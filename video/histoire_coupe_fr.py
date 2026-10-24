@@ -11,6 +11,8 @@ from historia_copa_es import EV_SFX, LEVELS  # noqa: F401
 BRAND = "FOFANA FÚTBOL"
 LANG = "fr-fr"
 VOICE = "ff_siwis"
+# voix off ElevenLabs « Adam - Dominant, Firm » (eleven_v4) ; sans ce fichier, voix Kokoro VOICE
+VOICE_FILE = "voix/adam_coupe_fr.mp3"
 SPEED = 1.0
 SUBTITLES = True
 OUT = "pixel_story_coupe_fr.mp4"

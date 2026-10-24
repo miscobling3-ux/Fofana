@@ -29,7 +29,7 @@ python3 make_video.py --stills 5,20,40   # aperçu rapide : quelques images PNG 
 # Pixel Story (niche 4) — « La Copa robada »
 
 Deux versions prêtes à poster, format TikTok 1080×1920, 30 fps, son à -14 LUFS :
-- **français** : **`output/pixel_story_coupe_fr.mp4`** (72 s, voix `ff_siwis`), script `video/histoire_coupe_fr.py`
+- **français** : **`output/pixel_story_coupe_fr.mp4`** (75 s, voix ElevenLabs « Adam - Dominant, Firm »), script `video/histoire_coupe_fr.py`
 - **espagnol** : **`output/pixel_story_copa_es.mp4`** (77 s, voix `em_alex`), script `video/historia_copa_es.py`
 
 Histoire vraie : en 1966, la Coupe du monde (Jules Rimet) est volée à Londres, puis retrouvée par le chien Pickles. La vidéo se termine sur le second vol de 1983 à Rio, où la coupe n'a jamais été retrouvée.
@@ -43,5 +43,6 @@ python3 pixel_story.py --script histoire_coupe_fr     # version française
 python3 pixel_story.py --stills 5,20,40    # aperçu : quelques PNG dans video/build/
 ```
 - **Texte / voix** : `video/historia_copa_es.py` → `LINES` (scène, texte). `*mot*` = mot-clé en ambre, `1966=mil-novecientos-sesenta-y-seis` = affiché / prononcé, commandes `{label:…}`, `{stamp:…}`, `{count:£15000}`, `{ev:…}`, `{sfx:…}` (les `_` deviennent des espaces).
+- **Voix off externe** (ElevenLabs ou ton propre enregistrement) : `VOICE_FILE = "voix/mon_fichier.mp3"` dans le script. Le fichier doit lire les lignes de `LINES` dans l'ordre, avec une petite pause entre chaque ; le moteur le découpe tout seul aux silences et recale les animations. Sans `VOICE_FILE`, c'est la voix Kokoro `VOICE` qui est utilisée.
 - **Langue** : `LANG` (`es`, `fr-fr`), `VOICE`, et `TXT` pour les textes dessinés dans les scènes (titre, lettre de rançon, appel à l'action…).
 - **Scènes** : fonctions `sc_*` dans `video/pixel_story.py`. **Son** : `video/chiptune.py`.

@@ -989,9 +989,73 @@ def tts_lines(G, lines, cache_dir, model_dir):
     return out
 
 
+def split_narration(path, lines):
+    """Découpe une voix off complète (ex. ElevenLabs) en une prise par ligne du script.
+
+    Choisit, parmi les silences, les coupures dont les segments ont la durée la plus proche
+    de celle attendue d'après le nombre de syllabes de chaque ligne (programmation dynamique).
+    """
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", path, "-ac", "1", "-ar", str(audio.SR), "-f", "f32le", "-"],
+                         capture_output=True, check=True).stdout
+    a = np.frombuffer(raw, np.float32).astype(np.float64)
+    a = a / (np.max(np.abs(a)) + 1e-9) * 0.9
+    hop = int(0.01 * audio.SR)
+    env = np.sqrt(np.convolve(a ** 2, np.ones(hop) / hop, "same")[::hop])
+    quiet = env < 0.04 * np.percentile(env, 95)
+    gaps, start = [], None
+    for i, q in enumerate(quiet):
+        if q and start is None:
+            start = i
+        elif not q and start is not None:
+            if (i - start) * 0.01 >= 0.12 and start > 0:
+                gaps.append((start * 0.01, i * 0.01))
+            start = None
+    voiced = np.where(~quiet)[0]
+    t_start, t_end = voiced[0] * 0.01, voiced[-1] * 0.01 + 0.01
+    syl = [sum(audio.syllables(w["spoken"]) for w in ws) for ws in lines]
+    n, G_ = len(lines), len(gaps)
+    rate = (t_end - t_start) / sum(syl)
+    if G_ < n - 1:
+        raise RuntimeError(f"voix off : {G_} silences trouvés pour {n} lignes")
+    edges = [t_start] + [(g0 + g1) / 2 for g0, g1 in gaps] + [t_end]
+    glen = [0.0] + [g1 - g0 for g0, g1 in gaps] + [0.0]
+
+    def cost(i, j, k):
+        d = edges[j] - edges[i]
+        return math.log(max(d, 0.05) / (syl[k] * rate)) ** 2 - 0.6 * glen[j]
+
+    # best[k][j] : coût minimal pour finir la ligne k sur la frontière j
+    INF = float("inf")
+    best = [[INF] * (G_ + 2) for _ in range(n)]
+    back = [[0] * (G_ + 2) for _ in range(n)]
+    for j in range(1, G_ + 2):
+        best[0][j] = cost(0, j, 0)
+    for k in range(1, n):
+        for j in range(k + 1, G_ + 2):
+            for i in range(k, j):
+                c = best[k - 1][i] + cost(i, j, k)
+                if c < best[k][j]:
+                    best[k][j], back[k][j] = c, i
+    cuts, j = [G_ + 1], G_ + 1
+    for k in range(n - 1, 0, -1):
+        j = back[k][j]
+        cuts.append(j)
+    cuts = [0] + cuts[::-1]
+    clips = []
+    for k in range(n):
+        s0, s1 = int(edges[cuts[k]] * audio.SR), int(edges[cuts[k + 1]] * audio.SR)
+        clips.append(audio.trim(a[s0:s1]))
+        print(f"  voix off {k + 1:2d} : {len(clips[-1]) / audio.SR:5.2f}s  "
+              f"{' '.join(w['spoken'] for w in lines[k])[:60]}", flush=True)
+    return clips
+
+
 def build(G, cache_dir, model_dir):
     parsed = [(sc, parse_line(txt)) for sc, txt in G.LINES]
-    clips = tts_lines(G, [w for _, w in parsed], cache_dir, model_dir)
+    if getattr(G, "VOICE_FILE", None):
+        clips = split_narration(os.path.join(HERE, G.VOICE_FILE), [w for _, w in parsed])
+    else:
+        clips = tts_lines(G, [w for _, w in parsed], cache_dir, model_dir)
     segs, starts, sfx = [], [], []
     t, prev = 0.4, None
     for (sc, words), clip in zip(parsed, clips):
