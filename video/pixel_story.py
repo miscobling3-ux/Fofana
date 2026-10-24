@@ -85,32 +85,35 @@ _G = {
 }
 GLYPHS = {k: np.array([[c == "#" for c in r] for r in v.split()]) for k, v in _G.items()}
 _ACC = {"Á": ("A", "acute"), "É": ("E", "acute"), "Í": ("I", "acute"), "Ó": ("O", "acute"),
-        "Ú": ("U", "acute"), "Ñ": ("N", "tilde"), "Ü": ("U", "diaer")}
+        "Ú": ("U", "acute"), "Ñ": ("N", "tilde"), "Ü": ("U", "diaer"), "À": ("A", "grave"),
+        "Â": ("A", "circ"), "È": ("E", "grave"), "Ê": ("E", "circ"), "Ë": ("E", "diaer"), "Î": ("I", "circ"),
+        "Ï": ("I", "diaer"), "Ô": ("O", "circ"), "Ù": ("U", "grave"), "Û": ("U", "circ"), "Ç": ("C", "cedil")}
 for _k, (_b, _kind) in _ACC.items():
     base = GLYPHS[_b]
-    g = np.zeros((10, base.shape[1]), bool)
-    g[3:] = base
+    g = np.zeros((12, base.shape[1]), bool)
+    g[3:10] = base
     w = base.shape[1]
     pts = {"acute": [(w // 2 + 1, 0), (w // 2, 1)], "diaer": [(1, 1), (w - 2, 1)],
-           "tilde": [(1, 0), (2, 0), (4, 0), (0, 1), (3, 1)]}[_kind]
+           "tilde": [(1, 0), (2, 0), (4, 0), (0, 1), (3, 1)], "grave": [(w // 2 - 1, 0), (w // 2, 1)],
+           "circ": [(w // 2 - 1, 1), (w // 2, 0), (w // 2 + 1, 1)], "cedil": [(w // 2, 10), (w // 2 - 1, 11)]}[_kind]
     for x, y in pts:
         g[y, min(x, w - 1)] = True
     GLYPHS[_k] = g
 for _k, _v in list(GLYPHS.items()):
     if _v.shape[0] == 7:
-        GLYPHS[_k] = np.vstack([np.zeros((3, _v.shape[1]), bool), _v])
+        GLYPHS[_k] = np.vstack([np.zeros((3, _v.shape[1]), bool), _v, np.zeros((2, _v.shape[1]), bool)])
 
 
 def text_mask(s, sc=1):
-    """Masque booléen du texte (10 lignes par caractère, dont 3 pour les accents)."""
+    """Masque booléen du texte (12 lignes par caractère : 3 pour les accents, 2 pour la cédille)."""
     s = s.upper()
     cols = []
     for ch in s:
         g = GLYPHS.get(ch)
         if g is None:
-            g = np.zeros((10, 3), bool)
-        cols += [g, np.zeros((10, 1), bool)]
-    m = np.hstack(cols[:-1]) if cols else np.zeros((10, 1), bool)
+            g = np.zeros((12, 3), bool)
+        cols += [g, np.zeros((12, 1), bool)]
+    m = np.hstack(cols[:-1]) if cols else np.zeros((12, 1), bool)
     return m.repeat(sc, 0).repeat(sc, 1)
 
 
@@ -456,6 +459,15 @@ def counter_str(arg, frac):
 
 
 # ---------------------------------------------------------------- scènes
+# textes dessinés dans les scènes ; le script peut les remplacer avec un dict TXT
+T = {
+    "title": ("LA COPA", "ROBADA"), "sub": "HISTORIA REAL EN PIXEL ART", "woof": "¡GUAU!",
+    "month": "JULIO", "cup": "MUNDIAL", "note": ("£15.000", "O LA COPA", "SE FUNDE"), "trace": "¿Y LA COPA?",
+    "final": "FINAL", "q": ("¿CONOCÍAS", "ESTA HISTORIA?"), "cta": ("DÍMELO EN LOS", "COMENTARIOS"),
+    "follow": "SÍGUEME",
+}
+
+
 class S:
     """Contexte de scène : temps local (par à-coups), événements, aléatoire."""
 
@@ -492,9 +504,9 @@ def floor_line(img, y, c="D"):
 
 def sc_hook(img, s):
     halo(img, 135, 250, 105, 1.0 + 0.06 * (s.k % 3 == 0))
-    text(img, "LA COPA", 135, 70, 4, "A", shadow="D")
-    text(img, "ROBADA", 135, 104, 4, "A", shadow="D")
-    text(img, "HISTORIA REAL EN PIXEL ART", 135, 142, 1, "W")
+    text(img, T["title"][0], 135, 70, 4, "A", shadow="D")
+    text(img, T["title"][1], 135, 116, 4, "A", shadow="D")
+    text(img, T["sub"], 135, 154, 1, "W")
     steal, dog = s.ev("steal"), s.ev("dog")
     by = 300
     if steal is not None and dog is None:
@@ -506,7 +518,7 @@ def sc_hook(img, s):
         sparkle(img, 120 + (s.k // 6 % 3) * 12, 225 + (s.k // 6 % 2) * 20, s.k)
     if dog is not None:
         blitc(img, DOG[s.k // 3 % 2 if dog < 0.6 else 0], 200, by + pop_y(dog), 2, flip=True)
-        bubble(img, "¡GUAU!", 214, by - 30, dog)
+        bubble(img, T["woof"], 214, by - 30, dog)
     floor_line(img, by)
 
 
@@ -560,9 +572,9 @@ def sc_londres(img, s):
         y = 96 + pop_y(cal)
         box(img, 22, y, 50, 54, "W")
         rect(img, 23, y + 1, 48, 13, "R")
-        text(img, "JULIO", 47, y + 4, 1, "W", outline=None)
+        text(img, T["month"], 47, y + 4, 1, "W", outline=None)
         text(img, "11", 47, y + 21, 3, "K", outline=None)
-        text(img, "MUNDIAL", 47, y + 60, 1, "A")
+        text(img, T["cup"], 47, y + 60, 1, "A")
 
 
 def _stamp_small(img, x, y, w, h, fill, k):
@@ -704,25 +716,25 @@ def sc_nota(img, s):
     rect(img, 206, y0 + 2, 2, 156, "H")
     rect(img, 64, y0 + 156, 144, 2, "H")
     dither(img, 63, y0 + 78, 144, 1, "H", 0.7)
-    lines = ["£15.000", "O LA COPA", "SE FUNDE"]
+    lines = T["note"]
     fills = ["A", "H", "g", "L", "R", "a"]
     n = int(note / 0.05)
     i = 0
     rng = np.random.default_rng(9)
     for li, ln in enumerate(lines):
-        x = 135 - len(ln) * 15 // 2
+        x = 135 - len(ln) * 13 // 2
         for ch in ln:
             jit = int(rng.integers(-2, 3))
             f = fills[int(rng.integers(0, len(fills)))]
             if ch != " " and i < n:
-                box(img, x, y0 + 16 + li * 44 + jit, 14, 20, f)
+                box(img, x, y0 + 16 + li * 44 + jit, 12, 20, f)
                 fg = "W" if f in ("g", "R", "a") else "K"
-                text(img, ch, x + 7, y0 + 20 + li * 44 + jit, 2 if ch != "£" else 2, fg, outline=None)
-            x += 15
+                text(img, ch, x + 6, y0 + 20 + li * 44 + jit, 2, fg, outline=None)
+            x += 13
             i += 1
     tr = s.ev("trace")
     if tr is not None:
-        bubble(img, "¿Y LA COPA?", 135, y0 - 2, tr)
+        bubble(img, T["trace"], 135, y0 - 2, tr)
 
 
 def _house(img, x, w, h, k, smoke=True):
@@ -834,7 +846,7 @@ def sc_wembley(img, s):
     if sc is not None:
         y = 98 + pop_y(sc)
         box(img, 88, y, 94, 40, "B", line="A")
-        text(img, "FINAL", 135, y + 4, 1, "W", outline=None)
+        text(img, T["final"], 135, y + 4, 1, "W", outline=None)
         if s.k % 4 or sc > 1:
             text(img, "4-2", 135, y + 16, 3, "L", outline=None)
         rng2 = np.random.default_rng(1)
@@ -881,7 +893,7 @@ def sc_banquete(img, s):
         rect(img, cx, 231 - (s.k % 2), 2, 2, "A")
         halo(img, cx + 1, 234, 14, 0.4)
     if wo is not None:
-        bubble(img, "¡GUAU!", 168, 226, wo)
+        bubble(img, T["woof"], 168, 226, wo)
     floor_line(img, 300, "D")
 
 
@@ -913,15 +925,15 @@ def sc_outro(img, s):
     if s.k % 4 < 3:
         ghost(img, TROPHY, 135, 296, 2, "A")
     if q is not None:
-        text(img, "¿CONOCÍAS", 135, 92 + pop_y(q), 3, "A", shadow="D")
-        text(img, "ESTA HISTORIA?", 135, 124 + pop_y(q), 3, "A", shadow="D")
+        text(img, T["q"][0], 135, 92 + pop_y(q), 3, "A", shadow="D")
+        text(img, T["q"][1], 135, 124 + pop_y(q), 3, "A", shadow="D")
     if cta is not None:
-        text(img, "DÍMELO EN LOS", 135, 166, 2, "W")
-        text(img, "COMENTARIOS", 135, 186, 2, "W")
+        text(img, T["cta"][0], 135, 166, 2, "W")
+        text(img, T["cta"][1], 135, 186, 2, "W")
         if cta > 0.6:
             y = 314 + pop_y(cta - 0.6)
             box(img, 70, y, 130, 28, "R" if s.k % 6 < 5 else "r")
-            text(img, "SÍGUEME", 135, y + 9, 2, "W", outline=None)
+            text(img, T["follow"], 135, y + 9, 2, "W", outline=None)
 
 
 SCENES = {k[3:]: v for k, v in globals().items() if k.startswith("sc_")}
@@ -956,8 +968,7 @@ def parse_line(txt):
         words.append(dict(text=disp, spoken=spoken, key=key, cmds=pending + cmds))
         pending = []
     if pending and words:
-        words[-1]["cmds"] += [(c, a) for c, a in pending]
-        words[-1]["late"] = True
+        words[-1]["late"] = pending   # commandes en fin de phrase : jouées à la fin du dernier mot
     return words
 
 
@@ -966,13 +977,14 @@ def tts_lines(G, lines, cache_dir, model_dir):
     tts, out = None, []
     for words in lines:
         txt = " ".join(w["spoken"] for w in words)
-        h = hashlib.md5(f"{G.VOICE}|{G.SPEED}|{txt}".encode()).hexdigest()[:12]
+        lang = getattr(G, "LANG", "es")
+        h = hashlib.md5(f"{lang}|{G.VOICE}|{G.SPEED}|{txt}".encode()).hexdigest()[:12]
         path = os.path.join(cache_dir, f"{h}.wav")
         if not os.path.exists(path):
             if tts is None:
                 tts = audio.load_tts(model_dir)
-            sf.write(path, audio.synth_line(tts, txt, G.VOICE, G.SPEED), audio.SR)
-            print(f"  voz : {txt}", flush=True)
+            sf.write(path, audio.synth_line(tts, txt, G.VOICE, G.SPEED, lang), audio.SR)
+            print(f"  voix : {txt}", flush=True)
         out.append(sf.read(path)[0])
     return out
 
@@ -995,8 +1007,8 @@ def build(G, cache_dir, model_dir):
         starts.append(t)
         for w, (a, b) in zip(words, audio.word_times([w["spoken"] for w in words], clip)):
             w["t0"], w["t1"] = t + a, t + b
-            te = w["t1"] if w.get("late") and w is words[-1] else w["t0"] - 0.04
-            for cmd, arg in w["cmds"]:
+            for cmd, arg, te in [(c, x, w["t0"] - 0.04) for c, x in w["cmds"]] + \
+                    [(c, x, w["t1"]) for c, x in w.get("late", [])]:
                 if cmd == "ev":
                     seg["ev"][arg] = te
                     if arg in G.EV_SFX:
@@ -1171,7 +1183,7 @@ def _render_range(args):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--script", default="historia_copa_es")
-    ap.add_argument("--out", default=os.path.join(HERE, "..", "output", "pixel_story_copa_es.mp4"))
+    ap.add_argument("--out", default=None, help="défaut : output/<OUT du script>")
     ap.add_argument("--models", default=os.environ.get("MODELS_DIR", os.path.join(HERE, "models")))
     ap.add_argument("--build", default=os.path.join(HERE, "build"))
     ap.add_argument("--stills", default="", help="temps (s) séparés par des virgules : n'exporte que ces images")
@@ -1179,8 +1191,10 @@ def main():
     a = ap.parse_args()
 
     G = importlib.import_module(a.script)
+    T.update(getattr(G, "TXT", {}))
+    a.out = a.out or os.path.join(HERE, "..", "output", getattr(G, "OUT", f"pixel_story_{a.script}.mp4"))
     os.makedirs(a.build, exist_ok=True)
-    print("1/3 voz + timeline…", flush=True)
+    print("1/3 voix + timeline…", flush=True)
     data, mix = build(G, os.path.join(a.build, "tts_cache"), a.models)
     print(f"   durée : {data['duration']:.1f}s", flush=True)
     for s in data["segs"]:

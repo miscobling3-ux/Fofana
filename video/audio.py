@@ -11,9 +11,9 @@ def load_tts(model_dir):
     return Kokoro(f"{model_dir}/kokoro.onnx", f"{model_dir}/voices.bin")
 
 
-def synth_line(tts, text, voice, speed):
+def synth_line(tts, text, voice, speed, lang="es"):
     import scipy.signal as ss
-    a, sr = tts.create(text, voice=voice, speed=speed, lang="es")
+    a, sr = tts.create(text, voice=voice, speed=speed, lang=lang)
     a = ss.resample_poly(a.astype(np.float64), SR, sr)
     return trim(a)
 
@@ -27,7 +27,7 @@ def trim(a, thr=0.008):
     return a[s:e]
 
 
-VOWELS = re.compile(r"[aeiouáéíóúüyAEIOUÁÉÍÓÚÜY]+")
+VOWELS = re.compile(r"[aeiouáéíóúüyàâèêëîïôùûœAEIOUÁÉÍÓÚÜYÀÂÈÊËÎÏÔÙÛŒ]+")
 
 
 def syllables(word):

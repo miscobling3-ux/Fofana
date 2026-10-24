@@ -65,3 +65,5 @@ EV_SFX = {
     "parcel": "sparkle", "open": "jingle", "score": "jingle", "woof": "bark", "gone": "sweep",
     "q": "blip", "cta": "coin",
 }
+
+OUT = "pixel_story_copa_es.mp4"
