@@ -23,3 +23,21 @@ python3 make_video.py --stills 5,20,40   # aperçu rapide : quelques images PNG 
 - **Nom de la chaîne** : `BRAND = "FOFANA FÚTBOL"`.
 - **Voix** : `VOICE` (`em_alex`, `em_santa` ou `ef_dora` pour une voix féminine) et `SPEED`.
 - Pour une nouvelle vidéo, copie `guion_psg_es.py` et lance `python3 make_video.py --script mon_script`.
+
+---
+
+# Pixel Story (niche 4) — « La Copa robada »
+
+Vidéo prête à poster : **`output/pixel_story_copa_es.mp4`**. Format TikTok 1080×1920, 30 fps, 77 s, son à -14 LUFS, en **espagnol**.
+
+Histoire vraie : en 1966, la Coupe du monde (Jules Rimet) est volée à Londres, puis retrouvée par le chien Pickles. La vidéo se termine sur le second vol de 1983 à Rio, où la coupe n'a jamais été retrouvée.
+
+Le style suit le prompt « Pixel Story » : pixel art 16 bits avec de gros pixels (toile 270×480 agrandie ×4 sans lissage), palette ambre, gris et rouge, ombres tramées, halo de bougie, une seule vignette au centre, étiquettes lieu/date en police pixel, compteurs qui défilent, tampons rouges qui s'écrasent, bulles, transitions en dissolution de pixels ou en balayage, mouvements par à-coups, musique chiptune et bruitages 8 bits. Tout est dessiné en code, sans aucune image externe.
+
+```bash
+cd video
+python3 pixel_story.py                     # crée output/pixel_story_copa_es.mp4 (~1 min)
+python3 pixel_story.py --stills 5,20,40    # aperçu : quelques PNG dans video/build/
+```
+- **Texte / voix** : `video/historia_copa_es.py` → `LINES` (scène, texte). `*mot*` = mot-clé en ambre, `1966=mil-novecientos-sesenta-y-seis` = affiché / prononcé, commandes `{label:…}`, `{stamp:…}`, `{count:£15000}`, `{ev:…}`, `{sfx:…}` (les `_` deviennent des espaces).
+- **Scènes** : fonctions `sc_*` dans `video/pixel_story.py`. **Son** : `video/chiptune.py`.
