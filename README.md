@@ -23,3 +23,40 @@ python3 make_video.py --stills 5,20,40   # aperçu rapide : quelques images PNG 
 - **Nom de la chaîne** : `BRAND = "FOFANA FÚTBOL"`.
 - **Voix** : `VOICE` (`em_alex`, `em_santa` ou `ef_dora` pour une voix féminine) et `SPEED`.
 - Pour une nouvelle vidéo, copie `guion_psg_es.py` et lance `python3 make_video.py --script mon_script`.
+
+---
+
+# Vidéos « santé » remontées : ongle incarné et petites peaux (FR + ES)
+
+Vidéos prêtes à poster : **`output/ongles_fr.mp4`** (français, 55 s) et **`output/ongles_es.mp4`** (espagnol, 60 s). Format 1080×1920, 30 fps, son à -14 LUFS.
+
+Elles sont remontées à partir de `video/sources/ongles_source.mp4` :
+- Nouveau texte (réécrit), nouvelle voix off, nouveaux sous-titres. Les anciens sous-titres incrustés sont effacés.
+- Zoom lent sur la zone importante de chaque plan, petit zoom « punch » sur chaque mot-clé, recadrage + flash + whoosh à chaque phrase.
+- Sous-titres mot par mot : mot prononcé surligné en rose, mots-clés en jaune.
+- Titre d'accroche (ONGLE INCARNÉ), titre de chapitre (ET LES ENVIES ?), badges « BON GESTE » / « ATTENTION » (avec teinte rouge), barre de progression et écran final « ABONNE-TOI ».
+- Musique et bruitages synthétisés, avec la musique qui baisse sous la voix.
+
+## Choisir la voix
+Les extraits sont dans `output/voix/` :
+
+| Fichier | Voix | Réglage `VOICE` |
+|---|---|---|
+| `fr_1_femme_kokoro_siwis.mp3` | Femme, la plus naturelle (utilisée par défaut) | `ff_siwis` |
+| `fr_2_homme_kokoro_grave.mp3` | Voix plus grave (mélange de deux voix) | `ff_siwis+am_onyx` |
+| `fr_3_femme_piper_siwis.mp3` | Femme, plus posée | `piper:fr-siwis-medium` |
+| `fr_4_homme_piper_gilles.mp3` | Homme, plus robotique | `piper:fr-gilles-low` |
+| `es_1_homme_alex.mp3` | Espagnol, homme (utilisée par défaut) | `em_alex` |
+| `es_2_homme_santa.mp3` | Espagnol, homme | `em_santa` |
+| `es_3_femme_dora.mp3` | Espagnol, femme | `ef_dora` |
+
+```bash
+cd video
+./setup.sh                                          # une seule fois
+python3 remix.py --script guion_ongles_fr           # -> output/ongles_fr.mp4 (environ 3 min)
+python3 remix.py --script guion_ongles_es           # -> output/ongles_es.mp4
+python3 remix.py --script guion_ongles_fr --voice piper:fr-gilles-low --out ../output/ongles_fr_homme.mp4
+python3 remix.py --script guion_ongles_fr --stills 2,14,45   # aperçu rapide en PNG dans video/build/
+```
+- **Texte, zooms et badges** : `video/guion_ongles_fr.py` / `guion_ongles_es.py` → `LINES`. Chaque phrase indique le passage de la vidéo source (`src`) et le zoom (`zoom=(départ, fin, centre x, centre y)`).
+- **Autre vidéo source** : copie un script, change `SOURCE` et les passages. Si la source n'a pas de sous-titres au même endroit, adapte `BAND` / `WATERMARK` dans `remix.py`.
