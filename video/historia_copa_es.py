@@ -9,6 +9,8 @@ Chaque ligne : (scène, texte). `*mot*` = mot-clé en ambre, `affiché=parlé` p
 
 BRAND = "FOFANA FÚTBOL"
 VOICE = "em_alex"
+# voix off ElevenLabs « Adam - Dominant, Firm » (eleven_v4) ; sans ce fichier, voix Kokoro VOICE
+VOICE_FILE = "voix/adam_copa_es.mp3"
 SPEED = 1.0
 SUBTITLES = True
 

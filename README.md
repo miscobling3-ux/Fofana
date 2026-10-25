@@ -30,7 +30,7 @@ python3 make_video.py --stills 5,20,40   # aperçu rapide : quelques images PNG 
 
 Deux versions prêtes à poster, format TikTok 1080×1920, 30 fps, son à -14 LUFS :
 - **français** : **`output/pixel_story_coupe_fr.mp4`** (75 s, voix ElevenLabs « Adam - Dominant, Firm »), script `video/histoire_coupe_fr.py`
-- **espagnol** : **`output/pixel_story_copa_es.mp4`** (77 s, voix `em_alex`), script `video/historia_copa_es.py`
+- **espagnol** : **`output/pixel_story_copa_es.mp4`** (79 s, voix ElevenLabs « Adam - Dominant, Firm »), script `video/historia_copa_es.py`
 
 Histoire vraie : en 1966, la Coupe du monde (Jules Rimet) est volée à Londres, puis retrouvée par le chien Pickles. La vidéo se termine sur le second vol de 1983 à Rio, où la coupe n'a jamais été retrouvée.
 
