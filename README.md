@@ -23,3 +23,24 @@ python3 make_video.py --stills 5,20,40   # aperçu rapide : quelques images PNG 
 - **Nom de la chaîne** : `BRAND = "FOFANA FÚTBOL"`.
 - **Voix** : `VOICE` (`em_alex`, `em_santa` ou `ef_dora` pour une voix féminine) et `SPEED`.
 - Pour une nouvelle vidéo, copie `guion_psg_es.py` et lance `python3 make_video.py --script mon_script`.
+
+---
+
+# Vidéo 2 — Balón de Oro 2026, style borne d'arcade
+
+Vidéo prête à poster : **`output/balon_de_oro_2026_es.mp4`**. Format 1080×1920, 66 s, voix et textes en espagnol.
+
+Le déroulé reprend l'image de référence, une borne d'arcade avec un écran de sélection de personnages :
+1. La borne s'allume (INSERT COIN), puis l'écran titre « BALÓN DE ORO 2026 · 70ª EDICIÓN · LONDRES » avec la skyline de Londres.
+2. Dembélé, tenant du titre, avec sa couronne, puis « ¿SU SUCESOR? ».
+3. L'écran de sélection avec 10 des 30 nominés (Kane, Yamal, Mbappé, Dembélé, Rodri, Olise, Kvaratskhelia, Vitinha, Fabián Ruiz, Messi). Le curseur 1P passe sur chaque joueur cité, avec son club et un fait marquant.
+4. Les 2 finalistes, Kane (1P) contre Yamal (2P), avec leurs stats qui s'affichent au fil de la voix, puis l'écran VS avec le tampon « FAVORITO ».
+5. Le pronostic : roulette entre les deux joueurs, puis « ¡GANADOR! HARRY KANE » avec fanfare et confettis.
+6. L'appel aux commentaires : « ¿Kane o Lamine? ».
+
+Effets : écran CRT (lignes de balayage, lueur, reflet), manettes et boutons qui bougent, musique chiptune 8 bits et bruitages d'arcade.
+
+- Portraits : générés avec ElevenLabs (gpt-image) en style pixel art, dans `video/assets/players/`.
+- Faits : liste officielle des nommés, cérémonie du 26/10/2026 au London Palladium, cotes des bookmakers avant la cérémonie (Kane favori). **Le vainqueur annoncé est un pronostic.**
+
+Refaire la vidéo : `cd video && python3 make_arcade.py`. Le texte se modifie dans `video/guion_balon_oro_es.py`.

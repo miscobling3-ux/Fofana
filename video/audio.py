@@ -296,3 +296,143 @@ def mix_all(voice, music, events, duration):
     fade = int(0.8 * SR)
     out[-fade:] *= np.linspace(1, 0, fade)
     return out
+
+
+# ---------------------------------------------------------------- chiptune (style arcade 16 bits)
+def _pulse(f, n, duty=0.25):
+    t = np.arange(n) / SR
+    return np.where((t * f) % 1.0 < duty, 1.0, -1.0)
+
+
+def _tri(f, n):
+    t = np.arange(n) / SR
+    ph = (t * f) % 1.0
+    return 4 * np.abs(ph - 0.5) - 1
+
+
+def make_chiptune(duration, sections, bpm=150, seed=3):
+    """sections: (t0, t1, niveau). < 0.4 : arpèges + basse ; >= 0.5 : batterie ; >= 0.9 : mélodie."""
+    rng = np.random.default_rng(seed)
+    n = int(duration * SR) + SR
+    mix = np.zeros(n)
+    step = 60 / bpm / 4
+    prog = [(57, [57, 60, 64]), (53, [53, 57, 60]), (48, [48, 52, 55]), (55, [55, 59, 62])]  # Am F C G
+    melody = [76, 0, 74, 72, 0, 72, 74, 76, 79, 0, 76, 74, 72, 0, 69, 0]
+
+    def level(t):
+        v = 0.3
+        for a, b, l in sections:
+            if a <= t < b:
+                v = l
+        return v
+
+    def add(sig, t, g):
+        i = int(t * SR)
+        if i >= n:
+            return
+        e = min(n, i + len(sig))
+        mix[i:e] += sig[:e - i] * g
+
+    nsteps = int(duration / step) + 1
+    hat = _highpass(rng.normal(0, 1, int(0.03 * SR)), 6000) * np.exp(-np.arange(int(0.03 * SR)) / SR * 120)
+    sn_n = int(0.15 * SR)
+    snare = rng.normal(0, 1, sn_n) * np.exp(-np.arange(sn_n) / SR * 25)
+    kn = int(0.18 * SR)
+    kt = np.arange(kn) / SR
+    kick_ = np.sin(2 * np.pi * np.cumsum(50 + 120 * np.exp(-kt * 35)) / SR) * np.exp(-kt * 14)
+    for s in range(nsteps):
+        t = s * step
+        L = level(t)
+        bar = s // 16
+        root, chord = prog[bar % 4]
+        k = s % 16
+        # arpège pulse 12,5 %
+        m = chord[k % 3] + 12
+        ln = int(step * SR * 0.9)
+        env = np.exp(-np.arange(ln) / SR * 18)
+        add(_pulse(note_hz(m), ln, 0.125) * env, t, 0.05)
+        # basse triangle en croches
+        if k % 2 == 0:
+            ln2 = int(step * 2 * SR * 0.95)
+            add(_tri(note_hz(root - 12 + (12 if k % 8 == 4 else 0)), ln2), t, 0.16)
+        if L >= 0.5:
+            if k in (0, 6, 8, 10):
+                add(kick_, t, 0.5)
+            if k in (4, 12):
+                add(snare, t, 0.16)
+            add(hat, t, 0.08 if k % 2 == 0 else 0.04)
+        if L >= 0.9 and melody[k] and bar % 2 == 0:
+            ln3 = int(step * 2 * SR)
+            vib = np.sin(2 * np.pi * 6 * np.arange(ln3) / SR) * 0.004
+            tt = np.arange(ln3) / SR
+            ph = np.cumsum(note_hz(melody[k] - (0 if bar % 4 < 2 else 2)) * (1 + vib)) / SR
+            sig = np.where(ph % 1.0 < 0.5, 1.0, -1.0) * np.exp(-tt * 3)
+            add(sig, t, 0.06)
+    return mix[:int(duration * SR)]
+
+
+def chip_sfx(kind, rng=None):
+    rng = rng or np.random.default_rng(1)
+    if kind == "coin":
+        a = _pulse(988, int(0.07 * SR), 0.5)
+        b = _pulse(1319, int(0.35 * SR), 0.5) * np.exp(-np.arange(int(0.35 * SR)) / SR * 8)
+        return np.concatenate([a, b]) * 0.25
+    if kind == "blip":
+        n = int(0.09 * SR)
+        f = np.linspace(660, 1320, n)
+        return np.where((np.cumsum(f) / SR) % 1 < 0.5, 1.0, -1.0) * np.exp(-np.arange(n) / SR * 25) * 0.22
+    if kind == "select":
+        out = []
+        for m in (72, 76, 79, 84):
+            out.append(_pulse(note_hz(m), int(0.06 * SR), 0.25))
+        return np.concatenate(out) * 0.22
+    if kind == "roll":
+        n = int(3.2 * SR)
+        out = np.zeros(n)
+        t, gap = 0.0, 0.12
+        hit = rng.normal(0, 1, int(0.05 * SR)) * np.exp(-np.arange(int(0.05 * SR)) / SR * 60)
+        while t < 3.1:
+            i = int(t * SR)
+            e = min(n, i + len(hit))
+            out[i:e] += hit[:e - i] * (0.3 + 0.7 * t / 3.1)
+            t += gap
+            gap = max(0.035, gap * 0.95)
+        return out * 0.35
+    if kind == "fanfare":
+        out = []
+        for m, d in ((67, .12), (72, .12), (76, .12), (79, .3), (76, .12), (79, .6)):
+            ln = int(d * SR)
+            out.append((_pulse(note_hz(m), ln, 0.5) * 0.6 + _pulse(note_hz(m - 12), ln, 0.25) * 0.4)
+                       * np.minimum(1, (ln - np.arange(ln)) / (0.02 * SR)))
+        return np.concatenate(out) * 0.25
+    return sfx(kind, rng)
+
+
+def mix_chip(voice, music, events, duration):
+    """Comme mix_all mais avec les bruitages 8 bits."""
+    n = int(duration * SR)
+    v = np.zeros(n)
+    v[:min(n, len(voice))] = voice[:n]
+    m = np.zeros(n)
+    m[:min(n, len(music))] = music[:n]
+    env = np.convolve(np.abs(v), np.ones(4800) / 4800, "same")
+    env = np.convolve(env, np.ones(9600) / 9600, "same")
+    duck = 1 - 0.5 * np.clip(env / 0.05, 0, 1)
+    m = m / (np.max(np.abs(m)) + 1e-9) * 0.4 * duck
+    v = v / (np.max(np.abs(v)) + 1e-9) * 0.92
+    fx = np.zeros(n)
+    rng = np.random.default_rng(5)
+    cache = {}
+    for t, kind, g in events:
+        if kind not in cache:
+            cache[kind] = chip_sfx(kind, rng)
+        s = cache[kind]
+        i = int(t * SR)
+        if i >= n:
+            continue
+        e = min(n, i + len(s))
+        fx[i:e] += s[:e - i] * g
+    out = np.tanh((v + m + fx * 0.8) * 1.1) / np.tanh(1.1)
+    fade = int(0.6 * SR)
+    out[-fade:] *= np.linspace(1, 0, fade)
+    return out
