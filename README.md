@@ -44,3 +44,18 @@ Effets : écran CRT (lignes de balayage, lueur, reflet), manettes et boutons qui
 - Faits : liste officielle des nommés, cérémonie du 26/10/2026 au London Palladium, cotes des bookmakers avant la cérémonie (Kane favori). **Le vainqueur annoncé est un pronostic.**
 
 Refaire la vidéo : `cd video && python3 make_arcade.py`. Le texte se modifie dans `video/guion_balon_oro_es.py`.
+
+---
+
+# Vidéo 3 — Balón de Oro 2026 : mon top 10, avec photo + stats de chaque joueur
+
+Vidéo prête à poster : **`output/balon_de_oro_2026_top10_es.mp4`**. Format 1080×1920, 1 min 49 s, en espagnol.
+
+- **Intro sur la borne d'arcade** (Londres, 70ª edición, Dembélé tenant du titre, grille « TOP 10 »), puis plongée dans l'écran.
+- **Un segment par joueur**, du n°10 au n°1 : Fabián Ruiz, Vitinha, Dembélé, Messi, Kvaratskhelia, Olise, Rodri, Mbappé, Yamal, Kane. À chaque fois, la photo apparaît quand on cite son nom. Le cadre s'ouvre ensuite en deux, et chaque statistique arrive **une par une** dans un disque relié par des lignes fines, puis s'ajoute à la liste sous la photo. C'est le style de la vidéo de référence : cadre octogonal noir et blanc, petit texte + grand mot, transitions en zoom, faisceaux de lumière.
+- **Les 2 finalistes** : le disque « 2 » devient le rond central d'un terrain. Yamal et Kane passent sur fond noir.
+- **Fin** : FAVORITO, pronostic (projecteur qui hésite), Kane en couleur avec confettis, puis retour sur la borne « ¿Kane o Lamine? ».
+
+Refaire : `cd video && python3 make_top10.py`. Le texte et les stats sont dans `video/guion_top10_es.py`.
+
+**Voix ElevenLabs (Adam - Dominant, Firm).** Si des fichiers `video/assets/voice_adam/00.wav`, `01.wav`, … existent (un par ligne de `LINES`), ils remplacent automatiquement la voix de synthèse au prochain rendu.

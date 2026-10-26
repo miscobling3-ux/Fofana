@@ -426,8 +426,9 @@ class Screens:
         else:
             # le curseur « cherche » au hasard avant le premier choix
             cur = self.G.GRID[int(t * 9) % 10]
-            pixel_text(c, "10 / 30", SW / 2, 230, 120, GOLD, px=6)
-            pixel_text(c, "NOMINADOS", SW / 2, 340, 40, "#ffffff")
+            big, small = getattr(self.G, "GRID_TITLE", ("10 / 30", "NOMINADOS"))
+            pixel_text(c, big, SW / 2, 230, 120, GOLD, px=6)
+            pixel_text(c, small, SW / 2, 340, 40, "#ffffff")
         self.draw_grid(c, t, lt, cur, appear=clamp01(lt / 1.2))
 
     def s_finalists(self, c, t, lt, ev, info):
