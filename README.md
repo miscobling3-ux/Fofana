@@ -60,3 +60,27 @@ python3 remix.py --script guion_ongles_fr --stills 2,14,45   # aperçu rapide en
 ```
 - **Texte, zooms et badges** : `video/guion_ongles_fr.py` / `guion_ongles_es.py` → `LINES`. Chaque phrase indique le passage de la vidéo source (`src`) et le zoom (`zoom=(départ, fin, centre x, centre y)`).
 - **Autre vidéo source** : copie un script, change `SOURCE` et les passages. Si la source n'a pas de sous-titres au même endroit, adapte `BAND` / `WATERMARK` dans `remix.py`.
+
+---
+
+# Actu France en motion design : « Mbappé × Chine » (FR)
+
+Vidéo prête à poster : **`output/mbappe_chine_fr.mp4`**. Format 1080×1920, 30 fps, 84 s, son à -14 LUFS.
+
+Sujet : la polémique du 27 octobre 2026. Mbappé plaisante sur un mème où sa tête est collée sur Mao Zedong, des sponsors chinois (Dongpeng, Mengniu) rompent leur contrat, Pékin réagit, la télé d'État suspend la Liga, puis Mbappé s'excuse en français, en anglais et en chinois.
+
+- **Script** : `video/actu_mbappe/script.txt`. Voix ElevenLabs « Xavier – Top France » (modèle eleven_v4). Le timing mot par mot vient de la transcription ElevenLabs (`assets/words.json`).
+- **Style** : celui des vidéos de référence. Fond nuit violet avec une ville en parallaxe, personnages silhouettes à tête noire, en-tête de chapitre avec compteur (« SPONSORS PERDUS : 0 → 3 ? »), sous-titres Anton mot par mot (mots-clés en rouge), zooms « whip », flashs, tremblements, teinte rouge sur les chocs, et la mascotte « F » en fin de vidéo.
+- **Bruitages** : vrais fichiers trouvés en ligne, sous licence CC0 (Kenney, via le dépôt GitHub `kapishdima/soundcn`, et `crafter-station/elements`). Ils sont dans `assets/sfx/`.
+- **Musique** : « Ominosity » de Tanner Helland, sous licence CC-BY 4.0. **À créditer dans la description TikTok** : `Musique : Tanner Helland (tannerhelland.com)`.
+- **Visuels** : emojis 3D Microsoft Fluent (MIT), drapeaux `flag-icons` (MIT) et carte Natural Earth (`world-atlas`). Tout le reste est dessiné en SVG/CSS.
+
+## Refaire / modifier
+```bash
+cd video/actu_mbappe
+node render.js --stills 3,25,60   # aperçus PNG dans build/
+node render.js                    # build/video_muette.mp4 (~10 min, 4 rendus en parallèle)
+python3 mix_audio.py              # build/mix.wav (voix + musique + bruitages)
+ffmpeg -i build/video_muette.mp4 -i build/mix.wav -c:v copy -c:a aac -b:a 192k -shortest ../../output/mbappe_chine_fr.mp4
+```
+- Animations et timings : `anim.js` (une fonction par scène, les temps viennent de `words.json`). Bruitages : liste `CUES` dans `mix_audio.py`.
