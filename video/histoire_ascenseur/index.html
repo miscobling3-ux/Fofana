@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Le 4e étage</title>
+<style>
+@font-face{font-family:Anton;src:url(assets/fonts/Anton-Regular.ttf)}
+@font-face{font-family:Bebas;src:url(assets/fonts/BebasNeue-Regular.ttf)}
+@font-face{font-family:InterV;src:url(assets/fonts/Inter.ttf);font-weight:100 900}
+:root{--red:#ff3344;--gold:#ffc83d;--ink:#0b0a14;--night1:#0e0b22;--night2:#231a4d}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+body{font-family:InterV,sans-serif;color:#fff}
+#stage{position:absolute;inset:0;overflow:hidden;background:radial-gradient(120% 70% at 50% 35%,#2a2060 0%,#15103a 45%,#07061a 100%)}
+.abs{position:absolute}
+.layer{position:absolute;inset:0;transform-origin:50% 40%}
+.scene{position:absolute;inset:0;display:none;transform-origin:50% 42%}
+.glow{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55}
+.card{position:absolute;background:linear-gradient(180deg,#1d1838,#120f26);border:2px solid rgba(255,255,255,.12);border-radius:34px;box-shadow:0 30px 80px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.12)}
+.emoji{position:absolute;width:200px;height:200px;background-size:contain;background-repeat:no-repeat;background-position:center;filter:drop-shadow(0 18px 30px rgba(0,0,0,.5))}
+.big{font-family:Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:1px;line-height:.95}
+.bebas{font-family:Bebas,Anton,sans-serif}
+.tag{position:absolute;padding:14px 26px;border-radius:18px;font-family:InterV;font-weight:800;font-size:34px;letter-spacing:.5px;white-space:nowrap}
+.namecard{position:absolute;padding:20px 30px 22px;border-radius:22px;background:rgba(12,10,28,.86);border:2px solid rgba(255,255,255,.14);box-shadow:0 20px 50px rgba(0,0,0,.5);white-space:nowrap}
+.namecard b{display:block;font-family:Anton;font-size:56px;font-weight:400;letter-spacing:1px;text-transform:uppercase}
+.namecard span{display:block;font-weight:600;font-size:28px;opacity:.75;margin-top:6px}
+.namecard i{position:absolute;left:0;top:18px;bottom:18px;width:8px;border-radius:0 6px 6px 0;background:var(--red)}
+.stamp{position:absolute;font-family:Anton;text-transform:uppercase;color:var(--red);border:10px solid var(--red);border-radius:18px;padding:6px 30px 10px;font-size:110px;letter-spacing:3px;white-space:nowrap;text-shadow:0 0 30px rgba(255,40,60,.6);box-shadow:0 0 40px rgba(255,40,60,.35),inset 0 0 30px rgba(255,40,60,.25);background:rgba(20,0,6,.35)}
+.phone{position:absolute;width:520px;height:1060px;border-radius:78px;background:#05050a;padding:18px;box-shadow:0 50px 120px rgba(0,0,0,.7),0 0 0 3px #2b2a36,inset 0 0 0 2px #3a3946}
+.phone .scr{position:relative;width:100%;height:100%;border-radius:62px;overflow:hidden;background:#111}
+.phone .notch{position:absolute;left:50%;top:30px;width:150px;height:42px;margin-left:-75px;border-radius:30px;background:#000;z-index:5}
+.quote{position:absolute;font-family:Anton;text-transform:uppercase;text-align:center;line-height:1.02}
+/* captions */
+#caps{position:absolute;left:60px;right:60px;top:1330px;height:260px;display:flex;align-items:center;justify-content:center;text-align:center;z-index:50}
+#caps .line{font-family:Anton;font-size:112px;text-transform:uppercase;letter-spacing:1px;line-height:1.02;color:#fff;-webkit-text-stroke:3px #000;paint-order:stroke fill;text-shadow:0 6px 0 #000,0 10px 30px rgba(0,0,0,.85)}
+#caps .w{display:inline-block;margin:0 14px;transform-origin:50% 70%}
+#caps .w.k{color:var(--red)}
+#caps .w.g{color:var(--gold)}
+/* header */
+#hdr{position:absolute;left:0;right:0;top:118px;text-align:center;z-index:60}
+#hdr .lab{font-family:InterV;font-weight:800;font-size:25px;letter-spacing:7px;opacity:.85;text-transform:uppercase}
+#hdr .lab i{display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--red);margin-right:14px;vertical-align:2px;box-shadow:0 0 14px var(--red)}
+#hdr .val{font-family:Bebas;font-size:92px;letter-spacing:3px;line-height:1;margin-top:6px;text-shadow:0 4px 20px rgba(0,0,0,.6)}
+#hdr .val em{font-style:normal;color:var(--red)}
+#prog{position:absolute;left:0;top:0;height:10px;background:linear-gradient(90deg,#ff3344,#ffc83d);z-index:70;box-shadow:0 0 18px rgba(255,60,70,.8)}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;z-index:80;pointer-events:none}
+#tint{position:absolute;inset:0;background:radial-gradient(80% 60% at 50% 45%,rgba(255,0,30,0) 30%,rgba(255,0,30,.55) 100%);opacity:0;z-index:40;mix-blend-mode:screen}
+#vig{position:absolute;inset:0;background:radial-gradient(90% 75% at 50% 45%,rgba(0,0,0,0) 55%,rgba(0,0,0,.75) 100%);z-index:45}
+#grain{position:absolute;inset:-50px;opacity:.09;z-index:46;mix-blend-mode:overlay}
+#dust{position:absolute;inset:0;z-index:2}
+#dust b{position:absolute;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 10px #fff}
+#bottomfade{position:absolute;left:0;right:0;bottom:0;height:520px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.55));z-index:41}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="glow" id="g1" style="width:900px;height:700px;left:90px;top:520px;background:#ff7a3d"></div>
+  <div class="glow" id="g2" style="width:700px;height:700px;left:-200px;top:100px;background:#5b3cff"></div>
+  <div id="dust"></div>
+  <div class="layer" id="world" style="z-index:3"></div>
+  <div id="tint"></div>
+  <div id="bottomfade"></div>
+  <div id="vig"></div>
+  <canvas id="grain" width="590" height="1010"></canvas>
+  <div id="hdr"><div class="lab"><i></i><span id="hlab">AFFAIRE MBAPPÉ</span></div><div class="val" id="hval">MBAPPÉ × CHINE</div></div>
+  <div id="caps"><div class="line" id="capline"></div></div>
+  <div id="prog"></div>
+  <div id="flash"></div>
+</div>
+<script src="assets/topojson-client.min.js"></script>
+<script src="anim.js"></script>
+</body>
+</html>

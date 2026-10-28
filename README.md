@@ -84,3 +84,25 @@ python3 mix_audio.py              # build/mix.wav (voix + musique + bruitages)
 ffmpeg -i build/video_muette.mp4 -i build/mix.wav -c:v copy -c:a aac -b:a 192k -shortest ../../output/mbappe_chine_fr.mp4
 ```
 - Animations et timings : `anim.js` (une fonction par scène, les temps viennent de `words.json`). Bruitages : liste `CUES` dans `mix_audio.py`.
+
+---
+
+# Histoires interactives « Tu sors ou… ? » (FR) — « Le 4ᵉ étage »
+
+Vidéo prête à poster : **`output/histoire_4e_etage_fr.mp4`**. Format 1080×1920, 30 fps, 62,5 s, son à -14 LUFS, **sans musique de fond** (voix et bruitages uniquement).
+
+- **Voix** : ElevenLabs « Adam - Dominant, Firm » (`pNInz6obpgDQGcFmaJgB`), qui parle en français grâce au modèle eleven_v4. Le texte est dans `video/histoire_ascenseur/script.txt`.
+- **Style** : celui de la 1ʳᵉ vidéo de référence. Personnage à tête noire en sweat jaune, en-tête « NUIT 1 · LIEU » avec une horloge qui défile (elle se bloque en rouge au 4ᵉ étage), doigt qui appuie sur le bouton, sous-titres mot par mot avec mots-clés en rouge.
+- **Déroulé** : rue → hall → bouton 3 → 1, 2, 3… DING 4 → coupe de l'immeuble avec un 4ᵉ étage fantôme → couloir identique (moquette, portes, néon qui grésille) → ta porte ouverte → la voisine et ton prénom → les portes se referment → choix « TU SORS / RDC » → note « RÈGLE N°1 » → appel aux commentaires → « ELLE T'ATTEND. » → « À SUIVRE… ».
+- **Bruitages** CC0 (Kenney, elements) : pas, bouton, ronronnement d'ascenseur, ding, portes, néon, grincement, battements de cœur qui accélèrent.
+
+## Faire une nouvelle histoire
+```bash
+cd video/histoire_ascenseur
+# 1. voix ElevenLabs (Adam) -> assets/voix.mp3, puis transcription ElevenLabs -> assets/words.json
+./build_anim.sh                   # assemble anim.js (outils communs + scenes.js)
+node render.js --stills 5,20,40   # aperçus PNG dans build/
+node render.js                    # build/video_muette.mp4 (~4 min)
+python3 mix_audio.py              # build/mix.wav (sans musique)
+ffmpeg -i build/video_muette.mp4 -i build/mix.wav -c:v libx264 -crf 21 -c:a aac -b:a 192k -shortest ../../output/mon_histoire.mp4
+```
