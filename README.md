@@ -60,3 +60,18 @@ python3 remix.py --script guion_ongles_fr --stills 2,14,45   # aperçu rapide en
 ```
 - **Texte, zooms et badges** : `video/guion_ongles_fr.py` / `guion_ongles_es.py` → `LINES`. Chaque phrase indique le passage de la vidéo source (`src`) et le zoom (`zoom=(départ, fin, centre x, centre y)`).
 - **Autre vidéo source** : copie un script, change `SOURCE` et les passages. Si la source n'a pas de sous-titres au même endroit, adapte `BAND` / `WATERMARK` dans `remix.py`.
+
+---
+
+# Pub Digiropay (français)
+
+Vidéo prête à poster : **`output/digiropay_pub_fr.mp4`** (1080×1920, 30 fps, 35 s, son à -14 LUFS). Style inspiré des pubs de référence : aplats de couleur, pastilles, cartes produits flottantes, téléphone avec notifications de vente, étapes cochées, écran final « Créer mon compte · digiropay.com ». Voix off féminine (Kokoro `ff_siwis`), sous-titres mot par mot, musique pop et bruitages synthétisés.
+
+```bash
+cd video
+./setup.sh                                  # une seule fois
+python3 pub_digiropay.py                    # -> output/digiropay_pub_fr.mp4 (environ 1 min)
+python3 pub_digiropay.py --stills 3,13,33   # aperçus PNG dans video/build/digiropay/
+```
+- **Texte / voix** : `LINES` dans `video/pub_digiropay.py` (texte prononcé, texte affiché, scène). « Digiro-pé » sert uniquement à la prononciation.
+- **Couleurs** : `BLUE`, `GREEN`, `ORANGE`… en haut du script. Le logo « D Digiropay » est provisoire (fonction `logo`).
