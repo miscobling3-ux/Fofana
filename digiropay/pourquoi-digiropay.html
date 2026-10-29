@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pourquoi Digiropay</title>
+<meta name="description" content="Vends tes formations, ebooks, guides et fichiers numériques en ligne avec Digiropay, depuis chez toi.">
+<style>
+  /* ==== À AJUSTER avec les couleurs et la police du site Digiropay ==== */
+  :root {
+    --dp-primary: #2563eb;      /* couleur principale (boutons, accents) */
+    --dp-primary-dark: #1d4ed8; /* survol des boutons */
+    --dp-accent: #16a34a;       /* coches de la liste */
+    --dp-text: #0f172a;
+    --dp-muted: #475569;
+    --dp-bg: #ffffff;
+    --dp-bg-soft: #f1f5f9;
+    --dp-radius: 14px;
+    --dp-font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  /* ==================================================================== */
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--dp-bg);
+    color: var(--dp-text);
+    font-family: var(--dp-font);
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  .dp-wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+  section { padding: 48px 0; }
+  h1, h2 { line-height: 1.2; margin: 0 0 16px; }
+  h1 { font-size: clamp(1.6rem, 5vw, 2.6rem); text-transform: uppercase; letter-spacing: .01em; }
+  h2 { font-size: clamp(1.3rem, 4vw, 1.9rem); }
+  p { margin: 0 0 16px; }
+  .dp-lead { font-size: 1.12em; color: var(--dp-muted); }
+
+  .dp-hero { background: var(--dp-bg-soft); text-align: center; padding: 64px 0 56px; }
+  .dp-hero .dp-lead { max-width: 640px; margin: 0 auto 28px; }
+
+  .dp-icon { width: 1.1em; height: 1.1em; vertical-align: -0.15em; flex: none; }
+  .dp-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 56px; height: 56px; border-radius: 50%;
+    background: var(--dp-primary); color: #fff; margin-bottom: 20px;
+  }
+  .dp-badge .dp-icon { width: 28px; height: 28px; }
+
+  .dp-btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--dp-primary); color: #fff; text-decoration: none;
+    font-weight: 700; font-size: 1.05rem;
+    padding: 14px 28px; border-radius: 999px;
+    transition: background .2s, transform .2s;
+  }
+  .dp-btn:hover, .dp-btn:focus-visible { background: var(--dp-primary-dark); transform: translateY(-1px); }
+
+  .dp-questions { list-style: none; padding: 0; margin: 0 0 16px; display: grid; gap: 12px; }
+  .dp-questions li {
+    background: var(--dp-bg-soft); border-radius: var(--dp-radius);
+    padding: 16px 18px; display: flex; gap: 12px; align-items: flex-start;
+  }
+  .dp-questions .dp-icon { color: var(--dp-primary); margin-top: 4px; }
+
+  .dp-vision {
+    border-left: 4px solid var(--dp-primary);
+    background: var(--dp-bg-soft);
+    border-radius: 0 var(--dp-radius) var(--dp-radius) 0;
+    padding: 20px 22px; margin: 24px 0; font-size: 1.1em;
+  }
+  .dp-highlight { font-weight: 700; font-size: 1.1em; }
+
+  .dp-steps { list-style: none; padding: 0; margin: 0 0 28px; display: grid; gap: 12px; }
+  .dp-steps li { display: flex; gap: 12px; align-items: flex-start; font-weight: 600; }
+  .dp-steps .dp-icon { color: var(--dp-accent); width: 24px; height: 24px; margin-top: 1px; }
+  .dp-cta-inline { text-align: center; margin: 8px 0 32px; }
+
+  .dp-final { background: var(--dp-primary); color: #fff; text-align: center; padding: 56px 0; }
+  .dp-final h2 { text-transform: uppercase; }
+  .dp-final .dp-btn { background: #fff; color: var(--dp-primary); margin: 12px 0 24px; }
+  .dp-final .dp-btn:hover, .dp-final .dp-btn:focus-visible { background: var(--dp-bg-soft); }
+  .dp-final p:last-child { margin: 0; font-size: 1.1em; }
+
+  @media (max-width: 600px) {
+    body { font-size: 16px; }
+    section { padding: 36px 0; }
+    .dp-hero { padding: 44px 0 40px; }
+    .dp-btn { width: 100%; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Icônes (SVG inline) : remplacer par celles du site si besoin -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-rocket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9.5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3z"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.74V16h8v-1.26A7 7 0 0 0 12 2z"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></symbol>
+</svg>
+
+<main>
+  <!-- Accroche -->
+  <section class="dp-hero">
+    <div class="dp-wrap">
+      <span class="dp-badge"><svg class="dp-icon"><use href="#i-rocket"/></svg></span>
+      <h1>Tu es créateur de contenu, formateur ou entrepreneur digital&nbsp;? Ce message est pour toi&nbsp;!</h1>
+      <p class="dp-lead">Imagine pouvoir vendre tes formations, tes ebooks, tes guides, tes fichiers numériques ou tes idées sur Internet, directement depuis chez toi, avec simplement ton téléphone ou ton ordinateur.</p>
+      <!-- URL d'inscription : remplacer https://digiropay.com/ par l'adresse exacte de la page d'inscription -->
+      <a class="dp-btn" href="https://digiropay.com/">Créer mon compte <svg class="dp-icon"><use href="#i-arrow"/></svg></a>
+    </div>
+  </section>
+
+  <!-- Pour qui -->
+  <section>
+    <div class="dp-wrap">
+      <ul class="dp-questions">
+        <li><svg class="dp-icon"><use href="#i-video"/></svg><span>Tu crées du contenu sur TikTok, YouTube, Facebook ou Instagram&nbsp;?</span></li>
+        <li><svg class="dp-icon"><use href="#i-bulb"/></svg><span>Tu as des connaissances, un savoir-faire ou une idée que tu aimerais transformer en revenus&nbsp;?</span></li>
+        <li><svg class="dp-icon"><use href="#i-globe"/></svg><span>Tu veux te lancer dans la vente en ligne sans ouvrir de boutique physique&nbsp;?</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Présentation et vision -->
+  <section style="padding-top:0">
+    <div class="dp-wrap">
+      <h2>Alors, découvre Digiropay&nbsp;!</h2>
+      <p>Nous sommes fiers de te présenter Digiropay.com, la plateforme que nous avons développée avec passion pour rendre la vente en ligne plus simple et accessible.</p>
+      <p class="dp-vision"><strong>Notre vision&nbsp;:</strong> aider les créateurs et les entrepreneurs à transformer leurs idées en ventes en ligne.</p>
+      <p>Crée ton produit numérique, propose-le à tes clients sur Internet et développe ton activité depuis chez toi. Pas besoin d’un grand bureau ni d’un magasin pour lancer ton projet digital&nbsp;!</p>
+      <p class="dp-highlight">Tu as une idée&nbsp;? Donne-lui une chance de devenir un vrai projet&nbsp;!</p>
+    </div>
+  </section>
+
+  <!-- Étapes -->
+  <section style="padding-top:0">
+    <div class="dp-wrap">
+      <h2>Rejoins Digiropay dès maintenant</h2>
+      <ul class="dp-steps">
+        <li><svg class="dp-icon"><use href="#i-check"/></svg>Découvre notre plateforme</li>
+        <li><svg class="dp-icon"><use href="#i-check"/></svg>Crée ton compte dès aujourd’hui</li>
+        <li><svg class="dp-icon"><use href="#i-check"/></svg>Explore toutes les possibilités pour ton activité</li>
+        <li><svg class="dp-icon"><use href="#i-check"/></svg>Partage le lien avec d’autres créateurs et entrepreneurs</li>
+      </ul>
+      <div class="dp-cta-inline">
+        <a class="dp-btn" href="https://digiropay.com/">Créer mon compte <svg class="dp-icon"><use href="#i-arrow"/></svg></a>
+      </div>
+      <p class="dp-highlight">N’attends pas d’avoir des milliers d’abonnés pour vendre tes connaissances. Commence à construire ton projet dès maintenant&nbsp;!</p>
+      <p>Nous avons créé Digiropay avec une ambition&nbsp;: ouvrir plus de possibilités dans le commerce digital. Aujourd’hui, nous t’invitons à découvrir notre travail et à rejoindre cette aventure avec nous.</p>
+    </div>
+  </section>
+
+  <!-- Appel final -->
+  <section class="dp-final">
+    <div class="dp-wrap">
+      <h2>Tu veux vendre tes produits ou tes idées en ligne&nbsp;? Inscris-toi sur Digiropay&nbsp;!</h2>
+      <a class="dp-btn" href="https://digiropay.com/">Créer mon compte <svg class="dp-icon"><use href="#i-arrow"/></svg></a>
+      <p>Ton prochain projet peut commencer depuis ta chambre. Et si tu faisais le premier pas aujourd’hui&nbsp;? 🚀</p>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>
