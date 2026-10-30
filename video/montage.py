@@ -255,7 +255,7 @@ class Renderer:
             ov = Image.new("RGBA", canvas.size, (0, 0, 0, int(110 * ease(dt / 0.3))))
             canvas.alpha_composite(ov)
             beat = 1 + 0.04 * math.sin(dt * 9) * ease((dt - 0.4) / 0.3)
-            paste(canvas, cached_pill(G.CTA[0], 110, PINK, WHITE, None), W / 2, 760, back_out(dt / 0.4) * beat)
+            paste(canvas, cached_pill(G.CTA[0], 80, PINK, WHITE, None), W / 2, 760, back_out(dt / 0.4) * beat)
             paste(canvas, outlined(G.CTA[1], 60, WHITE), W / 2, 920, back_out((dt - 0.2) / 0.4))
             if G.BRAND:
                 paste(canvas, outlined("@" + G.BRAND.lower().replace(" ", ""), 56, YELLOW), W / 2, 1020,
