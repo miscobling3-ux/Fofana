@@ -60,3 +60,23 @@ python3 remix.py --script guion_ongles_fr --stills 2,14,45   # aperçu rapide en
 ```
 - **Texte, zooms et badges** : `video/guion_ongles_fr.py` / `guion_ongles_es.py` → `LINES`. Chaque phrase indique le passage de la vidéo source (`src`) et le zoom (`zoom=(départ, fin, centre x, centre y)`).
 - **Autre vidéo source** : copie un script, change `SOURCE` et les passages. Si la source n'a pas de sous-titres au même endroit, adapte `BAND` / `WATERMARK` dans `remix.py`.
+
+---
+
+# Montage « Respeto » : les gestes de Cristiano Ronaldo (ES)
+
+Vidéo prête à poster : **`output/ronaldo_es.mp4`**. Format 1080×1920, 30 fps, son à -14 LUFS.
+
+Montée à partir de 4 vidéos (`video/sources/ronaldo_*.mp4`) avec `video/montage.py` : chaque phrase du texte a ses propres plans (Szoboszlai, maillot, Kvaratskhelia, Lampard, photo VIP, Ballon d'Or, enfant contre la Turquie, petite fille, Cavani).
+- Voix off en espagnol, sous-titres mot par mot (mot prononcé en rose, mots-clés en jaune), étiquette jaune en haut (nom du joueur / match).
+- Zoom lent sur chaque plan, « punch » sur les mots-clés, flash + whoosh à chaque coupe, titres « RESPETO », « ¡NO TERMINA! », « SU CARÁCTER ».
+- Les vidéos qui ne sont pas en 9:16 sont posées sur un fond flouté. Écran final « ESCRIBE «RESPETO» en los comentarios ».
+
+```bash
+cd video
+./setup.sh                                        # une seule fois
+python3 montage.py --script guion_ronaldo_es      # -> output/ronaldo_es.mp4 (environ 10 min)
+python3 montage.py --script guion_ronaldo_es --stills 2,20,60   # aperçu rapide en PNG dans video/build/
+```
+- **Texte et plans** : `video/guion_ronaldo_es.py` → `LINES`. Chaque phrase indique ses plans `[(source, début, fin), …]`.
+- **Voix ElevenLabs (Adam - Dominant, Firm)** : mets un fichier audio par phrase dans un dossier (`01.mp3`, `02.mp3`… dans l'ordre de `LINES`, 28 phrases) puis `python3 montage.py --script guion_ronaldo_es --voice-dir voz_eleven`. Sans ce dossier, la voix locale `em_alex` est utilisée.

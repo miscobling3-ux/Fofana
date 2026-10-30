@@ -177,6 +177,8 @@ def make_music(duration, bpm=96, seed=7, sections=None):
             f = note_hz(root - 24)
             sig = np.tanh(2.2 * np.sin(2 * np.pi * f * tt)) * np.exp(-tt * 1.6) * 0.5
             j = int((t0 + off * beat) * SR)
+            if j >= n:
+                continue
             e2 = min(n, j + bn)
             bass[j:e2] += sig[:e2 - j] * (1 if L > 0.3 else 0)
         # batterie

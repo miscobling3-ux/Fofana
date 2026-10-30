@@ -2,7 +2,7 @@
 # Installe les dépendances (Ubuntu) et télécharge les voix (hors-ligne) et les polices dans video/models/
 set -e
 cd "$(dirname "$0")"
-sudo apt-get install -y ffmpeg libegl1 || apt-get install -y ffmpeg libegl1
+sudo apt-get install -y ffmpeg libegl1 || apt-get install -y ffmpeg libegl1 || true
 pip install skia-python kokoro-onnx soundfile scipy numpy opencv-python-headless pillow piper-tts
 mkdir -p models/fonts
 [ -f models/kokoro.onnx ] || curl -L -o models/kokoro.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
