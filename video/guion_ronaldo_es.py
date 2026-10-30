@@ -18,7 +18,7 @@ SOURCES = {
     "N": "sources/ronaldo_ninos.mp4",    # enfants sur le terrain
     "G": "sources/ronaldo_nina.mp4",     # petite fille en fauteuil, Portugal
 }
-BRAND = "FOFANA FÚTBOL"
+BRAND = ""
 LANG = "es"
 # Voix locale (Kokoro) : "em_alex", "em_santa". Voix ElevenLabs : --voice-dir (un fichier par phrase)
 VOICE = "em_alex"
