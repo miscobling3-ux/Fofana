@@ -23,3 +23,9 @@ LINES = [
     "y en ese momento ya se puede sentir que está preparando un misil.",
     "Cuando llega el balón, Lamine Yamal conecta un disparo magnífico que termina en el fondo de la portería rival.",
 ]
+
+# Voix enregistrée (ElevenLabs, « Adam ») : si le fichier existe, elle remplace la voix de synthèse.
+# LINE_STARTS = début de chaque phrase dans ce fichier (s), mesuré sur les pauses ; les plans sont calés dessus.
+VOICE_FILE = "sources/yamal_voz.mp3"
+LINE_STARTS = [0.0, 6.86, 10.37, 13.67, 18.85, 26.46, 29.20, 34.41, 41.44, 44.79, 50.29, 55.27, 58.79, 62.81]
+VOICE_END = 68.91

@@ -444,6 +444,12 @@ def kfpos(kf, t):
     return keyframes([(a, b) for a, b in kf], t)
 
 
+def goal13(dur):
+    """Instant (dans le plan 13) où le ballon entre dans le but, vu de derrière le poteau (source 9.25 s)."""
+    rest = dur - 2.95
+    return 2.95 + rest * (9.25 - 7.9) / (9.8 - 7.9)
+
+
 def build_shots():
     S = []
 
@@ -573,7 +579,7 @@ def build_shots():
         draw_marker(img, v.P(head(fer)), u, 1)
         # « regard » : cône qui balaie vers la surface
         eye = v.P(head(fer, -45))
-        sweep = ease((u - fr - 0.5) / 1.2)
+        sweep = ease((u - fr - 0.9) / 1.3)
         ang = math.radians(lerp(-10, -128, sweep))
         L = 330 * v.s / 1.8
         for k, w in ((0, 0.20), (1, 0.12)):
@@ -590,11 +596,11 @@ def build_shots():
         cage = [v.P(feet(p, 40)) for p in CAGE]
         a = appear(u, 0.5)
         img[:] = spotlight(img, [(v.P(can), 95 * v.s / 1.8, 160 * v.s / 1.8)], 0.7 * a)
-        draw_marker(img, v.P(head(can)), u, appear(u, 0.4))
+        draw_marker(img, v.P(head(can)), u, appear(u, 0.9))
         draw_ring(img, v.P(feet(can)), 48 * v.s / 1.78, u, appear(u, 0.6), color=YELLOW)
         for i, p in enumerate(CAGE):
-            draw_ring(img, v.P(feet(p, 40)), 46 * v.s / 1.78, u, appear(u, 1.6 + 0.35 * i), color=RED, dashed=False)
-        k = appear(u, 2.8, 0.5)
+            draw_ring(img, v.P(feet(p, 40)), 46 * v.s / 1.78, u, appear(u, 3.3 + 0.3 * i), color=RED, dashed=False)
+        k = appear(u, 4.3, 0.5)
         if k > 0:
             poly_fill(img, cage, (40, 40, 220), 0.22 * k)
             for i in range(3):
@@ -694,7 +700,7 @@ def build_shots():
 
     def p13(img, u, dur):
         img = flash(img, max(0, 1 - abs(u - 0.05) / 0.12) * 0.6)
-        return flash(img, max(0, 1 - abs(u - (2.95 + 2.3)) / 0.22) * 0.8)
+        return flash(img, max(0, 1 - abs(u - goal13(dur)) / 0.22) * 0.8)
     S[-1].post = p13
 
     # fin : célébration de Lamine (sans voix)
@@ -709,7 +715,8 @@ def plan(G):
     os.makedirs(cache, exist_ok=True)
     tts = None
     clips = []
-    for i, text in enumerate(G.LINES):
+    vf0 = getattr(G, "VOICE_FILE", None)
+    for i, text in enumerate([] if vf0 and os.path.exists(os.path.join(HERE, vf0)) else G.LINES):
         p = os.path.join(cache, f"{G.VOICE}_{G.SPEED}_{i:02d}.wav")
         if not os.path.exists(p):
             if tts is None:
@@ -717,11 +724,18 @@ def plan(G):
             sf.write(p, audio.synth_line(tts, text, G.VOICE, G.SPEED, G.LANG), audio.SR)
         clips.append(sf.read(p)[0])
     shots = build_shots()
+    vf = getattr(G, "VOICE_FILE", None)
+    ext = vf and os.path.exists(os.path.join(HERE, vf))
+    if ext:
+        # voix enregistrée : bornes des plans = début de chaque phrase (un peu avant)
+        bounds = [0.0] + [s - 0.12 for s in G.LINE_STARTS[1:]] + [G.VOICE_END + 0.45]
     t = 0.0
     starts = []
-    for sh in shots:
+    for k, sh in enumerate(shots):
         lead = 0.15 if sh.line == 0 else 0.08
-        if sh.line is not None:
+        if sh.line is not None and ext:
+            dur = bounds[sh.line + 1] - bounds[sh.line]
+        elif sh.line is not None:
             ln = len(clips[sh.line]) / audio.SR
             gap = 0.18 if G.LINES[sh.line].endswith(",") else 0.32
             dur = max(lead + ln + gap, sh.min_dur)
@@ -742,6 +756,13 @@ def plan(G):
         t += sh.dur
     duration = t
     voice = np.zeros(int((duration + 1) * audio.SR))
+    if ext:
+        import scipy.signal as ss
+        dec = subprocess.run(["ffmpeg", "-v", "error", "-i", os.path.join(HERE, vf), "-ac", "1", "-ar", str(audio.SR),
+                              "-f", "f32le", "-"], capture_output=True, check=True).stdout
+        a = np.frombuffer(dec, np.float32).astype(np.float64)
+        voice[:min(len(a), len(voice))] = a[:len(voice)]
+        return shots, voice, duration
     for (s, li) in starts:
         if li is None:
             continue
@@ -771,7 +792,7 @@ def sfx_events(shots):
     s0 = shots[0]
     ev += [(s0.t0 + 1.9, "boom", 0.55), (s0.t0 + 4.15, "pop", 0.5), (s0.t0 + s0.dur - 1.5, "riser", 0.35)]
     s13 = shots[13]
-    ev += [(s13.t0 + 0.02, "boom", 0.6), (s13.t0 + 2.95 + 2.3, "boom", 0.7)]
+    ev += [(s13.t0 + 0.02, "boom", 0.6), (s13.t0 + goal13(s13.dur), "boom", 0.7)]
     s5 = shots[5]
     ev += [(s5.t0 + 0.25, "error", 0.55)]
     s12 = shots[12]

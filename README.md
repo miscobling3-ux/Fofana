@@ -67,7 +67,7 @@ python3 remix.py --script guion_ongles_fr --stills 2,14,45   # aperçu rapide en
 
 Vidéo prête à poster : **`output/lamine_yamal_es.mp4`**. Format 1080×1920, 30 i/s, 70 s, son à -14 LUFS.
 
-- Voix off espagnole avec le texte fourni. **Pas de sous-titres, pas de musique de fond** : seulement la voix et quelques bruitages discrets (whoosh, boom sur le but).
+- Voix off espagnole : enregistrement ElevenLabs fourni (`video/sources/yamal_voz.mp3`, les plans sont calés sur chaque phrase via `LINE_STARTS`). **Pas de sous-titres, pas de musique de fond** : seulement la voix et quelques bruitages discrets (whoosh, boom sur le but).
 - Logos des vidéos sources masqués : score, beIN SPORTS, #BarçaAlavés et le filigrane « x.com/marfawe » qui défile.
 - Accroche : la frappe et le but, puis retour en arrière vers le début de l'action.
 - Pour chaque phrase, un zoom ou un arrêt sur image avec des triangles rouges sur les joueurs, des cercles en pointillés, des joueurs éclairés (le reste assombri), des flèches de passe et de course, une croix rouge et une teinte rouge sur la passe bloquée, le « triangle » des 3 défenseurs autour de Cancelo, la main levée et le pied d'appui de Lamine, puis un ralenti sur la frappe.
