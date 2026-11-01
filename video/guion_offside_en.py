@@ -23,6 +23,7 @@ LINES = [
     "And there, with great intelligence, he advances and executes a magnificent chip shot to score an incredible goal.",
 ]
 
-VOICE_FILE = None
-LINE_STARTS = None
-VOICE_END = None
+# Voix enregistrée (ElevenLabs, « Adam ») : début de chaque phrase (s), mesuré sur les pauses du fichier.
+VOICE_FILE = "sources/offside_voz.mp3"
+LINE_STARTS = [0.0, 8.69, 11.85, 16.50, 21.77, 23.67, 29.75, 34.85, 40.51, 46.22, 50.44, 54.21, 58.84]
+VOICE_END = 66.42

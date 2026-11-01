@@ -85,9 +85,9 @@ python3 yamal.py --stills 8,38,56 # aperçu rapide en PNG dans video/build/yamal
 
 # But de Lamine Yamal : « why no offside? » (anglais)
 
-Vidéo prête à poster : **`output/lamine_yamal_offside_en.mp4`**. Format 1080×1920, 30 i/s, 67 s, son à -14 LUFS.
+Vidéo prête à poster : **`output/lamine_yamal_offside_en.mp4`**. Format 1080×1920, 30 i/s, 69 s, son à -14 LUFS.
 
-- Voix off **anglaise** avec le texte fourni (voix de synthèse `am_michael`). **Pas de sous-titres, pas de musique**.
+- Voix off **anglaise** : enregistrement ElevenLabs fourni (`video/sources/offside_voz.mp3`), chaque plan calé sur sa phrase. **Pas de sous-titres, pas de musique**.
 - Logos masqués : score, bandeau « BAR 4 LALIGA 0 ALA », #BarçaAlavés et le filigrane « x.com/marfawe ».
 - **Ligne de hors-jeu** : d'abord une ligne rouge « à première vue » (droite à l'écran : Yamal semble devant), puis la vraie ligne, lumineuse, tracée **en perspective** (parallèle à la ligne de but, calculée à partir des lignes du terrain) au moment de la passe. Elle passe par le pied du dernier défenseur et celui de Yamal.
 - Joueurs suivis automatiquement : triangles, cercles, mise en lumière, flèches (tête ratée, passe, course, sortie du gardien), lob au ralenti sous 2 angles, célébration à la fin.
