@@ -1,0 +1,830 @@
+{
+ "frames_rendered": 2535,
+ "frames_planned": 2535,
+ "tags_checked": 1600,
+ "tags_bad": [
+  [
+   321,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   564,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   565,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   566,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   567,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   568,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   569,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   570,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   571,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   572,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   573,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   574,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   575,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   576,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   577,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   578,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   579,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   580,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   581,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   582,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   583,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   584,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   585,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   586,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   587,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   588,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   589,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   590,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   591,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   592,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   593,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   594,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   595,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   596,
+   0,
+   "pointe introuvable"
+  ],
+  [
+   0,
+   1,
+   "pointe introuvable"
+  ],
+  [
+   693,
+   1,
+   "pointe introuvable"
+  ],
+  [
+   1213,
+   1,
+   "pointe introuvable"
+  ],
+  [
+   1631,
+   1,
+   "pointe introuvable"
+  ],
+  [
+   1773,
+   1,
+   "pointe introuvable"
+  ],
+  [
+   1906,
+   1,
+   "pointe introuvable"
+  ],
+  [
+   1944,
+   1,
+   "pointe introuvable"
+  ],
+  [
+   1061,
+   2,
+   "pointe introuvable"
+  ],
+  [
+   1554,
+   2,
+   "pointe introuvable"
+  ],
+  [
+   1555,
+   2,
+   "écart 18.0 px, dx 4.0"
+  ],
+  [
+   1313,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1413,
+   3,
+   "écart 21.0 px, dx 2.7"
+  ],
+  [
+   1414,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1415,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1416,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1417,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1418,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1419,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1420,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1421,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1422,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1423,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1424,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1425,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1426,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1427,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1428,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1429,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1430,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1431,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1432,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1433,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1434,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1435,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1436,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1437,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1438,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1439,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1440,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1441,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1442,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1443,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1444,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1445,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1446,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1447,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1448,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1449,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1450,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1451,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1452,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1453,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1454,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1455,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1456,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1457,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1458,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1459,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1460,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1461,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1462,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1463,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1464,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1465,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1466,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1467,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1468,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1469,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1470,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1471,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1472,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1473,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1474,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1475,
+   3,
+   "pointe introuvable"
+  ],
+  [
+   1865,
+   3,
+   "pointe introuvable"
+  ]
+ ],
+ "src_corr_min": 0.6180501698665986,
+ "src_low": [],
+ "clean_hits": [
+  [
+   1530,
+   "filigrane",
+   0.65
+  ],
+  [
+   1875,
+   "filigrane",
+   0.65
+  ],
+  [
+   2205,
+   "filigrane",
+   0.72
+  ],
+  [
+   2205,
+   "zone filigrane (y>895)",
+   1051
+  ],
+  [
+   2220,
+   "filigrane",
+   0.73
+  ],
+  [
+   2220,
+   "zone filigrane (y>895)",
+   1060
+  ],
+  [
+   2235,
+   "zone filigrane (y>895)",
+   1060
+  ],
+  [
+   2250,
+   "filigrane",
+   0.65
+  ],
+  [
+   2250,
+   "zone filigrane (y>895)",
+   1060
+  ],
+  [
+   2265,
+   "zone filigrane (y>895)",
+   1060
+  ],
+  [
+   2280,
+   "zone filigrane (y>895)",
+   1060
+  ]
+ ],
+ "sync": [
+  [
+   "  0.57s",
+   "Koita",
+   "Koita à l'image (A, porte le ballon)",
+   "A368",
+   "OK"
+  ],
+  [
+   "  5.20s",
+   "Douzième",
+   "plan de contexte + bandeau 0-0",
+   "B1143",
+   "OK"
+  ],
+  [
+   "  8.64s",
+   "toute",
+   "milieu de terrain, ballon libre",
+   "A161",
+   "OK"
+  ],
+  [
+   " 11.04s",
+   "Jović",
+   "Jović porteur",
+   "A203",
+   "OK"
+  ],
+  [
+   " 12.95s",
+   "protège",
+   "Jović protège",
+   "A234",
+   "OK"
+  ],
+  [
+   " 14.31s",
+   "adversaire",
+   "adversaire collé à Jović",
+   "A252",
+   "OK"
+  ],
+  [
+   " 16.40s",
+   "Autour",
+   "arrêt sur image 278",
+   "A278",
+   "OK"
+  ],
+  [
+   " 19.21s",
+   "Koita",
+   "Koita sur la droite (arrêt 278)",
+   "A278",
+   "OK"
+  ],
+  [
+   " 20.31s",
+   "ouvre",
+   "passe de Jović (285)",
+   "A277",
+   "OK"
+  ],
+  [
+   " 22.85s",
+   "récupère",
+   "contrôle de Koita",
+   "A312",
+   "OK"
+  ],
+  [
+   " 24.18s",
+   "Regardez",
+   "arrêt sur image 318",
+   "A318",
+   "OK"
+  ],
+  [
+   " 27.63s",
+   "défenseur",
+   "Cucurella entouré (318)",
+   "A318",
+   "OK"
+  ],
+  [
+   " 33.84s",
+   "Koita",
+   "Koita choisit le duel",
+   "A373",
+   "OK"
+  ],
+  [
+   " 35.54s",
+   "conduit",
+   "conduite (ralenti haut)",
+   "B259",
+   "OK"
+  ],
+  [
+   " 41.26s",
+   "Cucurella",
+   "Cucurella entouré (392)",
+   "A392",
+   "OK"
+  ],
+  [
+   " 43.76s",
+   "Personne",
+   "Cucurella seul (ralenti bas)",
+   "B561",
+   "OK"
+  ],
+  [
+   " 49.33s",
+   "contre",
+   "un contre un",
+   "B597",
+   "OK"
+  ],
+  [
+   " 54.83s",
+   "précipite",
+   "arrêt sur image 404",
+   "A404",
+   "OK"
+  ],
+  [
+   " 57.73s",
+   "crochet",
+   "le crochet",
+   "A403",
+   "OK"
+  ],
+  [
+   " 59.08s",
+   "Cucurella",
+   "Cucurella dépassé (417)",
+   "A417",
+   "OK"
+  ],
+  [
+   " 63.69s",
+   "frappe",
+   "la frappe (419)",
+   "A414",
+   "OK"
+  ],
+  [
+   " 66.36s",
+   "deuxième",
+   "2e défenseur trop tard",
+   "A421",
+   "OK"
+  ],
+  [
+   " 68.95s",
+   "trajectoire",
+   "trajectoire (ralenti haut)",
+   "B360",
+   "OK"
+  ],
+  [
+   " 71.22s",
+   "Courtois",
+   "Courtois plonge",
+   "A425",
+   "OK"
+  ],
+  [
+   " 73.88s",
+   "angle",
+   "autre angle, filets",
+   "B663",
+   "OK"
+  ],
+  [
+   " 76.30s",
+   "Un",
+   "1-0 (bandeau retourné)",
+   "A473",
+   "OK"
+  ],
+  [
+   " 79.23s",
+   "Jović",
+   "Jović rejoint Koita",
+   "A662",
+   "OK"
+  ],
+  [
+   " 81.40s",
+   "Alors",
+   "gros plan Koita",
+   "B1243",
+   "OK"
+  ]
+ ],
+ "lufs": -11.9,
+ "true_peak": -2.4,
+ "probe": {
+  "programs": [],
+  "streams": [
+   {
+    "codec_name": "h264",
+    "width": 1080,
+    "height": 1920,
+    "r_frame_rate": "30/1"
+   },
+   {
+    "codec_name": "aac",
+    "r_frame_rate": "0/0"
+   }
+  ],
+  "format": {
+   "duration": "84.500000",
+   "size": "60963951"
+  }
+ }
+}

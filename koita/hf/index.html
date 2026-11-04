@@ -32,7 +32,7 @@ html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; 
 #score { position: absolute; z-index: 30; top: 150px; left: 50%; transform: translateX(-50%) scale(0); display: flex; align-items: stretch;
   font: 800 40px/1 "Poppins", sans-serif; color: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,.5); }
 #score .team { background: rgba(10,10,12,.88); padding: 16px 22px; }
-#score .box { background: #e3121b; padding: 16px 20px; display: flex; gap: 14px; perspective: 400px; }
+#score .box { background: #e3121b; padding: 16px 20px; display: flex; gap: 14px; }
 #score .dig { position: relative; display: inline-block; width: 28px; height: 40px; }
 #score .dig span { position: absolute; left: 0; top: 0; width: 28px; text-align: center; }
 #score .min { background: #fff; color: #e3121b; padding: 16px 16px; }
@@ -1212,7 +1212,7 @@ html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; 
 <div class="tag" id="tag1"><div class="logo"><img src="assets/logos/aek.png" alt=""></div><div class="name">Aboubakary Koita</div><svg class="arrow" viewBox="0 0 64 86" width="64" height="86"><path d="M10 2 H54 V44 H62 L32 84 L2 44 H10 Z" fill="#ff1f1f" stroke="#3a0000" stroke-width="3" stroke-linejoin="round"/></svg></div>
 <div class="tag" id="tag2"><div class="logo"><img src="assets/logos/aek.png" alt=""></div><div class="name">Aboubakary Koita</div><svg class="arrow" viewBox="0 0 64 86" width="64" height="86"><path d="M10 2 H54 V44 H62 L32 84 L2 44 H10 Z" fill="#ff1f1f" stroke="#3a0000" stroke-width="3" stroke-linejoin="round"/></svg></div>
 <div class="tag" id="tag3"><div class="logo"><img src="assets/logos/aek.png" alt=""></div><div class="name">Aboubakary Koita</div><svg class="arrow" viewBox="0 0 64 86" width="64" height="86"><path d="M10 2 H54 V44 H62 L32 84 L2 44 H10 Z" fill="#ff1f1f" stroke="#3a0000" stroke-width="3" stroke-linejoin="round"/></svg></div>
-<div id="score"><div class="team">AEK</div><div class="box"><div class="dig" data-layout-allow-overlap><span id="d0">0</span><span id="d1" style="transform: rotateX(90deg)">1</span></div><div>–</div><div class="dig"><span>0</span></div></div><div class="team">RMA</div><div class="min">12'</div></div>
+<div id="score"><div class="team">AEK</div><div class="box"><div class="dig" data-layout-allow-overlap><span id="d0">0</span><span id="d1" style="transform: scaleY(0)">1</span></div><div>–</div><div class="dig"><span>0</span></div></div><div class="team">RMA</div><div class="min">12'</div></div>
 <div id="w0" class="clip sub" data-start="0.040" data-duration="0.176">ce</div>
 <div id="w1" class="clip sub" data-start="0.216" data-duration="0.176">but</div>
 <div id="w2" class="clip sub" data-start="0.392" data-duration="0.176">de</div>
@@ -1512,64 +1512,64 @@ html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; 
 <div id="w296" class="clip sub" data-start="83.615" data-duration="0.537">t'impressionne</div>
 <div id="w297" class="clip sub" data-start="84.152" data-duration="0.134">le</div>
 <div id="w298" class="clip sub" data-start="84.286" data-duration="0.207">plus</div>
-<audio id="vo" class="clip" src="assets/voice.wav" data-start="0" data-duration="84.493" data-volume="1.0"></audio>
-<audio id="sfx1" class="clip" src="assets/sfx/cut1.wav" data-start="5.080" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx2" class="clip" src="assets/sfx/cut2.wav" data-start="8.513" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx3" class="clip" src="assets/sfx/cut3.wav" data-start="10.580" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx4" class="clip" src="assets/sfx/cut4.wav" data-start="12.513" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx5" class="clip" src="assets/sfx/cut1.wav" data-start="14.047" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx6" class="clip" src="assets/sfx/cut2.wav" data-start="16.280" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx7" class="clip" src="assets/sfx/cut3.wav" data-start="19.747" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx8" class="clip" src="assets/sfx/cut4.wav" data-start="21.113" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx9" class="clip" src="assets/sfx/cut1.wav" data-start="24.047" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx10" class="clip" src="assets/sfx/cut2.wav" data-start="29.547" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx11" class="clip" src="assets/sfx/cut3.wav" data-start="30.780" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx12" class="clip" src="assets/sfx/cut4.wav" data-start="33.580" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx13" class="clip" src="assets/sfx/cut1.wav" data-start="35.247" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx14" class="clip" src="assets/sfx/cut2.wav" data-start="37.447" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx15" class="clip" src="assets/sfx/cut3.wav" data-start="40.313" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx16" class="clip" src="assets/sfx/cut4.wav" data-start="43.647" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx17" class="clip" src="assets/sfx/cut1.wav" data-start="46.247" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx18" class="clip" src="assets/sfx/cut2.wav" data-start="49.080" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx19" class="clip" src="assets/sfx/cut3.wav" data-start="51.680" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx20" class="clip" src="assets/sfx/cut4.wav" data-start="54.247" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx21" class="clip" src="assets/sfx/cut1.wav" data-start="57.247" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx22" class="clip" src="assets/sfx/cut2.wav" data-start="58.947" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx23" class="clip" src="assets/sfx/cut3.wav" data-start="62.013" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx24" class="clip" src="assets/sfx/cut4.wav" data-start="63.413" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx25" class="clip" src="assets/sfx/cut1.wav" data-start="64.680" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx26" class="clip" src="assets/sfx/cut2.wav" data-start="66.080" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx27" class="clip" src="assets/sfx/cut3.wav" data-start="68.347" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx28" class="clip" src="assets/sfx/cut4.wav" data-start="71.113" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx29" class="clip" src="assets/sfx/cut1.wav" data-start="73.313" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx30" class="clip" src="assets/sfx/cut2.wav" data-start="76.180" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx31" class="clip" src="assets/sfx/cut3.wav" data-start="77.747" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx32" class="clip" src="assets/sfx/cut4.wav" data-start="80.380" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx33" class="clip" src="assets/sfx/cut1.wav" data-start="81.280" data-duration="0.320" data-volume="0.3"></audio>
-<audio id="sfx34" class="clip" src="assets/sfx/freeze.wav" data-start="16.400" data-duration="0.450" data-volume="0.35"></audio>
-<audio id="sfx35" class="clip" src="assets/sfx/freeze.wav" data-start="24.180" data-duration="0.450" data-volume="0.35"></audio>
-<audio id="sfx36" class="clip" src="assets/sfx/freeze.wav" data-start="40.420" data-duration="0.450" data-volume="0.35"></audio>
-<audio id="sfx37" class="clip" src="assets/sfx/freeze.wav" data-start="46.360" data-duration="0.450" data-volume="0.35"></audio>
-<audio id="sfx38" class="clip" src="assets/sfx/freeze.wav" data-start="54.360" data-duration="0.450" data-volume="0.35"></audio>
-<audio id="sfx39" class="clip" src="assets/sfx/freeze.wav" data-start="59.080" data-duration="0.450" data-volume="0.35"></audio>
-<audio id="sfx40" class="clip" src="assets/sfx/pop.wav" data-start="10.700" data-duration="0.120" data-volume="0.3"></audio>
-<audio id="sfx41" class="clip" src="assets/sfx/pop.wav" data-start="0.000" data-duration="0.120" data-volume="0.3"></audio>
-<audio id="sfx42" class="clip" src="assets/sfx/pop.wav" data-start="23.100" data-duration="0.120" data-volume="0.3"></audio>
-<audio id="sfx43" class="clip" src="assets/sfx/pop.wav" data-start="40.433" data-duration="0.120" data-volume="0.3"></audio>
-<audio id="sfx44" class="clip" src="assets/sfx/pop.wav" data-start="54.367" data-duration="0.120" data-volume="0.3"></audio>
-<audio id="sfx45" class="clip" src="assets/sfx/pop.wav" data-start="59.100" data-duration="0.120" data-volume="0.3"></audio>
-<audio id="sfx46" class="clip" src="assets/sfx/pop.wav" data-start="63.533" data-duration="0.120" data-volume="0.3"></audio>
-<audio id="sfx47" class="clip" src="assets/sfx/pop.wav" data-start="64.800" data-duration="0.120" data-volume="0.3"></audio>
-<audio id="sfx48" class="clip" src="assets/sfx/pop.wav" data-start="35.367" data-duration="0.120" data-volume="0.3"></audio>
-<audio id="sfx49" class="clip" src="assets/sfx/pop.wav" data-start="51.800" data-duration="0.120" data-volume="0.3"></audio>
-<audio id="sfx50" class="clip" src="assets/sfx/pop.wav" data-start="43.767" data-duration="0.120" data-volume="0.3"></audio>
-<audio id="sfx51" class="clip" src="assets/sfx/pop.wav" data-start="62.167" data-duration="0.120" data-volume="0.3"></audio>
-<audio id="sfx52" class="clip" src="assets/sfx/pop.wav" data-start="5.200" data-duration="0.120" data-volume="0.3"></audio>
-<audio id="sfx53" class="clip" src="assets/sfx/kick1.wav" data-start="4.400" data-duration="0.300" data-volume="0.45"></audio>
-<audio id="sfx54" class="clip" src="assets/sfx/kick2.wav" data-start="59.033" data-duration="0.300" data-volume="0.45"></audio>
-<audio id="sfx55" class="clip" src="assets/sfx/kick3.wav" data-start="64.067" data-duration="0.300" data-volume="0.45"></audio>
-<audio id="sfx56" class="clip" src="assets/sfx/kick1.wav" data-start="66.200" data-duration="0.300" data-volume="0.45"></audio>
-<audio id="sfx57" class="clip" src="assets/sfx/kick2.wav" data-start="68.467" data-duration="0.300" data-volume="0.45"></audio>
+<audio id="vo" class="clip" src="assets/voice.wav" data-start="0" data-duration="84.493" data-volume="0.76"></audio>
+<audio id="sfx1" class="clip" src="assets/sfx/cut1.wav" data-start="5.080" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx2" class="clip" src="assets/sfx/cut2.wav" data-start="8.513" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx3" class="clip" src="assets/sfx/cut3.wav" data-start="10.580" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx4" class="clip" src="assets/sfx/cut4.wav" data-start="12.513" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx5" class="clip" src="assets/sfx/cut1.wav" data-start="14.047" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx6" class="clip" src="assets/sfx/cut2.wav" data-start="16.280" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx7" class="clip" src="assets/sfx/cut3.wav" data-start="19.747" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx8" class="clip" src="assets/sfx/cut4.wav" data-start="21.113" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx9" class="clip" src="assets/sfx/cut1.wav" data-start="24.047" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx10" class="clip" src="assets/sfx/cut2.wav" data-start="29.547" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx11" class="clip" src="assets/sfx/cut3.wav" data-start="30.780" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx12" class="clip" src="assets/sfx/cut4.wav" data-start="33.580" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx13" class="clip" src="assets/sfx/cut1.wav" data-start="35.247" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx14" class="clip" src="assets/sfx/cut2.wav" data-start="37.447" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx15" class="clip" src="assets/sfx/cut3.wav" data-start="40.313" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx16" class="clip" src="assets/sfx/cut4.wav" data-start="43.647" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx17" class="clip" src="assets/sfx/cut1.wav" data-start="46.247" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx18" class="clip" src="assets/sfx/cut2.wav" data-start="49.080" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx19" class="clip" src="assets/sfx/cut3.wav" data-start="51.680" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx20" class="clip" src="assets/sfx/cut4.wav" data-start="54.247" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx21" class="clip" src="assets/sfx/cut1.wav" data-start="57.247" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx22" class="clip" src="assets/sfx/cut2.wav" data-start="58.947" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx23" class="clip" src="assets/sfx/cut3.wav" data-start="62.013" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx24" class="clip" src="assets/sfx/cut4.wav" data-start="63.413" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx25" class="clip" src="assets/sfx/cut1.wav" data-start="64.680" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx26" class="clip" src="assets/sfx/cut2.wav" data-start="66.080" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx27" class="clip" src="assets/sfx/cut3.wav" data-start="68.347" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx28" class="clip" src="assets/sfx/cut4.wav" data-start="71.113" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx29" class="clip" src="assets/sfx/cut1.wav" data-start="73.313" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx30" class="clip" src="assets/sfx/cut2.wav" data-start="76.180" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx31" class="clip" src="assets/sfx/cut3.wav" data-start="77.747" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx32" class="clip" src="assets/sfx/cut4.wav" data-start="80.380" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx33" class="clip" src="assets/sfx/cut1.wav" data-start="81.280" data-duration="0.320" data-volume="0.228"></audio>
+<audio id="sfx34" class="clip" src="assets/sfx/freeze.wav" data-start="16.400" data-duration="0.450" data-volume="0.266"></audio>
+<audio id="sfx35" class="clip" src="assets/sfx/freeze.wav" data-start="24.180" data-duration="0.450" data-volume="0.266"></audio>
+<audio id="sfx36" class="clip" src="assets/sfx/freeze.wav" data-start="40.420" data-duration="0.450" data-volume="0.266"></audio>
+<audio id="sfx37" class="clip" src="assets/sfx/freeze.wav" data-start="46.360" data-duration="0.450" data-volume="0.266"></audio>
+<audio id="sfx38" class="clip" src="assets/sfx/freeze.wav" data-start="54.360" data-duration="0.450" data-volume="0.266"></audio>
+<audio id="sfx39" class="clip" src="assets/sfx/freeze.wav" data-start="59.080" data-duration="0.450" data-volume="0.266"></audio>
+<audio id="sfx40" class="clip" src="assets/sfx/pop.wav" data-start="10.700" data-duration="0.120" data-volume="0.228"></audio>
+<audio id="sfx41" class="clip" src="assets/sfx/pop.wav" data-start="0.000" data-duration="0.120" data-volume="0.228"></audio>
+<audio id="sfx42" class="clip" src="assets/sfx/pop.wav" data-start="23.100" data-duration="0.120" data-volume="0.228"></audio>
+<audio id="sfx43" class="clip" src="assets/sfx/pop.wav" data-start="40.433" data-duration="0.120" data-volume="0.228"></audio>
+<audio id="sfx44" class="clip" src="assets/sfx/pop.wav" data-start="54.367" data-duration="0.120" data-volume="0.228"></audio>
+<audio id="sfx45" class="clip" src="assets/sfx/pop.wav" data-start="59.100" data-duration="0.120" data-volume="0.228"></audio>
+<audio id="sfx46" class="clip" src="assets/sfx/pop.wav" data-start="63.533" data-duration="0.120" data-volume="0.228"></audio>
+<audio id="sfx47" class="clip" src="assets/sfx/pop.wav" data-start="64.800" data-duration="0.120" data-volume="0.228"></audio>
+<audio id="sfx48" class="clip" src="assets/sfx/pop.wav" data-start="35.367" data-duration="0.120" data-volume="0.228"></audio>
+<audio id="sfx49" class="clip" src="assets/sfx/pop.wav" data-start="51.800" data-duration="0.120" data-volume="0.228"></audio>
+<audio id="sfx50" class="clip" src="assets/sfx/pop.wav" data-start="43.767" data-duration="0.120" data-volume="0.228"></audio>
+<audio id="sfx51" class="clip" src="assets/sfx/pop.wav" data-start="62.167" data-duration="0.120" data-volume="0.228"></audio>
+<audio id="sfx52" class="clip" src="assets/sfx/pop.wav" data-start="5.200" data-duration="0.120" data-volume="0.228"></audio>
+<audio id="sfx53" class="clip" src="assets/sfx/kick1.wav" data-start="4.400" data-duration="0.300" data-volume="0.342"></audio>
+<audio id="sfx54" class="clip" src="assets/sfx/kick2.wav" data-start="59.033" data-duration="0.300" data-volume="0.342"></audio>
+<audio id="sfx55" class="clip" src="assets/sfx/kick3.wav" data-start="64.067" data-duration="0.300" data-volume="0.342"></audio>
+<audio id="sfx56" class="clip" src="assets/sfx/kick1.wav" data-start="66.200" data-duration="0.300" data-volume="0.342"></audio>
+<audio id="sfx57" class="clip" src="assets/sfx/kick2.wav" data-start="68.467" data-duration="0.300" data-volume="0.342"></audio>
 </div>
 <script>
 const tl = gsap.timeline({ paused: true });
@@ -3784,92 +3784,92 @@ C(73.292,-3497.8,-540.4,3.1654);
 C(73.325,-3503.8,-541.0,3.1654);
 C(73.358,-3509.5,-542.0,3.1654);
 C(73.392,-3509.5,-542.0,3.1654);
-C(73.425,-1931.3,-878.1,2.7032);
-C(73.458,-1881.8,-838.1,2.6442);
-C(73.492,-1832.5,-798.0,2.5853);
-C(73.525,-1783.3,-757.9,2.5263);
-C(73.558,-1788.5,-757.9,2.5263);
-C(73.592,-1794.1,-757.9,2.5263);
-C(73.625,-1799.9,-757.9,2.5263);
-C(73.658,-1805.9,-757.9,2.5263);
-C(73.692,-1812.3,-757.9,2.5263);
-C(73.725,-1818.8,-757.9,2.5263);
-C(73.758,-1825.6,-757.9,2.5263);
-C(73.792,-1832.6,-757.9,2.5263);
-C(73.825,-1839.8,-757.9,2.5263);
-C(73.858,-1847.1,-757.9,2.5263);
-C(73.892,-1854.6,-757.9,2.5263);
-C(73.925,-1862.2,-757.9,2.5263);
-C(73.958,-1869.8,-757.9,2.5263);
-C(73.992,-1877.6,-757.9,2.5263);
-C(74.025,-1885.5,-757.9,2.5263);
-C(74.058,-1893.4,-757.9,2.5263);
-C(74.092,-1901.4,-757.9,2.5263);
-C(74.125,-1909.4,-757.9,2.5263);
-C(74.158,-1917.5,-757.9,2.5263);
-C(74.192,-1925.6,-757.9,2.5263);
-C(74.225,-1933.7,-757.9,2.5263);
-C(74.258,-1941.8,-757.9,2.5263);
-C(74.292,-1949.9,-757.9,2.5263);
-C(74.325,-1958.1,-757.9,2.5263);
-C(74.358,-1966.3,-757.9,2.5263);
-C(74.392,-1974.4,-757.9,2.5263);
-C(74.425,-1982.6,-757.9,2.5263);
-C(74.458,-1990.8,-757.9,2.5263);
-C(74.492,-1999.0,-757.9,2.5263);
-C(74.525,-2007.1,-757.9,2.5263);
-C(74.558,-2015.3,-757.9,2.5263);
-C(74.592,-2023.5,-757.9,2.5263);
-C(74.625,-2031.7,-757.9,2.5263);
-C(74.658,-2039.9,-757.9,2.5263);
-C(74.692,-2048.1,-757.9,2.5263);
-C(74.725,-2056.3,-757.9,2.5263);
-C(74.758,-2064.4,-757.9,2.5263);
-C(74.792,-2072.6,-757.9,2.5263);
-C(74.825,-2080.8,-757.9,2.5263);
-C(74.858,-2089.0,-757.9,2.5263);
-C(74.892,-2097.2,-757.9,2.5263);
-C(74.925,-2105.4,-757.9,2.5263);
-C(74.958,-2113.6,-757.9,2.5263);
-C(74.992,-2121.8,-757.9,2.5263);
-C(75.025,-2129.9,-757.9,2.5263);
-C(75.058,-2138.1,-757.9,2.5263);
-C(75.092,-2146.3,-757.9,2.5263);
-C(75.125,-2154.5,-757.9,2.5263);
-C(75.158,-2162.7,-757.9,2.5263);
-C(75.192,-2170.9,-757.9,2.5263);
-C(75.225,-2179.0,-757.9,2.5263);
-C(75.258,-2187.2,-757.9,2.5263);
-C(75.292,-2195.4,-757.9,2.5263);
-C(75.325,-2203.6,-757.9,2.5263);
-C(75.358,-2211.7,-757.9,2.5263);
-C(75.392,-2219.9,-757.9,2.5263);
-C(75.425,-2228.0,-757.9,2.5263);
-C(75.458,-2236.2,-757.9,2.5263);
-C(75.492,-2244.3,-757.9,2.5263);
-C(75.525,-2252.4,-757.9,2.5263);
-C(75.558,-2260.4,-757.9,2.5263);
-C(75.592,-2268.4,-757.9,2.5263);
-C(75.625,-2276.4,-757.9,2.5263);
-C(75.658,-2284.3,-757.9,2.5263);
-C(75.692,-2292.2,-757.9,2.5263);
-C(75.725,-2300.0,-757.9,2.5263);
-C(75.758,-2307.7,-757.9,2.5263);
-C(75.792,-2315.3,-757.9,2.5263);
-C(75.825,-2322.7,-757.9,2.5263);
-C(75.858,-2330.0,-757.9,2.5263);
-C(75.892,-2337.2,-757.9,2.5263);
-C(75.925,-2344.2,-757.9,2.5263);
-C(75.958,-2351.0,-757.9,2.5263);
-C(75.992,-2357.6,-757.9,2.5263);
-C(76.025,-2363.9,-757.9,2.5263);
-C(76.058,-2370.0,-757.9,2.5263);
-C(76.092,-2375.8,-757.9,2.5263);
-C(76.125,-2381.3,-757.9,2.5263);
-C(76.158,-2386.5,-757.9,2.5263);
-C(76.192,-2391.4,-757.9,2.5263);
-C(76.225,-2396.0,-757.9,2.5263);
-C(76.258,-2400.2,-757.9,2.5263);
+C(73.425,-2825.4,-878.1,2.7032);
+C(73.458,-2752.0,-838.1,2.6442);
+C(73.492,-2678.7,-798.0,2.5853);
+C(73.525,-2605.3,-757.9,2.5263);
+C(73.558,-2605.3,-757.9,2.5263);
+C(73.592,-2605.3,-757.9,2.5263);
+C(73.625,-2605.3,-757.9,2.5263);
+C(73.658,-2605.3,-757.9,2.5263);
+C(73.692,-2605.3,-757.9,2.5263);
+C(73.725,-2605.3,-757.9,2.5263);
+C(73.758,-2605.3,-757.9,2.5263);
+C(73.792,-2605.3,-757.9,2.5263);
+C(73.825,-2605.3,-757.9,2.5263);
+C(73.858,-2605.3,-757.9,2.5263);
+C(73.892,-2605.3,-757.9,2.5263);
+C(73.925,-2605.3,-757.9,2.5263);
+C(73.958,-2605.3,-757.9,2.5263);
+C(73.992,-2605.3,-757.9,2.5263);
+C(74.025,-2605.3,-757.9,2.5263);
+C(74.058,-2605.3,-757.9,2.5263);
+C(74.092,-2605.3,-757.9,2.5263);
+C(74.125,-2605.3,-757.9,2.5263);
+C(74.158,-2605.3,-757.9,2.5263);
+C(74.192,-2605.3,-757.9,2.5263);
+C(74.225,-2605.3,-757.9,2.5263);
+C(74.258,-2605.3,-757.9,2.5263);
+C(74.292,-2605.3,-757.9,2.5263);
+C(74.325,-2605.3,-757.9,2.5263);
+C(74.358,-2605.3,-757.9,2.5263);
+C(74.392,-2605.3,-757.9,2.5263);
+C(74.425,-2605.3,-757.9,2.5263);
+C(74.458,-2605.3,-757.9,2.5263);
+C(74.492,-2605.3,-757.9,2.5263);
+C(74.525,-2605.3,-757.9,2.5263);
+C(74.558,-2605.3,-757.9,2.5263);
+C(74.592,-2605.3,-757.9,2.5263);
+C(74.625,-2605.3,-757.9,2.5263);
+C(74.658,-2605.3,-757.9,2.5263);
+C(74.692,-2605.3,-757.9,2.5263);
+C(74.725,-2605.3,-757.9,2.5263);
+C(74.758,-2605.3,-757.9,2.5263);
+C(74.792,-2605.3,-757.9,2.5263);
+C(74.825,-2605.3,-757.9,2.5263);
+C(74.858,-2605.3,-757.9,2.5263);
+C(74.892,-2605.3,-757.9,2.5263);
+C(74.925,-2605.3,-757.9,2.5263);
+C(74.958,-2605.3,-757.9,2.5263);
+C(74.992,-2605.3,-757.9,2.5263);
+C(75.025,-2605.3,-757.9,2.5263);
+C(75.058,-2605.3,-757.9,2.5263);
+C(75.092,-2605.3,-757.9,2.5263);
+C(75.125,-2605.3,-757.9,2.5263);
+C(75.158,-2605.3,-757.9,2.5263);
+C(75.192,-2605.3,-757.9,2.5263);
+C(75.225,-2605.3,-757.9,2.5263);
+C(75.258,-2605.3,-757.9,2.5263);
+C(75.292,-2605.3,-757.9,2.5263);
+C(75.325,-2605.3,-757.9,2.5263);
+C(75.358,-2605.3,-757.9,2.5263);
+C(75.392,-2605.3,-757.9,2.5263);
+C(75.425,-2605.3,-757.9,2.5263);
+C(75.458,-2605.3,-757.9,2.5263);
+C(75.492,-2605.3,-757.9,2.5263);
+C(75.525,-2605.3,-757.9,2.5263);
+C(75.558,-2605.3,-757.9,2.5263);
+C(75.592,-2605.3,-757.9,2.5263);
+C(75.625,-2605.3,-757.9,2.5263);
+C(75.658,-2605.3,-757.9,2.5263);
+C(75.692,-2605.3,-757.9,2.5263);
+C(75.725,-2605.3,-757.9,2.5263);
+C(75.758,-2605.3,-757.9,2.5263);
+C(75.792,-2605.3,-757.9,2.5263);
+C(75.825,-2605.3,-757.9,2.5263);
+C(75.858,-2605.3,-757.9,2.5263);
+C(75.892,-2605.3,-757.9,2.5263);
+C(75.925,-2605.3,-757.9,2.5263);
+C(75.958,-2605.3,-757.9,2.5263);
+C(75.992,-2605.3,-757.9,2.5263);
+C(76.025,-2605.3,-757.9,2.5263);
+C(76.058,-2605.3,-757.9,2.5263);
+C(76.092,-2605.3,-757.9,2.5263);
+C(76.125,-2605.3,-757.9,2.5263);
+C(76.158,-2605.3,-757.9,2.5263);
+C(76.192,-2605.3,-757.9,2.5263);
+C(76.225,-2605.3,-757.9,2.5263);
+C(76.258,-2605.3,-757.9,2.5263);
 C(76.292,-2802.2,-378.1,2.7762);
 C(76.325,-2729.0,-349.0,2.7157);
 C(76.358,-2655.7,-319.8,2.6551);
@@ -6510,8 +6510,8 @@ P(73.358,540.0,960.0,257.0,1.000);
 P(73.392,540.0,960.0,257.0,0.880);
 P(73.425,0,0,0,0);
 tl.fromTo("#score", { scale: 0 }, { scale: 1, duration: 0.12, ease: "back.out(2)" }, 5.200);
-tl.to("#d0", { rotateX: -90, duration: 0.17, ease: "power2.in" }, 76.300);
-tl.to("#d1", { rotateX: 0, duration: 0.17, ease: "power2.out" }, 76.470);
+tl.to("#d0", { scaleY: 0, duration: 0.17, ease: "power2.in" }, 76.300);
+tl.fromTo("#d1", { scaleY: 0 }, { scaleY: 1, duration: 0.17, ease: "power2.out", immediateRender: false }, 76.470);
 window.__timelines = window.__timelines || {};
 window.__timelines["main"] = tl;
 tl.seek(0);

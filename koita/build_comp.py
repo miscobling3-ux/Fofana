@@ -110,7 +110,7 @@ seg(S(30), S(31), "A", 350, 420, head_focus("koita_A"))
 seg(S(31), S(33), "A", 419, 447, lerp_focus(KA[419], (1240, 470)))
 seg(S(33), S(34), "B", 352, 392, lerp_focus(HEAD["koita_Bh"][352], (1640, 400)))
 seg(S(34), S(35), "A", 424, 462, lambda n, u: tuple(SPOT["courtois"][n][:2]))
-seg(S(35), S(36), "B", 650, 725, lerp_focus((900, 560), (1180, 700)), cy=680, hc=760)
+seg(S(35), S(36), "B", 650, 725, lambda n, u: (1245, 680), cy=680, hc=760)
 seg(S(36), S(37), "A", 470, 548, yellow_focus("A"))
 seg(S(37), S(38), "A", 590, 722, yellow_focus("A"))
 seg(S(38), S(39), "A", 722, 767, yellow_focus("A"))
@@ -281,10 +281,10 @@ for i, w in enumerate(words):
 # bandeau de score
 t_score = S(1); t_flip = S(36)
 # sons
-audio = [f'<audio id="vo" class="clip" src="assets/voice.wav" data-start="0" data-duration="{f3(DUR)}" data-volume="1.0"></audio>']
+audio = [f'<audio id="vo" class="clip" src="assets/voice.wav" data-start="0" data-duration="{f3(DUR)}" data-volume="0.76"></audio>']
 def snd(name, t, vol, dur):
     if t < 0 or t >= DUR: return
-    audio.append(f'<audio id="sfx{len(audio)}" class="clip" src="assets/sfx/{name}.wav" data-start="{f3(t)}" data-duration="{f3(min(dur, DUR - t))}" data-volume="{vol}"></audio>')
+    audio.append(f'<audio id="sfx{len(audio)}" class="clip" src="assets/sfx/{name}.wav" data-start="{f3(t)}" data-duration="{f3(min(dur, DUR - t))}" data-volume="{vol * 0.76:.3f}"></audio>')
 SDUR = {"cut1": .32, "cut2": .28, "cut3": .36, "cut4": .30, "freeze": .45, "pop": .12, "kick1": .3, "kick2": .3, "kick3": .3}
 for i, cf in enumerate(cut_frames):
     snd(["cut1", "cut2", "cut3", "cut4"][i % 4], cf / FPS - 0.12, 0.30, SDUR["cut1"])
@@ -332,7 +332,7 @@ html, body {{ width: 1080px; height: 1920px; overflow: hidden; background: #000;
 #score {{ position: absolute; z-index: 30; top: 150px; left: 50%; transform: translateX(-50%) scale(0); display: flex; align-items: stretch;
   font: 800 40px/1 "Poppins", sans-serif; color: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,.5); }}
 #score .team {{ background: rgba(10,10,12,.88); padding: 16px 22px; }}
-#score .box {{ background: #e3121b; padding: 16px 20px; display: flex; gap: 14px; perspective: 400px; }}
+#score .box {{ background: #e3121b; padding: 16px 20px; display: flex; gap: 14px; }}
 #score .dig {{ position: relative; display: inline-block; width: 28px; height: 40px; }}
 #score .dig span {{ position: absolute; left: 0; top: 0; width: 28px; text-align: center; }}
 #score .min {{ background: #fff; color: #e3121b; padding: 16px 16px; }}
@@ -345,7 +345,7 @@ html, body {{ width: 1080px; height: 1920px; overflow: hidden; background: #000;
 </div>
 <div id="dim"></div><div id="ring"></div>
 {chr(10).join(label_html)}
-<div id="score"><div class="team">AEK</div><div class="box"><div class="dig" data-layout-allow-overlap><span id="d0">0</span><span id="d1" style="transform: rotateX(90deg)">1</span></div><div>–</div><div class="dig"><span>0</span></div></div><div class="team">RMA</div><div class="min">12'</div></div>
+<div id="score"><div class="team">AEK</div><div class="box"><div class="dig" data-layout-allow-overlap><span id="d0">0</span><span id="d1" style="transform: scaleY(0)">1</span></div><div>–</div><div class="dig"><span>0</span></div></div><div class="team">RMA</div><div class="min">12'</div></div>
 {chr(10).join(subs)}
 {chr(10).join(audio)}
 </div>
@@ -361,8 +361,8 @@ function P(t, x, y, r, a) {{
 }}
 {chr(10).join(js)}
 tl.fromTo("#score", {{ scale: 0 }}, {{ scale: 1, duration: 0.12, ease: "back.out(2)" }}, {f3(t_score)});
-tl.to("#d0", {{ rotateX: -90, duration: 0.17, ease: "power2.in" }}, {f3(t_flip)});
-tl.to("#d1", {{ rotateX: 0, duration: 0.17, ease: "power2.out" }}, {f3(t_flip + 0.17)});
+tl.to("#d0", {{ scaleY: 0, duration: 0.17, ease: "power2.in" }}, {f3(t_flip)});
+tl.fromTo("#d1", {{ scaleY: 0 }}, {{ scaleY: 1, duration: 0.17, ease: "power2.out", immediateRender: false }}, {f3(t_flip + 0.17)});
 window.__timelines = window.__timelines || {{}};
 window.__timelines["main"] = tl;
 tl.seek(0);

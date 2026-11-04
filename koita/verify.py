@@ -8,12 +8,22 @@ SRC = "/tmp/claude-0/-home-user-Fofana/daca3ac7-e701-5674-9337-1a49ad094954/scra
 os.makedirs(AN, exist_ok=True)
 plan = json.load(open(f"{ROOT}/build/plan.json"))
 frames, cams = plan["frames"], plan["cams"]
-cap = cv2.VideoCapture(VID)
-out = []
-while True:
-    ok, f = cap.read()
-    if not ok: break
-    out.append(f)
+class Lazy:
+    """lecture séquentielle avec petit cache (évite de tout charger en mémoire)"""
+    def __init__(s, p):
+        s.p = p; s.cap = cv2.VideoCapture(p); s.pos = 0; s.cache = {}
+        s.n = int(s.cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    def __len__(s): return s.n
+    def __getitem__(s, k):
+        if k in s.cache: return s.cache[k]
+        if k < s.pos:
+            s.cap.release(); s.cap = cv2.VideoCapture(s.p); s.pos = 0
+        while s.pos <= k:
+            ok, f = s.cap.read(); s.pos += 1
+            if not ok: raise IndexError(k)
+        s.cache = {k: f}
+        return f
+out = Lazy(VID)
 N = len(out)
 rep = {"frames_rendered": N, "frames_planned": len(frames)}
 print("images rendues", N, "prévues", len(frames))
@@ -32,7 +42,8 @@ def red_tip(img, ex, ey):
 def head_top(img, tx, ty):
     """premier pixel de tête (sombre/non-pelouse) sous la pointe, dans une colonne de ±10 px"""
     x1 = int(tx - 10)
-    col = img[int(ty) + 1:int(ty) + 60, x1:int(tx + 11)]
+    col = img[max(0, int(ty) + 1):int(ty) + 60, max(0, x1):int(tx + 11)]
+    if col.size == 0 or col.shape[0] < 4: return None
     hsv = cv2.cvtColor(col, cv2.COLOR_BGR2HSV)
     grass = cv2.inRange(hsv, (30, 50, 50), (90, 255, 255)) > 0
     dark = (~grass) & (hsv[..., 2] < 140)
@@ -42,8 +53,16 @@ def head_top(img, tx, ty):
             return x1 + xs.mean(), int(ty) + 1 + r
     return None
 tag_rows, bad = [], []
+skipped = {"hors_cadre": 0, "pop": 0}
+firsts = set()
+prev = {}
+for k, li, ox, tip, oy in plan["tags"]:
+    if prev.get(li) != k - 1: firsts.update({(li, k + d) for d in range(4)})
+    prev[li] = k
 for k, li, ox, tip, oy in plan["tags"]:
     if k >= N: continue
+    if not (40 < ox < 1040): skipped["hors_cadre"] += 1; continue
+    if (li, k) in firsts: skipped["pop"] += 1; continue
     img = out[k]
     t = red_tip(img, ox, tip)
     if t is None: bad.append((k, li, "pointe introuvable")); continue
@@ -52,7 +71,8 @@ for k, li, ox, tip, oy in plan["tags"]:
     gap, dx = h[1] - t[1], h[0] - t[0]
     tag_rows.append((k, li, round(gap, 1), round(dx, 1)))
     if not (0 <= gap <= 16 and abs(dx) <= 6): bad.append((k, li, f"écart {gap:.1f} px, dx {dx:.1f}"))
-rep["tags_checked"] = len(tag_rows); rep["tags_bad"] = bad
+rep["tags_checked"] = len(tag_rows); rep["tags_bad"] = bad; rep["tags_skipped"] = skipped
+print("étiquettes non mesurées :", skipped)
 gaps = np.array([r[2] for r in tag_rows]); dxs = np.array([r[3] for r in tag_rows])
 print(f"étiquettes : {len(tag_rows)} images mesurées ; écart pointe/tête {gaps.min():.0f}..{gaps.max():.0f} px (moy {gaps.mean():.1f}) ; dx {dxs.min():.0f}..{dxs.max():.0f} ; hors tolérance : {len(bad)}")
 for b in bad[:40]: print("   ", b)
@@ -169,6 +189,21 @@ r = subprocess.run(["ffmpeg", "-hide_banner", "-i", VID, "-af", "ebur128=peak=tr
 I = re.findall(r"I:\s+(-?[\d.]+) LUFS", r)[-1]; TP = re.findall(r"Peak:\s+(-?[\d.]+) dBFS", r)[-1]
 pr = json.loads(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration,size:stream=codec_name,width,height,r_frame_rate", "-of", "json", VID], capture_output=True, text=True).stdout)
 rep.update(lufs=float(I), true_peak=float(TP), probe=pr)
+# absence de son de foule : niveau du mix là où ni voix ni bruitage ne jouent
+html = open(f"{ROOT}/hf/index.html").read()
+busy = [(w["start"] - 0.05, w["end"] + 0.15) for w in words]
+for m in re.finditer(r'<audio id="sfx\d+" class="clip" src="[^"]+" data-start="([\d.]+)" data-duration="([\d.]+)"', html):
+    busy.append((float(m.group(1)) - 0.05, float(m.group(1)) + float(m.group(2)) + 0.05))
+wav = f"{ROOT}/build/final_audio.wav"
+subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", VID, "-ac", "1", "-ar", "48000", wav])
+import soundfile as sf
+a, sr = sf.read(wav)
+quiet = np.ones(len(a), bool)
+for t0, t1 in busy: quiet[max(0, int(t0 * sr)):int(t1 * sr)] = False
+q = a[quiet]
+rms_db = 20 * np.log10(np.sqrt(np.mean(q ** 2)) + 1e-12) if len(q) else None
+rep["gaps_seconds"] = len(q) / sr; rep["gaps_rms_dbfs"] = rms_db
+print(f"son hors voix/bruitages : {len(q) / sr:.1f} s mesurées, niveau {rms_db:.1f} dBFS (une foule serait > -50 dBFS)")
 print(f"son : {I} LUFS intégré, crête vraie {TP} dBTP")
 print("format :", [(s.get("codec_name"), s.get("width"), s.get("height"), s.get("r_frame_rate")) for s in pr["streams"]], pr["format"])
 json.dump(rep, open(f"{ROOT}/build/verif.json", "w"), ensure_ascii=False, indent=1, default=str)
