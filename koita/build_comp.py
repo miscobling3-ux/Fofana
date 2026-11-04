@@ -247,7 +247,7 @@ for li, (c, hk, a, b, *_ ) in enumerate(LABELS):
             ox, oy = (hx - x0) * s, (hy - y0) * s
             if not vis_prev: start_t = t; pops.append(t)
             bounce = 5 * abs(math.sin(2 * math.pi * 1.4 * (t - start_t)))
-            tip = oy - 6 - bounce
+            tip = oy - 1 - bounce
             sc = min(1, (t - start_t) / 0.12)
             sc = 1 - (1 - sc) ** 3
             js.append(f'T({at(k)},{li},{ox:.1f},{tip:.1f},{sc:.3f});')
