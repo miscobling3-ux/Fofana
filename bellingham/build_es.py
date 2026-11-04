@@ -270,7 +270,7 @@ html, body {{ width: {OUT_W}px; height: {OUT_H}px; overflow: hidden; background:
 for n, im in enumerate(images):
     x0, y0, h = im['crop']; s = OUT_H / h
     st = f"left:{-x0 * s:.1f}px;top:{-y0 * s:.1f}px;width:{1920 * s:.1f}px;height:{1080 * s:.1f}px"
-    L.append(f'<img id="img{n}" class="clip" decoding="sync" loading="eager" src="frames/{im["clip"]}{im["f"]:04d}.jpg" data-start="{fx(im["t0"] + Q if n else 0)}" data-duration="{fx(im["t1"] - im["t0"])}" style="{st}" alt="">')
+    L.append(f'<img id="img{n}" class="clip" decoding="sync" loading="eager" src="frames/{im["clip"]}{im["f"]:04d}.jpg" data-start="{fx(im["t0"] + Q if n else 0)}" data-duration="{fx(round(im["t1"] + Q, 3) - round(im["t0"] + Q if n else 0, 3) + 0.004)}" style="{st}" alt="">')
 L.append('</div>')
 L.append('<div id="dark"></div><div id="ring"></div>')
 for i, te in enumerate(tag_events):
