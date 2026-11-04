@@ -243,7 +243,7 @@ html, body {{ width: {OUT_W}px; height: {OUT_H}px; overflow: hidden; background:
   box-shadow: 0 0 14px rgba(255,255,255,.55), inset 0 0 10px rgba(255,255,255,.35); }}
 .tag {{ position: absolute; left: 0; top: 0; width: 0; height: 0; }}
 .tag .inner {{ position: absolute; left: 0; bottom: 0; transform-origin: 50% 100%; }}
-.tag .box {{ position: absolute; left: -300px; width: 600px; bottom: 4px; display: flex; flex-direction: column-reverse; align-items: center; gap: 8px; }}
+.tag .box {{ position: absolute; left: -300px; width: 600px; bottom: -2px; display: flex; flex-direction: column-reverse; align-items: center; gap: 8px; }}
 .tag .arrow {{ width: 64px; height: 86px; filter: drop-shadow(0 3px 4px rgba(0,0,0,.5)); }}
 .tag .name {{ font-family: Montserrat; font-weight: 800; font-size: 38px; color: #fff; background: rgba(12,14,20,.86);
   padding: 6px 18px 8px; border-radius: 14px; white-space: nowrap; line-height: 1.1; }}
@@ -270,7 +270,7 @@ html, body {{ width: {OUT_W}px; height: {OUT_H}px; overflow: hidden; background:
 for n, im in enumerate(images):
     x0, y0, h = im['crop']; s = OUT_H / h
     st = f"left:{-x0 * s:.1f}px;top:{-y0 * s:.1f}px;width:{1920 * s:.1f}px;height:{1080 * s:.1f}px"
-    L.append(f'<img id="img{n}" class="clip" src="frames/{im["clip"]}{im["f"]:04d}.jpg" data-start="{fx(im["t0"] + Q if n else 0)}" data-duration="{fx(im["t1"] - im["t0"])}" style="{st}" alt="">')
+    L.append(f'<img id="img{n}" class="clip" decoding="sync" loading="eager" src="frames/{im["clip"]}{im["f"]:04d}.jpg" data-start="{fx(im["t0"] + Q if n else 0)}" data-duration="{fx(im["t1"] - im["t0"])}" style="{st}" alt="">')
 L.append('</div>')
 L.append('<div id="dark"></div><div id="ring"></div>')
 for i, te in enumerate(tag_events):

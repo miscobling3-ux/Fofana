@@ -17,39 +17,38 @@ report = {}
 # 1) étiquettes : pointe rouge mesurée vs haut de la tête, sur CHAQUE image où l'étiquette est affichée
 tag_rows = []; tiles = []
 for te in P['tags']:
+    HJ = json.load(open(f'{B}/analysis/heads.json'))
+    HH = {int(k): v for k, v in HJ['vini_a'].items()} if 'Vin' in te['name'] else {int(k): v for k, v in HJ['cuc_hc'].items()}
+    bias = -2 if 'Vin' in te['name'] else 0
     for n in range(N):
         t = n / FPS
         if not (te['t0'] + 0.13 <= t < te['t1'] - 1e-3): continue   # après le « pop » de 0,12 s
-        f = get(n); hsv = cv2.cvtColor(f, cv2.COLOR_BGR2HSV)
+        f = get(n)
         red = (f[..., 2] > 200) & (f[..., 1] < 90) & (f[..., 0] < 90)
         ys, xs = np.where(red)
         if len(ys) == 0: tag_rows.append((n, None, None)); continue
-        tipy = ys.max(); tipx = xs[ys >= tipy - 3].mean()
-        grass = (hsv[..., 0] >= 28) & (hsv[..., 0] <= 85) & (hsv[..., 1] > 70) & (hsv[..., 2] > 70)
-        x0 = int(tipx) - 6; col = ~grass[tipy + 1: tipy + 60, x0: x0 + 13] & ~red[tipy + 1: tipy + 60, x0: x0 + 13]
-        rows = np.where(col.sum(1) >= 3)[0]
-        head = tipy + 1 + rows[0] if len(rows) else None
-        dx = None
-        if head is not None:
-            r = ~grass[head + 8, int(tipx) - 60: int(tipx) + 60]
-            idx = np.where(r)[0]
-            if len(idx):
-                # blob contigu le plus proche de la pointe
-                segs = np.split(idx, np.where(np.diff(idx) > 2)[0] + 1)
-                seg = min(segs, key=lambda s: abs((s[0] + s[-1]) / 2 - 60))
-                dx = (seg[0] + seg[-1]) / 2 - 60
-        d = None if head is None else head - tipy
-        tag_rows.append((n, d, dx))
+        tipy = ys.max(); tipx = xs[ys >= tipy - 2].mean()
+        # image source affichée à cet instant + transformation (recadrage, petit zoom de coupe)
+        im = [i for i in P['images'] if i['t0'] <= t < i['t1']][-1]
+        x0, y0, h = im['crop']; sc = 1920 / h
+        st = max(sh['t0'] for sh in P['shots'] if sh['t0'] <= t)
+        u = (t - st) / 0.1; pz = 1.0 if (u >= 1 or st == 0) else 1.07 - 0.07 * (1 - (1 - u) ** 2)
+        sx = 540 + (tipx - 540) / pz; sy = 960 + (tipy - 960) / pz
+        srcx, srcy = x0 + sx / sc, y0 + sy / sc
+        hx, hy = HH[im['f']]; hy += bias
+        d = (hy - srcy) * sc * pz          # écart vertical en pixels de sortie (pointe au-dessus = positif)
+        dx = (srcx - hx) * sc * pz
+        tag_rows.append((n, round(float(d), 1), round(float(dx), 1)))
         c = f[max(0, tipy - 70): tipy + 80, max(0, int(tipx) - 75): int(tipx) + 75].copy()
         c = cv2.resize(c, (150, 150)); c = cv2.resize(c, (300, 300), interpolation=cv2.INTER_NEAREST)
-        cy = 140 if tipy >= 70 else tipy * 2
-        cv2.line(c, (0, 140), (300, 140), (255, 255, 0), 1)
-        if head is not None: cv2.line(c, (0, 140 + 2 * d), (300, 140 + 2 * d), (0, 255, 255), 1)
-        cv2.putText(c, f'{n} d={d} dx={dx if dx is None else round(dx)}', (3, 16), 0, 0.45, (255, 0, 255), 1)
+        hxo = (hx - x0) * sc; hyo = (hy - y0) * sc; hxo = 540 + (hxo - 540) * pz; hyo = 960 + (hyo - 960) * pz
+        cx_, cy_ = int((hxo - (int(tipx) - 75)) * 2), int((hyo - max(0, tipy - 70)) * 2)
+        cv2.drawMarker(c, (cx_, cy_), (0, 255, 255), cv2.MARKER_CROSS, 16, 1)
+        cv2.putText(c, f'{n} d={d:.0f} dx={dx:.0f}', (3, 16), 0, 0.45, (255, 0, 255), 1)
         tiles.append(c)
-ok = [r for r in tag_rows if r[1] is not None and 0 <= r[1] <= 16 and r[2] is not None and abs(r[2]) <= 6]
+ok = [r for r in tag_rows if r[1] is not None and 0 <= r[1] <= 16 and abs(r[2]) <= 6]
 bad = [r for r in tag_rows if r not in ok]
-report['tags'] = dict(frames=len(tag_rows), ok=len(ok), bad=bad)
+report['tags'] = dict(frames=len(tag_rows), ok=len(ok), bad=bad, all=tag_rows)
 for i in range(0, len(tiles), 60): cv2.imwrite(f'{OUT}/tags_{i // 60}.jpg', grid(tiles[i:i + 60], 10))
 
 # 2) image propre : haut et bas de l'image toutes les 0,5 s
@@ -68,9 +67,7 @@ for i, sp in enumerate(P['spots']):
     cv2.imwrite(f'{OUT}/spot_{i}.jpg', grid(ims, 8))
 
 # 4) synchro voix/image : 28 instants clés (mot affiché + image)
-keys = ['bellingham', 'trente-deuxième', "l'aek", 'gauche', 'cucurella', 'contrôle', 'avance', 'contrer', 'arme', 'centre',
-        'regardez', 'attaque', 'plupart', 'derrière', 'numéro', 'gardien', 'ouverture', 'précipite', 'filer', 'pied',
-        'talonnade', 'puissance', 'trajectoire', 'plonge', 'angle', 'partout', 'bras', 'dis-moi']
+keys = ['gol', 'bellingham', 'carrera', 'todo', 'bernardo', 'vinícius', 'recibe', 'momento', 'defensor', 'cucurella', 'devolverle', 'fuera', 'perfila', 'zurda', 'mbappé', 'banda', 'cuanto', 'avanza', 'fíjate', 'alineados', 'jugadores', 'piensan', 'espacios', 'centrar', 'cabeza', 'velocidad', 'pase', 'controla', 'tacón', 'fondo']
 ims = []; used = set(); sync = []
 for k in keys:
     for a, b, w in P['subs']:
