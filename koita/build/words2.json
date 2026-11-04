@@ -1,0 +1,1790 @@
+[
+{
+"w": "Ce",
+"start": 0.04,
+"end": 0.198,
+"sent": 0
+},
+{
+"w": "but",
+"start": 0.198,
+"end": 0.357,
+"sent": 0
+},
+{
+"w": "de",
+"start": 0.357,
+"end": 0.515,
+"sent": 0
+},
+{
+"w": "Koita",
+"start": 0.515,
+"end": 0.832,
+"sent": 0
+},
+{
+"w": "nous",
+"start": 0.832,
+"end": 0.991,
+"sent": 0
+},
+{
+"w": "prouve",
+"start": 0.991,
+"end": 1.308,
+"sent": 0
+},
+{
+"w": "qu'un",
+"start": 1.308,
+"end": 1.625,
+"sent": 0
+},
+{
+"w": "seul",
+"start": 1.625,
+"end": 1.783,
+"sent": 0
+},
+{
+"w": "crochet,",
+"start": 1.783,
+"end": 2.1,
+"sent": 0
+},
+{
+"w": "au",
+"start": 2.16,
+"end": 2.31,
+"sent": 0
+},
+{
+"w": "bon",
+"start": 2.31,
+"end": 2.46,
+"sent": 0
+},
+{
+"w": "moment,",
+"start": 2.46,
+"end": 2.76,
+"sent": 0
+},
+{
+"w": "suffit",
+"start": 2.84,
+"end": 3.26,
+"sent": 0
+},
+{
+"w": "pour",
+"start": 3.26,
+"end": 3.47,
+"sent": 0
+},
+{
+"w": "faire",
+"start": 3.47,
+"end": 3.89,
+"sent": 0
+},
+{
+"w": "plier",
+"start": 3.89,
+"end": 4.1,
+"sent": 0
+},
+{
+"w": "le",
+"start": 4.1,
+"end": 4.31,
+"sent": 0
+},
+{
+"w": "Real",
+"start": 4.31,
+"end": 4.52,
+"sent": 0
+},
+{
+"w": "Madrid.",
+"start": 4.52,
+"end": 4.94,
+"sent": 0
+},
+{
+"w": "Douzième",
+"start": 5.0,
+"end": 5.31,
+"sent": 1
+},
+{
+"w": "minute,",
+"start": 5.31,
+"end": 5.62,
+"sent": 1
+},
+{
+"w": "zéro",
+"start": 5.7,
+"end": 6.004,
+"sent": 1
+},
+{
+"w": "à",
+"start": 6.004,
+"end": 6.156,
+"sent": 1
+},
+{
+"w": "zéro.",
+"start": 6.156,
+"end": 6.46,
+"sent": 1
+},
+{
+"w": "L'AEK",
+"start": 6.52,
+"end": 6.803,
+"sent": 2
+},
+{
+"w": "reçoit",
+"start": 6.803,
+"end": 7.369,
+"sent": 2
+},
+{
+"w": "le",
+"start": 7.369,
+"end": 7.651,
+"sent": 2
+},
+{
+"w": "Real",
+"start": 7.651,
+"end": 7.934,
+"sent": 2
+},
+{
+"w": "Madrid,",
+"start": 7.934,
+"end": 8.5,
+"sent": 2
+},
+{
+"w": "et",
+"start": 8.56,
+"end": 8.695,
+"sent": 2
+},
+{
+"w": "toute",
+"start": 8.695,
+"end": 8.965,
+"sent": 2
+},
+{
+"w": "l'action",
+"start": 8.965,
+"end": 9.235,
+"sent": 2
+},
+{
+"w": "part",
+"start": 9.235,
+"end": 9.37,
+"sent": 2
+},
+{
+"w": "du",
+"start": 9.37,
+"end": 9.505,
+"sent": 2
+},
+{
+"w": "milieu",
+"start": 9.505,
+"end": 9.775,
+"sent": 2
+},
+{
+"w": "de",
+"start": 9.775,
+"end": 9.91,
+"sent": 2
+},
+{
+"w": "terrain.",
+"start": 9.91,
+"end": 10.18,
+"sent": 2
+},
+{
+"w": "Luka",
+"start": 10.24,
+"end": 10.571,
+"sent": 3
+},
+{
+"w": "Jović",
+"start": 10.571,
+"end": 10.902,
+"sent": 3
+},
+{
+"w": "a",
+"start": 10.902,
+"end": 11.067,
+"sent": 3
+},
+{
+"w": "le",
+"start": 11.067,
+"end": 11.233,
+"sent": 3
+},
+{
+"w": "ballon",
+"start": 11.233,
+"end": 11.564,
+"sent": 3
+},
+{
+"w": "dans",
+"start": 11.564,
+"end": 11.729,
+"sent": 3
+},
+{
+"w": "l'axe.",
+"start": 11.729,
+"end": 12.06,
+"sent": 3
+},
+{
+"w": "Il",
+"start": 12.12,
+"end": 12.28,
+"sent": 4
+},
+{
+"w": "le",
+"start": 12.28,
+"end": 12.44,
+"sent": 4
+},
+{
+"w": "protège",
+"start": 12.44,
+"end": 12.92,
+"sent": 4
+},
+{
+"w": "avec",
+"start": 12.92,
+"end": 13.24,
+"sent": 4
+},
+{
+"w": "son",
+"start": 13.24,
+"end": 13.4,
+"sent": 4
+},
+{
+"w": "corps.",
+"start": 13.4,
+"end": 13.56,
+"sent": 4
+},
+{
+"w": "Un",
+"start": 13.62,
+"end": 13.71,
+"sent": 5
+},
+{
+"w": "adversaire",
+"start": 13.71,
+"end": 14.07,
+"sent": 5
+},
+{
+"w": "le",
+"start": 14.07,
+"end": 14.16,
+"sent": 5
+},
+{
+"w": "colle,",
+"start": 14.16,
+"end": 14.34,
+"sent": 5
+},
+{
+"w": "mais",
+"start": 14.38,
+"end": 14.593,
+"sent": 5
+},
+{
+"w": "il",
+"start": 14.593,
+"end": 14.807,
+"sent": 5
+},
+{
+"w": "ne",
+"start": 14.807,
+"end": 15.02,
+"sent": 5
+},
+{
+"w": "lâche",
+"start": 15.02,
+"end": 15.447,
+"sent": 5
+},
+{
+"w": "rien.",
+"start": 15.447,
+"end": 15.66,
+"sent": 5
+},
+{
+"w": "Autour",
+"start": 15.72,
+"end": 15.77,
+"sent": 6
+},
+{
+"w": "de",
+"start": 15.77,
+"end": 15.795,
+"sent": 6
+},
+{
+"w": "lui,",
+"start": 15.795,
+"end": 15.82,
+"sent": 6
+},
+{
+"w": "les",
+"start": 15.84,
+"end": 16.04,
+"sent": 6
+},
+{
+"w": "Madrilènes",
+"start": 16.04,
+"end": 16.84,
+"sent": 6
+},
+{
+"w": "se",
+"start": 16.84,
+"end": 17.04,
+"sent": 6
+},
+{
+"w": "resserrent.",
+"start": 17.04,
+"end": 17.64,
+"sent": 6
+},
+{
+"w": "Sur",
+"start": 17.7,
+"end": 17.87,
+"sent": 7
+},
+{
+"w": "la",
+"start": 17.87,
+"end": 18.04,
+"sent": 7
+},
+{
+"w": "droite,",
+"start": 18.04,
+"end": 18.38,
+"sent": 7
+},
+{
+"w": "Koita",
+"start": 18.44,
+"end": 18.77,
+"sent": 7
+},
+{
+"w": "attend.",
+"start": 18.77,
+"end": 19.1,
+"sent": 7
+},
+{
+"w": "Jović",
+"start": 19.16,
+"end": 19.567,
+"sent": 8
+},
+{
+"w": "ouvre",
+"start": 19.567,
+"end": 19.973,
+"sent": 8
+},
+{
+"w": "vers",
+"start": 19.973,
+"end": 20.177,
+"sent": 8
+},
+{
+"w": "lui.",
+"start": 20.177,
+"end": 20.38,
+"sent": 8
+},
+{
+"w": "Le",
+"start": 20.44,
+"end": 20.58,
+"sent": 9
+},
+{
+"w": "ballon",
+"start": 20.58,
+"end": 20.86,
+"sent": 9
+},
+{
+"w": "traverse,",
+"start": 20.86,
+"end": 21.28,
+"sent": 9
+},
+{
+"w": "et",
+"start": 21.38,
+"end": 21.517,
+"sent": 9
+},
+{
+"w": "Koita",
+"start": 21.517,
+"end": 21.791,
+"sent": 9
+},
+{
+"w": "le",
+"start": 21.791,
+"end": 21.928,
+"sent": 9
+},
+{
+"w": "récupère",
+"start": 21.928,
+"end": 22.475,
+"sent": 9
+},
+{
+"w": "en",
+"start": 22.475,
+"end": 22.612,
+"sent": 9
+},
+{
+"w": "pleine",
+"start": 22.612,
+"end": 22.886,
+"sent": 9
+},
+{
+"w": "course.",
+"start": 22.886,
+"end": 23.16,
+"sent": 9
+},
+{
+"w": "Regardez",
+"start": 23.22,
+"end": 24.39,
+"sent": 10
+},
+{
+"w": "bien:",
+"start": 24.39,
+"end": 24.78,
+"sent": 10
+},
+{
+"w": "au",
+"start": 24.88,
+"end": 24.9,
+"sent": 10
+},
+{
+"w": "moment",
+"start": 24.9,
+"end": 24.94,
+"sent": 10
+},
+{
+"w": "de",
+"start": 24.94,
+"end": 24.96,
+"sent": 10
+},
+{
+"w": "la",
+"start": 24.96,
+"end": 24.98,
+"sent": 10
+},
+{
+"w": "passe,",
+"start": 24.98,
+"end": 25.02,
+"sent": 10
+},
+{
+"w": "Koita",
+"start": 25.08,
+"end": 25.32,
+"sent": 10
+},
+{
+"w": "est",
+"start": 25.32,
+"end": 25.44,
+"sent": 10
+},
+{
+"w": "isolé",
+"start": 25.44,
+"end": 25.8,
+"sent": 10
+},
+{
+"w": "sur",
+"start": 25.8,
+"end": 25.92,
+"sent": 10
+},
+{
+"w": "l'aile.",
+"start": 25.92,
+"end": 26.16,
+"sent": 10
+},
+{
+"w": "Un",
+"start": 26.22,
+"end": 26.379,
+"sent": 11
+},
+{
+"w": "seul",
+"start": 26.379,
+"end": 26.537,
+"sent": 11
+},
+{
+"w": "défenseur",
+"start": 26.537,
+"end": 27.013,
+"sent": 11
+},
+{
+"w": "se",
+"start": 27.013,
+"end": 27.171,
+"sent": 11
+},
+{
+"w": "trouve",
+"start": 27.171,
+"end": 27.489,
+"sent": 11
+},
+{
+"w": "entre",
+"start": 27.489,
+"end": 27.806,
+"sent": 11
+},
+{
+"w": "lui",
+"start": 27.806,
+"end": 27.964,
+"sent": 11
+},
+{
+"w": "et",
+"start": 27.964,
+"end": 28.123,
+"sent": 11
+},
+{
+"w": "le",
+"start": 28.123,
+"end": 28.281,
+"sent": 11
+},
+{
+"w": "but.",
+"start": 28.281,
+"end": 28.44,
+"sent": 11
+},
+{
+"w": "Tout",
+"start": 28.5,
+"end": 28.66,
+"sent": 12
+},
+{
+"w": "l'espace",
+"start": 28.66,
+"end": 29.14,
+"sent": 12
+},
+{
+"w": "est",
+"start": 29.14,
+"end": 29.3,
+"sent": 12
+},
+{
+"w": "pour",
+"start": 29.3,
+"end": 29.46,
+"sent": 12
+},
+{
+"w": "lui.",
+"start": 29.46,
+"end": 29.62,
+"sent": 12
+},
+{
+"w": "La",
+"start": 29.68,
+"end": 29.848,
+"sent": 13
+},
+{
+"w": "plupart",
+"start": 29.848,
+"end": 30.184,
+"sent": 13
+},
+{
+"w": "des",
+"start": 30.184,
+"end": 30.352,
+"sent": 13
+},
+{
+"w": "joueurs",
+"start": 30.352,
+"end": 30.52,
+"sent": 13
+},
+{
+"w": "auraient",
+"start": 30.52,
+"end": 30.856,
+"sent": 13
+},
+{
+"w": "ralenti,",
+"start": 30.856,
+"end": 31.36,
+"sent": 13
+},
+{
+"w": "ou",
+"start": 31.44,
+"end": 31.571,
+"sent": 13
+},
+{
+"w": "attendu",
+"start": 31.571,
+"end": 31.966,
+"sent": 13
+},
+{
+"w": "du",
+"start": 31.966,
+"end": 32.097,
+"sent": 13
+},
+{
+"w": "soutien.",
+"start": 32.097,
+"end": 32.36,
+"sent": 13
+},
+{
+"w": "Mais",
+"start": 32.42,
+"end": 32.453,
+"sent": 14
+},
+{
+"w": "Koita,",
+"start": 32.453,
+"end": 32.52,
+"sent": 14
+},
+{
+"w": "lui,",
+"start": 32.56,
+"end": 32.7,
+"sent": 14
+},
+{
+"w": "choisit",
+"start": 32.76,
+"end": 33.39,
+"sent": 14
+},
+{
+"w": "le",
+"start": 33.39,
+"end": 33.705,
+"sent": 14
+},
+{
+"w": "duel.",
+"start": 33.705,
+"end": 34.02,
+"sent": 14
+},
+{
+"w": "Il",
+"start": 34.08,
+"end": 34.252,
+"sent": 15
+},
+{
+"w": "conduit",
+"start": 34.252,
+"end": 34.595,
+"sent": 15
+},
+{
+"w": "le",
+"start": 34.595,
+"end": 34.767,
+"sent": 15
+},
+{
+"w": "ballon",
+"start": 34.767,
+"end": 35.11,
+"sent": 15
+},
+{
+"w": "droit",
+"start": 35.11,
+"end": 35.282,
+"sent": 15
+},
+{
+"w": "vers",
+"start": 35.282,
+"end": 35.453,
+"sent": 15
+},
+{
+"w": "la",
+"start": 35.453,
+"end": 35.625,
+"sent": 15
+},
+{
+"w": "surface.",
+"start": 35.625,
+"end": 36.14,
+"sent": 15
+},
+{
+"w": "Ballon",
+"start": 36.2,
+"end": 36.487,
+"sent": 16
+},
+{
+"w": "collé",
+"start": 36.487,
+"end": 36.773,
+"sent": 16
+},
+{
+"w": "au",
+"start": 36.773,
+"end": 36.917,
+"sent": 16
+},
+{
+"w": "pied,",
+"start": 36.917,
+"end": 37.06,
+"sent": 16
+},
+{
+"w": "il",
+"start": 37.12,
+"end": 37.255,
+"sent": 16
+},
+{
+"w": "oblige",
+"start": 37.255,
+"end": 37.66,
+"sent": 16
+},
+{
+"w": "le",
+"start": 37.66,
+"end": 37.795,
+"sent": 16
+},
+{
+"w": "défenseur",
+"start": 37.795,
+"end": 38.2,
+"sent": 16
+},
+{
+"w": "à",
+"start": 38.2,
+"end": 38.335,
+"sent": 16
+},
+{
+"w": "reculer.",
+"start": 38.335,
+"end": 38.74,
+"sent": 16
+},
+{
+"w": "Face",
+"start": 38.8,
+"end": 39.18,
+"sent": 17
+},
+{
+"w": "à",
+"start": 39.18,
+"end": 39.37,
+"sent": 17
+},
+{
+"w": "lui:",
+"start": 39.37,
+"end": 39.56,
+"sent": 17
+},
+{
+"w": "Marc",
+"start": 39.68,
+"end": 39.8,
+"sent": 17
+},
+{
+"w": "Cucurella.",
+"start": 39.8,
+"end": 40.28,
+"sent": 17
+},
+{
+"w": "Le",
+"start": 40.34,
+"end": 40.568,
+"sent": 18
+},
+{
+"w": "latéral",
+"start": 40.568,
+"end": 41.25,
+"sent": 18
+},
+{
+"w": "du",
+"start": 41.25,
+"end": 41.478,
+"sent": 18
+},
+{
+"w": "Real",
+"start": 41.478,
+"end": 41.705,
+"sent": 18
+},
+{
+"w": "est",
+"start": 41.705,
+"end": 41.933,
+"sent": 18
+},
+{
+"w": "seul.",
+"start": 41.933,
+"end": 42.16,
+"sent": 18
+},
+{
+"w": "Personne",
+"start": 42.22,
+"end": 42.649,
+"sent": 19
+},
+{
+"w": "ne",
+"start": 42.649,
+"end": 42.791,
+"sent": 19
+},
+{
+"w": "vient",
+"start": 42.791,
+"end": 42.934,
+"sent": 19
+},
+{
+"w": "l'aider,",
+"start": 42.934,
+"end": 43.22,
+"sent": 19
+},
+{
+"w": "aucune",
+"start": 43.32,
+"end": 43.702,
+"sent": 19
+},
+{
+"w": "couverture",
+"start": 43.702,
+"end": 44.211,
+"sent": 19
+},
+{
+"w": "derrière",
+"start": 44.211,
+"end": 44.593,
+"sent": 19
+},
+{
+"w": "lui.",
+"start": 44.593,
+"end": 44.72,
+"sent": 19
+},
+{
+"w": "Ses",
+"start": 44.78,
+"end": 44.922,
+"sent": 20
+},
+{
+"w": "partenaires",
+"start": 44.922,
+"end": 45.489,
+"sent": 20
+},
+{
+"w": "sont",
+"start": 45.489,
+"end": 45.631,
+"sent": 20
+},
+{
+"w": "restés",
+"start": 45.631,
+"end": 45.915,
+"sent": 20
+},
+{
+"w": "dans",
+"start": 45.915,
+"end": 46.056,
+"sent": 20
+},
+{
+"w": "l'axe,",
+"start": 46.056,
+"end": 46.34,
+"sent": 20
+},
+{
+"w": "attirés",
+"start": 46.42,
+"end": 46.92,
+"sent": 20
+},
+{
+"w": "par",
+"start": 46.92,
+"end": 47.087,
+"sent": 20
+},
+{
+"w": "Jović.",
+"start": 47.087,
+"end": 47.42,
+"sent": 20
+},
+{
+"w": "Un",
+"start": 47.48,
+"end": 47.84,
+"sent": 21
+},
+{
+"w": "contre",
+"start": 47.84,
+"end": 48.56,
+"sent": 21
+},
+{
+"w": "un,",
+"start": 48.56,
+"end": 48.92,
+"sent": 21
+},
+{
+"w": "en",
+"start": 49.0,
+"end": 49.152,
+"sent": 21
+},
+{
+"w": "pleine",
+"start": 49.152,
+"end": 49.456,
+"sent": 21
+},
+{
+"w": "course,",
+"start": 49.456,
+"end": 49.76,
+"sent": 21
+},
+{
+"w": "à",
+"start": 49.84,
+"end": 49.875,
+"sent": 21
+},
+{
+"w": "l'entrée",
+"start": 49.875,
+"end": 49.945,
+"sent": 21
+},
+{
+"w": "de",
+"start": 49.945,
+"end": 49.98,
+"sent": 21
+},
+{
+"w": "la",
+"start": 49.98,
+"end": 50.015,
+"sent": 21
+},
+{
+"w": "surface.",
+"start": 50.015,
+"end": 50.12,
+"sent": 21
+},
+{
+"w": "C'est",
+"start": 50.18,
+"end": 50.346,
+"sent": 22
+},
+{
+"w": "exactement",
+"start": 50.346,
+"end": 51.009,
+"sent": 22
+},
+{
+"w": "la",
+"start": 51.009,
+"end": 51.174,
+"sent": 22
+},
+{
+"w": "situation",
+"start": 51.174,
+"end": 51.671,
+"sent": 22
+},
+{
+"w": "que",
+"start": 51.671,
+"end": 51.837,
+"sent": 22
+},
+{
+"w": "Koita",
+"start": 51.837,
+"end": 52.169,
+"sent": 22
+},
+{
+"w": "voulait.",
+"start": 52.169,
+"end": 52.5,
+"sent": 22
+},
+{
+"w": "Il",
+"start": 52.56,
+"end": 52.715,
+"sent": 23
+},
+{
+"w": "ne",
+"start": 52.715,
+"end": 52.87,
+"sent": 23
+},
+{
+"w": "se",
+"start": 52.87,
+"end": 53.025,
+"sent": 23
+},
+{
+"w": "précipite",
+"start": 53.025,
+"end": 53.645,
+"sent": 23
+},
+{
+"w": "pas.",
+"start": 53.645,
+"end": 53.8,
+"sent": 23
+},
+{
+"w": "Il",
+"start": 53.86,
+"end": 54.013,
+"sent": 24
+},
+{
+"w": "attend",
+"start": 54.013,
+"end": 54.318,
+"sent": 24
+},
+{
+"w": "que",
+"start": 54.318,
+"end": 54.471,
+"sent": 24
+},
+{
+"w": "Cucurella",
+"start": 54.471,
+"end": 55.082,
+"sent": 24
+},
+{
+"w": "se",
+"start": 55.082,
+"end": 55.235,
+"sent": 24
+},
+{
+"w": "fige.",
+"start": 55.235,
+"end": 55.54,
+"sent": 24
+},
+{
+"w": "Puis",
+"start": 55.6,
+"end": 55.885,
+"sent": 25
+},
+{
+"w": "un",
+"start": 55.885,
+"end": 56.17,
+"sent": 25
+},
+{
+"w": "crochet,",
+"start": 56.17,
+"end": 56.74,
+"sent": 25
+},
+{
+"w": "vers",
+"start": 56.76,
+"end": 56.87,
+"sent": 25
+},
+{
+"w": "l'intérieur.",
+"start": 56.87,
+"end": 57.2,
+"sent": 25
+},
+{
+"w": "Cucurella",
+"start": 57.26,
+"end": 57.884,
+"sent": 26
+},
+{
+"w": "est",
+"start": 57.884,
+"end": 58.04,
+"sent": 26
+},
+{
+"w": "dépassé",
+"start": 58.04,
+"end": 58.508,
+"sent": 26
+},
+{
+"w": "d'un",
+"start": 58.508,
+"end": 58.664,
+"sent": 26
+},
+{
+"w": "pas.",
+"start": 58.664,
+"end": 58.82,
+"sent": 26
+},
+{
+"w": "Un",
+"start": 58.88,
+"end": 59.247,
+"sent": 27
+},
+{
+"w": "seul",
+"start": 59.247,
+"end": 59.613,
+"sent": 27
+},
+{
+"w": "pas,",
+"start": 59.613,
+"end": 59.98,
+"sent": 27
+},
+{
+"w": "mais",
+"start": 60.04,
+"end": 60.085,
+"sent": 27
+},
+{
+"w": "ça",
+"start": 60.085,
+"end": 60.13,
+"sent": 27
+},
+{
+"w": "suffit.",
+"start": 60.13,
+"end": 60.22,
+"sent": 27
+},
+{
+"w": "Koita",
+"start": 60.28,
+"end": 60.634,
+"sent": 28
+},
+{
+"w": "ouvre",
+"start": 60.634,
+"end": 60.989,
+"sent": 28
+},
+{
+"w": "son",
+"start": 60.989,
+"end": 61.166,
+"sent": 28
+},
+{
+"w": "angle.",
+"start": 61.166,
+"end": 61.52,
+"sent": 28
+},
+{
+"w": "Il",
+"start": 61.58,
+"end": 61.749,
+"sent": 29
+},
+{
+"w": "frappe",
+"start": 61.749,
+"end": 62.086,
+"sent": 29
+},
+{
+"w": "tout",
+"start": 62.086,
+"end": 62.254,
+"sent": 29
+},
+{
+"w": "de",
+"start": 62.254,
+"end": 62.423,
+"sent": 29
+},
+{
+"w": "suite.",
+"start": 62.423,
+"end": 62.76,
+"sent": 29
+},
+{
+"w": "Tout",
+"start": 62.82,
+"end": 62.967,
+"sent": 30
+},
+{
+"w": "se",
+"start": 62.967,
+"end": 63.113,
+"sent": 30
+},
+{
+"w": "joue",
+"start": 63.113,
+"end": 63.26,
+"sent": 30
+},
+{
+"w": "en",
+"start": 63.26,
+"end": 63.407,
+"sent": 30
+},
+{
+"w": "une",
+"start": 63.407,
+"end": 63.7,
+"sent": 30
+},
+{
+"w": "seconde.",
+"start": 63.7,
+"end": 64.14,
+"sent": 30
+},
+{
+"w": "Le",
+"start": 64.2,
+"end": 64.354,
+"sent": 31
+},
+{
+"w": "deuxième",
+"start": 64.354,
+"end": 64.816,
+"sent": 31
+},
+{
+"w": "défenseur",
+"start": 64.816,
+"end": 65.278,
+"sent": 31
+},
+{
+"w": "arrive.",
+"start": 65.278,
+"end": 65.74,
+"sent": 31
+},
+{
+"w": "Trop",
+"start": 65.8,
+"end": 66.09,
+"sent": 32
+},
+{
+"w": "tard.",
+"start": 66.09,
+"end": 66.38,
+"sent": 32
+},
+{
+"w": "Regardez",
+"start": 66.44,
+"end": 66.71,
+"sent": 33
+},
+{
+"w": "la",
+"start": 66.71,
+"end": 66.8,
+"sent": 33
+},
+{
+"w": "trajectoire:",
+"start": 66.8,
+"end": 67.16,
+"sent": 33
+},
+{
+"w": "une",
+"start": 67.22,
+"end": 67.707,
+"sent": 33
+},
+{
+"w": "frappe",
+"start": 67.707,
+"end": 68.193,
+"sent": 33
+},
+{
+"w": "sèche,",
+"start": 68.193,
+"end": 68.68,
+"sent": 33
+},
+{
+"w": "à",
+"start": 68.72,
+"end": 68.768,
+"sent": 33
+},
+{
+"w": "ras",
+"start": 68.768,
+"end": 68.816,
+"sent": 33
+},
+{
+"w": "de",
+"start": 68.816,
+"end": 68.864,
+"sent": 33
+},
+{
+"w": "terre.",
+"start": 68.864,
+"end": 68.96,
+"sent": 33
+},
+{
+"w": "Courtois",
+"start": 69.02,
+"end": 69.15,
+"sent": 34
+},
+{
+"w": "plonge,",
+"start": 69.15,
+"end": 69.28,
+"sent": 34
+},
+{
+"w": "mais",
+"start": 69.34,
+"end": 69.522,
+"sent": 34
+},
+{
+"w": "le",
+"start": 69.522,
+"end": 69.704,
+"sent": 34
+},
+{
+"w": "ballon",
+"start": 69.704,
+"end": 70.069,
+"sent": 34
+},
+{
+"w": "est",
+"start": 70.069,
+"end": 70.251,
+"sent": 34
+},
+{
+"w": "déjà",
+"start": 70.251,
+"end": 70.616,
+"sent": 34
+},
+{
+"w": "passé.",
+"start": 70.616,
+"end": 70.98,
+"sent": 34
+},
+{
+"w": "Et",
+"start": 71.04,
+"end": 71.196,
+"sent": 35
+},
+{
+"w": "sous",
+"start": 71.196,
+"end": 71.352,
+"sent": 35
+},
+{
+"w": "cet",
+"start": 71.352,
+"end": 71.508,
+"sent": 35
+},
+{
+"w": "angle,",
+"start": 71.508,
+"end": 71.82,
+"sent": 35
+},
+{
+"w": "on",
+"start": 71.92,
+"end": 72.052,
+"sent": 35
+},
+{
+"w": "voit",
+"start": 72.052,
+"end": 72.183,
+"sent": 35
+},
+{
+"w": "le",
+"start": 72.183,
+"end": 72.315,
+"sent": 35
+},
+{
+"w": "ballon",
+"start": 72.315,
+"end": 72.578,
+"sent": 35
+},
+{
+"w": "filer",
+"start": 72.578,
+"end": 72.842,
+"sent": 35
+},
+{
+"w": "au",
+"start": 72.842,
+"end": 72.973,
+"sent": 35
+},
+{
+"w": "fond",
+"start": 72.973,
+"end": 73.105,
+"sent": 35
+},
+{
+"w": "des",
+"start": 73.105,
+"end": 73.237,
+"sent": 35
+},
+{
+"w": "filets.",
+"start": 73.237,
+"end": 73.5,
+"sent": 35
+},
+{
+"w": "Un",
+"start": 73.56,
+"end": 73.79,
+"sent": 36
+},
+{
+"w": "à",
+"start": 73.79,
+"end": 74.02,
+"sent": 36
+},
+{
+"w": "zéro",
+"start": 74.02,
+"end": 74.48,
+"sent": 36
+},
+{
+"w": "pour",
+"start": 74.48,
+"end": 74.71,
+"sent": 36
+},
+{
+"w": "l'AEK!",
+"start": 74.71,
+"end": 74.94,
+"sent": 36
+},
+{
+"w": "Koita",
+"start": 75.0,
+"end": 75.34,
+"sent": 37
+},
+{
+"w": "part",
+"start": 75.34,
+"end": 75.51,
+"sent": 37
+},
+{
+"w": "célébrer,",
+"start": 75.51,
+"end": 76.02,
+"sent": 37
+},
+{
+"w": "et",
+"start": 76.12,
+"end": 76.288,
+"sent": 37
+},
+{
+"w": "Jović",
+"start": 76.288,
+"end": 76.622,
+"sent": 37
+},
+{
+"w": "vient",
+"start": 76.622,
+"end": 76.79,
+"sent": 37
+},
+{
+"w": "le",
+"start": 76.79,
+"end": 76.958,
+"sent": 37
+},
+{
+"w": "rejoindre.",
+"start": 76.958,
+"end": 77.46,
+"sent": 37
+},
+{
+"w": "Quel",
+"start": 77.52,
+"end": 77.79,
+"sent": 38
+},
+{
+"w": "but!",
+"start": 77.79,
+"end": 78.06,
+"sent": 38
+},
+{
+"w": "Alors",
+"start": 78.12,
+"end": 78.96,
+"sent": 39
+},
+{
+"w": "dis-moi:",
+"start": 78.96,
+"end": 79.8,
+"sent": 39
+},
+{
+"w": "le",
+"start": 79.86,
+"end": 79.997,
+"sent": 39
+},
+{
+"w": "crochet",
+"start": 79.997,
+"end": 80.271,
+"sent": 39
+},
+{
+"w": "ou",
+"start": 80.271,
+"end": 80.409,
+"sent": 39
+},
+{
+"w": "la",
+"start": 80.409,
+"end": 80.546,
+"sent": 39
+},
+{
+"w": "frappe,",
+"start": 80.546,
+"end": 80.82,
+"sent": 39
+},
+{
+"w": "qu'est-ce",
+"start": 80.9,
+"end": 80.948,
+"sent": 39
+},
+{
+"w": "qui",
+"start": 80.948,
+"end": 80.964,
+"sent": 39
+},
+{
+"w": "t'impressionne",
+"start": 80.964,
+"end": 81.028,
+"sent": 39
+},
+{
+"w": "le",
+"start": 81.028,
+"end": 81.044,
+"sent": 39
+},
+{
+"w": "plus?",
+"start": 81.044,
+"end": 81.06,
+"sent": 39
+}
+]

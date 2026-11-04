@@ -1,0 +1,12 @@
+hf/assets/frames/
+hf/.hyperframes/
+cover_v/.hyperframes/
+cover_s/.hyperframes/
+cover_v/assets/*.jpg
+cover_s/assets/*.jpg
+build/*.wav
+build/snap_*/
+build/render.log
+analysis/__pycache__/
+__pycache__/
+out/work-*/
