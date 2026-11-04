@@ -5,3 +5,4 @@ hf/.hyperframes/
 cover*/.hyperframes/
 voice/take_*.wav
 out/
+voice_user/*.wav

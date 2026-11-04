@@ -1,0 +1,1258 @@
+{
+"sentences": [
+"Este gol que marcó hoy Jude Bellingham ya es considerado el más bonito de",
+"toda su carrera.",
+"Todo empieza en esta jugada,",
+"cuando Bernardo Silva avanza con el balón",
+"y decide abrir por la banda para Vinícius.",
+"Este recibe y se lanza hacia el área rival.",
+"En ese momento,",
+"un defensor le cierra el paso y le impide entrar directamente",
+"al área.",
+"Los defensores creen que va a jugar aquí con Cucurella,",
+"pero decide devolverle el balón a Bernardo Silva,",
+"fuera del área.",
+"Bernardo recibe el pase y se perfila para jugar con la zurda.",
+"Mbappé le pide el balón,",
+"pero él decide abrir por la banda para Cucurella.",
+"En cuanto Cucurella recibe,",
+"avanza y entra al área.",
+"Fíjate en la posición de los defensores del AEK.",
+"Están bien alineados",
+"y se concentran principalmente en marcar a los jugadores del Real Madrid",
+"que están dentro del área.",
+"Piensan que Cucurella va a mandar un centro,",
+"por eso intentan cubrir",
+"todos los espacios.",
+"Pero Cucurella decide no centrar.",
+"En el último momento,",
+"levanta la cabeza y ve a Bellingham llegando a",
+"toda velocidad.",
+"Entonces,",
+"decide darle un pase dentro del área.",
+"Y Bellingham ni siquiera controla el balón,",
+"remata de tacón",
+"y lo manda",
+"directamente al fondo de la red."
+],
+"segments": [
+{
+"start": 0.1,
+"end": 4.4,
+"text": "Este gol que marcó hoy Jude Bellingham ya es considerado el más bonito de"
+},
+{
+"start": 4.54,
+"end": 5.4,
+"text": "toda su carrera."
+},
+{
+"start": 6.02,
+"end": 7.38,
+"text": "Todo empieza en esta jugada."
+},
+{
+"start": 7.74,
+"end": 9.96,
+"text": "Cuando Bernardo Silva avanza con el balón,"
+},
+{
+"start": 10.22,
+"end": 12.46,
+"text": "y decide abrir por la banda para Vinicius."
+},
+{
+"start": 12.98,
+"end": 15.66,
+"text": "Este recibe y se lanza hacia el área rival."
+},
+{
+"start": 16.22,
+"end": 17.02,
+"text": "En ese momento,"
+},
+{
+"start": 17.26,
+"end": 20.2,
+"text": "Un defensor le cierra el paso y la impide entrar directamente."
+},
+{
+"start": 20.32,
+"end": 21.16,
+"text": "a la área."
+},
+{
+"start": 21.72,
+"end": 24.42,
+"text": "Los defensores creen que va a jugar aquí con Cucurella."
+},
+{
+"start": 24.78,
+"end": 27.5,
+"text": "pero decide devolverle el balón a Bernardo Silva."
+},
+{
+"start": 27.72,
+"end": 28.48,
+"text": "fuera del área."
+},
+{
+"start": 29.08,
+"end": 32.46,
+"text": "Bernardo recibe el pase y se perfila para jugar con la zurda."
+},
+{
+"start": 32.98,
+"end": 34.3,
+"text": "Papel le pide el balón."
+},
+{
+"start": 34.58,
+"end": 37.06,
+"text": "pero él decide abrir por la banda para Kukureya."
+},
+{
+"start": 37.6,
+"end": 39.12,
+"text": "En cuanto Cucurella recibe,"
+},
+{
+"start": 39.3,
+"end": 40.98,
+"text": "Avanza y entra al área."
+},
+{
+"start": 41.56,
+"end": 44.38,
+"text": "Fíjate en la posición de los defensores del AECA."
+},
+{
+"start": 44.86,
+"end": 46.16,
+"text": "están bien alineados."
+},
+{
+"start": 46.38,
+"end": 50.28,
+"text": "y se concentran principalmente en marcar a los jugadores del Real Madrid,"
+},
+{
+"start": 50.48,
+"end": 51.86,
+"text": "que están dentro del área."
+},
+{
+"start": 52.42,
+"end": 54.56,
+"text": "Piensan que Kukureya va a mandar un centro."
+},
+{
+"start": 54.86,
+"end": 56.08,
+"text": "por eso intentan cubrir"
+},
+{
+"start": 56.24,
+"end": 57.36,
+"text": "todos los espacios."
+},
+{
+"start": 57.86,
+"end": 59.8,
+"text": "Pero Cucurella decide no centrar."
+},
+{
+"start": 60.34,
+"end": 61.44,
+"text": "En el último momento,"
+},
+{
+"start": 61.68,
+"end": 64.32,
+"text": "Levanta la cabeza y ve a Bellingham llegando a"
+},
+{
+"start": 64.46,
+"end": 65.24,
+"text": "toda velocidad."
+},
+{
+"start": 65.82,
+"end": 66.44,
+"text": "Entonces,"
+},
+{
+"start": 66.64,
+"end": 68.76,
+"text": "Decide darle un pase dentro del área."
+},
+{
+"start": 69.24,
+"end": 71.56,
+"text": "y Bellingham ni siquiera controla el balón."
+},
+{
+"start": 71.94,
+"end": 72.96,
+"text": "Remata de tacón."
+},
+{
+"start": 73.12,
+"end": 73.92,
+"text": "y lo manda directo"
+},
+{
+"start": 74.06,
+"end": 75.44,
+"text": "justamente al fondo de la red."
+}
+],
+"words": [
+{
+"word": "Este",
+"start": 0.1,
+"end": 0.438
+},
+{
+"word": "gol",
+"start": 0.438,
+"end": 0.632
+},
+{
+"word": "que",
+"start": 0.632,
+"end": 0.826
+},
+{
+"word": "marcó",
+"start": 0.826,
+"end": 1.164
+},
+{
+"word": "hoy",
+"start": 1.164,
+"end": 1.358
+},
+{
+"word": "Jude",
+"start": 1.358,
+"end": 1.696
+},
+{
+"word": "Bellingham",
+"start": 1.696,
+"end": 2.178
+},
+{
+"word": "ya",
+"start": 2.178,
+"end": 2.372
+},
+{
+"word": "es",
+"start": 2.372,
+"end": 2.566
+},
+{
+"word": "considerado",
+"start": 2.566,
+"end": 3.336
+},
+{
+"word": "el",
+"start": 3.336,
+"end": 3.53
+},
+{
+"word": "más",
+"start": 3.53,
+"end": 3.724
+},
+{
+"word": "bonito",
+"start": 3.724,
+"end": 4.206
+},
+{
+"word": "de",
+"start": 4.206,
+"end": 4.4
+},
+{
+"word": "toda",
+"start": 4.54,
+"end": 4.827
+},
+{
+"word": "su",
+"start": 4.827,
+"end": 4.991
+},
+{
+"word": "carrera.",
+"start": 4.991,
+"end": 5.4
+},
+{
+"word": "Todo",
+"start": 6.02,
+"end": 6.271
+},
+{
+"word": "empieza",
+"start": 6.271,
+"end": 6.628
+},
+{
+"word": "en",
+"start": 6.628,
+"end": 6.772
+},
+{
+"word": "esta",
+"start": 6.772,
+"end": 7.023
+},
+{
+"word": "jugada,",
+"start": 7.023,
+"end": 7.38
+},
+{
+"word": "cuando",
+"start": 7.74,
+"end": 8.057
+},
+{
+"word": "Bernardo",
+"start": 8.057,
+"end": 8.509
+},
+{
+"word": "Silva",
+"start": 8.509,
+"end": 8.826
+},
+{
+"word": "avanza",
+"start": 8.826,
+"end": 9.278
+},
+{
+"word": "con",
+"start": 9.278,
+"end": 9.461
+},
+{
+"word": "el",
+"start": 9.461,
+"end": 9.643
+},
+{
+"word": "balón",
+"start": 9.643,
+"end": 9.96
+},
+{
+"word": "y",
+"start": 10.22,
+"end": 10.39
+},
+{
+"word": "decide",
+"start": 10.39,
+"end": 10.811
+},
+{
+"word": "abrir",
+"start": 10.811,
+"end": 11.107
+},
+{
+"word": "por",
+"start": 11.107,
+"end": 11.277
+},
+{
+"word": "la",
+"start": 11.277,
+"end": 11.447
+},
+{
+"word": "banda",
+"start": 11.447,
+"end": 11.743
+},
+{
+"word": "para",
+"start": 11.743,
+"end": 12.038
+},
+{
+"word": "Vinícius.",
+"start": 12.038,
+"end": 12.46
+},
+{
+"word": "Este",
+"start": 12.98,
+"end": 13.309
+},
+{
+"word": "recibe",
+"start": 13.309,
+"end": 13.778
+},
+{
+"word": "y",
+"start": 13.778,
+"end": 13.967
+},
+{
+"word": "se",
+"start": 13.967,
+"end": 14.156
+},
+{
+"word": "lanza",
+"start": 14.156,
+"end": 14.484
+},
+{
+"word": "hacia",
+"start": 14.484,
+"end": 14.813
+},
+{
+"word": "el",
+"start": 14.813,
+"end": 15.002
+},
+{
+"word": "área",
+"start": 15.002,
+"end": 15.331
+},
+{
+"word": "rival.",
+"start": 15.331,
+"end": 15.66
+},
+{
+"word": "En",
+"start": 16.22,
+"end": 16.373
+},
+{
+"word": "ese",
+"start": 16.373,
+"end": 16.64
+},
+{
+"word": "momento,",
+"start": 16.64,
+"end": 17.02
+},
+{
+"word": "un",
+"start": 17.26,
+"end": 17.414
+},
+{
+"word": "defensor",
+"start": 17.414,
+"end": 17.795
+},
+{
+"word": "le",
+"start": 17.795,
+"end": 17.948
+},
+{
+"word": "cierra",
+"start": 17.948,
+"end": 18.215
+},
+{
+"word": "el",
+"start": 18.215,
+"end": 18.369
+},
+{
+"word": "paso",
+"start": 18.369,
+"end": 18.636
+},
+{
+"word": "y",
+"start": 18.636,
+"end": 18.79
+},
+{
+"word": "le",
+"start": 18.79,
+"end": 18.943
+},
+{
+"word": "impide",
+"start": 18.943,
+"end": 19.324
+},
+{
+"word": "entrar",
+"start": 19.324,
+"end": 19.592
+},
+{
+"word": "directamente",
+"start": 19.592,
+"end": 20.2
+},
+{
+"word": "al",
+"start": 20.32,
+"end": 20.626
+},
+{
+"word": "área.",
+"start": 20.626,
+"end": 21.16
+},
+{
+"word": "Los",
+"start": 21.72,
+"end": 21.89
+},
+{
+"word": "defensores",
+"start": 21.89,
+"end": 22.436
+},
+{
+"word": "creen",
+"start": 22.436,
+"end": 22.605
+},
+{
+"word": "que",
+"start": 22.605,
+"end": 22.775
+},
+{
+"word": "va",
+"start": 22.775,
+"end": 22.944
+},
+{
+"word": "a",
+"start": 22.944,
+"end": 23.114
+},
+{
+"word": "jugar",
+"start": 23.114,
+"end": 23.409
+},
+{
+"word": "aquí",
+"start": 23.409,
+"end": 23.704
+},
+{
+"word": "con",
+"start": 23.704,
+"end": 23.874
+},
+{
+"word": "Cucurella,",
+"start": 23.874,
+"end": 24.42
+},
+{
+"word": "pero",
+"start": 24.78,
+"end": 25.087
+},
+{
+"word": "decide",
+"start": 25.087,
+"end": 25.525
+},
+{
+"word": "devolverle",
+"start": 25.525,
+"end": 26.094
+},
+{
+"word": "el",
+"start": 26.094,
+"end": 26.271
+},
+{
+"word": "balón",
+"start": 26.271,
+"end": 26.578
+},
+{
+"word": "a",
+"start": 26.578,
+"end": 26.755
+},
+{
+"word": "Bernardo",
+"start": 26.755,
+"end": 27.193
+},
+{
+"word": "Silva,",
+"start": 27.193,
+"end": 27.5
+},
+{
+"word": "fuera",
+"start": 27.72,
+"end": 28.015
+},
+{
+"word": "del",
+"start": 28.015,
+"end": 28.185
+},
+{
+"word": "área.",
+"start": 28.185,
+"end": 28.48
+},
+{
+"word": "Bernardo",
+"start": 29.08,
+"end": 29.512
+},
+{
+"word": "recibe",
+"start": 29.512,
+"end": 29.944
+},
+{
+"word": "el",
+"start": 29.944,
+"end": 30.119
+},
+{
+"word": "pase",
+"start": 30.119,
+"end": 30.422
+},
+{
+"word": "y",
+"start": 30.422,
+"end": 30.596
+},
+{
+"word": "se",
+"start": 30.596,
+"end": 30.77
+},
+{
+"word": "perfila",
+"start": 30.77,
+"end": 31.202
+},
+{
+"word": "para",
+"start": 31.202,
+"end": 31.505
+},
+{
+"word": "jugar",
+"start": 31.505,
+"end": 31.809
+},
+{
+"word": "con",
+"start": 31.809,
+"end": 31.983
+},
+{
+"word": "la",
+"start": 31.983,
+"end": 32.157
+},
+{
+"word": "zurda.",
+"start": 32.157,
+"end": 32.46
+},
+{
+"word": "Mbappé",
+"start": 32.98,
+"end": 33.298
+},
+{
+"word": "le",
+"start": 33.298,
+"end": 33.481
+},
+{
+"word": "pide",
+"start": 33.481,
+"end": 33.799
+},
+{
+"word": "el",
+"start": 33.799,
+"end": 33.982
+},
+{
+"word": "balón,",
+"start": 33.982,
+"end": 34.3
+},
+{
+"word": "pero",
+"start": 34.58,
+"end": 34.856
+},
+{
+"word": "él",
+"start": 34.856,
+"end": 35.014
+},
+{
+"word": "decide",
+"start": 35.014,
+"end": 35.407
+},
+{
+"word": "abrir",
+"start": 35.407,
+"end": 35.682
+},
+{
+"word": "por",
+"start": 35.682,
+"end": 35.841
+},
+{
+"word": "la",
+"start": 35.841,
+"end": 35.999
+},
+{
+"word": "banda",
+"start": 35.999,
+"end": 36.274
+},
+{
+"word": "para",
+"start": 36.274,
+"end": 36.55
+},
+{
+"word": "Cucurella.",
+"start": 36.55,
+"end": 37.06
+},
+{
+"word": "En",
+"start": 37.6,
+"end": 37.78
+},
+{
+"word": "cuanto",
+"start": 37.78,
+"end": 38.093
+},
+{
+"word": "Cucurella",
+"start": 38.093,
+"end": 38.673
+},
+{
+"word": "recibe,",
+"start": 38.673,
+"end": 39.12
+},
+{
+"word": "avanza",
+"start": 39.3,
+"end": 39.824
+},
+{
+"word": "y",
+"start": 39.824,
+"end": 40.035
+},
+{
+"word": "entra",
+"start": 40.035,
+"end": 40.402
+},
+{
+"word": "al",
+"start": 40.402,
+"end": 40.613
+},
+{
+"word": "área.",
+"start": 40.613,
+"end": 40.98
+},
+{
+"word": "Fíjate",
+"start": 41.56,
+"end": 42.053
+},
+{
+"word": "en",
+"start": 42.053,
+"end": 42.252
+},
+{
+"word": "la",
+"start": 42.252,
+"end": 42.451
+},
+{
+"word": "posición",
+"start": 42.451,
+"end": 42.944
+},
+{
+"word": "de",
+"start": 42.944,
+"end": 43.143
+},
+{
+"word": "los",
+"start": 43.143,
+"end": 43.342
+},
+{
+"word": "defensores",
+"start": 43.342,
+"end": 43.982
+},
+{
+"word": "del",
+"start": 43.982,
+"end": 44.181
+},
+{
+"word": "AEK.",
+"start": 44.181,
+"end": 44.38
+},
+{
+"word": "Están",
+"start": 44.86,
+"end": 45.24
+},
+{
+"word": "bien",
+"start": 45.24,
+"end": 45.458
+},
+{
+"word": "alineados",
+"start": 45.458,
+"end": 46.16
+},
+{
+"word": "y",
+"start": 46.38,
+"end": 46.574
+},
+{
+"word": "se",
+"start": 46.574,
+"end": 46.767
+},
+{
+"word": "concentran",
+"start": 46.767,
+"end": 47.247
+},
+{
+"word": "principalmente",
+"start": 47.247,
+"end": 48.015
+},
+{
+"word": "en",
+"start": 48.015,
+"end": 48.208
+},
+{
+"word": "marcar",
+"start": 48.208,
+"end": 48.545
+},
+{
+"word": "a",
+"start": 48.545,
+"end": 48.739
+},
+{
+"word": "los",
+"start": 48.739,
+"end": 48.932
+},
+{
+"word": "jugadores",
+"start": 48.932,
+"end": 49.556
+},
+{
+"word": "del",
+"start": 49.556,
+"end": 49.749
+},
+{
+"word": "Real",
+"start": 49.749,
+"end": 49.943
+},
+{
+"word": "Madrid",
+"start": 49.943,
+"end": 50.28
+},
+{
+"word": "que",
+"start": 50.48,
+"end": 50.671
+},
+{
+"word": "están",
+"start": 50.671,
+"end": 51.004
+},
+{
+"word": "dentro",
+"start": 51.004,
+"end": 51.336
+},
+{
+"word": "del",
+"start": 51.336,
+"end": 51.527
+},
+{
+"word": "área.",
+"start": 51.527,
+"end": 51.86
+},
+{
+"word": "Piensan",
+"start": 52.42,
+"end": 52.719
+},
+{
+"word": "que",
+"start": 52.719,
+"end": 52.891
+},
+{
+"word": "Cucurella",
+"start": 52.891,
+"end": 53.445
+},
+{
+"word": "va",
+"start": 53.445,
+"end": 53.617
+},
+{
+"word": "a",
+"start": 53.617,
+"end": 53.789
+},
+{
+"word": "mandar",
+"start": 53.789,
+"end": 54.089
+},
+{
+"word": "un",
+"start": 54.089,
+"end": 54.261
+},
+{
+"word": "centro,",
+"start": 54.261,
+"end": 54.56
+},
+{
+"word": "por",
+"start": 54.86,
+"end": 55.035
+},
+{
+"word": "eso",
+"start": 55.035,
+"end": 55.34
+},
+{
+"word": "intentan",
+"start": 55.34,
+"end": 55.775
+},
+{
+"word": "cubrir",
+"start": 55.775,
+"end": 56.08
+},
+{
+"word": "todos",
+"start": 56.24,
+"end": 56.613
+},
+{
+"word": "los",
+"start": 56.613,
+"end": 56.828
+},
+{
+"word": "espacios.",
+"start": 56.828,
+"end": 57.36
+},
+{
+"word": "Pero",
+"start": 57.86,
+"end": 58.192
+},
+{
+"word": "Cucurella",
+"start": 58.192,
+"end": 58.805
+},
+{
+"word": "decide",
+"start": 58.805,
+"end": 59.278
+},
+{
+"word": "no",
+"start": 59.278,
+"end": 59.468
+},
+{
+"word": "centrar.",
+"start": 59.468,
+"end": 59.8
+},
+{
+"word": "En",
+"start": 60.34,
+"end": 60.498
+},
+{
+"word": "el",
+"start": 60.498,
+"end": 60.656
+},
+{
+"word": "último",
+"start": 60.656,
+"end": 61.048
+},
+{
+"word": "momento,",
+"start": 61.048,
+"end": 61.44
+},
+{
+"word": "levanta",
+"start": 61.68,
+"end": 62.119
+},
+{
+"word": "la",
+"start": 62.119,
+"end": 62.296
+},
+{
+"word": "cabeza",
+"start": 62.296,
+"end": 62.735
+},
+{
+"word": "y",
+"start": 62.735,
+"end": 62.912
+},
+{
+"word": "ve",
+"start": 62.912,
+"end": 63.088
+},
+{
+"word": "a",
+"start": 63.088,
+"end": 63.265
+},
+{
+"word": "Bellingham",
+"start": 63.265,
+"end": 63.704
+},
+{
+"word": "llegando",
+"start": 63.704,
+"end": 64.143
+},
+{
+"word": "a",
+"start": 64.143,
+"end": 64.32
+},
+{
+"word": "toda",
+"start": 64.46,
+"end": 64.734
+},
+{
+"word": "velocidad.",
+"start": 64.734,
+"end": 65.24
+},
+{
+"word": "Entonces,",
+"start": 65.82,
+"end": 66.44
+},
+{
+"word": "decide",
+"start": 66.64,
+"end": 67.1
+},
+{
+"word": "darle",
+"start": 67.1,
+"end": 67.422
+},
+{
+"word": "un",
+"start": 67.422,
+"end": 67.607
+},
+{
+"word": "pase",
+"start": 67.607,
+"end": 67.93
+},
+{
+"word": "dentro",
+"start": 67.93,
+"end": 68.252
+},
+{
+"word": "del",
+"start": 68.252,
+"end": 68.438
+},
+{
+"word": "área.",
+"start": 68.438,
+"end": 68.76
+},
+{
+"word": "Y",
+"start": 69.24,
+"end": 69.43
+},
+{
+"word": "Bellingham",
+"start": 69.43,
+"end": 69.903
+},
+{
+"word": "ni",
+"start": 69.903,
+"end": 70.093
+},
+{
+"word": "siquiera",
+"start": 70.093,
+"end": 70.566
+},
+{
+"word": "controla",
+"start": 70.566,
+"end": 71.038
+},
+{
+"word": "el",
+"start": 71.038,
+"end": 71.229
+},
+{
+"word": "balón,",
+"start": 71.229,
+"end": 71.56
+},
+{
+"word": "remata",
+"start": 71.94,
+"end": 72.425
+},
+{
+"word": "de",
+"start": 72.425,
+"end": 72.62
+},
+{
+"word": "tacón",
+"start": 72.62,
+"end": 72.96
+},
+{
+"word": "y",
+"start": 73.12,
+"end": 73.334
+},
+{
+"word": "lo",
+"start": 73.334,
+"end": 73.548
+},
+{
+"word": "manda",
+"start": 73.548,
+"end": 73.92
+},
+{
+"word": "directamente",
+"start": 74.06,
+"end": 74.624
+},
+{
+"word": "al",
+"start": 74.624,
+"end": 74.766
+},
+{
+"word": "fondo",
+"start": 74.766,
+"end": 75.013
+},
+{
+"word": "de",
+"start": 75.013,
+"end": 75.156
+},
+{
+"word": "la",
+"start": 75.156,
+"end": 75.298
+},
+{
+"word": "red.",
+"start": 75.298,
+"end": 75.44
+}
+],
+"duration": 75.68
+}

@@ -11,7 +11,7 @@ def interp(keys,f):
     for a,b in zip(ks,ks[1:]):
         if a[0]<=f<=b[0]: t=(f-a[0])/(b[0]-a[0]); return np.array(a[1:],float)*(1-t)+np.array(b[1:],float)*t
     return np.array(ks[-1][1:],float)
-def track(v,f0,f1,keys,half=7,tw=14,th=14,search=10,refine=True):
+def track(v,f0,f1,keys,half=7,tw=14,th=14,search=10,refine=True,recenter=0):
     out={}; tmpl=None; prev=None
     for f in range(f0,f1+1):
         im=load(v,f); prior=interp(keys,f)
@@ -31,6 +31,13 @@ def track(v,f0,f1,keys,half=7,tw=14,th=14,search=10,refine=True):
             band=~gm[y-15:y+20, x-half:x+half+1]
             rows=np.where(band.sum(1)>=3)[0]
             if len(rows): pos[1]=y-15+rows[0]
+            if recenter:
+                yy=int(pos[1])+recenter; seg=~gm[yy, x-14:x+15]; idx=np.where(seg)[0]
+                if len(idx):
+                    parts=np.split(idx,np.where(np.diff(idx)>1)[0]+1); best=min(parts,key=lambda q:abs((q[0]+q[-1])/2-14))
+                    pos[0]=x-14+(best[0]+best[-1])/2
+                    band=~gm[int(pos[1])-6:int(pos[1])+8, int(pos[0])-2:int(pos[0])+3]; rows=np.where(band.sum(1)>=2)[0]
+                    if len(rows): pos[1]=int(pos[1])-6+rows[0]
         out[f]=[float(pos[0]),float(pos[1])]
         g=cv2.cvtColor(im,cv2.COLOR_BGR2GRAY); x=int(pos[0]); y=int(pos[1])
         tmpl=g[y:y+2*th, x-tw:x+tw].copy(); prev=pos

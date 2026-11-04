@@ -10,7 +10,7 @@ def page(W, H, ph, big, band_top, title_top):
     hv = 560; wv = hv * pw / ph
     g = panel('b0818.jpg', min(1565 - wg, 1700 - wg / 2), 110, hg, pw, ph, 0) if False else panel('b0818.jpg', 1420 if W < H else 1690 - wg * 0.62, 110, hg, pw, ph, 0)
     v = panel('b1150.jpg', 790 - wv / 2, 330, hv, pw, ph, pw)
-    return f'''<!doctype html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width={W}, height={H}">
+    return f'''<!doctype html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width={W}, height={H}">
 <style>
 @font-face {{ font-family: Poppins; font-weight: 800; src: url(assets/fonts/poppins-latin-800-normal.woff2) format('woff2'); }}
 *{{margin:0;padding:0;box-sizing:border-box}} html,body{{width:{W}px;height:{H}px;overflow:hidden;background:#000}}
@@ -25,7 +25,7 @@ def page(W, H, ph, big, band_top, title_top):
 <div id="root" data-composition-id="main" data-start="0" data-duration="1" data-width="{W}" data-height="{H}">
 <div id="art" class="clip" data-start="0" data-duration="1">{g}{v}<div id="sep"></div><div id="grad"></div>
 <div id="band"><div>AEK 1-1 REAL MADRID</div></div>
-<div id="title">QUELLE<br>TALONNADE !</div></div>
+<div id="title">¡QUÉ<br>TACONAZO!</div></div>
 </div>
 <script src="assets/gsap.min.js"></script><script>const tl=gsap.timeline({{paused:true}});tl.set("#art",{{opacity:1}},0);window.__timelines=window.__timelines||{{}};window.__timelines["main"]=tl;</script>
 </body></html>'''
