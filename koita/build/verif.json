@@ -7,7 +7,7 @@
   "hors_cadre": 96,
   "pop": 48
  },
- "src_corr_min": 0.6180501698665986,
+ "src_corr_min": 0.6181930519459073,
  "src_low": [],
  "clean_hits": [
   [
@@ -267,7 +267,7 @@
   ],
   "format": {
    "duration": "84.500000",
-   "size": "60727218"
+   "size": "60717446"
   }
  },
  "gaps_seconds": 0.5059583333333333,

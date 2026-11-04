@@ -10,3 +10,5 @@ build/render.log
 analysis/__pycache__/
 __pycache__/
 out/work-*/
+build/render2.log
+build/*.wav
