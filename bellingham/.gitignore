@@ -1,0 +1,7 @@
+hf/frames/
+hf/node_modules/
+hf/package-lock.json
+hf/.hyperframes/
+cover*/.hyperframes/
+voice/take_*.wav
+out/

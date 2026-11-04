@@ -1,0 +1,1602 @@
+{
+"sentences": [
+"Ce but de Jude Bellingham nous prouve qu'un seul contact du talon peut valoir plus qu'une frappe surpuissante.",
+"Trente-deuxième minute à Athènes.",
+"L'AEK mène un à zéro face au Real Madrid.",
+"Tout part du côté gauche.",
+"Le ballon arrive sur Marc Cucurella, tout près de la surface.",
+"Il contrôle.",
+"Il lève la tête.",
+"En face, un défenseur de l'AEK hésite à sortir.",
+"Cucurella pousse le ballon vers la ligne, puis il arme.",
+"Le centre part fort, à ras de terre, vers le premier poteau.",
+"Regardez bien : dans la surface, les défenseurs de l'AEK ont tous les yeux sur le ballon.",
+"Personne ne suit la course de Bellingham, qui attaque le premier poteau.",
+"La plupart des joueurs auraient tenté une reprise classique, du plat du pied.",
+"Mais le ballon arrive trop vite et un peu derrière lui.",
+"Alors Bellingham choisit un geste que personne n'attend.",
+"Devant lui, le numéro deux de l'AEK est tourné vers le ballon.",
+"Il ne voit pas Bellingham arriver dans son dos.",
+"Le gardien, lui, est déjà au sol, couché au premier poteau.",
+"Il n'y a qu'une petite ouverture, et Bellingham est seul pour la viser.",
+"Il ne se précipite pas.",
+"Il ne cherche pas à frapper fort.",
+"Il laisse filer le ballon.",
+"Il lève le pied gauche.",
+"Et d'une talonnade, il dévie le centre vers le but.",
+"Pas d'élan.",
+"Pas de puissance.",
+"Juste le bon contact, au bon moment, avec le bon angle.",
+"Regardez la trajectoire : le ballon file au ras du sol, hors de portée.",
+"Le gardien plonge, mais il est déjà battu.",
+"Et sous cet angle, on voit le ballon terminer sa course au fond des filets.",
+"Le score passe à un partout.",
+"Bellingham lève les bras vers le public grec.",
+"Il vient de remettre le Real dans le match.",
+"Quelle talonnade !",
+"Alors dis-moi : geste de génie ou coup de chance ?"
+],
+"words": [
+{
+"word": "Ce",
+"start": 0.0,
+"end": 0.188
+},
+{
+"word": "but",
+"start": 0.188,
+"end": 0.376
+},
+{
+"word": "de",
+"start": 0.376,
+"end": 0.563
+},
+{
+"word": "Jude",
+"start": 0.563,
+"end": 0.896
+},
+{
+"word": "Bellingham",
+"start": 0.896,
+"end": 1.373
+},
+{
+"word": "nous",
+"start": 1.373,
+"end": 1.56
+},
+{
+"word": "prouve",
+"start": 1.56,
+"end": 1.893
+},
+{
+"word": "qu'un",
+"start": 1.893,
+"end": 2.225
+},
+{
+"word": "seul",
+"start": 2.225,
+"end": 2.413
+},
+{
+"word": "contact",
+"start": 2.413,
+"end": 2.745
+},
+{
+"word": "du",
+"start": 2.745,
+"end": 2.933
+},
+{
+"word": "talon",
+"start": 2.933,
+"end": 3.265
+},
+{
+"word": "peut",
+"start": 3.265,
+"end": 3.453
+},
+{
+"word": "valoir",
+"start": 3.453,
+"end": 3.785
+},
+{
+"word": "plus",
+"start": 3.785,
+"end": 3.973
+},
+{
+"word": "qu'une",
+"start": 3.973,
+"end": 4.45
+},
+{
+"word": "frappe",
+"start": 4.45,
+"end": 4.782
+},
+{
+"word": "surpuissante.",
+"start": 4.782,
+"end": 5.403
+},
+{
+"word": "Trente-deuxième",
+"start": 5.463,
+"end": 6.179
+},
+{
+"word": "minute",
+"start": 6.179,
+"end": 6.625
+},
+{
+"word": "à",
+"start": 6.625,
+"end": 6.801
+},
+{
+"word": "Athènes.",
+"start": 6.801,
+"end": 7.246
+},
+{
+"word": "L'AEK",
+"start": 7.306,
+"end": 7.591
+},
+{
+"word": "mène",
+"start": 7.591,
+"end": 8.095
+},
+{
+"word": "un",
+"start": 8.095,
+"end": 8.379
+},
+{
+"word": "à",
+"start": 8.379,
+"end": 8.664
+},
+{
+"word": "zéro",
+"start": 8.664,
+"end": 9.168
+},
+{
+"word": "face",
+"start": 9.168,
+"end": 9.671
+},
+{
+"word": "au",
+"start": 9.671,
+"end": 9.956
+},
+{
+"word": "Real",
+"start": 9.956,
+"end": 10.241
+},
+{
+"word": "Madrid.",
+"start": 10.241,
+"end": 10.744
+},
+{
+"word": "Tout",
+"start": 10.804,
+"end": 11.017
+},
+{
+"word": "part",
+"start": 11.017,
+"end": 11.229
+},
+{
+"word": "du",
+"start": 11.229,
+"end": 11.442
+},
+{
+"word": "côté",
+"start": 11.442,
+"end": 11.818
+},
+{
+"word": "gauche.",
+"start": 11.818,
+"end": 12.194
+},
+{
+"word": "Le",
+"start": 12.254,
+"end": 12.436
+},
+{
+"word": "ballon",
+"start": 12.436,
+"end": 12.757
+},
+{
+"word": "arrive",
+"start": 12.757,
+"end": 13.219
+},
+{
+"word": "sur",
+"start": 13.219,
+"end": 13.401
+},
+{
+"word": "Marc",
+"start": 13.401,
+"end": 13.582
+},
+{
+"word": "Cucurella,",
+"start": 13.582,
+"end": 14.184
+},
+{
+"word": "tout",
+"start": 14.184,
+"end": 14.354
+},
+{
+"word": "près",
+"start": 14.354,
+"end": 14.524
+},
+{
+"word": "de",
+"start": 14.524,
+"end": 14.694
+},
+{
+"word": "la",
+"start": 14.694,
+"end": 14.864
+},
+{
+"word": "surface.",
+"start": 14.864,
+"end": 15.295
+},
+{
+"word": "Il",
+"start": 15.355,
+"end": 15.623
+},
+{
+"word": "contrôle.",
+"start": 15.623,
+"end": 16.303
+},
+{
+"word": "Il",
+"start": 16.363,
+"end": 16.558
+},
+{
+"word": "lève",
+"start": 16.558,
+"end": 16.904
+},
+{
+"word": "la",
+"start": 16.904,
+"end": 17.1
+},
+{
+"word": "tête.",
+"start": 17.1,
+"end": 17.446
+},
+{
+"word": "En",
+"start": 17.506,
+"end": 17.802
+},
+{
+"word": "face,",
+"start": 17.802,
+"end": 18.326
+},
+{
+"word": "un",
+"start": 18.326,
+"end": 18.505
+},
+{
+"word": "défenseur",
+"start": 18.505,
+"end": 18.959
+},
+{
+"word": "de",
+"start": 18.959,
+"end": 19.138
+},
+{
+"word": "l'AEK",
+"start": 19.138,
+"end": 19.317
+},
+{
+"word": "hésite",
+"start": 19.317,
+"end": 19.772
+},
+{
+"word": "à",
+"start": 19.772,
+"end": 19.951
+},
+{
+"word": "sortir.",
+"start": 19.951,
+"end": 20.267
+},
+{
+"word": "Cucurella",
+"start": 20.327,
+"end": 20.837
+},
+{
+"word": "pousse",
+"start": 20.837,
+"end": 21.11
+},
+{
+"word": "le",
+"start": 21.11,
+"end": 21.264
+},
+{
+"word": "ballon",
+"start": 21.264,
+"end": 21.536
+},
+{
+"word": "vers",
+"start": 21.536,
+"end": 21.691
+},
+{
+"word": "la",
+"start": 21.691,
+"end": 21.845
+},
+{
+"word": "ligne,",
+"start": 21.845,
+"end": 22.117
+},
+{
+"word": "puis",
+"start": 22.117,
+"end": 22.347
+},
+{
+"word": "il",
+"start": 22.347,
+"end": 22.576
+},
+{
+"word": "arme.",
+"start": 22.576,
+"end": 22.983
+},
+{
+"word": "Le",
+"start": 23.043,
+"end": 23.217
+},
+{
+"word": "centre",
+"start": 23.217,
+"end": 23.525
+},
+{
+"word": "part",
+"start": 23.525,
+"end": 23.699
+},
+{
+"word": "fort,",
+"start": 23.699,
+"end": 23.873
+},
+{
+"word": "à",
+"start": 23.873,
+"end": 24.099
+},
+{
+"word": "ras",
+"start": 24.099,
+"end": 24.326
+},
+{
+"word": "de",
+"start": 24.326,
+"end": 24.552
+},
+{
+"word": "terre,",
+"start": 24.552,
+"end": 24.953
+},
+{
+"word": "vers",
+"start": 24.953,
+"end": 25.148
+},
+{
+"word": "le",
+"start": 25.148,
+"end": 25.343
+},
+{
+"word": "premier",
+"start": 25.343,
+"end": 25.688
+},
+{
+"word": "poteau.",
+"start": 25.688,
+"end": 26.033
+},
+{
+"word": "Regardez",
+"start": 26.093,
+"end": 26.666
+},
+{
+"word": "bien",
+"start": 26.666,
+"end": 26.892
+},
+{
+"word": ":",
+"start": 26.892,
+"end": 27.118
+},
+{
+"word": "dans",
+"start": 27.118,
+"end": 27.344
+},
+{
+"word": "la",
+"start": 27.344,
+"end": 27.569
+},
+{
+"word": "surface,",
+"start": 27.569,
+"end": 28.143
+},
+{
+"word": "les",
+"start": 28.143,
+"end": 28.333
+},
+{
+"word": "défenseurs",
+"start": 28.333,
+"end": 28.817
+},
+{
+"word": "de",
+"start": 28.817,
+"end": 29.008
+},
+{
+"word": "l'AEK",
+"start": 29.008,
+"end": 29.199
+},
+{
+"word": "ont",
+"start": 29.199,
+"end": 29.389
+},
+{
+"word": "tous",
+"start": 29.389,
+"end": 29.58
+},
+{
+"word": "les",
+"start": 29.58,
+"end": 29.771
+},
+{
+"word": "yeux",
+"start": 29.771,
+"end": 29.961
+},
+{
+"word": "sur",
+"start": 29.961,
+"end": 30.152
+},
+{
+"word": "le",
+"start": 30.152,
+"end": 30.343
+},
+{
+"word": "ballon.",
+"start": 30.343,
+"end": 30.68
+},
+{
+"word": "Personne",
+"start": 30.74,
+"end": 31.21
+},
+{
+"word": "ne",
+"start": 31.21,
+"end": 31.396
+},
+{
+"word": "suit",
+"start": 31.396,
+"end": 31.581
+},
+{
+"word": "la",
+"start": 31.581,
+"end": 31.766
+},
+{
+"word": "course",
+"start": 31.766,
+"end": 32.094
+},
+{
+"word": "de",
+"start": 32.094,
+"end": 32.279
+},
+{
+"word": "Bellingham,",
+"start": 32.279,
+"end": 32.75
+},
+{
+"word": "qui",
+"start": 32.75,
+"end": 32.914
+},
+{
+"word": "attaque",
+"start": 32.914,
+"end": 33.329
+},
+{
+"word": "le",
+"start": 33.329,
+"end": 33.493
+},
+{
+"word": "premier",
+"start": 33.493,
+"end": 33.782
+},
+{
+"word": "poteau.",
+"start": 33.782,
+"end": 34.072
+},
+{
+"word": "La",
+"start": 34.132,
+"end": 34.327
+},
+{
+"word": "plupart",
+"start": 34.327,
+"end": 34.673
+},
+{
+"word": "des",
+"start": 34.673,
+"end": 34.868
+},
+{
+"word": "joueurs",
+"start": 34.868,
+"end": 35.063
+},
+{
+"word": "auraient",
+"start": 35.063,
+"end": 35.409
+},
+{
+"word": "tenté",
+"start": 35.409,
+"end": 35.755
+},
+{
+"word": "une",
+"start": 35.755,
+"end": 36.1
+},
+{
+"word": "reprise",
+"start": 36.1,
+"end": 36.596
+},
+{
+"word": "classique,",
+"start": 36.596,
+"end": 37.092
+},
+{
+"word": "du",
+"start": 37.092,
+"end": 37.247
+},
+{
+"word": "plat",
+"start": 37.247,
+"end": 37.402
+},
+{
+"word": "du",
+"start": 37.402,
+"end": 37.557
+},
+{
+"word": "pied.",
+"start": 37.557,
+"end": 37.712
+},
+{
+"word": "Mais",
+"start": 37.772,
+"end": 37.939
+},
+{
+"word": "le",
+"start": 37.939,
+"end": 38.106
+},
+{
+"word": "ballon",
+"start": 38.106,
+"end": 38.402
+},
+{
+"word": "arrive",
+"start": 38.402,
+"end": 38.826
+},
+{
+"word": "trop",
+"start": 38.826,
+"end": 38.993
+},
+{
+"word": "vite",
+"start": 38.993,
+"end": 39.288
+},
+{
+"word": "et",
+"start": 39.288,
+"end": 39.455
+},
+{
+"word": "un",
+"start": 39.455,
+"end": 39.622
+},
+{
+"word": "peu",
+"start": 39.622,
+"end": 39.789
+},
+{
+"word": "derrière",
+"start": 39.789,
+"end": 40.213
+},
+{
+"word": "lui.",
+"start": 40.213,
+"end": 40.38
+},
+{
+"word": "Alors",
+"start": 40.44,
+"end": 40.776
+},
+{
+"word": "Bellingham",
+"start": 40.776,
+"end": 41.259
+},
+{
+"word": "choisit",
+"start": 41.259,
+"end": 41.595
+},
+{
+"word": "un",
+"start": 41.595,
+"end": 41.786
+},
+{
+"word": "geste",
+"start": 41.786,
+"end": 42.122
+},
+{
+"word": "que",
+"start": 42.122,
+"end": 42.312
+},
+{
+"word": "personne",
+"start": 42.312,
+"end": 42.795
+},
+{
+"word": "n'attend.",
+"start": 42.795,
+"end": 43.131
+},
+{
+"word": "Devant",
+"start": 43.191,
+"end": 43.543
+},
+{
+"word": "lui,",
+"start": 43.543,
+"end": 43.741
+},
+{
+"word": "le",
+"start": 43.741,
+"end": 43.937
+},
+{
+"word": "numéro",
+"start": 43.937,
+"end": 44.435
+},
+{
+"word": "deux",
+"start": 44.435,
+"end": 44.632
+},
+{
+"word": "de",
+"start": 44.632,
+"end": 44.828
+},
+{
+"word": "l'AEK",
+"start": 44.828,
+"end": 45.024
+},
+{
+"word": "est",
+"start": 45.024,
+"end": 45.22
+},
+{
+"word": "tourné",
+"start": 45.22,
+"end": 45.567
+},
+{
+"word": "vers",
+"start": 45.567,
+"end": 45.764
+},
+{
+"word": "le",
+"start": 45.764,
+"end": 45.96
+},
+{
+"word": "ballon.",
+"start": 45.96,
+"end": 46.307
+},
+{
+"word": "Il",
+"start": 46.367,
+"end": 46.589
+},
+{
+"word": "ne",
+"start": 46.589,
+"end": 46.811
+},
+{
+"word": "voit",
+"start": 46.811,
+"end": 47.033
+},
+{
+"word": "pas",
+"start": 47.033,
+"end": 47.255
+},
+{
+"word": "Bellingham",
+"start": 47.255,
+"end": 47.819
+},
+{
+"word": "arriver",
+"start": 47.819,
+"end": 48.383
+},
+{
+"word": "dans",
+"start": 48.383,
+"end": 48.605
+},
+{
+"word": "son",
+"start": 48.605,
+"end": 48.827
+},
+{
+"word": "dos.",
+"start": 48.827,
+"end": 49.05
+},
+{
+"word": "Le",
+"start": 49.11,
+"end": 49.307
+},
+{
+"word": "gardien,",
+"start": 49.307,
+"end": 49.657
+},
+{
+"word": "lui,",
+"start": 49.657,
+"end": 49.839
+},
+{
+"word": "est",
+"start": 49.839,
+"end": 50.049
+},
+{
+"word": "déjà",
+"start": 50.049,
+"end": 50.42
+},
+{
+"word": "au",
+"start": 50.42,
+"end": 50.63
+},
+{
+"word": "sol,",
+"start": 50.63,
+"end": 50.84
+},
+{
+"word": "couché",
+"start": 50.84,
+"end": 51.173
+},
+{
+"word": "au",
+"start": 51.173,
+"end": 51.361
+},
+{
+"word": "premier",
+"start": 51.361,
+"end": 51.694
+},
+{
+"word": "poteau.",
+"start": 51.694,
+"end": 52.028
+},
+{
+"word": "Il",
+"start": 52.088,
+"end": 52.219
+},
+{
+"word": "n'y",
+"start": 52.219,
+"end": 52.349
+},
+{
+"word": "a",
+"start": 52.349,
+"end": 52.48
+},
+{
+"word": "qu'une",
+"start": 52.48,
+"end": 52.813
+},
+{
+"word": "petite",
+"start": 52.813,
+"end": 53.145
+},
+{
+"word": "ouverture,",
+"start": 53.145,
+"end": 53.578
+},
+{
+"word": "et",
+"start": 53.578,
+"end": 53.779
+},
+{
+"word": "Bellingham",
+"start": 53.779,
+"end": 54.292
+},
+{
+"word": "est",
+"start": 54.292,
+"end": 54.493
+},
+{
+"word": "seul",
+"start": 54.493,
+"end": 54.695
+},
+{
+"word": "pour",
+"start": 54.695,
+"end": 54.897
+},
+{
+"word": "la",
+"start": 54.897,
+"end": 55.099
+},
+{
+"word": "viser.",
+"start": 55.099,
+"end": 55.456
+},
+{
+"word": "Il",
+"start": 55.516,
+"end": 55.695
+},
+{
+"word": "ne",
+"start": 55.695,
+"end": 55.874
+},
+{
+"word": "se",
+"start": 55.874,
+"end": 56.053
+},
+{
+"word": "précipite",
+"start": 56.053,
+"end": 56.645
+},
+{
+"word": "pas.",
+"start": 56.645,
+"end": 56.824
+},
+{
+"word": "Il",
+"start": 56.884,
+"end": 57.086
+},
+{
+"word": "ne",
+"start": 57.086,
+"end": 57.288
+},
+{
+"word": "cherche",
+"start": 57.288,
+"end": 57.645
+},
+{
+"word": "pas",
+"start": 57.645,
+"end": 57.847
+},
+{
+"word": "à",
+"start": 57.847,
+"end": 58.048
+},
+{
+"word": "frapper",
+"start": 58.048,
+"end": 58.405
+},
+{
+"word": "fort.",
+"start": 58.405,
+"end": 58.607
+},
+{
+"word": "Il",
+"start": 58.667,
+"end": 58.855
+},
+{
+"word": "laisse",
+"start": 58.855,
+"end": 59.186
+},
+{
+"word": "filer",
+"start": 59.186,
+"end": 59.517
+},
+{
+"word": "le",
+"start": 59.517,
+"end": 59.705
+},
+{
+"word": "ballon.",
+"start": 59.705,
+"end": 60.036
+},
+{
+"word": "Il",
+"start": 60.096,
+"end": 60.298
+},
+{
+"word": "lève",
+"start": 60.298,
+"end": 60.655
+},
+{
+"word": "le",
+"start": 60.655,
+"end": 60.856
+},
+{
+"word": "pied",
+"start": 60.856,
+"end": 61.058
+},
+{
+"word": "gauche.",
+"start": 61.058,
+"end": 61.415
+},
+{
+"word": "Et",
+"start": 61.475,
+"end": 61.631
+},
+{
+"word": "d'une",
+"start": 61.631,
+"end": 61.908
+},
+{
+"word": "talonnade,",
+"start": 61.908,
+"end": 62.425
+},
+{
+"word": "il",
+"start": 62.425,
+"end": 62.6
+},
+{
+"word": "dévie",
+"start": 62.6,
+"end": 62.911
+},
+{
+"word": "le",
+"start": 62.911,
+"end": 63.086
+},
+{
+"word": "centre",
+"start": 63.086,
+"end": 63.397
+},
+{
+"word": "vers",
+"start": 63.397,
+"end": 63.572
+},
+{
+"word": "le",
+"start": 63.572,
+"end": 63.747
+},
+{
+"word": "but.",
+"start": 63.747,
+"end": 63.923
+},
+{
+"word": "Pas",
+"start": 63.983,
+"end": 64.228
+},
+{
+"word": "d'élan.",
+"start": 64.228,
+"end": 64.661
+},
+{
+"word": "Pas",
+"start": 64.721,
+"end": 64.952
+},
+{
+"word": "de",
+"start": 64.952,
+"end": 65.183
+},
+{
+"word": "puissance.",
+"start": 65.183,
+"end": 65.769
+},
+{
+"word": "Juste",
+"start": 65.829,
+"end": 66.212
+},
+{
+"word": "le",
+"start": 66.212,
+"end": 66.429
+},
+{
+"word": "bon",
+"start": 66.429,
+"end": 66.645
+},
+{
+"word": "contact,",
+"start": 66.645,
+"end": 67.029
+},
+{
+"word": "au",
+"start": 67.029,
+"end": 67.249
+},
+{
+"word": "bon",
+"start": 67.249,
+"end": 67.469
+},
+{
+"word": "moment,",
+"start": 67.469,
+"end": 67.859
+},
+{
+"word": "avec",
+"start": 67.859,
+"end": 68.211
+},
+{
+"word": "le",
+"start": 68.211,
+"end": 68.41
+},
+{
+"word": "bon",
+"start": 68.41,
+"end": 68.609
+},
+{
+"word": "angle.",
+"start": 68.609,
+"end": 68.961
+},
+{
+"word": "Regardez",
+"start": 69.021,
+"end": 69.466
+},
+{
+"word": "la",
+"start": 69.466,
+"end": 69.641
+},
+{
+"word": "trajectoire",
+"start": 69.641,
+"end": 70.22
+},
+{
+"word": ":",
+"start": 70.22,
+"end": 70.395
+},
+{
+"word": "le",
+"start": 70.395,
+"end": 70.57
+},
+{
+"word": "ballon",
+"start": 70.57,
+"end": 70.88
+},
+{
+"word": "file",
+"start": 70.88,
+"end": 71.19
+},
+{
+"word": "au",
+"start": 71.19,
+"end": 71.365
+},
+{
+"word": "ras",
+"start": 71.365,
+"end": 71.541
+},
+{
+"word": "du",
+"start": 71.541,
+"end": 71.716
+},
+{
+"word": "sol,",
+"start": 71.716,
+"end": 71.891
+},
+{
+"word": "hors",
+"start": 71.891,
+"end": 72.071
+},
+{
+"word": "de",
+"start": 72.071,
+"end": 72.251
+},
+{
+"word": "portée.",
+"start": 72.251,
+"end": 72.57
+},
+{
+"word": "Le",
+"start": 72.63,
+"end": 72.853
+},
+{
+"word": "gardien",
+"start": 72.853,
+"end": 73.247
+},
+{
+"word": "plonge,",
+"start": 73.247,
+"end": 73.64
+},
+{
+"word": "mais",
+"start": 73.64,
+"end": 73.813
+},
+{
+"word": "il",
+"start": 73.813,
+"end": 73.986
+},
+{
+"word": "est",
+"start": 73.986,
+"end": 74.159
+},
+{
+"word": "déjà",
+"start": 74.159,
+"end": 74.464
+},
+{
+"word": "battu.",
+"start": 74.464,
+"end": 74.77
+},
+{
+"word": "Et",
+"start": 74.83,
+"end": 75.025
+},
+{
+"word": "sous",
+"start": 75.025,
+"end": 75.22
+},
+{
+"word": "cet",
+"start": 75.22,
+"end": 75.415
+},
+{
+"word": "angle,",
+"start": 75.415,
+"end": 75.76
+},
+{
+"word": "on",
+"start": 75.76,
+"end": 75.942
+},
+{
+"word": "voit",
+"start": 75.942,
+"end": 76.123
+},
+{
+"word": "le",
+"start": 76.123,
+"end": 76.305
+},
+{
+"word": "ballon",
+"start": 76.305,
+"end": 76.627
+},
+{
+"word": "terminer",
+"start": 76.627,
+"end": 77.088
+},
+{
+"word": "sa",
+"start": 77.088,
+"end": 77.27
+},
+{
+"word": "course",
+"start": 77.27,
+"end": 77.591
+},
+{
+"word": "au",
+"start": 77.591,
+"end": 77.773
+},
+{
+"word": "fond",
+"start": 77.773,
+"end": 77.955
+},
+{
+"word": "des",
+"start": 77.955,
+"end": 78.137
+},
+{
+"word": "filets.",
+"start": 78.137,
+"end": 78.458
+},
+{
+"word": "Le",
+"start": 78.518,
+"end": 78.708
+},
+{
+"word": "score",
+"start": 78.708,
+"end": 79.043
+},
+{
+"word": "passe",
+"start": 79.043,
+"end": 79.378
+},
+{
+"word": "à",
+"start": 79.378,
+"end": 79.567
+},
+{
+"word": "un",
+"start": 79.567,
+"end": 79.756
+},
+{
+"word": "partout.",
+"start": 79.756,
+"end": 80.091
+},
+{
+"word": "Bellingham",
+"start": 80.151,
+"end": 80.638
+},
+{
+"word": "lève",
+"start": 80.638,
+"end": 80.977
+},
+{
+"word": "les",
+"start": 80.977,
+"end": 81.169
+},
+{
+"word": "bras",
+"start": 81.169,
+"end": 81.361
+},
+{
+"word": "vers",
+"start": 81.361,
+"end": 81.552
+},
+{
+"word": "le",
+"start": 81.552,
+"end": 81.744
+},
+{
+"word": "public",
+"start": 81.744,
+"end": 82.083
+},
+{
+"word": "grec.",
+"start": 82.083,
+"end": 82.275
+},
+{
+"word": "Il",
+"start": 82.335,
+"end": 82.597
+},
+{
+"word": "vient",
+"start": 82.597,
+"end": 82.86
+},
+{
+"word": "de",
+"start": 82.86,
+"end": 83.122
+},
+{
+"word": "remettre",
+"start": 83.122,
+"end": 83.789
+},
+{
+"word": "le",
+"start": 83.789,
+"end": 84.051
+},
+{
+"word": "Real",
+"start": 84.051,
+"end": 84.314
+},
+{
+"word": "dans",
+"start": 84.314,
+"end": 84.576
+},
+{
+"word": "le",
+"start": 84.576,
+"end": 84.839
+},
+{
+"word": "match.",
+"start": 84.839,
+"end": 85.101
+},
+{
+"word": "Quelle",
+"start": 85.161,
+"end": 85.457
+},
+{
+"word": "talonnade",
+"start": 85.457,
+"end": 86.009
+},
+{
+"word": "!",
+"start": 86.009,
+"end": 86.176
+},
+{
+"word": "Alors",
+"start": 86.236,
+"end": 86.525
+},
+{
+"word": "dis-moi",
+"start": 86.525,
+"end": 86.813
+},
+{
+"word": ":",
+"start": 86.813,
+"end": 86.977
+},
+{
+"word": "geste",
+"start": 86.977,
+"end": 87.265
+},
+{
+"word": "de",
+"start": 87.265,
+"end": 87.429
+},
+{
+"word": "génie",
+"start": 87.429,
+"end": 87.718
+},
+{
+"word": "ou",
+"start": 87.718,
+"end": 87.881
+},
+{
+"word": "coup",
+"start": 87.881,
+"end": 88.044
+},
+{
+"word": "de",
+"start": 88.044,
+"end": 88.207
+},
+{
+"word": "chance",
+"start": 88.207,
+"end": 88.496
+},
+{
+"word": "?",
+"start": 88.496,
+"end": 88.659
+}
+],
+"duration": 88.7195
+}
