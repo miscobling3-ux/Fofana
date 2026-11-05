@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="assets/gsap.min.js"></script>
+<script src="data.js"></script>
+<style>
+@font-face { font-family: Poppins; font-weight: 500; src: url(assets/poppins-500.woff2) format('woff2'); }
+@font-face { font-family: Poppins; font-weight: 800; src: url(assets/poppins-800.woff2) format('woff2'); }
+@font-face { font-family: Montserrat; font-weight: 800; src: url(assets/montserrat-800.woff2) format('woff2'); }
+:root { --red: #ff1f1f; --ink: #fff; --dark: rgba(14,14,18,.86); }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+#punch { position: absolute; inset: 0; transform-origin: 540px 960px; }
+#cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+#cam img.src { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+#shade { position: absolute; inset: 0; background: rgba(0,0,0,.58); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); opacity: 0; }
+#ring { position: absolute; border: 5px solid #fff; border-radius: 50%; box-shadow: 0 0 14px rgba(255,255,255,.55), inset 0 0 10px rgba(255,255,255,.25); opacity: 0; }
+#tag { z-index: 5; position: absolute; left: 0; top: 0; display: none; flex-direction: column; align-items: center; transform-origin: 50% 100%; }
+#taglab { display: flex; flex-direction: column; align-items: center; }
+#tag .logo { width: 84px; height: 84px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 8px rgba(0,0,0,.45); overflow: hidden; }
+#tag .logo img { height: 72px; width: auto; }
+#tag .name { margin-top: 8px; padding: 6px 18px 8px; border-radius: 16px; background: var(--dark); color: #fff; font: 800 38px/1.1 Montserrat, sans-serif; white-space: nowrap; letter-spacing: .2px; box-shadow: 0 3px 8px rgba(0,0,0,.4); }
+#tag svg { margin-top: 8px; width: 64px; height: 86px; filter: drop-shadow(0 3px 3px rgba(0,0,0,.5)); }
+#sub { z-index: 6; position: absolute; left: 0; right: 0; top: 1600px; text-align: center; color: #fff; font: 500 46px/1.2 Poppins, sans-serif; text-shadow: 0 2px 4px rgba(0,0,0,.85); }
+#score { position: absolute; top: 150px; left: 50%; transform: translateX(-50%); display: flex; align-items: stretch; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,.5); opacity: 0; font: 800 40px/1 Poppins, sans-serif; color: #fff; }
+#score .team { background: rgba(14,14,18,.9); padding: 16px 22px; }
+#score .res { background: var(--red); padding: 16px 20px; display: flex; gap: 14px; align-items: center; perspective: 300px; }
+#score .digit { display: inline-block; min-width: 26px; text-align: center; }
+#score .min { background: #fff; color: #111; padding: 16px 16px; font-weight: 800; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="{{DUR}}" data-width="1080" data-height="1920">
+  <div id="punch">
+    <div id="cam" data-layout-allow-overflow>
+{{IMGS}}
+    </div>
+  </div>
+  <div id="shade"></div>
+  <div id="ring"></div>
+  <div id="tag"><div id="taglab"><div class="logo"><img src="assets/rm_crest.png" alt=""></div><div class="name" id="tagname"></div></div>
+    <svg viewBox="0 0 64 86"><path d="M20 2 H44 V46 H62 L32 84 L2 46 H20 Z" fill="#ff1f1f" stroke="#2a0000" stroke-width="3" stroke-linejoin="round"/></svg></div>
+  <div id="score"><div class="team">AEK</div><div class="res"><span class="digit">2</span><span>–</span><span class="digit" id="d2">1</span></div><div class="team">REAL MADRID</div><div class="min">78'</div></div>
+  <div id="sub"></div>
+  <audio id="vo" class="clip" src="voice.wav" data-start="0" data-duration="{{DUR}}" data-volume="1" data-track-index="9"></audio>
+{{SFX}}
+</div>
+<script>
+(function () {
+  const E = window.EDIT, F = E.frames, fps = E.FPS;
+  const cam = document.getElementById('cam'), punch = document.getElementById('punch');
+  const shade = document.getElementById('shade'), ring = document.getElementById('ring');
+  const tag = document.getElementById('tag'), tagname = document.getElementById('tagname'), taglab = document.getElementById('taglab');
+  const sub = document.getElementById('sub'), score = document.getElementById('score'), d2 = document.getElementById('d2');
+  function wordAt(t) {
+    let w = null;
+    for (let i = 0; i < E.words.length; i++) {
+      const nx = i + 1 < E.words.length ? E.words[i + 1].a : E.words[i].b + 0.6;
+      if (t >= E.words[i].a && t < nx) { w = E.words[i].t; break; }
+    }
+    return w;
+  }
+  function apply(t) {
+    const k = Math.max(0, Math.min(E.N - 1, Math.floor(t * fps + 1e-4)));
+    const s = F[k];
+    cam.style.transform = `translate(${s.x}px, ${s.y}px) scale(${s.s})`;
+    punch.style.transform = `scale(${s.p})`;
+    if (s.spot) {
+      const [cx, cy, r, op] = s.spot;
+      const m = `radial-gradient(circle ${r}px at ${cx}px ${cy}px, transparent ${r - 1}px, #000 ${r + 1}px)`;
+      shade.style.webkitMaskImage = m; shade.style.maskImage = m; shade.style.opacity = op;
+      ring.style.left = (cx - r - 2.5) + 'px'; ring.style.top = (cy - r - 2.5) + 'px';
+      ring.style.width = (2 * r + 5) + 'px'; ring.style.height = (2 * r + 5) + 'px'; ring.style.opacity = op;
+    } else { shade.style.opacity = 0; ring.style.opacity = 0; }
+    if (s.tag) {
+      const [x, y, name, age] = s.tag;
+      const bounce = 5 * Math.abs(Math.sin(2 * Math.PI * 1.4 * age));
+      const pop = age >= 0.12 ? 1 : 0.25 + 0.75 * (age / 0.12) * (1 + 0.25 * Math.sin(Math.PI * age / 0.12));
+      tag.style.display = 'flex'; tagname.textContent = name;
+      tag.style.transform = `translate(${x}px, ${y - 2 - bounce}px) translate(-50%, -100%) scale(${pop})`;
+      const half = 192; let dx = 0;
+      if (x - half < 16) dx = 16 - (x - half); else if (x + half > 1064) dx = 1064 - (x + half);
+      taglab.style.transform = `translateX(${dx}px)`;
+    } else tag.style.display = 'none';
+    const w = wordAt(t); sub.textContent = w || '';
+    if (t >= E.scoreIn) {
+      const a = Math.min(1, (t - E.scoreIn) / 0.12);
+      score.style.opacity = a; score.style.transform = `translateX(-50%) scale(${0.6 + 0.4 * a})`;
+    } else score.style.opacity = 0;
+    if (t >= E.scoreFlip) {
+      const u = Math.min(1, (t - E.scoreFlip) / 0.4);
+      d2.textContent = u < 0.5 ? '1' : '2';
+      d2.style.transform = `rotateX(${u < 0.5 ? u * 180 : (u - 1) * 180}deg)`;
+    } else { d2.textContent = '1'; d2.style.transform = 'none'; }
+  }
+  const proxy = { t: 0 };
+  const tl = gsap.timeline({ paused: true });
+  tl.to(proxy, { t: E.dur, duration: E.dur, ease: 'none', onUpdate: () => apply(proxy.t) }, 0);
+  tl.eventCallback('onUpdate', () => apply(tl.time()));
+  window.__timelines = window.__timelines || {};
+  window.__timelines['main'] = tl;
+  apply(0);
+  tl.seek(0);
+})();
+</script>
+</body>
+</html>

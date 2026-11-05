@@ -1,0 +1,1850 @@
+[
+{
+"text": "Ce",
+"start": 0.18,
+"end": 0.356,
+"block": 1
+},
+{
+"text": "but",
+"start": 0.356,
+"end": 0.532,
+"block": 1
+},
+{
+"text": "de",
+"start": 0.532,
+"end": 0.7080000000000001,
+"block": 1
+},
+{
+"text": "Kylian",
+"start": 0.7080000000000001,
+"end": 1.06,
+"block": 1
+},
+{
+"text": "Mbappé",
+"start": 1.06,
+"end": 1.412,
+"block": 1
+},
+{
+"text": "nous",
+"start": 1.412,
+"end": 1.5879999999999999,
+"block": 1
+},
+{
+"text": "prouve",
+"start": 1.5879999999999999,
+"end": 1.94,
+"block": 1
+},
+{
+"text": "qu'il",
+"start": 1.94,
+"end": 2.292,
+"block": 1
+},
+{
+"text": "suffit",
+"start": 2.292,
+"end": 2.644,
+"block": 1
+},
+{
+"text": "d'une",
+"start": 2.644,
+"end": 2.996,
+"block": 1
+},
+{
+"text": "seule",
+"start": 2.996,
+"end": 3.26,
+"block": 1
+},
+{
+"text": "touche",
+"start": 3.26,
+"end": 3.501,
+"block": 1
+},
+{
+"text": "pour",
+"start": 3.501,
+"end": 3.677,
+"block": 1
+},
+{
+"text": "remettre",
+"start": 3.677,
+"end": 4.205,
+"block": 1
+},
+{
+"text": "le",
+"start": 4.205,
+"end": 4.381,
+"block": 1
+},
+{
+"text": "Real",
+"start": 4.381,
+"end": 4.557,
+"block": 1
+},
+{
+"text": "Madrid",
+"start": 4.557,
+"end": 4.909000000000001,
+"block": 1
+},
+{
+"text": "dans",
+"start": 4.909000000000001,
+"end": 5.085,
+"block": 1
+},
+{
+"text": "le",
+"start": 5.085,
+"end": 5.261,
+"block": 1
+},
+{
+"text": "match.",
+"start": 5.261,
+"end": 5.437,
+"block": 1
+},
+{
+"text": "Soixante-dix-huitième",
+"start": 5.507000000000001,
+"end": 6.466,
+"block": 2
+},
+{
+"text": "minute",
+"start": 6.466,
+"end": 6.877000000000001,
+"block": 2
+},
+{
+"text": "à",
+"start": 6.877000000000001,
+"end": 7.014,
+"block": 2
+},
+{
+"text": "Athènes.",
+"start": 7.014,
+"end": 7.426,
+"block": 2
+},
+{
+"text": "L'AEK",
+"start": 7.496,
+"end": 8.0,
+"block": 2
+},
+{
+"text": "mène",
+"start": 8.0,
+"end": 8.504,
+"block": 2
+},
+{
+"text": "deux",
+"start": 8.504,
+"end": 8.755,
+"block": 2
+},
+{
+"text": "à",
+"start": 8.755,
+"end": 9.007,
+"block": 2
+},
+{
+"text": "un.",
+"start": 9.007,
+"end": 9.259,
+"block": 2
+},
+{
+"text": "Le",
+"start": 9.349,
+"end": 9.533,
+"block": 2
+},
+{
+"text": "Real",
+"start": 9.533,
+"end": 9.716000000000001,
+"block": 2
+},
+{
+"text": "repart",
+"start": 9.716000000000001,
+"end": 10.084,
+"block": 2
+},
+{
+"text": "du",
+"start": 10.084,
+"end": 10.267000000000001,
+"block": 2
+},
+{
+"text": "milieu",
+"start": 10.267000000000001,
+"end": 10.634,
+"block": 2
+},
+{
+"text": "de",
+"start": 10.634,
+"end": 10.818,
+"block": 2
+},
+{
+"text": "terrain,",
+"start": 10.818,
+"end": 11.185,
+"block": 2
+},
+{
+"text": "côté",
+"start": 11.255,
+"end": 11.732000000000001,
+"block": 2
+},
+{
+"text": "droit.",
+"start": 11.732000000000001,
+"end": 11.97,
+"block": 2
+},
+{
+"text": "Tout",
+"start": 12.06,
+"end": 12.238,
+"block": 3
+},
+{
+"text": "part",
+"start": 12.238,
+"end": 12.416,
+"block": 3
+},
+{
+"text": "de",
+"start": 12.416,
+"end": 12.593,
+"block": 3
+},
+{
+"text": "Jude",
+"start": 12.593,
+"end": 12.949,
+"block": 3
+},
+{
+"text": "Bellingham.",
+"start": 12.949,
+"end": 13.482000000000001,
+"block": 3
+},
+{
+"text": "Face",
+"start": 13.572000000000001,
+"end": 13.903,
+"block": 3
+},
+{
+"text": "à",
+"start": 13.903,
+"end": 14.069,
+"block": 3
+},
+{
+"text": "son",
+"start": 14.069,
+"end": 14.234,
+"block": 3
+},
+{
+"text": "défenseur,",
+"start": 14.234,
+"end": 14.73,
+"block": 3
+},
+{
+"text": "il",
+"start": 14.82,
+"end": 14.999,
+"block": 3
+},
+{
+"text": "ne",
+"start": 14.999,
+"end": 15.179,
+"block": 3
+},
+{
+"text": "force",
+"start": 15.179,
+"end": 15.537,
+"block": 3
+},
+{
+"text": "pas.",
+"start": 15.537,
+"end": 15.716000000000001,
+"block": 3
+},
+{
+"text": "Il",
+"start": 15.806000000000001,
+"end": 15.97,
+"block": 3
+},
+{
+"text": "glisse",
+"start": 15.97,
+"end": 16.298,
+"block": 3
+},
+{
+"text": "le",
+"start": 16.298,
+"end": 16.462,
+"block": 3
+},
+{
+"text": "ballon",
+"start": 16.462,
+"end": 16.788999999999998,
+"block": 3
+},
+{
+"text": "dans",
+"start": 16.788999999999998,
+"end": 16.953,
+"block": 3
+},
+{
+"text": "l'espace,",
+"start": 16.953,
+"end": 17.445,
+"block": 3
+},
+{
+"text": "le",
+"start": 17.514999999999997,
+"end": 17.674,
+"block": 3
+},
+{
+"text": "long",
+"start": 17.674,
+"end": 17.834,
+"block": 3
+},
+{
+"text": "de",
+"start": 17.834,
+"end": 17.993,
+"block": 3
+},
+{
+"text": "la",
+"start": 17.993,
+"end": 18.153,
+"block": 3
+},
+{
+"text": "ligne.",
+"start": 18.153,
+"end": 18.471999999999998,
+"block": 3
+},
+{
+"text": "Denzel",
+"start": 18.541999999999998,
+"end": 18.979999999999997,
+"block": 3
+},
+{
+"text": "Dumfries",
+"start": 18.979999999999997,
+"end": 19.636999999999997,
+"block": 3
+},
+{
+"text": "surgit",
+"start": 19.636999999999997,
+"end": 20.075,
+"block": 3
+},
+{
+"text": "dans",
+"start": 20.075,
+"end": 20.293999999999997,
+"block": 3
+},
+{
+"text": "son",
+"start": 20.293999999999997,
+"end": 20.479999999999997,
+"block": 3
+},
+{
+"text": "dos.",
+"start": 20.479999999999997,
+"end": 20.653,
+"block": 3
+},
+{
+"text": "Il",
+"start": 20.743,
+"end": 20.903,
+"block": 3
+},
+{
+"text": "prend",
+"start": 20.903,
+"end": 21.064,
+"block": 3
+},
+{
+"text": "le",
+"start": 21.064,
+"end": 21.224999999999998,
+"block": 3
+},
+{
+"text": "couloir",
+"start": 21.224999999999998,
+"end": 21.546999999999997,
+"block": 3
+},
+{
+"text": "à",
+"start": 21.546999999999997,
+"end": 21.708,
+"block": 3
+},
+{
+"text": "pleine",
+"start": 21.708,
+"end": 22.029999999999998,
+"block": 3
+},
+{
+"text": "vitesse,",
+"start": 22.029999999999998,
+"end": 22.512999999999998,
+"block": 3
+},
+{
+"text": "garde",
+"start": 22.602999999999998,
+"end": 22.933999999999997,
+"block": 3
+},
+{
+"text": "le",
+"start": 22.933999999999997,
+"end": 23.099,
+"block": 3
+},
+{
+"text": "ballon",
+"start": 23.099,
+"end": 23.43,
+"block": 3
+},
+{
+"text": "devant",
+"start": 23.43,
+"end": 23.759999999999998,
+"block": 3
+},
+{
+"text": "lui",
+"start": 23.759999999999998,
+"end": 23.924999999999997,
+"block": 3
+},
+{
+"text": "et",
+"start": 23.924999999999997,
+"end": 24.090999999999998,
+"block": 3
+},
+{
+"text": "fonce",
+"start": 24.090999999999998,
+"end": 24.421,
+"block": 3
+},
+{
+"text": "vers",
+"start": 24.421,
+"end": 24.587,
+"block": 3
+},
+{
+"text": "la",
+"start": 24.587,
+"end": 24.752,
+"block": 3
+},
+{
+"text": "surface.",
+"start": 24.752,
+"end": 25.247999999999998,
+"block": 3
+},
+{
+"text": "Regardez",
+"start": 25.317999999999998,
+"end": 25.974999999999998,
+"block": 4
+},
+{
+"text": "bien :",
+"start": 25.974999999999998,
+"end": 26.194,
+"block": 4
+},
+{
+"text": "Dumfries",
+"start": 26.264,
+"end": 26.698999999999998,
+"block": 4
+},
+{
+"text": "arrive",
+"start": 26.698999999999998,
+"end": 27.133,
+"block": 4
+},
+{
+"text": "à",
+"start": 27.133,
+"end": 27.278,
+"block": 4
+},
+{
+"text": "l'entrée",
+"start": 27.278,
+"end": 27.567999999999998,
+"block": 4
+},
+{
+"text": "de",
+"start": 27.567999999999998,
+"end": 27.712999999999997,
+"block": 4
+},
+{
+"text": "la",
+"start": 27.712999999999997,
+"end": 27.857999999999997,
+"block": 4
+},
+{
+"text": "surface.",
+"start": 27.857999999999997,
+"end": 28.279999999999998,
+"block": 4
+},
+{
+"text": "Au",
+"start": 28.322999999999997,
+"end": 28.543,
+"block": 4
+},
+{
+"text": "centre,",
+"start": 28.543,
+"end": 28.982999999999997,
+"block": 4
+},
+{
+"text": "Mbappé",
+"start": 29.072999999999997,
+"end": 29.424999999999997,
+"block": 4
+},
+{
+"text": "est",
+"start": 29.424999999999997,
+"end": 29.601,
+"block": 4
+},
+{
+"text": "déjà",
+"start": 29.601,
+"end": 29.953999999999997,
+"block": 4
+},
+{
+"text": "lancé.",
+"start": 29.953999999999997,
+"end": 30.305999999999997,
+"block": 4
+},
+{
+"text": "Son",
+"start": 30.375999999999998,
+"end": 30.555,
+"block": 4
+},
+{
+"text": "défenseur",
+"start": 30.555,
+"end": 31.093,
+"block": 4
+},
+{
+"text": "est",
+"start": 31.093,
+"end": 31.272,
+"block": 4
+},
+{
+"text": "derrière",
+"start": 31.272,
+"end": 31.808999999999997,
+"block": 4
+},
+{
+"text": "lui.",
+"start": 31.808999999999997,
+"end": 31.988,
+"block": 4
+},
+{
+"text": "Et",
+"start": 32.058,
+"end": 32.229,
+"block": 4
+},
+{
+"text": "le",
+"start": 32.229,
+"end": 32.4,
+"block": 4
+},
+{
+"text": "gardien",
+"start": 32.4,
+"end": 32.742,
+"block": 4
+},
+{
+"text": "reste",
+"start": 32.742,
+"end": 33.085,
+"block": 4
+},
+{
+"text": "près",
+"start": 33.085,
+"end": 33.256,
+"block": 4
+},
+{
+"text": "de",
+"start": 33.256,
+"end": 33.427,
+"block": 4
+},
+{
+"text": "son",
+"start": 33.427,
+"end": 33.598,
+"block": 4
+},
+{
+"text": "poteau.",
+"start": 33.598,
+"end": 33.940999999999995,
+"block": 4
+},
+{
+"text": "La",
+"start": 34.031,
+"end": 34.198,
+"block": 5
+},
+{
+"text": "plupart",
+"start": 34.198,
+"end": 34.532,
+"block": 5
+},
+{
+"text": "des",
+"start": 34.532,
+"end": 34.699,
+"block": 5
+},
+{
+"text": "latéraux",
+"start": 34.699,
+"end": 35.199999999999996,
+"block": 5
+},
+{
+"text": "auraient",
+"start": 35.199999999999996,
+"end": 35.534,
+"block": 5
+},
+{
+"text": "frappé,",
+"start": 35.534,
+"end": 35.868,
+"block": 5
+},
+{
+"text": "ou",
+"start": 35.937999999999995,
+"end": 36.113,
+"block": 5
+},
+{
+"text": "envoyé",
+"start": 36.113,
+"end": 36.464,
+"block": 5
+},
+{
+"text": "un",
+"start": 36.464,
+"end": 36.638999999999996,
+"block": 5
+},
+{
+"text": "centre",
+"start": 36.638999999999996,
+"end": 36.99,
+"block": 5
+},
+{
+"text": "en",
+"start": 36.99,
+"end": 37.165,
+"block": 5
+},
+{
+"text": "l'air",
+"start": 37.165,
+"end": 37.339999999999996,
+"block": 5
+},
+{
+"text": "vers",
+"start": 37.339999999999996,
+"end": 37.415,
+"block": 5
+},
+{
+"text": "le",
+"start": 37.415,
+"end": 37.589999999999996,
+"block": 5
+},
+{
+"text": "second",
+"start": 37.589999999999996,
+"end": 37.940999999999995,
+"block": 5
+},
+{
+"text": "poteau.",
+"start": 37.940999999999995,
+"end": 38.291,
+"block": 5
+},
+{
+"text": "Mais",
+"start": 38.361,
+"end": 38.5,
+"block": 5
+},
+{
+"text": "Dumfries",
+"start": 38.5,
+"end": 38.917,
+"block": 5
+},
+{
+"text": "lève",
+"start": 38.917,
+"end": 39.195,
+"block": 5
+},
+{
+"text": "la",
+"start": 39.195,
+"end": 39.333999999999996,
+"block": 5
+},
+{
+"text": "tête.",
+"start": 39.333999999999996,
+"end": 39.612,
+"block": 5
+},
+{
+"text": "Il",
+"start": 39.702,
+"end": 39.851,
+"block": 5
+},
+{
+"text": "choisit",
+"start": 39.851,
+"end": 40.147,
+"block": 5
+},
+{
+"text": "la",
+"start": 40.147,
+"end": 40.296,
+"block": 5
+},
+{
+"text": "passe",
+"start": 40.296,
+"end": 40.592,
+"block": 5
+},
+{
+"text": "à",
+"start": 40.592,
+"end": 40.741,
+"block": 5
+},
+{
+"text": "ras",
+"start": 40.741,
+"end": 40.888999999999996,
+"block": 5
+},
+{
+"text": "de",
+"start": 40.888999999999996,
+"end": 41.037,
+"block": 5
+},
+{
+"text": "terre,",
+"start": 41.037,
+"end": 41.333999999999996,
+"block": 5
+},
+{
+"text": "en",
+"start": 41.424,
+"end": 41.589999999999996,
+"block": 5
+},
+{
+"text": "travers",
+"start": 41.589999999999996,
+"end": 41.921,
+"block": 5
+},
+{
+"text": "de",
+"start": 41.921,
+"end": 42.086999999999996,
+"block": 5
+},
+{
+"text": "la",
+"start": 42.086999999999996,
+"end": 42.253,
+"block": 5
+},
+{
+"text": "surface,",
+"start": 42.253,
+"end": 42.75,
+"block": 5
+},
+{
+"text": "pile",
+"start": 42.8,
+"end": 43.108,
+"block": 5
+},
+{
+"text": "dans",
+"start": 43.108,
+"end": 43.262,
+"block": 5
+},
+{
+"text": "la",
+"start": 43.262,
+"end": 43.415,
+"block": 5
+},
+{
+"text": "course",
+"start": 43.415,
+"end": 43.723,
+"block": 5
+},
+{
+"text": "de",
+"start": 43.723,
+"end": 43.876999999999995,
+"block": 5
+},
+{
+"text": "son",
+"start": 43.876999999999995,
+"end": 44.031,
+"block": 5
+},
+{
+"text": "attaquant.",
+"start": 44.031,
+"end": 44.492,
+"block": 5
+},
+{
+"text": "Face",
+"start": 44.562,
+"end": 44.885,
+"block": 6
+},
+{
+"text": "à",
+"start": 44.885,
+"end": 45.047,
+"block": 6
+},
+{
+"text": "Mbappé,",
+"start": 45.047,
+"end": 45.37,
+"block": 6
+},
+{
+"text": "il",
+"start": 45.44,
+"end": 45.601,
+"block": 6
+},
+{
+"text": "n'y",
+"start": 45.601,
+"end": 45.762,
+"block": 6
+},
+{
+"text": "a",
+"start": 45.762,
+"end": 45.923,
+"block": 6
+},
+{
+"text": "plus",
+"start": 45.923,
+"end": 46.083999999999996,
+"block": 6
+},
+{
+"text": "que",
+"start": 46.083999999999996,
+"end": 46.245,
+"block": 6
+},
+{
+"text": "le",
+"start": 46.245,
+"end": 46.406,
+"block": 6
+},
+{
+"text": "gardien.",
+"start": 46.406,
+"end": 46.728,
+"block": 6
+},
+{
+"text": "Pourquoi",
+"start": 46.798,
+"end": 47.18,
+"block": 6
+},
+{
+"text": "est-il",
+"start": 47.18,
+"end": 47.562,
+"block": 6
+},
+{
+"text": "seul ?",
+"start": 47.562,
+"end": 47.753,
+"block": 6
+},
+{
+"text": "Parce",
+"start": 47.823,
+"end": 48.171,
+"block": 6
+},
+{
+"text": "que",
+"start": 48.171,
+"end": 48.344,
+"block": 6
+},
+{
+"text": "les",
+"start": 48.344,
+"end": 48.518,
+"block": 6
+},
+{
+"text": "défenseurs",
+"start": 48.518,
+"end": 49.039,
+"block": 6
+},
+{
+"text": "grecs",
+"start": 49.039,
+"end": 49.213,
+"block": 6
+},
+{
+"text": "ont",
+"start": 49.213,
+"end": 49.385999999999996,
+"block": 6
+},
+{
+"text": "reculé",
+"start": 49.385999999999996,
+"end": 49.907,
+"block": 6
+},
+{
+"text": "vers",
+"start": 49.907,
+"end": 50.080999999999996,
+"block": 6
+},
+{
+"text": "leur",
+"start": 50.080999999999996,
+"end": 50.254999999999995,
+"block": 6
+},
+{
+"text": "but",
+"start": 50.254999999999995,
+"end": 50.429,
+"block": 6
+},
+{
+"text": "en",
+"start": 50.429,
+"end": 50.602,
+"block": 6
+},
+{
+"text": "suivant",
+"start": 50.602,
+"end": 50.949999999999996,
+"block": 6
+},
+{
+"text": "le",
+"start": 50.949999999999996,
+"end": 51.123,
+"block": 6
+},
+{
+"text": "ballon.",
+"start": 51.123,
+"end": 51.471,
+"block": 6
+},
+{
+"text": "Celui",
+"start": 51.521,
+"end": 51.855,
+"block": 6
+},
+{
+"text": "qui",
+"start": 51.855,
+"end": 52.022999999999996,
+"block": 6
+},
+{
+"text": "devait",
+"start": 52.022999999999996,
+"end": 52.357,
+"block": 6
+},
+{
+"text": "le",
+"start": 52.357,
+"end": 52.525,
+"block": 6
+},
+{
+"text": "suivre",
+"start": 52.525,
+"end": 52.86,
+"block": 6
+},
+{
+"text": "court",
+"start": 52.86,
+"end": 53.027,
+"block": 6
+},
+{
+"text": "derrière",
+"start": 53.027,
+"end": 53.528999999999996,
+"block": 6
+},
+{
+"text": "lui,",
+"start": 53.528999999999996,
+"end": 53.696,
+"block": 6
+},
+{
+"text": "avec",
+"start": 53.786,
+"end": 54.129999999999995,
+"block": 6
+},
+{
+"text": "un",
+"start": 54.129999999999995,
+"end": 54.301,
+"block": 6
+},
+{
+"text": "temps",
+"start": 54.301,
+"end": 54.473,
+"block": 6
+},
+{
+"text": "de",
+"start": 54.473,
+"end": 54.644,
+"block": 6
+},
+{
+"text": "retard.",
+"start": 54.644,
+"end": 54.987,
+"block": 6
+},
+{
+"text": "Mbappé,",
+"start": 55.056999999999995,
+"end": 55.582,
+"block": 6
+},
+{
+"text": "lui,",
+"start": 55.672,
+"end": 56.059999999999995,
+"block": 6
+},
+{
+"text": "a",
+"start": 56.102,
+"end": 56.251,
+"block": 6
+},
+{
+"text": "gardé",
+"start": 56.251,
+"end": 56.549,
+"block": 6
+},
+{
+"text": "toute",
+"start": 56.549,
+"end": 56.847,
+"block": 6
+},
+{
+"text": "sa",
+"start": 56.847,
+"end": 56.995999999999995,
+"block": 6
+},
+{
+"text": "vitesse.",
+"start": 56.995999999999995,
+"end": 57.443,
+"block": 6
+},
+{
+"text": "Et",
+"start": 57.513,
+"end": 57.677,
+"block": 7
+},
+{
+"text": "maintenant,",
+"start": 57.677,
+"end": 58.169,
+"block": 7
+},
+{
+"text": "regardez",
+"start": 58.239,
+"end": 58.745999999999995,
+"block": 7
+},
+{
+"text": "sa",
+"start": 58.745999999999995,
+"end": 58.916,
+"block": 7
+},
+{
+"text": "frappe.",
+"start": 58.916,
+"end": 59.254,
+"block": 7
+},
+{
+"text": "Il",
+"start": 59.344,
+"end": 59.492,
+"block": 7
+},
+{
+"text": "ne",
+"start": 59.492,
+"end": 59.638999999999996,
+"block": 7
+},
+{
+"text": "panique",
+"start": 59.638999999999996,
+"end": 60.082,
+"block": 7
+},
+{
+"text": "pas.",
+"start": 60.082,
+"end": 60.23,
+"block": 7
+},
+{
+"text": "Il",
+"start": 60.3,
+"end": 60.474,
+"block": 7
+},
+{
+"text": "ne",
+"start": 60.474,
+"end": 60.647999999999996,
+"block": 7
+},
+{
+"text": "contrôle",
+"start": 60.647999999999996,
+"end": 61.171,
+"block": 7
+},
+{
+"text": "pas.",
+"start": 61.171,
+"end": 61.345,
+"block": 7
+},
+{
+"text": "Il",
+"start": 61.434999999999995,
+"end": 61.589999999999996,
+"block": 7
+},
+{
+"text": "ne",
+"start": 61.589999999999996,
+"end": 61.745999999999995,
+"block": 7
+},
+{
+"text": "cherche",
+"start": 61.745999999999995,
+"end": 62.056999999999995,
+"block": 7
+},
+{
+"text": "pas",
+"start": 62.056999999999995,
+"end": 62.213,
+"block": 7
+},
+{
+"text": "la",
+"start": 62.213,
+"end": 62.369,
+"block": 7
+},
+{
+"text": "puissance.",
+"start": 62.369,
+"end": 62.82,
+"block": 7
+},
+{
+"text": "Il",
+"start": 62.865,
+"end": 63.004,
+"block": 7
+},
+{
+"text": "frappe",
+"start": 63.004,
+"end": 63.281,
+"block": 7
+},
+{
+"text": "en",
+"start": 63.281,
+"end": 63.419,
+"block": 7
+},
+{
+"text": "une",
+"start": 63.419,
+"end": 63.696,
+"block": 7
+},
+{
+"text": "seule",
+"start": 63.696,
+"end": 63.974,
+"block": 7
+},
+{
+"text": "touche,",
+"start": 63.974,
+"end": 64.251,
+"block": 7
+},
+{
+"text": "au",
+"start": 64.32100000000001,
+"end": 64.45400000000001,
+"block": 7
+},
+{
+"text": "moment",
+"start": 64.45400000000001,
+"end": 64.72,
+"block": 7
+},
+{
+"text": "exact",
+"start": 64.72,
+"end": 64.986,
+"block": 7
+},
+{
+"text": "où",
+"start": 64.986,
+"end": 65.039,
+"block": 7
+},
+{
+"text": "le",
+"start": 65.039,
+"end": 65.17200000000001,
+"block": 7
+},
+{
+"text": "ballon",
+"start": 65.17200000000001,
+"end": 65.438,
+"block": 7
+},
+{
+"text": "arrive.",
+"start": 65.438,
+"end": 65.837,
+"block": 7
+},
+{
+"text": "Le",
+"start": 65.927,
+"end": 66.11200000000001,
+"block": 7
+},
+{
+"text": "gardien",
+"start": 66.11200000000001,
+"end": 66.48100000000001,
+"block": 7
+},
+{
+"text": "sort",
+"start": 66.48100000000001,
+"end": 66.66600000000001,
+"block": 7
+},
+{
+"text": "et",
+"start": 66.66600000000001,
+"end": 66.85000000000001,
+"block": 7
+},
+{
+"text": "se",
+"start": 66.85000000000001,
+"end": 67.03500000000001,
+"block": 7
+},
+{
+"text": "couche.",
+"start": 67.03500000000001,
+"end": 67.40400000000001,
+"block": 7
+},
+{
+"text": "Mais",
+"start": 67.474,
+"end": 67.64,
+"block": 7
+},
+{
+"text": "il",
+"start": 67.64,
+"end": 67.805,
+"block": 7
+},
+{
+"text": "est",
+"start": 67.805,
+"end": 67.97,
+"block": 7
+},
+{
+"text": "déjà",
+"start": 67.97,
+"end": 68.301,
+"block": 7
+},
+{
+"text": "trop",
+"start": 68.301,
+"end": 68.46600000000001,
+"block": 7
+},
+{
+"text": "tard.",
+"start": 68.46600000000001,
+"end": 68.632,
+"block": 7
+},
+{
+"text": "Tout",
+"start": 68.72200000000001,
+"end": 68.884,
+"block": 7
+},
+{
+"text": "est",
+"start": 68.884,
+"end": 69.04700000000001,
+"block": 7
+},
+{
+"text": "dans",
+"start": 69.04700000000001,
+"end": 69.209,
+"block": 7
+},
+{
+"text": "le",
+"start": 69.209,
+"end": 69.372,
+"block": 7
+},
+{
+"text": "timing.",
+"start": 69.372,
+"end": 69.86,
+"block": 7
+},
+{
+"text": "Regardez",
+"start": 69.89,
+"end": 70.376,
+"block": 8
+},
+{
+"text": "la",
+"start": 70.376,
+"end": 70.53800000000001,
+"block": 8
+},
+{
+"text": "trajectoire :",
+"start": 70.53800000000001,
+"end": 71.186,
+"block": 8
+},
+{
+"text": "le",
+"start": 71.256,
+"end": 71.423,
+"block": 8
+},
+{
+"text": "ballon",
+"start": 71.423,
+"end": 71.756,
+"block": 8
+},
+{
+"text": "file",
+"start": 71.756,
+"end": 72.089,
+"block": 8
+},
+{
+"text": "au",
+"start": 72.089,
+"end": 72.256,
+"block": 8
+},
+{
+"text": "ras",
+"start": 72.256,
+"end": 72.42200000000001,
+"block": 8
+},
+{
+"text": "du",
+"start": 72.42200000000001,
+"end": 72.589,
+"block": 8
+},
+{
+"text": "sol,",
+"start": 72.589,
+"end": 72.75500000000001,
+"block": 8
+},
+{
+"text": "hors",
+"start": 72.825,
+"end": 73.021,
+"block": 8
+},
+{
+"text": "de",
+"start": 73.021,
+"end": 73.21600000000001,
+"block": 8
+},
+{
+"text": "portée",
+"start": 73.21600000000001,
+"end": 73.607,
+"block": 8
+},
+{
+"text": "du",
+"start": 73.607,
+"end": 73.80300000000001,
+"block": 8
+},
+{
+"text": "gardien",
+"start": 73.80300000000001,
+"end": 74.194,
+"block": 8
+},
+{
+"text": "qui",
+"start": 74.194,
+"end": 74.39,
+"block": 8
+},
+{
+"text": "plonge.",
+"start": 74.39,
+"end": 74.781,
+"block": 8
+},
+{
+"text": "Et",
+"start": 74.87100000000001,
+"end": 75.05300000000001,
+"block": 8
+},
+{
+"text": "sous",
+"start": 75.05300000000001,
+"end": 75.236,
+"block": 8
+},
+{
+"text": "cet",
+"start": 75.236,
+"end": 75.418,
+"block": 8
+},
+{
+"text": "angle,",
+"start": 75.418,
+"end": 75.783,
+"block": 8
+},
+{
+"text": "on",
+"start": 75.873,
+"end": 76.013,
+"block": 8
+},
+{
+"text": "voit",
+"start": 76.013,
+"end": 76.15400000000001,
+"block": 8
+},
+{
+"text": "la",
+"start": 76.15400000000001,
+"end": 76.29400000000001,
+"block": 8
+},
+{
+"text": "passe",
+"start": 76.29400000000001,
+"end": 76.575,
+"block": 8
+},
+{
+"text": "de",
+"start": 76.575,
+"end": 76.71600000000001,
+"block": 8
+},
+{
+"text": "Dumfries",
+"start": 76.71600000000001,
+"end": 77.137,
+"block": 8
+},
+{
+"text": "traverser",
+"start": 77.137,
+"end": 77.558,
+"block": 8
+},
+{
+"text": "toute",
+"start": 77.558,
+"end": 77.839,
+"block": 8
+},
+{
+"text": "la",
+"start": 77.839,
+"end": 77.979,
+"block": 8
+},
+{
+"text": "surface.",
+"start": 77.979,
+"end": 78.36,
+"block": 8
+},
+{
+"text": "Deux",
+"start": 78.411,
+"end": 78.629,
+"block": 8
+},
+{
+"text": "à",
+"start": 78.629,
+"end": 78.848,
+"block": 8
+},
+{
+"text": "deux.",
+"start": 78.848,
+"end": 79.06700000000001,
+"block": 8
+},
+{
+"text": "Mbappé",
+"start": 79.137,
+"end": 79.48700000000001,
+"block": 9
+},
+{
+"text": "lève",
+"start": 79.48700000000001,
+"end": 79.83800000000001,
+"block": 9
+},
+{
+"text": "la",
+"start": 79.83800000000001,
+"end": 80.013,
+"block": 9
+},
+{
+"text": "main.",
+"start": 80.013,
+"end": 80.18900000000001,
+"block": 9
+},
+{
+"text": "Dumfries",
+"start": 80.259,
+"end": 80.763,
+"block": 9
+},
+{
+"text": "serre",
+"start": 80.763,
+"end": 81.099,
+"block": 9
+},
+{
+"text": "le",
+"start": 81.099,
+"end": 81.26700000000001,
+"block": 9
+},
+{
+"text": "poing.",
+"start": 81.26700000000001,
+"end": 81.435,
+"block": 9
+},
+{
+"text": "Quelle",
+"start": 81.525,
+"end": 81.92500000000001,
+"block": 9
+},
+{
+"text": "réaction",
+"start": 81.92500000000001,
+"end": 82.32600000000001,
+"block": 9
+},
+{
+"text": "du",
+"start": 82.32600000000001,
+"end": 82.52600000000001,
+"block": 9
+},
+{
+"text": "Real !",
+"start": 82.52600000000001,
+"end": 82.726,
+"block": 9
+},
+{
+"text": "Alors",
+"start": 82.77600000000001,
+"end": 83.165,
+"block": 9
+},
+{
+"text": "dis-moi :",
+"start": 83.165,
+"end": 83.554,
+"block": 9
+},
+{
+"text": "cette",
+"start": 83.644,
+"end": 83.974,
+"block": 9
+},
+{
+"text": "passe",
+"start": 83.974,
+"end": 84.304,
+"block": 9
+},
+{
+"text": "de",
+"start": 84.304,
+"end": 84.46900000000001,
+"block": 9
+},
+{
+"text": "Dumfries,",
+"start": 84.46900000000001,
+"end": 84.798,
+"block": 9
+},
+{
+"text": "elle",
+"start": 84.86800000000001,
+"end": 85.165,
+"block": 9
+},
+{
+"text": "vaut",
+"start": 85.165,
+"end": 85.313,
+"block": 9
+},
+{
+"text": "autant",
+"start": 85.313,
+"end": 85.61,
+"block": 9
+},
+{
+"text": "que",
+"start": 85.61,
+"end": 85.75800000000001,
+"block": 9
+},
+{
+"text": "le",
+"start": 85.75800000000001,
+"end": 85.906,
+"block": 9
+},
+{
+"text": "but ?",
+"start": 85.906,
+"end": 86.055,
+"block": 9
+}
+]

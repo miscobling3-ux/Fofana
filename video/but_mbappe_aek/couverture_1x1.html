@@ -1,0 +1,19 @@
+<!doctype html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=1080, height=1080">
+<style>@font-face{font-family:Poppins;font-weight:800;src:url(assets/poppins-800.woff2) format('woff2')}
+*{margin:0;padding:0;box-sizing:border-box} html,body{width:1080px;height:1080px;overflow:hidden;background:#000}
+#root{position:relative;width:1080px;height:1080px;overflow:hidden;background:#000;font-family:Poppins,sans-serif}
+.pan{position:absolute;overflow:hidden} .pan img{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0}
+#grad{position:absolute;left:0;right:0;bottom:0;height:594px;background:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.92) 70%)}
+#sep{position:absolute;background:#fff}
+#band{position:absolute;left:50%;top:560px;transform:translateX(-50%);background:#ff1f1f;color:#fff;font-weight:800;font-size:61px;padding:12px 30px;border-radius:12px;white-space:nowrap;box-shadow:0 6px 18px rgba(0,0,0,.5)}
+#words{position:absolute;left:0;right:0;top:650px;text-align:center;color:#fff;font-weight:800;font-size:170px;line-height:.98;letter-spacing:-2px;text-shadow:0 6px 18px rgba(0,0,0,.7)}
+</style></head><body>
+<div id="root" data-composition-id="cover" data-start="0" data-duration="1" data-width="1080" data-height="1080">
+<div class="pan" style="left:0px;top:0px;width:540px;height:1080px"><img id="shot" src="assets/shot.jpg" style="transform:translate(-2496.2px,-754.0px) scale(2.0377)" alt=""></div><div class="pan" style="left:540px;top:0px;width:540px;height:1080px"><img id="face" src="assets/face.jpg" style="transform:translate(-1066.5px,-54.0px) scale(1.3500)" alt=""></div><div id="sep" style="top:0;bottom:0;left:536px;width:8px"></div>
+<div id="grad" class="clip" data-start="0" data-duration="1"></div>
+<div id="band" class="clip" data-start="0" data-duration="1">AEK 2-2 REAL MADRID</div>
+<div id="words" class="clip" data-start="0" data-duration="1">QUEL<br>TIMING !</div>
+</div>
+<script src="assets/gsap.min.js"></script>
+<script>window.__timelines=window.__timelines||{};window.__timelines["cover"]=gsap.timeline({paused:true});</script>
+</body></html>
