@@ -1,0 +1,21 @@
+<!doctype html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=1080, height=1920">
+<script src="assets/gsap.min.js"></script>
+<style>@font-face{font-family:"Poppins";font-weight:800;src:url(assets/poppins-latin-800-normal.woff2) format("woff2")}
+*{margin:0;padding:0;box-sizing:border-box} html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;background:#000}
+.panel{position:absolute;top:0;width:540px;height:1150px;overflow:hidden}
+.panel img{position:absolute;width:1920px;height:1080px;transform-origin:0 0}
+#p1{left:0} #p2{left:540px;border-left:6px solid #ff1f1f}
+#grad{position:absolute;left:0;right:0;bottom:0;height:1207px;background:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.85) 45%,#000)}
+#band{position:absolute;left:50%;top:1130px;transform:translateX(-50%);background:#ff1f1f;color:#fff;font-family:Poppins;font-weight:800;font-size:68px;padding:12px 34px;border-radius:12px;white-space:nowrap;letter-spacing:1px}
+#words{position:absolute;left:0;right:0;top:1272px;text-align:center;color:#fff;font-family:Poppins;font-weight:800;font-size:190px;line-height:.98;text-shadow:0 6px 24px rgba(0,0,0,.7)}
+</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="1" data-width="1080" data-height="1920">
+<div class="panel" id="p1"><img class="clip" data-start="0" data-duration="1" id="g" src="assets/gesture.jpg" style="transform:translate(-2590.0px,-660.0px) scale(2.2)"></div>
+<div class="panel" id="p2"><img class="clip" data-start="0" data-duration="1" id="fc" src="assets/face.jpg" style="transform:translate(-2538.0px,-52.0px) scale(2.6)"></div>
+<div id="grad"></div>
+<div id="band">AEK 2-2 REAL MADRID</div>
+<div id="words">¡QUÉ<br>SANGRE<br>FRÍA!</div>
+</div>
+<script>const tl=gsap.timeline({paused:true});tl.to({},{duration:1},0);window.__timelines=window.__timelines||{};window.__timelines["main"]=tl;</script>
+</body></html>

@@ -1,0 +1,950 @@
+[
+{
+"text": "El",
+"start": 0.02,
+"end": 0.199,
+"sentence": 0
+},
+{
+"text": "gol",
+"start": 0.199,
+"end": 0.43,
+"sentence": 0
+},
+{
+"text": "que",
+"start": 0.43,
+"end": 0.66,
+"sentence": 0
+},
+{
+"text": "marcó",
+"start": 0.66,
+"end": 0.993,
+"sentence": 0
+},
+{
+"text": "ayer",
+"start": 0.993,
+"end": 1.274,
+"sentence": 0
+},
+{
+"text": "Mbappé",
+"start": 1.274,
+"end": 1.658,
+"sentence": 0
+},
+{
+"text": "demuestra",
+"start": 1.658,
+"end": 2.296,
+"sentence": 0
+},
+{
+"text": "claramente",
+"start": 2.296,
+"end": 2.885,
+"sentence": 0
+},
+{
+"text": "que",
+"start": 2.885,
+"end": 3.115,
+"sentence": 0
+},
+{
+"text": "va",
+"start": 3.115,
+"end": 3.294,
+"sentence": 0
+},
+{
+"text": "a",
+"start": 3.294,
+"end": 3.422,
+"sentence": 0
+},
+{
+"text": "regalar",
+"start": 3.422,
+"end": 3.858,
+"sentence": 0
+},
+{
+"text": "la",
+"start": 3.858,
+"end": 4.037,
+"sentence": 0
+},
+{
+"text": "Liga",
+"start": 4.037,
+"end": 4.318,
+"sentence": 0
+},
+{
+"text": "de",
+"start": 4.318,
+"end": 4.498,
+"sentence": 0
+},
+{
+"text": "Campeones",
+"start": 4.498,
+"end": 5.035,
+"sentence": 0
+},
+{
+"text": "al",
+"start": 5.035,
+"end": 5.214,
+"sentence": 0
+},
+{
+"text": "Real",
+"start": 5.214,
+"end": 5.496,
+"sentence": 0
+},
+{
+"text": "Madrid.",
+"start": 5.496,
+"end": 5.88,
+"sentence": 0
+},
+{
+"text": "Todo",
+"start": 6.64,
+"end": 6.896,
+"sentence": 1
+},
+{
+"text": "empieza",
+"start": 6.896,
+"end": 7.292,
+"sentence": 1
+},
+{
+"text": "en",
+"start": 7.292,
+"end": 7.455,
+"sentence": 1
+},
+{
+"text": "esta",
+"start": 7.455,
+"end": 7.711,
+"sentence": 1
+},
+{
+"text": "jugada",
+"start": 7.711,
+"end": 8.061,
+"sentence": 1
+},
+{
+"text": "en",
+"start": 8.061,
+"end": 8.224,
+"sentence": 1
+},
+{
+"text": "la",
+"start": 8.224,
+"end": 8.387,
+"sentence": 1
+},
+{
+"text": "que",
+"start": 8.387,
+"end": 8.597,
+"sentence": 1
+},
+{
+"text": "Dumfries",
+"start": 8.597,
+"end": 9.039,
+"sentence": 1
+},
+{
+"text": "tiene",
+"start": 9.039,
+"end": 9.342,
+"sentence": 1
+},
+{
+"text": "el",
+"start": 9.342,
+"end": 9.505,
+"sentence": 1
+},
+{
+"text": "balón",
+"start": 9.505,
+"end": 9.808,
+"sentence": 1
+},
+{
+"text": "en",
+"start": 9.808,
+"end": 9.971,
+"sentence": 1
+},
+{
+"text": "la",
+"start": 9.971,
+"end": 10.134,
+"sentence": 1
+},
+{
+"text": "banda",
+"start": 10.134,
+"end": 10.437,
+"sentence": 1
+},
+{
+"text": "derecha",
+"start": 10.437,
+"end": 11.073,
+"sentence": 1
+},
+{
+"text": "y",
+"start": 11.073,
+"end": 11.189,
+"sentence": 1
+},
+{
+"text": "decide",
+"start": 11.189,
+"end": 11.539,
+"sentence": 1
+},
+{
+"text": "pasárselo",
+"start": 11.539,
+"end": 12.028,
+"sentence": 1
+},
+{
+"text": "a",
+"start": 12.028,
+"end": 12.144,
+"sentence": 1
+},
+{
+"text": "Bellingham.",
+"start": 12.144,
+"end": 12.68,
+"sentence": 1
+},
+{
+"text": "En",
+"start": 13.24,
+"end": 13.397,
+"sentence": 2
+},
+{
+"text": "cuanto",
+"start": 13.397,
+"end": 13.732,
+"sentence": 2
+},
+{
+"text": "le",
+"start": 13.732,
+"end": 13.889,
+"sentence": 2
+},
+{
+"text": "hace",
+"start": 13.889,
+"end": 14.135,
+"sentence": 2
+},
+{
+"text": "el",
+"start": 14.135,
+"end": 14.291,
+"sentence": 2
+},
+{
+"text": "pase,",
+"start": 14.291,
+"end": 14.797,
+"sentence": 2
+},
+{
+"text": "sigue",
+"start": 14.797,
+"end": 15.088,
+"sentence": 2
+},
+{
+"text": "corriendo",
+"start": 15.088,
+"end": 15.558,
+"sentence": 2
+},
+{
+"text": "para",
+"start": 15.558,
+"end": 15.804,
+"sentence": 2
+},
+{
+"text": "ofrecerle",
+"start": 15.804,
+"end": 16.274,
+"sentence": 2
+},
+{
+"text": "un",
+"start": 16.274,
+"end": 16.43,
+"sentence": 2
+},
+{
+"text": "desmarque.",
+"start": 16.43,
+"end": 16.9,
+"sentence": 2
+},
+{
+"text": "Pero",
+"start": 17.46,
+"end": 17.712,
+"sentence": 3
+},
+{
+"text": "Bellingham,",
+"start": 17.712,
+"end": 18.238,
+"sentence": 3
+},
+{
+"text": "en",
+"start": 18.238,
+"end": 18.558,
+"sentence": 3
+},
+{
+"text": "el",
+"start": 18.558,
+"end": 18.718,
+"sentence": 3
+},
+{
+"text": "momento",
+"start": 18.718,
+"end": 19.107,
+"sentence": 3
+},
+{
+"text": "de",
+"start": 19.107,
+"end": 19.267,
+"sentence": 3
+},
+{
+"text": "recibir",
+"start": 19.267,
+"end": 19.656,
+"sentence": 3
+},
+{
+"text": "el",
+"start": 19.656,
+"end": 19.816,
+"sentence": 3
+},
+{
+"text": "balón,",
+"start": 19.816,
+"end": 20.413,
+"sentence": 3
+},
+{
+"text": "tiene",
+"start": 20.413,
+"end": 20.711,
+"sentence": 3
+},
+{
+"text": "varias",
+"start": 20.711,
+"end": 21.054,
+"sentence": 3
+},
+{
+"text": "opciones",
+"start": 21.054,
+"end": 21.488,
+"sentence": 3
+},
+{
+"text": "ante",
+"start": 21.488,
+"end": 21.74,
+"sentence": 3
+},
+{
+"text": "sí.",
+"start": 21.74,
+"end": 21.9,
+"sentence": 3
+},
+{
+"text": "Puede",
+"start": 22.5,
+"end": 22.84,
+"sentence": 4
+},
+{
+"text": "pasar",
+"start": 22.84,
+"end": 23.179,
+"sentence": 4
+},
+{
+"text": "aquí",
+"start": 23.179,
+"end": 23.467,
+"sentence": 4
+},
+{
+"text": "a",
+"start": 23.467,
+"end": 23.597,
+"sentence": 4
+},
+{
+"text": "Vinicius",
+"start": 23.597,
+"end": 24.093,
+"sentence": 4
+},
+{
+"text": "o",
+"start": 24.093,
+"end": 24.224,
+"sentence": 4
+},
+{
+"text": "a",
+"start": 24.224,
+"end": 24.355,
+"sentence": 4
+},
+{
+"text": "Endrick,",
+"start": 24.355,
+"end": 25.119,
+"sentence": 4
+},
+{
+"text": "o",
+"start": 25.119,
+"end": 25.249,
+"sentence": 4
+},
+{
+"text": "incluso",
+"start": 25.249,
+"end": 25.693,
+"sentence": 4
+},
+{
+"text": "girarse",
+"start": 25.693,
+"end": 26.138,
+"sentence": 4
+},
+{
+"text": "y",
+"start": 26.138,
+"end": 26.268,
+"sentence": 4
+},
+{
+"text": "pasar",
+"start": 26.268,
+"end": 26.608,
+"sentence": 4
+},
+{
+"text": "simplemente",
+"start": 26.608,
+"end": 27.261,
+"sentence": 4
+},
+{
+"text": "a",
+"start": 27.261,
+"end": 27.391,
+"sentence": 4
+},
+{
+"text": "Camavinga.",
+"start": 27.391,
+"end": 27.94,
+"sentence": 4
+},
+{
+"text": "Sin",
+"start": 28.64,
+"end": 28.849,
+"sentence": 5
+},
+{
+"text": "embargo,",
+"start": 28.849,
+"end": 29.244,
+"sentence": 5
+},
+{
+"text": "Bellingham",
+"start": 29.244,
+"end": 30.039,
+"sentence": 5
+},
+{
+"text": "decide",
+"start": 30.039,
+"end": 30.387,
+"sentence": 5
+},
+{
+"text": "actuar",
+"start": 30.387,
+"end": 30.836,
+"sentence": 5
+},
+{
+"text": "con",
+"start": 30.836,
+"end": 31.045,
+"sentence": 5
+},
+{
+"text": "rapidez.",
+"start": 31.045,
+"end": 31.44,
+"sentence": 5
+},
+{
+"text": "Desliza",
+"start": 32.1,
+"end": 32.512,
+"sentence": 6
+},
+{
+"text": "un",
+"start": 32.512,
+"end": 32.682,
+"sentence": 6
+},
+{
+"text": "pase",
+"start": 32.682,
+"end": 32.948,
+"sentence": 6
+},
+{
+"text": "entre",
+"start": 32.948,
+"end": 33.264,
+"sentence": 6
+},
+{
+"text": "los",
+"start": 33.264,
+"end": 33.482,
+"sentence": 6
+},
+{
+"text": "defensas",
+"start": 33.482,
+"end": 33.942,
+"sentence": 6
+},
+{
+"text": "para",
+"start": 33.942,
+"end": 34.209,
+"sentence": 6
+},
+{
+"text": "encontrar",
+"start": 34.209,
+"end": 34.718,
+"sentence": 6
+},
+{
+"text": "a",
+"start": 34.718,
+"end": 34.839,
+"sentence": 6
+},
+{
+"text": "Dumfries.",
+"start": 34.839,
+"end": 35.3,
+"sentence": 6
+},
+{
+"text": "El",
+"start": 35.82,
+"end": 35.994,
+"sentence": 7
+},
+{
+"text": "balón",
+"start": 35.994,
+"end": 36.318,
+"sentence": 7
+},
+{
+"text": "atraviesa",
+"start": 36.318,
+"end": 36.841,
+"sentence": 7
+},
+{
+"text": "la",
+"start": 36.841,
+"end": 37.015,
+"sentence": 7
+},
+{
+"text": "línea",
+"start": 37.015,
+"end": 37.339,
+"sentence": 7
+},
+{
+"text": "defensiva",
+"start": 37.339,
+"end": 38.102,
+"sentence": 7
+},
+{
+"text": "y",
+"start": 38.102,
+"end": 38.227,
+"sentence": 7
+},
+{
+"text": "Dumfries",
+"start": 38.227,
+"end": 38.7,
+"sentence": 7
+},
+{
+"text": "acelera",
+"start": 38.7,
+"end": 39.123,
+"sentence": 7
+},
+{
+"text": "para",
+"start": 39.123,
+"end": 39.397,
+"sentence": 7
+},
+{
+"text": "recuperarlo.",
+"start": 39.397,
+"end": 40.02,
+"sentence": 7
+},
+{
+"text": "Se",
+"start": 40.6,
+"end": 40.758,
+"sentence": 8
+},
+{
+"text": "encuentra",
+"start": 40.758,
+"end": 41.232,
+"sentence": 8
+},
+{
+"text": "entonces",
+"start": 41.232,
+"end": 41.66,
+"sentence": 8
+},
+{
+"text": "frente",
+"start": 41.66,
+"end": 41.999,
+"sentence": 8
+},
+{
+"text": "al",
+"start": 41.999,
+"end": 42.157,
+"sentence": 8
+},
+{
+"text": "portero.",
+"start": 42.157,
+"end": 42.54,
+"sentence": 8
+},
+{
+"text": "En",
+"start": 43.22,
+"end": 43.386,
+"sentence": 9
+},
+{
+"text": "esta",
+"start": 43.386,
+"end": 43.648,
+"sentence": 9
+},
+{
+"text": "posición,",
+"start": 43.648,
+"end": 44.099,
+"sentence": 9
+},
+{
+"text": "muchos",
+"start": 44.099,
+"end": 44.715,
+"sentence": 9
+},
+{
+"text": "jugadores",
+"start": 44.715,
+"end": 45.214,
+"sentence": 9
+},
+{
+"text": "habrían",
+"start": 45.214,
+"end": 45.618,
+"sentence": 9
+},
+{
+"text": "intentado",
+"start": 45.618,
+"end": 46.117,
+"sentence": 9
+},
+{
+"text": "un",
+"start": 46.117,
+"end": 46.283,
+"sentence": 9
+},
+{
+"text": "disparo",
+"start": 46.283,
+"end": 46.687,
+"sentence": 9
+},
+{
+"text": "directo",
+"start": 46.687,
+"end": 47.211,
+"sentence": 9
+},
+{
+"text": "o",
+"start": 47.211,
+"end": 47.57,
+"sentence": 9
+},
+{
+"text": "habrían",
+"start": 47.57,
+"end": 47.973,
+"sentence": 9
+},
+{
+"text": "jugado",
+"start": 47.973,
+"end": 48.33,
+"sentence": 9
+},
+{
+"text": "hacia",
+"start": 48.33,
+"end": 48.639,
+"sentence": 9
+},
+{
+"text": "atrás,",
+"start": 48.639,
+"end": 48.947,
+"sentence": 9
+},
+{
+"text": "hacia",
+"start": 48.947,
+"end": 49.476,
+"sentence": 9
+},
+{
+"text": "Endrick.",
+"start": 49.476,
+"end": 49.88,
+"sentence": 9
+},
+{
+"text": "Pero",
+"start": 50.56,
+"end": 50.847,
+"sentence": 10
+},
+{
+"text": "Dumfries,",
+"start": 50.847,
+"end": 51.342,
+"sentence": 10
+},
+{
+"text": "en",
+"start": 51.342,
+"end": 51.665,
+"sentence": 10
+},
+{
+"text": "el",
+"start": 51.665,
+"end": 51.848,
+"sentence": 10
+},
+{
+"text": "último",
+"start": 51.848,
+"end": 52.239,
+"sentence": 10
+},
+{
+"text": "momento,",
+"start": 52.239,
+"end": 52.942,
+"sentence": 10
+},
+{
+"text": "envía",
+"start": 52.942,
+"end": 53.281,
+"sentence": 10
+},
+{
+"text": "un",
+"start": 53.281,
+"end": 53.464,
+"sentence": 10
+},
+{
+"text": "pase",
+"start": 53.464,
+"end": 53.751,
+"sentence": 10
+},
+{
+"text": "al",
+"start": 53.751,
+"end": 53.933,
+"sentence": 10
+},
+{
+"text": "área.",
+"start": 53.933,
+"end": 54.22,
+"sentence": 10
+},
+{
+"text": "Mbappé",
+"start": 54.72,
+"end": 55.103,
+"sentence": 11
+},
+{
+"text": "acelera,",
+"start": 55.103,
+"end": 55.537,
+"sentence": 11
+},
+{
+"text": "alcanza",
+"start": 55.537,
+"end": 56.232,
+"sentence": 11
+},
+{
+"text": "el",
+"start": 56.232,
+"end": 56.41,
+"sentence": 11
+},
+{
+"text": "balón",
+"start": 56.41,
+"end": 56.742,
+"sentence": 11
+},
+{
+"text": "y",
+"start": 56.742,
+"end": 56.87,
+"sentence": 11
+},
+{
+"text": "lo",
+"start": 56.87,
+"end": 57.289,
+"sentence": 11
+},
+{
+"text": "empuja",
+"start": 57.289,
+"end": 57.672,
+"sentence": 11
+},
+{
+"text": "directamente",
+"start": 57.672,
+"end": 58.482,
+"sentence": 11
+},
+{
+"text": "al",
+"start": 58.482,
+"end": 58.66,
+"sentence": 11
+},
+{
+"text": "fondo",
+"start": 58.66,
+"end": 58.993,
+"sentence": 11
+},
+{
+"text": "de",
+"start": 58.993,
+"end": 59.171,
+"sentence": 11
+},
+{
+"text": "la",
+"start": 59.171,
+"end": 59.35,
+"sentence": 11
+},
+{
+"text": "red.",
+"start": 59.35,
+"end": 59.58,
+"sentence": 11
+}
+]

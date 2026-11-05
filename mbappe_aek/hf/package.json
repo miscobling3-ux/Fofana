@@ -1,0 +1,22 @@
+{
+  "name": "hf",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.9.16 preview",
+    "check": "npx --yes hyperframes@0.9.16 check",
+    "render": "npx --yes hyperframes@0.9.16 render",
+    "publish": "npx --yes hyperframes@0.9.16 publish"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fontsource/montserrat": "^5.0.8",
+    "@fontsource/poppins": "^5.0.8",
+    "gsap": "^3.12.5"
+  }
+}

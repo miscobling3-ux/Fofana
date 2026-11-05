@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es" data-resolution="portrait">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face { font-family: "Poppins"; font-weight: 500; src: url(assets/fonts/poppins-latin-500-normal.woff2) format("woff2"); }
+@font-face { font-family: "Poppins"; font-weight: 800; src: url(assets/fonts/poppins-latin-800-normal.woff2) format("woff2"); }
+@font-face { font-family: "Montserrat"; font-weight: 800; src: url(assets/fonts/montserrat-latin-800-normal.woff2) format("woff2"); }
+:root { --ground: #000; --ink: #fff; --red: #ff1f1f; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--ground); }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+#cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+#cam img.src { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+#dim { position: absolute; inset: 0; background: rgba(0,0,0,.58); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); opacity: 0; pointer-events: none; }
+#ring { position: absolute; left: 0; top: 0; border: 5px solid #fff; border-radius: 50%; box-shadow: 0 0 18px rgba(255,255,255,.55), inset 0 0 12px rgba(255,255,255,.25); opacity: 0; }
+#lab { position: absolute; left: 0; top: 0; display: flex; flex-direction: column; align-items: center; opacity: 0; transform-origin: 50% 100%; }
+#lab .name { font-family: "Montserrat", sans-serif; font-weight: 800; font-size: 38px; color: #fff; background: rgba(12,12,16,.86); padding: 8px 20px 9px; border-radius: 16px; white-space: nowrap; box-shadow: 0 4px 12px rgba(0,0,0,.45); margin-bottom: 8px; line-height: 1.1; }
+#lab svg { width: 64px; height: 86px; display: block; filter: drop-shadow(0 3px 4px rgba(0,0,0,.55)); }
+#banner { position: absolute; top: 170px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 0; font-family: "Poppins", sans-serif; font-weight: 800; font-size: 44px; color: #fff; opacity: 0; filter: drop-shadow(0 6px 14px rgba(0,0,0,.5)); }
+#banner .team { background: rgba(10,10,14,.9); padding: 10px 22px; }
+#banner .team.l { border-radius: 14px 0 0 14px; }
+#banner .min { background: rgba(10,10,14,.9); padding: 10px 20px 10px 6px; border-radius: 0 14px 14px 0; color: #ffd84a; font-size: 36px; align-self: stretch; display: flex; align-items: center; }
+#banner .score { background: var(--red); padding: 10px 22px; display: flex; gap: 14px; perspective: 400px; }
+#banner .digit { display: inline-block; min-width: 28px; text-align: center; }
+.cap { position: absolute; left: 0; width: 1080px; top: 1600px; text-align: center; font-family: "Poppins", sans-serif; font-weight: 500; font-size: 46px; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,.85); z-index: 50; line-height: 1.2; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="__DUR__" data-width="1080" data-height="1920">
+  <div id="cam">
+__IMGS__
+  </div>
+  <div id="dim"></div>
+  <div id="ring"></div>
+  <div id="lab"><div class="name" id="labname">—</div>
+    <svg viewBox="0 0 64 86"><path d="M18 3 H46 V44 H61 L32 83 L3 44 H18 Z" fill="#ff1f1f" stroke="#2a0000" stroke-width="3.5" stroke-linejoin="round"/></svg>
+  </div>
+  <div id="banner"><span class="team l">AEK</span><span class="score"><span class="digit">2</span><span>–</span><span class="digit" id="rmd">1</span></span><span class="team">RMA</span><span class="min">77'</span></div>
+__CAPS__
+  <audio id="voice" class="clip" src="assets/voice.wav" data-start="0" data-duration="__DUR__" data-volume="__VOICE_VOL__" data-track-index="2"></audio>
+__AUDIO__
+</div>
+<script>
+const FR = __FRAMES__;
+const DUR = __DUR__, BANNER_IN = __BANNER_IN__, GOAL_T = __GOAL_T__;
+const cam = document.getElementById("cam"), dim = document.getElementById("dim"), ring = document.getElementById("ring");
+const lab = document.getElementById("lab"), labname = document.getElementById("labname");
+const banner = document.getElementById("banner"), rmd = document.getElementById("rmd");
+let labW = 0, labH = 0, curName = "";
+function measure() { const r = lab.getBoundingClientRect(); labW = lab.offsetWidth; labH = lab.offsetHeight; }
+function render(t) {
+  const n = Math.min(FR.length - 1, Math.max(0, Math.floor(t * 30 + 1e-4)));
+  const f = FR[n];
+  cam.style.transform = `translate(${f.tx}px, ${f.ty}px) scale(${f.s})`;
+  if (f.spot && f.spot.a > 0) {
+    const s = f.spot;
+    const m = `radial-gradient(circle at ${s.x}px ${s.y}px, transparent ${s.r}px, black ${s.r + 1.5}px)`;
+    dim.style.webkitMaskImage = m; dim.style.maskImage = m; dim.style.opacity = s.a;
+    ring.style.width = ring.style.height = (2 * s.r + 10) + "px";
+    ring.style.transform = `translate(${s.x - s.r - 5}px, ${s.y - s.r - 5}px)`; ring.style.opacity = s.a;
+  } else { dim.style.opacity = 0; ring.style.opacity = 0; }
+  if (f.lab) {
+    if (f.lab.name !== curName) { labname.textContent = f.lab.name; curName = f.lab.name; measure(); }
+    const age = t - f.lab.t0;
+    const p = Math.min(1, Math.max(0, age / 0.12));
+    const pop = p >= 1 ? 1 : 1 + 2.2 * Math.pow(p - 1, 3) + 1.2 * Math.pow(p - 1, 2);
+    const bob = 5 * Math.abs(Math.sin(2 * Math.PI * 1.4 * t));
+    const gap = 3 + bob - 10; // red tip sits ~10 px above the SVG box bottom (dark outline + viewBox)
+    lab.style.opacity = 1;
+    lab.style.transform = `translate(${f.lab.x - labW / 2}px, ${f.lab.y - gap - labH}px) scale(${Math.max(0.01, pop)})`;
+  } else { lab.style.opacity = 0; }
+  // score banner
+  const bp = Math.min(1, Math.max(0, (t - BANNER_IN) / 0.12));
+  banner.style.opacity = t >= BANNER_IN ? 1 : 0;
+  banner.style.transform = `translateX(-50%) scale(${t >= BANNER_IN ? 0.6 + 0.4 * bp : 1})`;
+  const g = (t - GOAL_T) / 0.3;
+  if (g < 0) { rmd.textContent = "1"; rmd.style.transform = "rotateX(0deg)"; }
+  else if (g < 0.5) { rmd.textContent = "1"; rmd.style.transform = `rotateX(${g * 180}deg)`; }
+  else if (g < 1) { rmd.textContent = "2"; rmd.style.transform = `rotateX(${(g - 1) * 180}deg)`; }
+  else { rmd.textContent = "2"; rmd.style.transform = "rotateX(0deg)"; }
+}
+measure();
+const state = { t: 0 };
+const tl = gsap.timeline({ paused: true });
+tl.to(state, { t: DUR, duration: DUR, ease: "none", onUpdate: () => render(state.t) }, 0);
+window.__timelines = window.__timelines || {};
+window.__timelines["main"] = tl;
+document.fonts && document.fonts.ready.then(() => { measure(); render(state.t); });
+tl.seek(0); render(0);
+</script>
+</body>
+</html>

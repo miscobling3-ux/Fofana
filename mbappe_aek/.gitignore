@@ -1,2 +1,9 @@
 src/
 work/
+hf/assets/frames/
+hf/node_modules/
+hf/.hyperframes/
+cover_v/.hyperframes/
+cover_s/.hyperframes/
+hf/package-lock.json
+__pycache__/
