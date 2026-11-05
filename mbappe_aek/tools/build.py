@@ -25,24 +25,40 @@ S[0] = 0.0
 # ---------------- EDL ----------------
 # kind: play (src a->b) or freeze (src a). cam: list of (src_frame, cx, cy) keys or ("follow", track, dx, dy)
 SHOTS = [
-    dict(id="E0", clip="A", a=786, b=870, T0=0.0, T1=S[1], H=760, cam=[("F", "FM", 0, 110)]),
-    dict(id="E1", clip="B", a=50, b=168, T0=S[1], T1=S[2], H=700, cam=[("F", "FD1", -30, 60)]),
-    dict(id="E2", clip="B", a=168, b=222, T0=S[2], T1=S[3], H=760, cam=[("F", "FB2", 40, 60)]),
+    dict(id="E0", clip="A", a=40, b=180, T0=0.0, T1=S[1], H=885, cam=[(40, 900, 440), (100, 820, 440), (145, 960, 440), (180, 1150, 440)]),
+    dict(id="E1", clip="B", a=50, b=168, T0=S[1], T1=S[2], H=700, cam=[("F", "FD1", -30, 60)], sync=[(143, word_time(1, "pasárselo") + 0.05)]),
+    dict(id="E2", clip="B", a=130, b=205, T0=S[2], T1=S[3], H=885, cam=[(130, 1400, 620), (143, 1430, 640), (170, 1500, 650), (186, 1530, 650), (195, 1100, 630), (205, 1050, 630)], sync=[(143, word_time(2, "pase"))]),
     dict(id="E3", clip="A", a=490, b=540, T0=S[3], T1=S[4], H=980, cam=[("F", "FB3", 0, 330)]),
     dict(id="E4", clip="B", a=205, b=205, T0=S[4], T1=S[5], H=885, cam=[(205, 990, 640)], freeze=True),
     dict(id="E5", clip="A", a=540, b=578, T0=S[5], T1=S[6], H=980, cam=[("F", "FB3", 0, 330)]),
-    dict(id="E6", clip="B", a=210, b=262, T0=S[6], T1=S[7], H=885, cam=[(210, 1000, 650), (224, 1020, 650), (262, 1480, 640)]),
-    dict(id="E7", clip="A", a=600, b=700, T0=S[7], T1=S[8], H=1000, cam=[(600, 560, 600), (640, 580, 600), (672, 830, 600), (700, 1000, 620)]),
+    dict(id="E6", clip="B", a=210, b=262, T0=S[6], T1=S[7], H=885, cam=[(210, 1000, 650), (224, 1020, 650), (262, 1480, 640)], sync=[(222, word_time(6, "pase"))]),
+    dict(id="E7", clip="A", a=600, b=700, T0=S[7], T1=S[8], H=1000, cam=[(600, 560, 600), (640, 580, 600), (672, 830, 600), (700, 1000, 620)], sync=[(650, word_time(7, "Dumfries")), (672, word_time(7, "acelera") + 0.5)]),
     dict(id="E8", clip="A", a=300, b=368, T0=S[8], T1=S[9], H=900, cam=[(300, 420, 560), (329, 300, 520), ("F", "FD8", 110, 200)]),
     dict(id="E9", clip="B", a=312, b=312, T0=S[9], T1=S[10], H=760, cam=[(312, 1440, 560)], freeze=True),
-    dict(id="E10", clip="B", a=312, b=372, T0=S[10], T1=S[11], H=760, cam=[("F", "FD10", -60, 40), (335, 1330, 520), (352, 1130, 480), (372, 960, 470)]),
-    dict(id="E11", clip="A", a=716, b=850, T0=S[11], T1=DUR, H=760, cam=[(716, 470, 700), (742, 760, 690), ("F", "FM", 0, 110)]),
+    dict(id="E10", clip="B", a=288, b=372, T0=S[10], T1=S[11], H=760, cam=[("F", "FD10", -60, 40), (335, 1330, 520), (352, 1130, 480), (372, 960, 470)], sync=[(317, word_time(10, "envía") + 0.1)]),
+    dict(id="E11", clip="A", a=740, b=850, T0=S[11], T1=DUR, H=760, cam=[(740, 820, 680), (760, 1000, 690), ("F", "FM", 0, 110)], sync=[(778, word_time(11, "alcanza") + 0.05), (791, word_time(11, "empuja") + 0.05)]),
 ]
+for _s in SHOTS:
+    if not _s.get("freeze"):
+        _s["sync"] = [(_s["a"], _s["T0"])] + _s.get("sync", []) + [(_s["b"] + 1, _s["T1"])]
+
+def srcf(sh, t):
+    if sh.get("freeze"): return sh["a"]
+    ts = [p[1] for p in sh["sync"]]; fs = [p[0] for p in sh["sync"]]
+    return int(min(sh["b"], max(sh["a"], math.floor(float(np.interp(t, ts, fs)) + 1e-6))))
+
+def out_time(shot_id, src):
+    sh = SHOTS[[s["id"] for s in SHOTS].index(shot_id)]
+    ts = [p[1] for p in sh["sync"]]; fs = [p[0] for p in sh["sync"]]
+    return float(np.interp(src, fs, ts))
+
+# Mbappé circle in the aerial opening (manual keyframes, 10 px grid)
+MA_KEYS = {int(k): v for k, v in json.load(open("work/ma_keys.json")).items()}
 
 # label segments (ball carrier): track, shot, from src frame, contact frame (label disappears AT this frame)
 LABELS = [
-    dict(shot="E0", trk="L0", f0=786, fc=791),
     dict(shot="E1", trk="L1", f0=100, fc=143),
+    dict(shot="E2", trk="L1", f0=130, fc=143),
     dict(shot="E2", trk="L2", f0=188, fc=222),
     dict(shot="E3", trk="L3", f0=490, fc=9999),
     dict(shot="E4", trk="L4", f0=205, fc=9999),
@@ -51,17 +67,16 @@ LABELS = [
     dict(shot="E7", trk="L5", f0=672, fc=688),
     dict(shot="E8", trk="L6", f0=330, fc=366),
     dict(shot="E9", trk="L7", f0=312, fc=9999),
-    dict(shot="E10", trk="L7", f0=312, fc=317),
+    dict(shot="E10", trk="L7", f0=288, fc=317),
     dict(shot="E11", trk="L8", f0=778, fc=791),
 ]
 CLUB = {"Kylian Mbappé": "rm", "Denzel Dumfries": "rm", "Jude Bellingham": "rm"}
 # contact frames -> ball sound
 CONTACTS = [("E1", 143), ("E2", 188), ("E2", 222), ("E5", 550), ("E6", 222), ("E7", 672), ("E7", 688),
-            ("E8", 366), ("E10", 317), ("E11", 778), ("E11", 791), ("E0", 791)]
+            ("E8", 366), ("E10", 317), ("E11", 778), ("E11", 791), ("E0", 160), ("E2", 143)]
 
 # spotlights: shot, follow track, start time (word naming player), end time, body height(src px), extra radius
 SPOTS = [
-    dict(shot="E0", trk="FM", t0=word_time(0, "Mbappé"), t1=4.0, h=120),
     dict(shot="E1", trk="FD1", t0=word_time(1, "Dumfries"), t1=S[2] - 0.3, h=118),
     dict(shot="E10", trk="FD10", t0=word_time(10, "Dumfries"), t1=word_time(10, "Dumfries") + 1.7, h=112),
 ]
@@ -141,12 +156,11 @@ for si, sh in enumerate(SHOTS):
         rate = 0.0
         img_clips.append((sh["clip"], a, sh["T0"] - 1 / 120 if si else 0, sh["T1"] - sh["T0"] + (1 / 120 if si else 0)))
     else:
-        rate = (b - a + 1) / (sh["T1"] - sh["T0"])  # source frames per second
-        sh["rate"] = rate
+        rate = 1.0
         # each source image covers exactly the output samples that should show it, +/- 1/4 output frame
         smp = {}
         for n in range(n0, n1):
-            k = min(b, a + int(math.floor((n / FPS - sh["T0"]) * rate + 1e-6)))
+            k = srcf(sh, n / FPS)
             smp.setdefault(k, []).append(n)
         for k in sorted(smp):
             st = smp[k][0] / FPS - 1 / 120; en = smp[k][-1] / FPS + 1 / 120
@@ -156,7 +170,7 @@ for si, sh in enumerate(SHOTS):
     cx, cy, HH, lab = [], [], [], []
     for n in range(n0, n1):
         t = n / FPS
-        src = a if rate == 0 else min(b, a + int(math.floor((t - sh["T0"]) * rate + 1e-6)))
+        src = srcf(sh, t)
         c = cam_center(sh, src)
         cx.append(c[0]); cy.append(c[1]); HH.append(sh["H"])
         frames.append(dict(n=n, t=t, shot=si, clip=sh["clip"], src=src))
@@ -229,10 +243,21 @@ for fr in frames:
         sp = fr["spot"]
         a = min(1, (fr["t"] - sp["t0"]) / 0.25, (sp["t1"] - fr["t"]) / 0.25)
         rec["spot"] = dict(x=round((sp["x"] - x2) * s, 1), y=round((sp["y"] - y2) * s, 1), r=round(sp["R"] * s, 1), a=round(max(0, a), 3))
+    if fr["shot"] == 0:
+        ks = sorted(MA_KEYS); f0 = min(max(fr["src"], ks[0]), ks[-1])
+        lo = max(k for k in ks if k <= f0); hi = min(k for k in ks if k >= f0); u = 0 if hi == lo else (f0 - lo) / (hi - lo)
+        mx = MA_KEYS[lo][0] + u * (MA_KEYS[hi][0] - MA_KEYS[lo][0]); my = MA_KEYS[lo][1] + u * (MA_KEYS[hi][1] - MA_KEYS[lo][1])
+        rec["mc"] = dict(x=round((mx - x2) * s, 1), y=round((my - y2) * s, 1), r=round(46 * s, 1))
     out.append(rec)
 json.dump(out, open("work/frames_out.json", "w"))
 json.dump(dict(shots=[{k: v for k, v in s.items() if k != "cam"} for s in SHOTS], spots=SPOTS), open("work/edl.json", "w"), indent=1, default=str)
 
+# make image clips contiguous (each lasts until the next one starts)
+img_clips.sort(key=lambda c: c[2])
+for i in range(len(img_clips)):
+    c, k, st, du = img_clips[i]
+    en = img_clips[i + 1][2] if i + 1 < len(img_clips) else DUR
+    img_clips[i] = (c, k, st, round(en - st, 5))
 # ---------------- assets ----------------
 os.makedirs("hf/assets/frames", exist_ok=True)
 for f in os.listdir("hf/assets/frames"): os.remove(os.path.join("hf/assets/frames", f))
@@ -240,9 +265,6 @@ for c, k, st, du in img_clips:
     shutil.copy(f"src/{c}/{k:04d}.jpg", f"hf/assets/frames/{c}{k:04d}.jpg")
 
 # ---------------- audio events ----------------
-def out_time(shot_id, src):
-    sh = SHOTS[[s["id"] for s in SHOTS].index(shot_id)]
-    return sh["T0"] + (src - sh["a"]) / sh["rate"]
 audio = []
 cuts = [s["T0"] for s in SHOTS[1:]]
 for i, t in enumerate(cuts):
@@ -266,7 +288,7 @@ GOAL_T = out_time("E11", 841)
 # ---------------- captions ----------------
 caps = []
 for w in WORDS:
-    txt = w["text"].lower().strip(",.;:!?¡¿")
+    txt = w["text"].strip(",.;:!?¡¿")
     caps.append((txt, w["start"]))
 cap_html = []
 for i, (txt, st) in enumerate(caps):
@@ -288,4 +310,4 @@ html = (html.replace("__DUR__", f"{DUR}").replace("__IMGS__", img_html).replace(
         .replace("__VOICE_VOL__", os.environ.get("VOICE_VOL", "1.0")))
 open("hf/index.html", "w").write(html)
 print("frames", len(out), "imgs", len(img_clips), "audio", len(audio), "goal_t", round(GOAL_T, 3))
-for s in SHOTS: print(s["id"], round(s["T0"], 2), round(s["T1"], 2), s["clip"], s["a"], s["b"], round(s.get("rate", 0) / 50, 3))
+for s in SHOTS: print(s["id"], round(s["T0"], 2), round(s["T1"], 2), s["clip"], s["a"], s["b"], s.get("sync"))
