@@ -76,12 +76,39 @@ def load_track(f):
 TR = {"mbappe": ("B", load_track("tr_mbappe.json"), 15),
       "guler": ("B", load_track("tr_guler.json"), 12),
       "valverde": ("A", load_track("tr_valv.json"), 19)}
-def head(p, n):
+# Valverde (A, busy background): head-top keyframes set by hand on a 10 px zoomed grid, interpolated
+VMAN = {284: (938, 479), 288: (893, 488), 292: (873, 505), 296: (867, 525), 300: (890, 523), 304: (913, 507),
+        308: (920, 488), 312: (910, 465), 316: (887, 420), 320: (870, 404), 324: (860, 408), 328: (850, 418),
+        332: (833, 423), 336: (803, 428), 340: (787, 452), 345: (777, 488)}
+import sys, cv2
+sys.path.insert(0, S)
+from headtop import hair_top
+_HT = {}
+def measured_top(p, n):
+    """B players on grass: hair top measured on the source frame, median-smoothed over 5 frames."""
+    if (p, n) in _HT: return _HT[(p, n)]
+    c, tr, off = TR[p]; ks = sorted(tr); vals = []
+    for m in range(n - 2, n + 3):
+        mm = min(max(m, ks[0]), ks[-1])
+        im = cv2.imread(f"{CLIP[c]['dir']}/{mm:04d}.jpg")
+        x, y, ok = hair_top(im, tr[mm][0], tr[mm][1], off)
+        vals.append((x, y))
+    r = (float(np.median([v[0] for v in vals])), float(np.median([v[1] for v in vals])))
+    _HT[(p, n)] = r; return r
+def head(p, n, top_only=False):
     c, tr, top = TR[p]
     ks = sorted(tr)
     n = min(max(n, ks[0]), ks[-1])
     x, y = tr[n]
-    return x, y, y - top   # centre x, centre y, top of head
+    return x, y, y - top   # centre x, centre y, top of head (coarse; labels use label_head)
+def label_head(p, n):
+    if p == "valverde":
+        ks = sorted(VMAN); m = min(max(n, ks[0]), ks[-1])
+        for a, b in zip(ks, ks[1:]):
+            if a <= m <= b:
+                u = (m - a) / (b - a)
+                return VMAN[a][0] + (VMAN[b][0] - VMAN[a][0]) * u, VMAN[a][1] + (VMAN[b][1] - VMAN[a][1]) * u
+    return measured_top(p, n)
 
 # ---------------------------------------------------------------- overlays to keep out of frame (x0,y0,x1,y1)
 OVL = {"A": [(85, 35, 315, 180), (1580, 40, 1895, 170), (1565, 990, 1860, 1045)],
@@ -221,7 +248,7 @@ lab = [None] * N
 for f in frames:
     p = label_at(f["k"], f["n"])
     if p:
-        hx, hy, top = head(p, f["n"]); lab[f["i"]] = dict(p=p, x=hx, top=top)
+        hx, top = label_head(p, f["n"]); lab[f["i"]] = dict(p=p, x=hx, top=top)
 # hard constraints: no overlay, labelled head stays in frame
 for f in frames:
     i = f["i"]; L = lab[i]

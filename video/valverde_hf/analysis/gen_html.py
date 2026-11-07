@@ -40,16 +40,16 @@ def add(name, t, dur, vol):
 cuts = [e[0] for e in EDL[1:]]
 freezes = [e[0] for e in EDL if e[3] == e[4]]
 for j, c in enumerate(cuts):
-    add(f"whoosh{j % 4}", c - 0.12, 0.42, 0.30)
+    add(f"whoosh{j % 4}", c - 0.12, 0.42, 0.22)
 for c in freezes:
-    add("freeze", c, 0.45, 0.45)
+    add("freeze", c, 0.45, 0.32)
 # label pops
 prev = None
 for r in fr:
     cur = r.get("lab", [None])[0]
-    if cur and cur != prev: add("pop", r["t"], 0.14, 0.45)
+    if cur and cur != prev: add("pop", r["t"], 0.14, 0.32)
     prev = cur
-add("pop", 4.96, 0.14, 0.45)
+add("pop", 4.96, 0.14, 0.32)
 # ball contact: first output frame showing the contact source frame
 contacts = [("A", 334, (0, 16)), ("B", 592, (8,)), ]
 kick_i = 0
@@ -57,8 +57,8 @@ for clip, cf, ks in contacts:
     for k in ks:
         for r in fr:
             if r["k"] == k and r["c"] == clip and r["n"] >= cf:
-                add(f"kick{kick_i % 3}", r["t"], 0.40, 0.55); kick_i += 1; break
-add("flip", 73.12, 0.2, 0.4)
+                add(f"kick{kick_i % 3}", r["t"], 0.40, 0.40); kick_i += 1; break
+add("flip", 73.12, 0.2, 0.3)
 aud = [f'<audio id="voice" class="clip" src="assets/voice.wav" data-start="0" data-duration="{VDUR:.3f}" data-volume="{VOICE_VOL:.3f}" data-track-index="20"></audio>']
 for j, (n, t, d, v) in enumerate(sfx):
     aud.append(f'<audio id="sfx{j}" class="clip" src="assets/sfx/{n}.wav" data-start="{t:.3f}" data-duration="{d:.3f}" data-volume="{v}" data-track-index="{21 + j}"></audio>')
@@ -153,13 +153,13 @@ for (let i = 0; i < D.length; i++) {{
     if (prevLab) tl.set(labs[prevLab], {{ visibility: "hidden" }}, t);
     if (cur) {{
       tl.set(labs[cur], {{ visibility: "visible" }}, t);
-      tl.fromTo(labs[cur].querySelector(".pop"), {{ scale: 0 }}, {{ scale: 1, duration: 0.12, ease: "back.out(2)" }}, t);
+      tl.fromTo(labs[cur].querySelector(".pop"), {{ scale: 0.35 }}, {{ scale: 1, duration: 0.12, ease: "back.out(2)" }}, t);
     }}
     prevLab = cur;
   }}
   if (L) {{
     const bounce = 5 * Math.abs(Math.sin(2 * Math.PI * 1.4 * t));
-    tl.set(labs[cur], {{ x: L[1], y: L[2] - 6 - bounce }}, t);
+    tl.set(labs[cur], {{ x: L[1], y: L[2] - bounce }}, t);
   }}
   const P = d[4];
   if (P) {{
