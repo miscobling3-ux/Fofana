@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "historyId": "24b767b1-c971-44f1-8df3-fbd6cf3ff7e0",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "assets/face.jpg": {
+      "hash": "7475915de388d762c44f18f9ab789a17c840d87d00c52f6bcbec2064a7c04945",
+      "content": "/root/.cache/hyperframes/history/24b767b1-c971-44f1-8df3-fbd6cf3ff7e0/blobs/74/7475915de388d762c44f18f9ab789a17c840d87d00c52f6bcbec2064a7c04945"
+    },
+    "assets/gsap.min.js": {
+      "hash": "28033e449a31ebcc396e5be8b13b63152bf03094288fb5867034321927bce087",
+      "content": "/root/.cache/hyperframes/history/24b767b1-c971-44f1-8df3-fbd6cf3ff7e0/blobs/28/28033e449a31ebcc396e5be8b13b63152bf03094288fb5867034321927bce087"
+    },
+    "assets/poppins-latin-800-normal.woff2": {
+      "hash": "60bf0aba6526436f3930c58c12047687fbb6bff4dd180cce4613458ed3439ea2",
+      "content": "/root/.cache/hyperframes/history/24b767b1-c971-44f1-8df3-fbd6cf3ff7e0/blobs/60/60bf0aba6526436f3930c58c12047687fbb6bff4dd180cce4613458ed3439ea2"
+    },
+    "assets/strike.jpg": {
+      "hash": "6963573cbbbb2b2c4b2024cbef579c00531574595ddb2fa4f50477f0a2c98c8f",
+      "content": "/root/.cache/hyperframes/history/24b767b1-c971-44f1-8df3-fbd6cf3ff7e0/blobs/69/6963573cbbbb2b2c4b2024cbef579c00531574595ddb2fa4f50477f0a2c98c8f"
+    },
+    "hyperframes.json": {
+      "hash": "0276f831549c51bbc13846028258d78936d49224097438753f6e2cffb6912823",
+      "content": "/root/.cache/hyperframes/history/24b767b1-c971-44f1-8df3-fbd6cf3ff7e0/blobs/02/0276f831549c51bbc13846028258d78936d49224097438753f6e2cffb6912823"
+    },
+    "index.html": {
+      "hash": "eb90a1cd34effc23781e9237a175fcccc791900450a278913e3eddd6d2eaedfb",
+      "content": "/root/.cache/hyperframes/history/24b767b1-c971-44f1-8df3-fbd6cf3ff7e0/blobs/eb/eb90a1cd34effc23781e9237a175fcccc791900450a278913e3eddd6d2eaedfb"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "fd5c8f35-84e1-4771-ac41-f046853df271-0"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "fd5c8f35-84e1-4771-ac41-f046853df271-0",
+        "image": "/tmp/claude-0/-home-user-Fofana/0dc10ad3-8ae5-5d3f-b08b-3b4d72bae3e6/scratchpad/snapc_cover11/frame-00-at-0.5s.png",
+        "time": 0.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1794094071481,
+        "contentHash": "514b7e0619e7874f7acaeae5520b548332d99875ff5634cabee3a341036551c9",
+        "revision": null,
+        "inputFingerprint": "e16fa115ae56c239eece92d90bc9c21cc30f0744465cd34bcb6fe268cd45881f",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  }
+}

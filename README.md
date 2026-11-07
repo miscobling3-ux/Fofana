@@ -60,3 +60,19 @@ python3 remix.py --script guion_ongles_fr --stills 2,14,45   # aperçu rapide en
 ```
 - **Texte, zooms et badges** : `video/guion_ongles_fr.py` / `guion_ongles_es.py` → `LINES`. Chaque phrase indique le passage de la vidéo source (`src`) et le zoom (`zoom=(départ, fin, centre x, centre y)`).
 - **Autre vidéo source** : copie un script, change `SOURCE` et les passages. Si la source n'a pas de sous-titres au même endroit, adapte `BAND` / `WATERMARK` dans `remix.py`.
+
+---
+
+# Analyse d'un but : Valverde (Valencia 0-1 Real Madrid, 27') — espagnol, HyperFrames
+
+Vidéo prête à poster : **`output/valverde_es.mp4`** (1080×1920, 30 i/s, 79 s, voix ElevenLabs « Adam » fournie).
+Couvertures : `output/valverde_es_cover_9x16.png` et `output/valverde_es_cover_1x1.png`.
+
+Montée selon le master prompt v3 : recadrage 9:16 qui suit le joueur, étiquette (flèche rouge + nom + blason) sur le porteur du ballon,
+effet projecteur quand la voix nomme un joueur, arrêts sur image, ralentis image par image (les images sources sont des `<img>` à leur cadence d'origine),
+sous-titres mot par mot, bandeau de score qui passe à 0-1. Le score télé, le filigrane et le hashtag de la source sont exclus par le cadrage.
+
+- `video/valverde_hf/analysis/` : suivi des têtes (OpenCV, analyse uniquement), `build.py` (découpage, caméra, étiquettes, spotlight → plan),
+  `gen_html.py` (écrit la composition HyperFrames). `words.json` : texte du script aligné sur la voix.
+- Rendu : `hyperframes render --fps 30 --crf 20` dans le projet généré (les images sources extraites ne sont pas versionnées).
+- `video/valverde_hf/cover916`, `cover11` : couvertures faites dans HyperFrames (`hyperframes snapshot --at 0.5`).
