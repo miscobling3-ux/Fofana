@@ -1,0 +1,1007 @@
+[
+{
+"word": "Este",
+"start": 0.04,
+"end": 0.335
+},
+{
+"word": "gol",
+"start": 0.359,
+"end": 0.518
+},
+{
+"word": "de",
+"start": 0.542,
+"end": 0.701
+},
+{
+"word": "Mbappé",
+"start": 0.725,
+"end": 1.02
+},
+{
+"word": "demuestra",
+"start": 1.044,
+"end": 1.475
+},
+{
+"word": "claramente",
+"start": 1.498,
+"end": 2.065
+},
+{
+"word": "que",
+"start": 2.089,
+"end": 2.248
+},
+{
+"word": "lo",
+"start": 2.272,
+"end": 2.431
+},
+{
+"word": "va",
+"start": 2.455,
+"end": 2.614
+},
+{
+"word": "a",
+"start": 2.638,
+"end": 2.797
+},
+{
+"word": "ganar",
+"start": 2.821,
+"end": 3.116
+},
+{
+"word": "todo",
+"start": 3.3,
+"end": 3.594
+},
+{
+"word": "con",
+"start": 3.617,
+"end": 3.776
+},
+{
+"word": "el",
+"start": 3.799,
+"end": 3.958
+},
+{
+"word": "Real",
+"start": 3.982,
+"end": 4.275
+},
+{
+"word": "Madrid",
+"start": 4.299,
+"end": 4.592
+},
+{
+"word": "esta",
+"start": 4.616,
+"end": 4.909
+},
+{
+"word": "temporada.",
+"start": 4.933,
+"end": 5.496
+},
+{
+"word": "Todo",
+"start": 6.1,
+"end": 6.375
+},
+{
+"word": "empieza",
+"start": 6.398,
+"end": 6.8
+},
+{
+"word": "en",
+"start": 6.822,
+"end": 6.971
+},
+{
+"word": "la",
+"start": 6.993,
+"end": 7.142
+},
+{
+"word": "defensa",
+"start": 7.164,
+"end": 7.566
+},
+{
+"word": "del",
+"start": 7.588,
+"end": 7.737
+},
+{
+"word": "Real",
+"start": 7.759,
+"end": 8.034
+},
+{
+"word": "Madrid",
+"start": 8.056,
+"end": 8.332
+},
+{
+"word": "con",
+"start": 8.354,
+"end": 8.503
+},
+{
+"word": "Ibrahima",
+"start": 8.525,
+"end": 9.054
+},
+{
+"word": "Konaté,",
+"start": 9.076,
+"end": 9.478
+},
+{
+"word": "que",
+"start": 9.74,
+"end": 9.863
+},
+{
+"word": "recibe",
+"start": 9.881,
+"end": 10.214
+},
+{
+"word": "un",
+"start": 10.232,
+"end": 10.355
+},
+{
+"word": "pase.",
+"start": 10.374,
+"end": 10.602
+},
+{
+"word": "Sin",
+"start": 11.1,
+"end": 11.28
+},
+{
+"word": "dudarlo,",
+"start": 11.307,
+"end": 11.793
+},
+{
+"word": "juega",
+"start": 12.14,
+"end": 12.459
+},
+{
+"word": "hacia",
+"start": 12.484,
+"end": 12.803
+},
+{
+"word": "atrás",
+"start": 12.829,
+"end": 13.148
+},
+{
+"word": "con",
+"start": 13.173,
+"end": 13.345
+},
+{
+"word": "Thibaut",
+"start": 13.371,
+"end": 13.69
+},
+{
+"word": "Courtois,",
+"start": 13.716,
+"end": 14.034
+},
+{
+"word": "quien",
+"start": 14.44,
+"end": 14.617
+},
+{
+"word": "no",
+"start": 14.643,
+"end": 14.82
+},
+{
+"word": "lo",
+"start": 14.846,
+"end": 15.023
+},
+{
+"word": "piensa",
+"start": 15.049,
+"end": 15.377
+},
+{
+"word": "ni",
+"start": 15.403,
+"end": 15.58
+},
+{
+"word": "un",
+"start": 15.606,
+"end": 15.783
+},
+{
+"word": "segundo",
+"start": 15.809,
+"end": 16.287
+},
+{
+"word": "y",
+"start": 16.313,
+"end": 16.49
+},
+{
+"word": "lanza",
+"start": 16.516,
+"end": 16.843
+},
+{
+"word": "un",
+"start": 16.87,
+"end": 17.047
+},
+{
+"word": "balón",
+"start": 17.073,
+"end": 17.4
+},
+{
+"word": "largo.",
+"start": 17.426,
+"end": 17.754
+},
+{
+"word": "El",
+"start": 18.3,
+"end": 18.458
+},
+{
+"word": "envío",
+"start": 18.481,
+"end": 18.907
+},
+{
+"word": "va",
+"start": 18.93,
+"end": 19.088
+},
+{
+"word": "bien",
+"start": 19.111,
+"end": 19.268
+},
+{
+"word": "dirigido",
+"start": 19.292,
+"end": 19.852
+},
+{
+"word": "hacia",
+"start": 19.875,
+"end": 20.167
+},
+{
+"word": "Arda",
+"start": 20.19,
+"end": 20.482
+},
+{
+"word": "Güler,",
+"start": 20.505,
+"end": 20.797
+},
+{
+"word": "que",
+"start": 21.12,
+"end": 21.263
+},
+{
+"word": "acelera",
+"start": 21.285,
+"end": 21.794
+},
+{
+"word": "con",
+"start": 21.815,
+"end": 21.959
+},
+{
+"word": "un",
+"start": 21.98,
+"end": 22.123
+},
+{
+"word": "defensor",
+"start": 22.145,
+"end": 22.532
+},
+{
+"word": "del",
+"start": 22.553,
+"end": 22.697
+},
+{
+"word": "Valencia",
+"start": 22.718,
+"end": 23.105
+},
+{
+"word": "por",
+"start": 23.127,
+"end": 23.27
+},
+{
+"word": "delante.",
+"start": 23.291,
+"end": 23.679
+},
+{
+"word": "Los",
+"start": 24.14,
+"end": 24.295
+},
+{
+"word": "dos",
+"start": 24.318,
+"end": 24.473
+},
+{
+"word": "corren",
+"start": 24.496,
+"end": 24.782
+},
+{
+"word": "a",
+"start": 24.805,
+"end": 24.96
+},
+{
+"word": "buscar",
+"start": 24.983,
+"end": 25.27
+},
+{
+"word": "el",
+"start": 25.293,
+"end": 25.447
+},
+{
+"word": "balón,",
+"start": 25.47,
+"end": 25.757
+},
+{
+"word": "pero",
+"start": 26.08,
+"end": 26.258
+},
+{
+"word": "Arda",
+"start": 26.272,
+"end": 26.451
+},
+{
+"word": "Güler",
+"start": 26.465,
+"end": 26.643
+},
+{
+"word": "tiene",
+"start": 26.657,
+"end": 26.835
+},
+{
+"word": "una",
+"start": 26.85,
+"end": 27.028
+},
+{
+"word": "ligera",
+"start": 27.042,
+"end": 27.302
+},
+{
+"word": "ventaja.",
+"start": 27.317,
+"end": 27.577
+},
+{
+"word": "Y",
+"start": 27.591,
+"end": 27.687
+},
+{
+"word": "Arda",
+"start": 27.702,
+"end": 27.88
+},
+{
+"word": "Güler",
+"start": 27.894,
+"end": 28.072
+},
+{
+"word": "es",
+"start": 28.086,
+"end": 28.183
+},
+{
+"word": "un",
+"start": 28.197,
+"end": 28.293
+},
+{
+"word": "genio.",
+"start": 28.308,
+"end": 28.486
+},
+{
+"word": "En",
+"start": 29.02,
+"end": 29.33
+},
+{
+"word": "plena",
+"start": 29.376,
+"end": 29.95
+},
+{
+"word": "carrera,",
+"start": 29.996,
+"end": 30.834
+},
+{
+"word": "acelera",
+"start": 31.38,
+"end": 31.749
+},
+{
+"word": "de",
+"start": 31.765,
+"end": 31.869
+},
+{
+"word": "golpe",
+"start": 31.884,
+"end": 32.077
+},
+{
+"word": "como",
+"start": 32.092,
+"end": 32.285
+},
+{
+"word": "si",
+"start": 32.54,
+"end": 32.685
+},
+{
+"word": "fuera",
+"start": 32.706,
+"end": 32.975
+},
+{
+"word": "a",
+"start": 32.996,
+"end": 33.141
+},
+{
+"word": "seguir",
+"start": 33.163,
+"end": 33.431
+},
+{
+"word": "llevándose",
+"start": 33.452,
+"end": 33.967
+},
+{
+"word": "el",
+"start": 33.988,
+"end": 34.133
+},
+{
+"word": "balón,",
+"start": 34.155,
+"end": 34.423
+},
+{
+"word": "pero",
+"start": 34.445,
+"end": 34.713
+},
+{
+"word": "lo",
+"start": 34.734,
+"end": 34.879
+},
+{
+"word": "deja",
+"start": 34.901,
+"end": 35.169
+},
+{
+"word": "atrás.",
+"start": 35.19,
+"end": 35.458
+},
+{
+"word": "Con",
+"start": 35.74,
+"end": 35.886
+},
+{
+"word": "ese",
+"start": 35.908,
+"end": 36.178
+},
+{
+"word": "movimiento",
+"start": 36.2,
+"end": 36.718
+},
+{
+"word": "se",
+"start": 37.18,
+"end": 37.384
+},
+{
+"word": "quita",
+"start": 37.414,
+"end": 37.791
+},
+{
+"word": "por",
+"start": 37.821,
+"end": 38.025
+},
+{
+"word": "completo",
+"start": 38.056,
+"end": 38.606
+},
+{
+"word": "al",
+"start": 38.636,
+"end": 38.84
+},
+{
+"word": "defensor",
+"start": 38.87,
+"end": 39.421
+},
+{
+"word": "que",
+"start": 39.451,
+"end": 39.655
+},
+{
+"word": "lo",
+"start": 39.685,
+"end": 39.889
+},
+{
+"word": "seguía.",
+"start": 39.919,
+"end": 40.47
+},
+{
+"word": "En",
+"start": 41.0,
+"end": 41.15
+},
+{
+"word": "ese",
+"start": 41.172,
+"end": 41.45
+},
+{
+"word": "mismo",
+"start": 41.472,
+"end": 41.75
+},
+{
+"word": "instante,",
+"start": 41.772,
+"end": 42.178
+},
+{
+"word": "se",
+"start": 42.4,
+"end": 42.562
+},
+{
+"word": "da",
+"start": 42.586,
+"end": 42.748
+},
+{
+"word": "la",
+"start": 42.773,
+"end": 42.935
+},
+{
+"word": "vuelta",
+"start": 42.959,
+"end": 43.259
+},
+{
+"word": "y",
+"start": 43.283,
+"end": 43.445
+},
+{
+"word": "tiene",
+"start": 43.469,
+"end": 43.769
+},
+{
+"word": "varias",
+"start": 43.794,
+"end": 44.094
+},
+{
+"word": "opciones.",
+"start": 44.118,
+"end": 44.556
+},
+{
+"word": "Jugar",
+"start": 45.02,
+"end": 45.298
+},
+{
+"word": "con",
+"start": 45.32,
+"end": 45.47
+},
+{
+"word": "su",
+"start": 45.492,
+"end": 45.642
+},
+{
+"word": "compañero,",
+"start": 45.665,
+"end": 46.198
+},
+{
+"word": "que",
+"start": 46.44,
+"end": 46.571
+},
+{
+"word": "avanza",
+"start": 46.591,
+"end": 46.945
+},
+{
+"word": "por",
+"start": 46.964,
+"end": 47.095
+},
+{
+"word": "aquí",
+"start": 47.115,
+"end": 47.469
+},
+{
+"word": "para",
+"start": 47.488,
+"end": 47.731
+},
+{
+"word": "darle",
+"start": 47.75,
+"end": 47.993
+},
+{
+"word": "más",
+"start": 48.013,
+"end": 48.144
+},
+{
+"word": "calma",
+"start": 48.163,
+"end": 48.406
+},
+{
+"word": "a",
+"start": 48.425,
+"end": 48.556
+},
+{
+"word": "la",
+"start": 48.576,
+"end": 48.707
+},
+{
+"word": "jugada,",
+"start": 48.726,
+"end": 49.08
+},
+{
+"word": "o",
+"start": 49.4,
+"end": 49.538
+},
+{
+"word": "cambiar",
+"start": 49.559,
+"end": 49.815
+},
+{
+"word": "el",
+"start": 49.836,
+"end": 49.974
+},
+{
+"word": "juego",
+"start": 49.994,
+"end": 50.251
+},
+{
+"word": "hacia",
+"start": 50.271,
+"end": 50.527
+},
+{
+"word": "el",
+"start": 50.548,
+"end": 50.686
+},
+{
+"word": "otro",
+"start": 50.707,
+"end": 50.963
+},
+{
+"word": "lado.",
+"start": 50.983,
+"end": 51.239
+},
+{
+"word": "Pero",
+"start": 51.78,
+"end": 52.039
+},
+{
+"word": "en",
+"start": 52.06,
+"end": 52.2
+},
+{
+"word": "el",
+"start": 52.221,
+"end": 52.361
+},
+{
+"word": "último",
+"start": 52.382,
+"end": 52.76
+},
+{
+"word": "momento",
+"start": 52.781,
+"end": 53.159
+},
+{
+"word": "ve",
+"start": 53.18,
+"end": 53.32
+},
+{
+"word": "a",
+"start": 53.341,
+"end": 53.481
+},
+{
+"word": "Mbappé",
+"start": 53.502,
+"end": 53.761
+},
+{
+"word": "acelerar",
+"start": 53.782,
+"end": 54.279
+},
+{
+"word": "hacia",
+"start": 54.3,
+"end": 54.559
+},
+{
+"word": "el",
+"start": 54.58,
+"end": 54.72
+},
+{
+"word": "área",
+"start": 54.741,
+"end": 55.119
+},
+{
+"word": "y",
+"start": 55.38,
+"end": 55.55
+},
+{
+"word": "decide",
+"start": 55.575,
+"end": 56.035
+},
+{
+"word": "filtrarle",
+"start": 56.06,
+"end": 56.519
+},
+{
+"word": "el",
+"start": 56.545,
+"end": 56.715
+},
+{
+"word": "pase.",
+"start": 56.74,
+"end": 57.055
+},
+{
+"word": "Mbappé",
+"start": 57.56,
+"end": 57.851
+},
+{
+"word": "recibe",
+"start": 57.874,
+"end": 58.299
+},
+{
+"word": "el",
+"start": 58.322,
+"end": 58.479
+},
+{
+"word": "balón",
+"start": 58.503,
+"end": 58.793
+},
+{
+"word": "y",
+"start": 58.817,
+"end": 58.974
+},
+{
+"word": "entra",
+"start": 58.997,
+"end": 59.288
+},
+{
+"word": "al",
+"start": 59.312,
+"end": 59.469
+},
+{
+"word": "área.",
+"start": 59.492,
+"end": 59.917
+},
+{
+"word": "El",
+"start": 60.38,
+"end": 60.518
+},
+{
+"word": "portero",
+"start": 60.539,
+"end": 60.912
+},
+{
+"word": "sale",
+"start": 60.933,
+"end": 61.188
+},
+{
+"word": "a",
+"start": 61.209,
+"end": 61.347
+},
+{
+"word": "su",
+"start": 61.367,
+"end": 61.506
+},
+{
+"word": "encuentro,",
+"start": 61.526,
+"end": 61.899
+},
+{
+"word": "pero",
+"start": 62.18,
+"end": 62.474
+},
+{
+"word": "Mbappé",
+"start": 62.498,
+"end": 62.793
+},
+{
+"word": "lo",
+"start": 62.816,
+"end": 62.975
+},
+{
+"word": "deja",
+"start": 62.999,
+"end": 63.294
+},
+{
+"word": "completamente",
+"start": 63.317,
+"end": 64.018
+},
+{
+"word": "atrás",
+"start": 64.042,
+"end": 64.336
+},
+{
+"word": "y",
+"start": 64.36,
+"end": 64.519
+},
+{
+"word": "empuja",
+"start": 64.543,
+"end": 64.973
+},
+{
+"word": "el",
+"start": 64.996,
+"end": 65.155
+},
+{
+"word": "balón",
+"start": 65.179,
+"end": 65.474
+},
+{
+"word": "al",
+"start": 65.497,
+"end": 65.656
+},
+{
+"word": "fondo",
+"start": 65.8,
+"end": 66.051
+},
+{
+"word": "de",
+"start": 66.072,
+"end": 66.208
+},
+{
+"word": "la",
+"start": 66.228,
+"end": 66.364
+},
+{
+"word": "red.",
+"start": 66.384,
+"end": 66.52
+}
+]

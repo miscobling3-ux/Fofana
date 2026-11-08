@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Poppins"; font-weight: 500; src: url("assets/poppins-latin-500-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Poppins"; font-weight: 800; src: url("assets/poppins-latin-800-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Montserrat"; font-weight: 800; src: url("assets/montserrat-latin-800-normal.woff2") format("woff2"); }
+      :root { --red: #ff1f1f; --ink: #ffffff; --ground: #000000; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--ground); }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--ground); font-family: "Poppins", sans-serif; }
+      #stage { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; will-change: transform; }
+      #stage img.src { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+      #opts { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; opacity: 0; }
+      #spot { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.58); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); opacity: 0; z-index: 5; }
+      #ring { position: absolute; left: 0; top: 0; border: 5px solid #fff; border-radius: 50%; box-shadow: 0 0 18px rgba(255,255,255,0.75), inset 0 0 12px rgba(255,255,255,0.35); opacity: 0; z-index: 6; }
+      #label { position: absolute; left: 0; top: 0; width: 0; height: 0; z-index: 8; opacity: 0; }
+      #label .inner { position: absolute; left: 0; bottom: 0; transform-origin: 50% 100%; }
+      #label .logo { position: absolute; left: -42px; bottom: 152px; width: 84px; height: 84px; border-radius: 50%; background: #fff; box-shadow: 0 3px 8px rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; }
+      #label .logo img { width: 58px; height: 58px; object-fit: contain; }
+      #label .name { position: absolute; left: 0; bottom: 96px; transform: translateX(-50%); white-space: nowrap; font-family: "Montserrat", sans-serif; font-weight: 800; font-size: 38px; line-height: 1; color: #fff; background: rgba(12, 12, 16, 0.86); padding: 9px 20px 10px; border-radius: 16px; box-shadow: 0 3px 8px rgba(0,0,0,0.45); }
+      #label svg.arrow { position: absolute; left: -32px; bottom: 0; width: 64px; height: 86px; filter: drop-shadow(0 3px 3px rgba(0,0,0,0.55)); }
+      #banner { position: absolute; top: 96px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 0; z-index: 9; opacity: 0; font-family: "Poppins", sans-serif; font-weight: 800; color: #fff; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.55)); }
+      #banner .team { background: rgba(12,12,16,0.9); font-size: 40px; padding: 10px 22px; display: flex; align-items: center; gap: 12px; height: 76px; }
+      #banner .team img { width: 46px; height: 46px; object-fit: contain; }
+      #banner .t1 { border-radius: 14px 0 0 14px; }
+      #banner .t2 { border-radius: 0 14px 14px 0; }
+      #banner .score { background: var(--red); height: 76px; display: flex; align-items: center; padding: 0 20px; font-size: 46px; gap: 14px; perspective: 400px; }
+      #banner .digit { display: inline-block; width: 32px; text-align: center; position: relative; height: 60px; line-height: 60px; }
+      #banner .digit span { position: absolute; left: 0; top: 0; width: 100%; backface-visibility: hidden; }
+      #banner .min { background: rgba(12,12,16,0.9); margin-left: 10px; border-radius: 14px; font-size: 34px; height: 76px; display: flex; align-items: center; padding: 0 18px; }
+      .sub { position: absolute; left: 0; width: 1080px; top: 1600px; text-align: center; font-family: "Poppins", sans-serif; font-weight: 500; font-size: 46px; line-height: 1.2; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.85); z-index: 20; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="{{DUR}}" data-width="1080" data-height="1920">
+      <div id="stage">
+        {{IMGS}}
+        <svg id="opts" viewBox="0 0 1920 1080">
+          <defs>
+            <marker id="ah" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ffd400" /></marker>
+          </defs>
+          <path id="arr1" d="M1462,505 C1240,520 960,560 778,640" fill="none" stroke="#ffd400" stroke-width="6" stroke-linecap="round" marker-end="url(#ah)" />
+          <circle id="mate" cx="735" cy="652" r="46" fill="none" stroke="#ffd400" stroke-width="5" />
+          <path id="arr2" d="M1450,520 C1100,430 600,440 210,555" fill="none" stroke="#ffd400" stroke-width="6" stroke-dasharray="0" stroke-linecap="round" marker-end="url(#ah)" />
+        </svg>
+      </div>
+      <div id="spot"></div>
+      <div id="ring"></div>
+      <div id="label">
+        <div class="inner">
+          <div class="logo"><img src="assets/rma.png" alt="" /></div>
+          <div class="name" id="lname">Kylian Mbappé</div>
+          <svg class="arrow" viewBox="0 0 64 86"><path d="M20,2 H44 V44 H62 L32,84 L2,44 H20 Z" fill="#ff1f1f" stroke="#3a0000" stroke-width="3" stroke-linejoin="round" /></svg>
+        </div>
+      </div>
+      <div id="banner">
+        <div class="team t1"><img src="assets/vcf.png" alt="" />VAL</div>
+        <div class="score"><span class="digit">0</span>–<span class="digit" id="d2" data-layout-allow-overlap><span id="dOld">2</span><span id="dNew">3</span></span></div>
+        <div class="team t2">RMA<img src="assets/rma.png" alt="" /></div>
+        <div class="min">74'</div>
+      </div>
+      {{SUBS}}
+    {{AUDIO}}
+    </div>
+    <script>
+      const DATA = {{DATA}};
+      const F = DATA.frames;
+      const stage = document.getElementById("stage");
+      const spot = document.getElementById("spot");
+      const ring = document.getElementById("ring");
+      const label = document.getElementById("label");
+      const inner = label.querySelector(".inner");
+      const lname = document.getElementById("lname");
+      const logo = label.querySelector(".logo");
+      const banner = document.getElementById("banner");
+      const dOld = document.getElementById("dOld");
+      const dNew = document.getElementById("dNew");
+      const opts = document.getElementById("opts");
+      const arr1 = document.getElementById("arr1"), arr2 = document.getElementById("arr2"), mate = document.getElementById("mate");
+      const L1 = arr1.getTotalLength(), L2 = arr2.getTotalLength(), LC = 2 * Math.PI * 46;
+      arr1.style.strokeDasharray = L1; arr2.style.strokeDasharray = L2; mate.style.strokeDasharray = LC;
+      const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+      function apply(t) {
+        const i = clamp(Math.floor(t * DATA.fps + 1e-6), 0, DATA.n - 1);
+        const f = F[i];
+        const [x0, y0, s, punch] = f.cam;
+        const P = (v, c) => c + (v - c) * punch;
+        stage.style.transform = `translate(540px,960px) scale(${punch}) translate(-540px,-960px) translate(${-x0 * s}px,${-y0 * s}px) scale(${s})`;
+        // options overlay (freeze on the live shot)
+        if (t >= DATA.shot8[0] && t < DATA.shot8[1]) {
+          opts.style.opacity = 1;
+          const o = DATA.opt;
+          const p1 = clamp((t - o.t_jugar) / 0.9, 0, 1), p2 = clamp((t - o.t_otro) / 1.0, 0, 1), pc = clamp((t - o.t_jugar - 0.7) / 0.5, 0, 1);
+          arr1.style.strokeDashoffset = L1 * (1 - p1); arr1.style.opacity = p1 > 0 ? 1 : 0;
+          mate.style.strokeDashoffset = LC * (1 - pc); mate.style.opacity = pc > 0 ? 1 : 0;
+          arr2.style.strokeDashoffset = L2 * (1 - p2); arr2.style.opacity = p2 > 0 ? 1 : 0;
+        } else { opts.style.opacity = 0; }
+        // spotlight
+        if (f.sp) {
+          const [al, sx, sy, r] = f.sp;
+          const X = P(sx, 540), Y = P(sy, 960), Rr = r * punch;
+          const m = `radial-gradient(circle ${Rr}px at ${X}px ${Y}px, transparent ${Rr - 1}px, #000 ${Rr + 1}px)`;
+          spot.style.webkitMaskImage = m; spot.style.maskImage = m; spot.style.opacity = al;
+          ring.style.width = ring.style.height = `${2 * Rr + 10}px`;
+          ring.style.transform = `translate(${X - Rr - 5}px,${Y - Rr - 5}px)`; ring.style.opacity = al;
+        } else { spot.style.opacity = 0; ring.style.opacity = 0; }
+        // ball-carrier label
+        if (f.lab) {
+          const [nm, hx, hy, age] = f.lab;
+          if (lname.textContent !== nm) lname.textContent = nm;
+          const bounce = 5 * Math.abs(Math.sin(2 * Math.PI * 1.4 * t));
+          label.style.transform = `translate(${P(hx, 540)}px,${P(hy, 960) - 6 - bounce}px)`;
+          const pt = clamp(age / DATA.fps / 0.12, 0, 1);
+          const sc = pt < 1 ? 0.2 + 0.8 * (1 - Math.pow(1 - pt, 3)) * (1 + 0.12 * Math.sin(pt * Math.PI)) : 1;
+          inner.style.transform = `scale(${sc})`;
+          logo.style.opacity = hy < 330 ? 0 : 1;
+          label.style.opacity = 1;
+        } else { label.style.opacity = 0; }
+        // score banner
+        if (t >= DATA.banner) {
+          const pb = clamp((t - DATA.banner) / 0.12, 0, 1);
+          banner.style.opacity = pb * f.bv;
+          banner.style.transform = `translateX(-50%) scale(${0.6 + 0.4 * pb})`;
+          const pf = clamp((t - DATA.flip) / 0.35, 0, 1);
+          dOld.style.transform = `rotateX(${pf * 180}deg)`;
+          dNew.style.transform = `rotateX(${pf * 180 - 180}deg)`;
+        } else { banner.style.opacity = 0; }
+      }
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const proxy = { t: 0 };
+      tl.to(proxy, { t: {{DUR}}, duration: {{DUR}}, ease: "none", onUpdate: () => apply(proxy.t) }, 0);
+      window.__timelines["main"] = tl;
+      apply(0);
+      tl.seek(0);
+    </script>
+  </body>
+</html>
