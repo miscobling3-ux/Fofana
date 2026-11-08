@@ -60,3 +60,15 @@ python3 remix.py --script guion_ongles_fr --stills 2,14,45   # aperçu rapide en
 ```
 - **Texte, zooms et badges** : `video/guion_ongles_fr.py` / `guion_ongles_es.py` → `LINES`. Chaque phrase indique le passage de la vidéo source (`src`) et le zoom (`zoom=(départ, fin, centre x, centre y)`).
 - **Autre vidéo source** : copie un script, change `SOURCE` et les passages. Si la source n'a pas de sous-titres au même endroit, adapte `BAND` / `WATERMARK` dans `remix.py`.
+
+---
+
+# Analyse du but d'Arda Güler (Valencia 0-2 Real Madrid) — espagnol
+
+Vidéo prête à poster : **`output/arda_guler_valencia_es.mp4`** (1080×1920, 30 fps, 66 s, −14 LUFS, crête −2,3 dBTP).
+Couvertures : `output/arda_guler_portada_1080x1920.png` et `output/arda_guler_portada_1080x1080.png`.
+
+Montée dans HyperFrames selon le master prompt v3 avec la voix ElevenLabs fournie (espagnol) :
+recadrage 9:16 qui suit l'action, étiquettes (flèche + nom + logo) sur chaque porteur du ballon,
+effet projecteur sur Diomande, Mbappé et Bellingham, sous-titres mot par mot, bandeau de score qui passe à 0-2, bruitages.
+Les scripts d'analyse et de génération sont dans `video/arda_guler_es/` (les images source extraites ne sont pas versionnées).
