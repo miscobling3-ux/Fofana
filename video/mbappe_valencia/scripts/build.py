@@ -299,7 +299,7 @@ for i, o in enumerate(out):
     if c is not None:
         name, hx, hy, fy, hw = c
         lx, ly = (hx - x0) * s, (hy - y0) * s
-        if 60 <= lx <= OW - 60 and 165 <= ly <= OH:
+        if 60 <= lx <= OW - 60 and 165 <= ly <= OH - 420:
             lab = [name, round(lx, 1), round(ly, 1)]
     j, al = spot_info[i]
     sp = None
@@ -382,9 +382,9 @@ snd.append(("pop", BANNER_T, 0.14, 0.45))
 # ball strike on the contact frame of the finish
 snd.append(("kick", T["empuja"], 0.32, 0.7))
 FLIP_T = find("red", 66)
-audio_html = ['<audio id="voice" class="clip" src="assets/voice.wav" data-start="0" data-duration="66.800" data-volume="1.0"></audio>']
+audio_html = ['<audio id="voice" class="clip" src="assets/voice.wav" data-start="0" data-duration="66.800" data-volume="0.76"></audio>']
 for n, (nm, st, du, vol) in enumerate(snd):
-    audio_html.append(f'<audio id="sfx{n}" class="clip" src="assets/sfx/{nm}.wav" data-start="{st:.3f}" data-duration="{du:.3f}" data-volume="{vol}"></audio>')
+    audio_html.append(f'<audio id="sfx{n}" class="clip" src="assets/sfx/{nm}.wav" data-start="{st:.3f}" data-duration="{du:.3f}" data-volume="{vol*0.55:.3f}"></audio>')
 
 # options freeze overlay (arrows drawn in source coordinates, inside the stage)
 opt = {"t_jugar": round(t_jugar, 3), "t_otro": round(t_otro - 0.3, 3), "t_end": round(t_pero, 3)}

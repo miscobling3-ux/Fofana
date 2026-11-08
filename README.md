@@ -60,3 +60,12 @@ python3 remix.py --script guion_ongles_fr --stills 2,14,45   # aperçu rapide en
 ```
 - **Texte, zooms et badges** : `video/guion_ongles_fr.py` / `guion_ongles_es.py` → `LINES`. Chaque phrase indique le passage de la vidéo source (`src`) et le zoom (`zoom=(départ, fin, centre x, centre y)`).
 - **Autre vidéo source** : copie un script, change `SOURCE` et les passages. Si la source n'a pas de sous-titres au même endroit, adapte `BAND` / `WATERMARK` dans `remix.py`.
+
+---
+
+# Analyse du but de Mbappé (Valencia 0-3 Real Madrid) — voix espagnole
+
+Vidéo prête à poster : **`output/mbappe_valencia_es.mp4`** (1080×1920, 30 i/s, 67 s, −14 LUFS). Couvertures : `output/mbappe_valencia_portada_1080x1920.png` et `..._1080x1080.png`.
+
+Faite selon le master prompt « analyse d'un but », avec la voix ElevenLabs fournie (espagnol) : recadrage 9:16 qui suit le joueur et évite score télé / filigranes, étiquette (flèche + nom + logo) sur le porteur du ballon, effet projecteur sur le joueur nommé, sous-titres mot à mot, bandeau de score qui passe de 0-2 à 0-3, bruitages.
+Montage en HTML/GSAP rendu par HyperFrames ; les scripts sont dans `video/mbappe_valencia/scripts/` (`build.py` génère la composition).
