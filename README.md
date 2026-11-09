@@ -60,3 +60,13 @@ python3 remix.py --script guion_ongles_fr --stills 2,14,45   # aperçu rapide en
 ```
 - **Texte, zooms et badges** : `video/guion_ongles_fr.py` / `guion_ongles_es.py` → `LINES`. Chaque phrase indique le passage de la vidéo source (`src`) et le zoom (`zoom=(départ, fin, centre x, centre y)`).
 - **Autre vidéo source** : copie un script, change `SOURCE` et les passages. Si la source n'a pas de sous-titres au même endroit, adapte `BAND` / `WATERMARK` dans `remix.py`.
+
+---
+
+# Analyse du but de Fermín López (Atlético 1-1 Barça) — voix off espagnole
+
+Vidéo prête à poster : **`output/fermin_lopez_atleti_barca_es.mp4`** (1080×1920, 30 fps, 89 s, −14 LUFS). Couvertures : `output/fermin_portada_9x16.png` et `output/fermin_portada_1x1.png`.
+
+- Montage fait dans HyperFrames ; Python sert seulement à l'analyse et au calcul du découpage, de la caméra et des positions. Code dans `video/fermin_hyperframes/` : `build.py` génère `index.html`, et les images sources à 50 i/s sont extraites des clips.
+- La voix off est celle fournie par l'utilisateur. Elle a été transcrite, puis calée mot par mot dans `words.json`.
+- Le son d'origine des clips n'est pas utilisé. Les bruitages sont synthétisés, car le site Mixkit n'est pas accessible depuis l'environnement.
