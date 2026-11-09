@@ -1,0 +1,987 @@
+[
+{
+"text": "Este",
+"start": 0.04,
+"end": 0.371
+},
+{
+"text": "gol",
+"start": 0.371,
+"end": 0.537
+},
+{
+"text": "del",
+"start": 0.537,
+"end": 0.703
+},
+{
+"text": "Atlético",
+"start": 0.703,
+"end": 1.366
+},
+{
+"text": "de",
+"start": 1.366,
+"end": 1.531
+},
+{
+"text": "Madrid",
+"start": 1.531,
+"end": 1.863
+},
+{
+"text": "de",
+"start": 1.863,
+"end": 2.029
+},
+{
+"text": "hoy,",
+"start": 2.029,
+"end": 2.194
+},
+{
+"text": "demuestra",
+"start": 2.194,
+"end": 2.691
+},
+{
+"text": "claramente",
+"start": 2.691,
+"end": 3.354
+},
+{
+"text": "por",
+"start": 3.354,
+"end": 3.52
+},
+{
+"text": "qué",
+"start": 3.52,
+"end": 3.686
+},
+{
+"text": "la",
+"start": 3.686,
+"end": 3.851
+},
+{
+"text": "defensa",
+"start": 3.851,
+"end": 4.349
+},
+{
+"text": "del",
+"start": 4.349,
+"end": 4.514
+},
+{
+"text": "Barcelona",
+"start": 4.514,
+"end": 5.177
+},
+{
+"text": "tiene",
+"start": 5.177,
+"end": 5.509
+},
+{
+"text": "una",
+"start": 5.509,
+"end": 5.84
+},
+{
+"text": "enorme",
+"start": 5.84,
+"end": 6.337
+},
+{
+"text": "debilidad,",
+"start": 6.337,
+"end": 7.0
+},
+{
+"text": "y",
+"start": 7.32,
+"end": 7.48
+},
+{
+"text": "por",
+"start": 7.48,
+"end": 7.64
+},
+{
+"text": "qué",
+"start": 7.64,
+"end": 7.8
+},
+{
+"text": "va",
+"start": 7.8,
+"end": 7.96
+},
+{
+"text": "a",
+"start": 7.96,
+"end": 8.12
+},
+{
+"text": "encajar",
+"start": 8.12,
+"end": 8.6
+},
+{
+"text": "muchos",
+"start": 8.6,
+"end": 8.92
+},
+{
+"text": "goles",
+"start": 8.92,
+"end": 9.24
+},
+{
+"text": "esta",
+"start": 9.24,
+"end": 9.56
+},
+{
+"text": "temporada.",
+"start": 9.56,
+"end": 10.2
+},
+{
+"text": "Todo",
+"start": 11.14,
+"end": 11.468
+},
+{
+"text": "comienza",
+"start": 11.468,
+"end": 11.961
+},
+{
+"text": "cuando",
+"start": 11.961,
+"end": 12.289
+},
+{
+"text": "Marcos",
+"start": 12.289,
+"end": 12.617
+},
+{
+"text": "Llorente",
+"start": 12.617,
+"end": 13.109
+},
+{
+"text": "realiza",
+"start": 13.109,
+"end": 13.766
+},
+{
+"text": "un",
+"start": 13.766,
+"end": 13.93
+},
+{
+"text": "pase",
+"start": 13.93,
+"end": 14.258
+},
+{
+"text": "en",
+"start": 14.258,
+"end": 14.422
+},
+{
+"text": "profundidad",
+"start": 14.422,
+"end": 15.079
+},
+{
+"text": "hacia",
+"start": 15.079,
+"end": 15.407
+},
+{
+"text": "Kang-in",
+"start": 15.407,
+"end": 15.735
+},
+{
+"text": "Lee",
+"start": 15.735,
+"end": 16.064
+},
+{
+"text": "por",
+"start": 16.064,
+"end": 16.228
+},
+{
+"text": "la",
+"start": 16.228,
+"end": 16.392
+},
+{
+"text": "banda.",
+"start": 16.392,
+"end": 16.72
+},
+{
+"text": "Lee",
+"start": 17.32,
+"end": 17.64
+},
+{
+"text": "controla",
+"start": 17.64,
+"end": 18.12
+},
+{
+"text": "el",
+"start": 18.12,
+"end": 18.28
+},
+{
+"text": "balón",
+"start": 18.28,
+"end": 18.6
+},
+{
+"text": "y",
+"start": 18.82,
+"end": 18.97
+},
+{
+"text": "comienza",
+"start": 18.97,
+"end": 19.419
+},
+{
+"text": "a",
+"start": 19.419,
+"end": 19.568
+},
+{
+"text": "avanzar",
+"start": 19.568,
+"end": 20.017
+},
+{
+"text": "aprovechando",
+"start": 20.017,
+"end": 20.766
+},
+{
+"text": "los",
+"start": 20.766,
+"end": 20.915
+},
+{
+"text": "espacios",
+"start": 20.915,
+"end": 21.364
+},
+{
+"text": "en",
+"start": 21.364,
+"end": 21.514
+},
+{
+"text": "una",
+"start": 21.514,
+"end": 21.813
+},
+{
+"text": "situación",
+"start": 21.813,
+"end": 22.262
+},
+{
+"text": "de",
+"start": 22.262,
+"end": 22.412
+},
+{
+"text": "contraataque.",
+"start": 22.412,
+"end": 23.16
+},
+{
+"text": "A",
+"start": 23.84,
+"end": 23.98
+},
+{
+"text": "medida",
+"start": 23.98,
+"end": 24.4
+},
+{
+"text": "que",
+"start": 24.4,
+"end": 24.54
+},
+{
+"text": "sigue",
+"start": 24.54,
+"end": 24.82
+},
+{
+"text": "progresando,",
+"start": 24.82,
+"end": 25.38
+},
+{
+"text": "levanta",
+"start": 25.66,
+"end": 26.096
+},
+{
+"text": "la",
+"start": 26.096,
+"end": 26.242
+},
+{
+"text": "cabeza",
+"start": 26.242,
+"end": 26.678
+},
+{
+"text": "y",
+"start": 26.678,
+"end": 26.824
+},
+{
+"text": "observa",
+"start": 26.824,
+"end": 27.26
+},
+{
+"text": "cómo",
+"start": 27.38,
+"end": 27.708
+},
+{
+"text": "Julián",
+"start": 27.708,
+"end": 28.035
+},
+{
+"text": "Álvarez",
+"start": 28.035,
+"end": 28.527
+},
+{
+"text": "se",
+"start": 28.527,
+"end": 28.69
+},
+{
+"text": "desmarca",
+"start": 28.69,
+"end": 29.182
+},
+{
+"text": "a",
+"start": 29.182,
+"end": 29.346
+},
+{
+"text": "la",
+"start": 29.346,
+"end": 29.51
+},
+{
+"text": "espalda",
+"start": 29.51,
+"end": 30.001
+},
+{
+"text": "de",
+"start": 30.001,
+"end": 30.165
+},
+{
+"text": "la",
+"start": 30.165,
+"end": 30.329
+},
+{
+"text": "defensa.",
+"start": 30.329,
+"end": 30.82
+},
+{
+"text": "Sin",
+"start": 31.56,
+"end": 31.743
+},
+{
+"text": "pensarlo",
+"start": 31.743,
+"end": 32.291
+},
+{
+"text": "dos",
+"start": 32.291,
+"end": 32.474
+},
+{
+"text": "veces,",
+"start": 32.474,
+"end": 32.84
+},
+{
+"text": "Kang-in",
+"start": 33.18,
+"end": 33.497
+},
+{
+"text": "Lee",
+"start": 33.497,
+"end": 33.814
+},
+{
+"text": "ejecuta",
+"start": 33.814,
+"end": 34.447
+},
+{
+"text": "un",
+"start": 34.447,
+"end": 34.606
+},
+{
+"text": "espectacular",
+"start": 34.606,
+"end": 35.398
+},
+{
+"text": "pase",
+"start": 35.398,
+"end": 35.714
+},
+{
+"text": "de",
+"start": 35.714,
+"end": 35.873
+},
+{
+"text": "trivela",
+"start": 35.873,
+"end": 36.348
+},
+{
+"text": "hacia",
+"start": 36.348,
+"end": 36.665
+},
+{
+"text": "Álvarez,",
+"start": 36.665,
+"end": 37.14
+},
+{
+"text": "quien",
+"start": 37.48,
+"end": 37.649
+},
+{
+"text": "controla",
+"start": 37.649,
+"end": 38.154
+},
+{
+"text": "el",
+"start": 38.154,
+"end": 38.323
+},
+{
+"text": "balón",
+"start": 38.323,
+"end": 38.66
+},
+{
+"text": "y",
+"start": 38.9,
+"end": 39.06
+},
+{
+"text": "se",
+"start": 39.06,
+"end": 39.22
+},
+{
+"text": "encuentra",
+"start": 39.22,
+"end": 39.7
+},
+{
+"text": "frente",
+"start": 39.7,
+"end": 40.02
+},
+{
+"text": "a",
+"start": 40.02,
+"end": 40.18
+},
+{
+"text": "frente",
+"start": 40.18,
+"end": 40.5
+},
+{
+"text": "con",
+"start": 40.5,
+"end": 40.66
+},
+{
+"text": "un",
+"start": 40.66,
+"end": 40.82
+},
+{
+"text": "defensor.",
+"start": 40.82,
+"end": 41.3
+},
+{
+"text": "En",
+"start": 42.06,
+"end": 42.193
+},
+{
+"text": "ese",
+"start": 42.193,
+"end": 42.46
+},
+{
+"text": "momento,",
+"start": 42.46,
+"end": 42.86
+},
+{
+"text": "todo",
+"start": 43.22,
+"end": 43.5
+},
+{
+"text": "el",
+"start": 43.5,
+"end": 43.64
+},
+{
+"text": "mundo",
+"start": 43.64,
+"end": 43.92
+},
+{
+"text": "pensaba",
+"start": 43.92,
+"end": 44.34
+},
+{
+"text": "que",
+"start": 44.34,
+"end": 44.48
+},
+{
+"text": "iba",
+"start": 44.48,
+"end": 44.76
+},
+{
+"text": "a",
+"start": 44.76,
+"end": 44.9
+},
+{
+"text": "realizar",
+"start": 44.9,
+"end": 45.46
+},
+{
+"text": "un",
+"start": 45.46,
+"end": 45.6
+},
+{
+"text": "pase,",
+"start": 45.6,
+"end": 45.88
+},
+{
+"text": "ya",
+"start": 46.16,
+"end": 46.331
+},
+{
+"text": "fuera",
+"start": 46.331,
+"end": 46.672
+},
+{
+"text": "hacia",
+"start": 46.672,
+"end": 47.013
+},
+{
+"text": "Grimaldo",
+"start": 47.013,
+"end": 47.525
+},
+{
+"text": "o",
+"start": 47.525,
+"end": 47.696
+},
+{
+"text": "hacia",
+"start": 47.696,
+"end": 48.037
+},
+{
+"text": "Kang-in",
+"start": 48.037,
+"end": 48.379
+},
+{
+"text": "Lee,",
+"start": 48.379,
+"end": 48.72
+},
+{
+"text": "que",
+"start": 49.06,
+"end": 49.192
+},
+{
+"text": "se",
+"start": 49.192,
+"end": 49.323
+},
+{
+"text": "encontraban",
+"start": 49.323,
+"end": 49.85
+},
+{
+"text": "fuera",
+"start": 49.85,
+"end": 50.113
+},
+{
+"text": "del",
+"start": 50.113,
+"end": 50.245
+},
+{
+"text": "área.",
+"start": 50.245,
+"end": 50.64
+},
+{
+"text": "Pero",
+"start": 51.3,
+"end": 51.628
+},
+{
+"text": "Julián",
+"start": 51.628,
+"end": 51.956
+},
+{
+"text": "Álvarez",
+"start": 51.956,
+"end": 52.448
+},
+{
+"text": "descarta",
+"start": 52.448,
+"end": 52.94
+},
+{
+"text": "esas",
+"start": 52.94,
+"end": 53.268
+},
+{
+"text": "opciones",
+"start": 53.268,
+"end": 53.76
+},
+{
+"text": "y",
+"start": 54.02,
+"end": 54.2
+},
+{
+"text": "decide",
+"start": 54.2,
+"end": 54.74
+},
+{
+"text": "encarar",
+"start": 54.74,
+"end": 55.28
+},
+{
+"text": "directamente",
+"start": 55.42,
+"end": 56.02
+},
+{
+"text": "al",
+"start": 56.02,
+"end": 56.14
+},
+{
+"text": "defensor.",
+"start": 56.14,
+"end": 56.5
+},
+{
+"text": "Levanta",
+"start": 57.12,
+"end": 57.557
+},
+{
+"text": "la",
+"start": 57.557,
+"end": 57.703
+},
+{
+"text": "cabeza",
+"start": 57.703,
+"end": 58.14
+},
+{
+"text": "y",
+"start": 58.38,
+"end": 58.55
+},
+{
+"text": "descubre",
+"start": 58.55,
+"end": 59.062
+},
+{
+"text": "que",
+"start": 59.062,
+"end": 59.232
+},
+{
+"text": "Giuliano",
+"start": 59.232,
+"end": 59.744
+},
+{
+"text": "Simeone",
+"start": 59.744,
+"end": 60.426
+},
+{
+"text": "está",
+"start": 60.426,
+"end": 60.767
+},
+{
+"text": "completamente",
+"start": 60.767,
+"end": 61.619
+},
+{
+"text": "solo,",
+"start": 61.619,
+"end": 61.96
+},
+{
+"text": "sin",
+"start": 62.26,
+"end": 62.426
+},
+{
+"text": "ningún",
+"start": 62.426,
+"end": 62.758
+},
+{
+"text": "defensa",
+"start": 62.758,
+"end": 63.257
+},
+{
+"text": "que",
+"start": 63.257,
+"end": 63.423
+},
+{
+"text": "lo",
+"start": 63.423,
+"end": 63.589
+},
+{
+"text": "esté",
+"start": 63.589,
+"end": 63.922
+},
+{
+"text": "marcando.",
+"start": 63.922,
+"end": 64.42
+},
+{
+"text": "Entonces,",
+"start": 65.04,
+"end": 65.62
+},
+{
+"text": "le",
+"start": 65.84,
+"end": 65.947
+},
+{
+"text": "envía",
+"start": 65.947,
+"end": 66.267
+},
+{
+"text": "un",
+"start": 66.267,
+"end": 66.373
+},
+{
+"text": "pase",
+"start": 66.373,
+"end": 66.587
+},
+{
+"text": "espectacular,",
+"start": 66.587,
+"end": 67.12
+},
+{
+"text": "perfectamente",
+"start": 67.24,
+"end": 67.76
+},
+{
+"text": "ajustado,",
+"start": 68.02,
+"end": 68.2
+},
+{
+"text": "y",
+"start": 68.34,
+"end": 68.44
+},
+{
+"text": "Simeone",
+"start": 68.58,
+"end": 69.6
+},
+{
+"text": "solo",
+"start": 69.98,
+"end": 70.377
+},
+{
+"text": "tiene",
+"start": 70.377,
+"end": 70.773
+},
+{
+"text": "que",
+"start": 70.773,
+"end": 70.972
+},
+{
+"text": "rematar",
+"start": 70.972,
+"end": 71.567
+},
+{
+"text": "de",
+"start": 71.567,
+"end": 71.765
+},
+{
+"text": "primeras,",
+"start": 71.765,
+"end": 72.36
+},
+{
+"text": "sin",
+"start": 72.58,
+"end": 72.748
+},
+{
+"text": "necesidad",
+"start": 72.748,
+"end": 73.422
+},
+{
+"text": "de",
+"start": 73.422,
+"end": 73.59
+},
+{
+"text": "controlar",
+"start": 73.59,
+"end": 74.095
+},
+{
+"text": "el",
+"start": 74.095,
+"end": 74.263
+},
+{
+"text": "balón,",
+"start": 74.263,
+"end": 74.6
+},
+{
+"text": "para",
+"start": 74.86,
+"end": 75.236
+},
+{
+"text": "mandarlo",
+"start": 75.236,
+"end": 75.8
+},
+{
+"text": "directamente",
+"start": 75.94,
+"end": 76.576
+},
+{
+"text": "al",
+"start": 76.576,
+"end": 76.704
+},
+{
+"text": "fondo",
+"start": 76.704,
+"end": 76.958
+},
+{
+"text": "de",
+"start": 76.958,
+"end": 77.085
+},
+{
+"text": "la",
+"start": 77.085,
+"end": 77.213
+},
+{
+"text": "red.",
+"start": 77.213,
+"end": 77.34
+}
+]

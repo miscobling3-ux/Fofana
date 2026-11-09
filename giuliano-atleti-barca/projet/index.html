@@ -1,0 +1,1070 @@
+<!doctype html>
+<html lang="es" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/gsap.min.js"></script>
+    <script src="data.js"></script>
+    <style>
+      @font-face { font-family: "Montserrat"; font-weight: 800; src: url("assets/fonts/montserrat-latin-800-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Poppins"; font-weight: 500; src: url("assets/fonts/poppins-latin-500-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Poppins"; font-weight: 800; src: url("assets/fonts/poppins-latin-800-normal.woff2") format("woff2"); }
+      :root { --red: #ff1f1f; --ink: #ffffff; --ground: #000; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--ground); }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+      #cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; will-change: transform; }
+      #cam img.src { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+      #spot { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.58); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); opacity: 0; z-index: 5; }
+      #ring { position: absolute; left: 0; top: 0; border: 5px solid #fff; border-radius: 50%; box-shadow: 0 0 14px rgba(255,255,255,0.55), inset 0 0 10px rgba(255,255,255,0.25); opacity: 0; z-index: 6; }
+      #tag { position: absolute; left: 0; top: 0; width: 0; height: 0; z-index: 8; display: none; }
+      #tag .wrap { position: absolute; left: 0; bottom: 0; transform-origin: 50% 100%; display: flex; flex-direction: column; align-items: center; transform: translateX(-50%); }
+      #tag .logo { width: 84px; height: 84px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 8px rgba(0,0,0,0.45); margin-bottom: 8px; }
+      #tag .logo img { height: 66px; width: auto; }
+      #tag .name { font-family: "Montserrat", sans-serif; font-weight: 800; font-size: 38px; color: #fff; background: rgba(12, 14, 20, 0.88); border-radius: 16px; padding: 6px 18px 8px; white-space: nowrap; box-shadow: 0 3px 8px rgba(0,0,0,0.45); margin-bottom: 6px; }
+      #tag svg { display: block; filter: drop-shadow(0 3px 3px rgba(0,0,0,0.5)); }
+      #sub { position: absolute; left: 0; width: 1080px; top: 1600px; text-align: center; font-family: "Poppins", sans-serif; font-weight: 500; font-size: 46px; line-height: 1.15; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.85); z-index: 20; }
+      #banner { position: absolute; top: 120px; left: 50%; transform: translateX(-50%); display: none; align-items: center; gap: 14px; background: rgba(10, 12, 18, 0.9); border-radius: 18px; padding: 12px 22px; z-index: 15; font-family: "Montserrat", sans-serif; font-weight: 800; color: #fff; font-size: 40px; box-shadow: 0 6px 18px rgba(0,0,0,0.5); }
+      #banner img { height: 54px; }
+      #banner .score { display: flex; align-items: center; gap: 10px; background: var(--red); border-radius: 10px; padding: 4px 16px; perspective: 400px; }
+      #banner .dig { display: inline-block; min-width: 28px; text-align: center; transform-style: preserve-3d; }
+      #banner .min { font-size: 30px; opacity: 0.85; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="77.6" data-width="1080" data-height="1920">
+      <div id="cam">
+      <img class="clip src" src="frames/b1030.jpg" data-start="0.0000" data-duration="0.0250" alt="">
+      <img class="clip src" src="frames/b1031.jpg" data-start="0.0250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1032.jpg" data-start="0.0583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1033.jpg" data-start="0.0917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1034.jpg" data-start="0.1250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1035.jpg" data-start="0.1583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1036.jpg" data-start="0.1917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b1037.jpg" data-start="0.2583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1038.jpg" data-start="0.2917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1039.jpg" data-start="0.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1040.jpg" data-start="0.3583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1041.jpg" data-start="0.3917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1042.jpg" data-start="0.4250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1043.jpg" data-start="0.4583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1044.jpg" data-start="0.4917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1045.jpg" data-start="0.5250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1046.jpg" data-start="0.5583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1047.jpg" data-start="0.5917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b1048.jpg" data-start="0.6583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1049.jpg" data-start="0.6917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1050.jpg" data-start="0.7250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1051.jpg" data-start="0.7583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1052.jpg" data-start="0.7917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1053.jpg" data-start="0.8250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1054.jpg" data-start="0.8583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1055.jpg" data-start="0.8917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1056.jpg" data-start="0.9250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1057.jpg" data-start="0.9583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1058.jpg" data-start="0.9917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1059.jpg" data-start="1.0250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b1060.jpg" data-start="1.0917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1061.jpg" data-start="1.1250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1062.jpg" data-start="1.1583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1063.jpg" data-start="1.1917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1064.jpg" data-start="1.2250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1065.jpg" data-start="1.2583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1066.jpg" data-start="1.2917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1067.jpg" data-start="1.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1068.jpg" data-start="1.3583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1069.jpg" data-start="1.3917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1070.jpg" data-start="1.4250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b1071.jpg" data-start="1.4917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1072.jpg" data-start="1.5250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1073.jpg" data-start="1.5583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1074.jpg" data-start="1.5917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1075.jpg" data-start="1.6250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1076.jpg" data-start="1.6583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1077.jpg" data-start="1.6917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1078.jpg" data-start="1.7250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1079.jpg" data-start="1.7583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1080.jpg" data-start="1.7917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1081.jpg" data-start="1.8250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b1082.jpg" data-start="1.8917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1083.jpg" data-start="1.9250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1084.jpg" data-start="1.9583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1085.jpg" data-start="1.9917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1086.jpg" data-start="2.0250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1087.jpg" data-start="2.0583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1088.jpg" data-start="2.0917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1089.jpg" data-start="2.1250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1090.jpg" data-start="2.1583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1091.jpg" data-start="2.1917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1092.jpg" data-start="2.2250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1093.jpg" data-start="2.2583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b1094.jpg" data-start="2.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1095.jpg" data-start="2.3583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1096.jpg" data-start="2.3917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1097.jpg" data-start="2.4250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1098.jpg" data-start="2.4583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1099.jpg" data-start="2.4917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1100.jpg" data-start="2.5250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1101.jpg" data-start="2.5583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1102.jpg" data-start="2.5917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1103.jpg" data-start="2.6250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1104.jpg" data-start="2.6583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b1105.jpg" data-start="2.7250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1106.jpg" data-start="2.7583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1107.jpg" data-start="2.7917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1108.jpg" data-start="2.8250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1109.jpg" data-start="2.8583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1110.jpg" data-start="2.8917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1111.jpg" data-start="2.9250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1112.jpg" data-start="2.9583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1113.jpg" data-start="2.9917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1114.jpg" data-start="3.0250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1115.jpg" data-start="3.0583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1116.jpg" data-start="3.0917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b1117.jpg" data-start="3.1583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1118.jpg" data-start="3.1917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1119.jpg" data-start="3.2250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1120.jpg" data-start="3.2583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1121.jpg" data-start="3.2917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1122.jpg" data-start="3.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1123.jpg" data-start="3.3583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1124.jpg" data-start="3.3917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1125.jpg" data-start="3.4250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1126.jpg" data-start="3.4583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1127.jpg" data-start="3.4917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b1128.jpg" data-start="3.5583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1129.jpg" data-start="3.5917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1130.jpg" data-start="3.6250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1131.jpg" data-start="3.6583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1132.jpg" data-start="3.6917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1133.jpg" data-start="3.7250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1134.jpg" data-start="3.7583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1135.jpg" data-start="3.7917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1136.jpg" data-start="3.8250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1137.jpg" data-start="3.8583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1138.jpg" data-start="3.8917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1139.jpg" data-start="3.9250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b1140.jpg" data-start="3.9917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1141.jpg" data-start="4.0250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1142.jpg" data-start="4.0583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1143.jpg" data-start="4.0917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1144.jpg" data-start="4.1250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1145.jpg" data-start="4.1583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1146.jpg" data-start="4.1917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1147.jpg" data-start="4.2250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1148.jpg" data-start="4.2583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1149.jpg" data-start="4.2917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b1150.jpg" data-start="4.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0440.jpg" data-start="4.3583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0441.jpg" data-start="4.3917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0442.jpg" data-start="4.4250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0443.jpg" data-start="4.4917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0444.jpg" data-start="4.5250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0445.jpg" data-start="4.5917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0446.jpg" data-start="4.6250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0447.jpg" data-start="4.6917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0448.jpg" data-start="4.7250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0449.jpg" data-start="4.7917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0450.jpg" data-start="4.8250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0451.jpg" data-start="4.8917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0452.jpg" data-start="4.9250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0453.jpg" data-start="4.9917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0454.jpg" data-start="5.0250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0455.jpg" data-start="5.0917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0456.jpg" data-start="5.1250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0457.jpg" data-start="5.1583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0458.jpg" data-start="5.2250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0459.jpg" data-start="5.2583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0460.jpg" data-start="5.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0461.jpg" data-start="5.3583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0462.jpg" data-start="5.4250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0463.jpg" data-start="5.4583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0464.jpg" data-start="5.5250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0465.jpg" data-start="5.5583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0466.jpg" data-start="5.6250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0467.jpg" data-start="5.6583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0468.jpg" data-start="5.7250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0469.jpg" data-start="5.7583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0470.jpg" data-start="5.8250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0471.jpg" data-start="5.8583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0472.jpg" data-start="5.9250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0473.jpg" data-start="5.9583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0474.jpg" data-start="6.0250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0475.jpg" data-start="6.0583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0476.jpg" data-start="6.1250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0477.jpg" data-start="6.1583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0478.jpg" data-start="6.2250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0479.jpg" data-start="6.2583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0480.jpg" data-start="6.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0481.jpg" data-start="6.3583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0482.jpg" data-start="6.4250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0483.jpg" data-start="6.4583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0484.jpg" data-start="6.5250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0485.jpg" data-start="6.5583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0486.jpg" data-start="6.6250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0487.jpg" data-start="6.6583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0488.jpg" data-start="6.7250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0489.jpg" data-start="6.7583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0490.jpg" data-start="6.8250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0491.jpg" data-start="6.8583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0492.jpg" data-start="6.8917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0493.jpg" data-start="6.9583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0494.jpg" data-start="6.9917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0495.jpg" data-start="7.0583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0496.jpg" data-start="7.0917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0497.jpg" data-start="7.1583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0498.jpg" data-start="7.1917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0499.jpg" data-start="7.2583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0500.jpg" data-start="7.2917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0555.jpg" data-start="7.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0556.jpg" data-start="7.3583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0558.jpg" data-start="7.3917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0560.jpg" data-start="7.4250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0561.jpg" data-start="7.4583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0563.jpg" data-start="7.4917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0565.jpg" data-start="7.5250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0566.jpg" data-start="7.5583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0568.jpg" data-start="7.5917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0570.jpg" data-start="7.6250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0571.jpg" data-start="7.6583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0573.jpg" data-start="7.6917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0575.jpg" data-start="7.7250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0576.jpg" data-start="7.7583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0578.jpg" data-start="7.7917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0580.jpg" data-start="7.8250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0581.jpg" data-start="7.8583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0583.jpg" data-start="7.8917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0585.jpg" data-start="7.9250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0586.jpg" data-start="7.9583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0588.jpg" data-start="7.9917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0589.jpg" data-start="8.0250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0591.jpg" data-start="8.0583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0593.jpg" data-start="8.0917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0594.jpg" data-start="8.1250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0596.jpg" data-start="8.1583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0598.jpg" data-start="8.1917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0599.jpg" data-start="8.2250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0601.jpg" data-start="8.2583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0603.jpg" data-start="8.2917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0604.jpg" data-start="8.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0606.jpg" data-start="8.3583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0608.jpg" data-start="8.3917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0609.jpg" data-start="8.4250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0611.jpg" data-start="8.4583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0613.jpg" data-start="8.4917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0614.jpg" data-start="8.5250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0616.jpg" data-start="8.5583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0618.jpg" data-start="8.5917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0619.jpg" data-start="8.6250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0621.jpg" data-start="8.6583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0623.jpg" data-start="8.6917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0624.jpg" data-start="8.7250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0626.jpg" data-start="8.7583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0628.jpg" data-start="8.7917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0629.jpg" data-start="8.8250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0631.jpg" data-start="8.8583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0633.jpg" data-start="8.8917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0634.jpg" data-start="8.9250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0636.jpg" data-start="8.9583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0638.jpg" data-start="8.9917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0639.jpg" data-start="9.0250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0641.jpg" data-start="9.0583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0643.jpg" data-start="9.0917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0644.jpg" data-start="9.1250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0646.jpg" data-start="9.1583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0648.jpg" data-start="9.1917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0649.jpg" data-start="9.2250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0651.jpg" data-start="9.2583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0652.jpg" data-start="9.2917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0654.jpg" data-start="9.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0656.jpg" data-start="9.3583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0657.jpg" data-start="9.3917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0659.jpg" data-start="9.4250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0661.jpg" data-start="9.4583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0662.jpg" data-start="9.4917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0664.jpg" data-start="9.5250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0666.jpg" data-start="9.5583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0667.jpg" data-start="9.5917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0669.jpg" data-start="9.6250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0671.jpg" data-start="9.6583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0672.jpg" data-start="9.6917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0674.jpg" data-start="9.7250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0676.jpg" data-start="9.7583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0677.jpg" data-start="9.7917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0679.jpg" data-start="9.8250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0681.jpg" data-start="9.8583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0682.jpg" data-start="9.8917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0684.jpg" data-start="9.9250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0686.jpg" data-start="9.9583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0687.jpg" data-start="9.9917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0689.jpg" data-start="10.0250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0691.jpg" data-start="10.0583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0692.jpg" data-start="10.0917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0694.jpg" data-start="10.1250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0696.jpg" data-start="10.1583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0697.jpg" data-start="10.1917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0699.jpg" data-start="10.2250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0701.jpg" data-start="10.2583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0702.jpg" data-start="10.2917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0704.jpg" data-start="10.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0706.jpg" data-start="10.3583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0707.jpg" data-start="10.3917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0709.jpg" data-start="10.4250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0711.jpg" data-start="10.4583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0712.jpg" data-start="10.4917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0714.jpg" data-start="10.5250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0715.jpg" data-start="10.5583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0717.jpg" data-start="10.5917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0719.jpg" data-start="10.6250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0720.jpg" data-start="10.6583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0722.jpg" data-start="10.6917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0724.jpg" data-start="10.7250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0725.jpg" data-start="10.7583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0727.jpg" data-start="10.7917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0729.jpg" data-start="10.8250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0730.jpg" data-start="10.8583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0732.jpg" data-start="10.8917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0734.jpg" data-start="10.9250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0735.jpg" data-start="10.9583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0737.jpg" data-start="10.9917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0739.jpg" data-start="11.0250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0740.jpg" data-start="11.0583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0742.jpg" data-start="11.0917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0744.jpg" data-start="11.1250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0001.jpg" data-start="11.1583" data-duration="1.9667" alt="">
+      <img class="clip src" src="frames/a0001.jpg" data-start="13.1250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0002.jpg" data-start="13.1583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0003.jpg" data-start="13.1917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0004.jpg" data-start="13.2583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0005.jpg" data-start="13.2917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0006.jpg" data-start="13.3583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0007.jpg" data-start="13.3917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0008.jpg" data-start="13.4583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0009.jpg" data-start="13.4917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0010.jpg" data-start="13.5583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0011.jpg" data-start="13.5917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0012.jpg" data-start="13.6583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0013.jpg" data-start="13.6917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0014.jpg" data-start="13.7583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0015.jpg" data-start="13.7917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0016.jpg" data-start="13.8583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0017.jpg" data-start="13.8917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0018.jpg" data-start="13.9583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0019.jpg" data-start="13.9917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0020.jpg" data-start="14.0583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0021.jpg" data-start="14.0917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0022.jpg" data-start="14.1583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0023.jpg" data-start="14.2250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0024.jpg" data-start="14.2583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0025.jpg" data-start="14.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0026.jpg" data-start="14.3583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0027.jpg" data-start="14.4250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0028.jpg" data-start="14.4583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0029.jpg" data-start="14.5250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0030.jpg" data-start="14.5583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0031.jpg" data-start="14.6250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0032.jpg" data-start="14.6583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0033.jpg" data-start="14.7250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0034.jpg" data-start="14.7583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0035.jpg" data-start="14.8250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0036.jpg" data-start="14.8583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0037.jpg" data-start="14.9250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0038.jpg" data-start="14.9583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0039.jpg" data-start="15.0250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0040.jpg" data-start="15.0583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0041.jpg" data-start="15.1250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0042.jpg" data-start="15.1583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0043.jpg" data-start="15.2250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0044.jpg" data-start="15.2583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0045.jpg" data-start="15.3250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0046.jpg" data-start="15.3917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0047.jpg" data-start="15.4250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0048.jpg" data-start="15.4917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0049.jpg" data-start="15.5250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0050.jpg" data-start="15.5917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0051.jpg" data-start="15.6250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0052.jpg" data-start="15.6917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0053.jpg" data-start="15.7250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0054.jpg" data-start="15.7917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0055.jpg" data-start="15.8250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0056.jpg" data-start="15.8917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0057.jpg" data-start="15.9250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0058.jpg" data-start="15.9917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0059.jpg" data-start="16.0250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0060.jpg" data-start="16.0917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0061.jpg" data-start="16.1250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0062.jpg" data-start="16.1917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0063.jpg" data-start="16.2250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0064.jpg" data-start="16.2917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0065.jpg" data-start="16.3250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0066.jpg" data-start="16.3917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0067.jpg" data-start="16.4250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0068.jpg" data-start="16.4917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0069.jpg" data-start="16.5583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0070.jpg" data-start="16.5917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0071.jpg" data-start="16.6583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0072.jpg" data-start="16.6917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0073.jpg" data-start="16.7583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0074.jpg" data-start="16.7917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0075.jpg" data-start="16.8583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0076.jpg" data-start="16.8917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0077.jpg" data-start="16.9583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0078.jpg" data-start="16.9917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0079.jpg" data-start="17.0583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0080.jpg" data-start="17.0917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0081.jpg" data-start="17.1583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0082.jpg" data-start="17.1917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0083.jpg" data-start="17.2583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0084.jpg" data-start="17.2917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0084.jpg" data-start="17.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0085.jpg" data-start="17.3583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0086.jpg" data-start="17.4583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0087.jpg" data-start="17.5250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0088.jpg" data-start="17.5917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0089.jpg" data-start="17.6917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0090.jpg" data-start="17.7583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0091.jpg" data-start="17.8250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0092.jpg" data-start="17.8917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0093.jpg" data-start="17.9917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0094.jpg" data-start="18.0583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0095.jpg" data-start="18.1250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0096.jpg" data-start="18.2250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0097.jpg" data-start="18.2917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0098.jpg" data-start="18.3583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0099.jpg" data-start="18.4583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0100.jpg" data-start="18.5250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0101.jpg" data-start="18.5917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0102.jpg" data-start="18.6917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0103.jpg" data-start="18.7583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0104.jpg" data-start="18.8250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0105.jpg" data-start="18.9250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0106.jpg" data-start="18.9917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0107.jpg" data-start="19.0583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0108.jpg" data-start="19.1583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0109.jpg" data-start="19.2250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0110.jpg" data-start="19.2917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0111.jpg" data-start="19.3583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0112.jpg" data-start="19.4583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0113.jpg" data-start="19.5250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0114.jpg" data-start="19.5917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0115.jpg" data-start="19.6917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0116.jpg" data-start="19.7583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0117.jpg" data-start="19.8250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0118.jpg" data-start="19.9250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0119.jpg" data-start="19.9917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0120.jpg" data-start="20.0583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0121.jpg" data-start="20.1583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0122.jpg" data-start="20.2250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0123.jpg" data-start="20.2917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0124.jpg" data-start="20.3917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0125.jpg" data-start="20.4583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0126.jpg" data-start="20.5250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0127.jpg" data-start="20.6250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0128.jpg" data-start="20.6917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0129.jpg" data-start="20.7583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0130.jpg" data-start="20.8583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0131.jpg" data-start="20.9250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0132.jpg" data-start="20.9917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0133.jpg" data-start="21.0583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0134.jpg" data-start="21.1583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0135.jpg" data-start="21.2250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0136.jpg" data-start="21.2917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0137.jpg" data-start="21.3917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0138.jpg" data-start="21.4583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0139.jpg" data-start="21.5250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0140.jpg" data-start="21.6250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0141.jpg" data-start="21.6917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0142.jpg" data-start="21.7583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0143.jpg" data-start="21.8583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0144.jpg" data-start="21.9250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0145.jpg" data-start="21.9917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0146.jpg" data-start="22.0917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0147.jpg" data-start="22.1583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0148.jpg" data-start="22.2250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0149.jpg" data-start="22.3250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0150.jpg" data-start="22.3917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0151.jpg" data-start="22.4583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0152.jpg" data-start="22.5250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0153.jpg" data-start="22.6250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0154.jpg" data-start="22.6917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0155.jpg" data-start="22.7583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0156.jpg" data-start="22.8583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0157.jpg" data-start="22.9250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0158.jpg" data-start="22.9917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0159.jpg" data-start="23.0917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0160.jpg" data-start="23.1583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0161.jpg" data-start="23.2250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0162.jpg" data-start="23.3250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0163.jpg" data-start="23.3917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0164.jpg" data-start="23.4583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0165.jpg" data-start="23.5583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0166.jpg" data-start="23.6250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0167.jpg" data-start="23.6917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0168.jpg" data-start="23.7917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0169.jpg" data-start="23.8583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0170.jpg" data-start="23.9250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0171.jpg" data-start="23.9917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0172.jpg" data-start="24.0917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0173.jpg" data-start="24.1583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0174.jpg" data-start="24.2250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0175.jpg" data-start="24.3250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0176.jpg" data-start="24.3917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0177.jpg" data-start="24.4583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0178.jpg" data-start="24.5583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0179.jpg" data-start="24.6250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0180.jpg" data-start="24.6917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0181.jpg" data-start="24.7917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0182.jpg" data-start="24.8583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0183.jpg" data-start="24.9250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0184.jpg" data-start="25.0250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0185.jpg" data-start="25.0917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0186.jpg" data-start="25.1583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0187.jpg" data-start="25.2583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0188.jpg" data-start="25.3250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0189.jpg" data-start="25.3917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0190.jpg" data-start="25.4917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0191.jpg" data-start="25.5583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0192.jpg" data-start="25.6250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0192.jpg" data-start="25.6583" data-duration="5.9000" alt="">
+      <img class="clip src" src="frames/a0160.jpg" data-start="31.5583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0161.jpg" data-start="31.6250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0162.jpg" data-start="31.7250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0163.jpg" data-start="31.8250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0164.jpg" data-start="31.9250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0165.jpg" data-start="32.0250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0166.jpg" data-start="32.1250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0167.jpg" data-start="32.2250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0168.jpg" data-start="32.3250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0169.jpg" data-start="32.4250" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0170.jpg" data-start="32.5583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0171.jpg" data-start="32.6583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0172.jpg" data-start="32.7583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0173.jpg" data-start="32.8583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0174.jpg" data-start="32.9583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0175.jpg" data-start="33.0583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0176.jpg" data-start="33.1583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0177.jpg" data-start="33.2583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0178.jpg" data-start="33.3583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0179.jpg" data-start="33.4583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0180.jpg" data-start="33.5583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0181.jpg" data-start="33.6583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0182.jpg" data-start="33.7583" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0183.jpg" data-start="33.8917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0184.jpg" data-start="33.9917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0185.jpg" data-start="34.0917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0186.jpg" data-start="34.1917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0187.jpg" data-start="34.2917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0188.jpg" data-start="34.3917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0189.jpg" data-start="34.4917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0190.jpg" data-start="34.5917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0191.jpg" data-start="34.6917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0192.jpg" data-start="34.7917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0193.jpg" data-start="34.8917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0194.jpg" data-start="34.9917" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0195.jpg" data-start="35.1250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0196.jpg" data-start="35.2250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0197.jpg" data-start="35.3250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0198.jpg" data-start="35.4250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0199.jpg" data-start="35.5250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0200.jpg" data-start="35.6250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0201.jpg" data-start="35.7250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0202.jpg" data-start="35.8250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0204.jpg" data-start="35.8917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0205.jpg" data-start="35.9250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0207.jpg" data-start="35.9583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0209.jpg" data-start="35.9917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0210.jpg" data-start="36.0250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0212.jpg" data-start="36.0583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0214.jpg" data-start="36.0917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0216.jpg" data-start="36.1250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0217.jpg" data-start="36.1583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0219.jpg" data-start="36.1917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0221.jpg" data-start="36.2250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0222.jpg" data-start="36.2583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0224.jpg" data-start="36.2917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0226.jpg" data-start="36.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0228.jpg" data-start="36.3583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0229.jpg" data-start="36.3917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0231.jpg" data-start="36.4250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0233.jpg" data-start="36.4583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0234.jpg" data-start="36.4917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0236.jpg" data-start="36.5250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0238.jpg" data-start="36.5583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0240.jpg" data-start="36.5917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0241.jpg" data-start="36.6250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0243.jpg" data-start="36.6583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0245.jpg" data-start="36.6917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0247.jpg" data-start="36.7250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0248.jpg" data-start="36.7583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0250.jpg" data-start="36.7917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0252.jpg" data-start="36.8250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0253.jpg" data-start="36.8583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0255.jpg" data-start="36.8917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0257.jpg" data-start="36.9250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0259.jpg" data-start="36.9583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0260.jpg" data-start="36.9917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0262.jpg" data-start="37.0250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0264.jpg" data-start="37.0583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0265.jpg" data-start="37.0917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0267.jpg" data-start="37.1250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0269.jpg" data-start="37.1583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0271.jpg" data-start="37.1917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0272.jpg" data-start="37.2250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0274.jpg" data-start="37.2583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0276.jpg" data-start="37.2917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0277.jpg" data-start="37.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0279.jpg" data-start="37.3583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0281.jpg" data-start="37.3917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0283.jpg" data-start="37.4250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0284.jpg" data-start="37.4583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0285.jpg" data-start="37.4917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0286.jpg" data-start="37.5250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0287.jpg" data-start="37.5917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0288.jpg" data-start="37.6250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0289.jpg" data-start="37.6917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0290.jpg" data-start="37.7583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0291.jpg" data-start="37.8250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0292.jpg" data-start="37.8917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0293.jpg" data-start="37.9583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0294.jpg" data-start="37.9917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0295.jpg" data-start="38.0583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0296.jpg" data-start="38.1250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0297.jpg" data-start="38.1917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0298.jpg" data-start="38.2583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0299.jpg" data-start="38.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0300.jpg" data-start="38.3583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0301.jpg" data-start="38.4250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0302.jpg" data-start="38.4917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0303.jpg" data-start="38.5583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0304.jpg" data-start="38.6250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0305.jpg" data-start="38.6917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0306.jpg" data-start="38.7250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0307.jpg" data-start="38.7917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0308.jpg" data-start="38.8583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0309.jpg" data-start="38.9250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0310.jpg" data-start="38.9917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0311.jpg" data-start="39.0583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0312.jpg" data-start="39.0917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0313.jpg" data-start="39.1583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0314.jpg" data-start="39.2250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0315.jpg" data-start="39.2917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0316.jpg" data-start="39.3583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0317.jpg" data-start="39.4250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0318.jpg" data-start="39.4583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0319.jpg" data-start="39.5250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0320.jpg" data-start="39.5917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0321.jpg" data-start="39.6583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0322.jpg" data-start="39.7250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0323.jpg" data-start="39.7917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0324.jpg" data-start="39.8250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0325.jpg" data-start="39.8917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0326.jpg" data-start="39.9583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0327.jpg" data-start="40.0250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0328.jpg" data-start="40.0917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0329.jpg" data-start="40.1583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0330.jpg" data-start="40.1917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0331.jpg" data-start="40.2583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0332.jpg" data-start="40.3250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0333.jpg" data-start="40.3917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0334.jpg" data-start="40.4583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0335.jpg" data-start="40.5250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0336.jpg" data-start="40.5583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0337.jpg" data-start="40.6250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0338.jpg" data-start="40.6917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0339.jpg" data-start="40.7583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0340.jpg" data-start="40.8250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0341.jpg" data-start="40.8917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0342.jpg" data-start="40.9250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0343.jpg" data-start="40.9917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0344.jpg" data-start="41.0583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0345.jpg" data-start="41.1250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0346.jpg" data-start="41.1917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0347.jpg" data-start="41.2583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0348.jpg" data-start="41.2917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0349.jpg" data-start="41.3583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0350.jpg" data-start="41.4250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0351.jpg" data-start="41.4917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0352.jpg" data-start="41.5583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0353.jpg" data-start="41.6250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0354.jpg" data-start="41.6583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0355.jpg" data-start="41.7250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0356.jpg" data-start="41.7917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0357.jpg" data-start="41.8583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0358.jpg" data-start="41.9250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0359.jpg" data-start="41.9917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0360.jpg" data-start="42.0250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0360.jpg" data-start="42.0583" data-duration="9.2333" alt="">
+      <img class="clip src" src="frames/a0360.jpg" data-start="51.2917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0361.jpg" data-start="51.3583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0362.jpg" data-start="51.4583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0363.jpg" data-start="51.5583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0364.jpg" data-start="51.6583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0365.jpg" data-start="51.7583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0366.jpg" data-start="51.8583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0367.jpg" data-start="51.9250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0368.jpg" data-start="52.0250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0369.jpg" data-start="52.1250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0370.jpg" data-start="52.2250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0371.jpg" data-start="52.3250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0372.jpg" data-start="52.4250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0373.jpg" data-start="52.5250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0374.jpg" data-start="52.6250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0375.jpg" data-start="52.7250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0376.jpg" data-start="52.8250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0377.jpg" data-start="52.9250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0378.jpg" data-start="52.9917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0379.jpg" data-start="53.0917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0380.jpg" data-start="53.1917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0381.jpg" data-start="53.2917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0382.jpg" data-start="53.3917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0383.jpg" data-start="53.4917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0384.jpg" data-start="53.5917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0385.jpg" data-start="53.6917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0386.jpg" data-start="53.7917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0387.jpg" data-start="53.8917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0388.jpg" data-start="53.9917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0389.jpg" data-start="54.0583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0390.jpg" data-start="54.1583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0391.jpg" data-start="54.2583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0392.jpg" data-start="54.3583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0393.jpg" data-start="54.4583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0394.jpg" data-start="54.5583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0395.jpg" data-start="54.6583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0396.jpg" data-start="54.7583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0397.jpg" data-start="54.8583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0398.jpg" data-start="54.9583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0399.jpg" data-start="55.0583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0400.jpg" data-start="55.1250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0401.jpg" data-start="55.2250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0402.jpg" data-start="55.3250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0403.jpg" data-start="55.4250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0404.jpg" data-start="55.5250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0405.jpg" data-start="55.6250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0406.jpg" data-start="55.7250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0407.jpg" data-start="55.8250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0408.jpg" data-start="55.9250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0409.jpg" data-start="56.0250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0410.jpg" data-start="56.1250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0411.jpg" data-start="56.1917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0412.jpg" data-start="56.2917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0413.jpg" data-start="56.3917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0414.jpg" data-start="56.4917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0415.jpg" data-start="56.5917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0416.jpg" data-start="56.6917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0417.jpg" data-start="56.7917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0418.jpg" data-start="56.8917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0419.jpg" data-start="56.9917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0420.jpg" data-start="57.0917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0420.jpg" data-start="57.1250" data-duration="7.9333" alt="">
+      <img class="clip src" src="frames/a0420.jpg" data-start="65.0583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0421.jpg" data-start="65.0917" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0422.jpg" data-start="65.2250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0423.jpg" data-start="65.3250" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0424.jpg" data-start="65.4583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0425.jpg" data-start="65.5583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0426.jpg" data-start="65.6583" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0427.jpg" data-start="65.7917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0428.jpg" data-start="65.8917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0428.jpg" data-start="65.9583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0429.jpg" data-start="66.0250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0430.jpg" data-start="66.1250" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0431.jpg" data-start="66.2583" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0432.jpg" data-start="66.3917" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0433.jpg" data-start="66.4917" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0434.jpg" data-start="66.6250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0435.jpg" data-start="66.7250" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0436.jpg" data-start="66.8583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0437.jpg" data-start="66.9583" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0438.jpg" data-start="67.0917" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0439.jpg" data-start="67.2250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0440.jpg" data-start="67.3250" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0441.jpg" data-start="67.4583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0442.jpg" data-start="67.5583" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0443.jpg" data-start="67.6917" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0444.jpg" data-start="67.8250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0445.jpg" data-start="67.9250" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0446.jpg" data-start="68.0583" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0447.jpg" data-start="68.1583" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0448.jpg" data-start="68.2917" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0449.jpg" data-start="68.4250" data-duration="0.1000" alt="">
+      <img class="clip src" src="frames/a0450.jpg" data-start="68.5250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0860.jpg" data-start="68.5917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0861.jpg" data-start="68.6250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0862.jpg" data-start="68.6917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0863.jpg" data-start="68.7250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0864.jpg" data-start="68.7917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0865.jpg" data-start="68.8583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0866.jpg" data-start="68.9250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0867.jpg" data-start="68.9917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0868.jpg" data-start="69.0583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0869.jpg" data-start="69.1250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0870.jpg" data-start="69.1583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0871.jpg" data-start="69.2250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0872.jpg" data-start="69.2917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0873.jpg" data-start="69.3583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0874.jpg" data-start="69.4250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0875.jpg" data-start="69.4917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0876.jpg" data-start="69.5250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0877.jpg" data-start="69.5917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0878.jpg" data-start="69.6583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0879.jpg" data-start="69.7250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0880.jpg" data-start="69.7917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0881.jpg" data-start="69.8583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0882.jpg" data-start="69.8917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0883.jpg" data-start="69.9583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0884.jpg" data-start="70.0250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0885.jpg" data-start="70.0917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0886.jpg" data-start="70.1583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0887.jpg" data-start="70.2250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0888.jpg" data-start="70.2583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0889.jpg" data-start="70.3250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0890.jpg" data-start="70.3917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0891.jpg" data-start="70.4583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0892.jpg" data-start="70.5250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0893.jpg" data-start="70.5917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0894.jpg" data-start="70.6250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0895.jpg" data-start="70.6917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0896.jpg" data-start="70.7583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0897.jpg" data-start="70.8250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0898.jpg" data-start="70.8917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0899.jpg" data-start="70.9583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0900.jpg" data-start="70.9917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0901.jpg" data-start="71.0583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0902.jpg" data-start="71.0917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0903.jpg" data-start="71.1250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0904.jpg" data-start="71.1917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0905.jpg" data-start="71.2250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0906.jpg" data-start="71.2583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0907.jpg" data-start="71.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0908.jpg" data-start="71.3583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0909.jpg" data-start="71.3917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0910.jpg" data-start="71.4583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0911.jpg" data-start="71.4917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0912.jpg" data-start="71.5250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0913.jpg" data-start="71.5917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0914.jpg" data-start="71.6250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0915.jpg" data-start="71.6583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0916.jpg" data-start="71.7250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0917.jpg" data-start="71.7583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0918.jpg" data-start="71.7917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0919.jpg" data-start="71.8583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0920.jpg" data-start="71.8917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0921.jpg" data-start="71.9250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0922.jpg" data-start="71.9917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0923.jpg" data-start="72.0250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0924.jpg" data-start="72.0583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0925.jpg" data-start="72.1250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0926.jpg" data-start="72.1583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0927.jpg" data-start="72.1917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0928.jpg" data-start="72.2583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0929.jpg" data-start="72.2917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0930.jpg" data-start="72.3583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0931.jpg" data-start="72.3917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0932.jpg" data-start="72.4250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/b0933.jpg" data-start="72.4917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0934.jpg" data-start="72.5250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/b0935.jpg" data-start="72.5583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0440.jpg" data-start="72.5917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0441.jpg" data-start="72.6583" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0442.jpg" data-start="72.7917" data-duration="0.1667" alt="">
+      <img class="clip src" src="frames/a0443.jpg" data-start="72.9583" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0444.jpg" data-start="73.0917" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0445.jpg" data-start="73.2250" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0446.jpg" data-start="73.3583" data-duration="0.1667" alt="">
+      <img class="clip src" src="frames/a0447.jpg" data-start="73.5250" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0448.jpg" data-start="73.6583" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0449.jpg" data-start="73.7917" data-duration="0.1667" alt="">
+      <img class="clip src" src="frames/a0450.jpg" data-start="73.9583" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0451.jpg" data-start="74.0917" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0452.jpg" data-start="74.2250" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0453.jpg" data-start="74.3583" data-duration="0.1667" alt="">
+      <img class="clip src" src="frames/a0454.jpg" data-start="74.5250" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0455.jpg" data-start="74.6583" data-duration="0.1333" alt="">
+      <img class="clip src" src="frames/a0456.jpg" data-start="74.7917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0456.jpg" data-start="74.8583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0457.jpg" data-start="74.8917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0458.jpg" data-start="74.9250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0459.jpg" data-start="74.9583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0460.jpg" data-start="74.9917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0461.jpg" data-start="75.0583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0462.jpg" data-start="75.0917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0463.jpg" data-start="75.1250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0464.jpg" data-start="75.1583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0465.jpg" data-start="75.1917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0466.jpg" data-start="75.2583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0467.jpg" data-start="75.2917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0468.jpg" data-start="75.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0469.jpg" data-start="75.3583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0470.jpg" data-start="75.3917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0471.jpg" data-start="75.4583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0472.jpg" data-start="75.4917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0473.jpg" data-start="75.5250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0474.jpg" data-start="75.5583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0475.jpg" data-start="75.5917" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0476.jpg" data-start="75.6583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0477.jpg" data-start="75.6917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0478.jpg" data-start="75.7250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0479.jpg" data-start="75.7583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0480.jpg" data-start="75.7917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0481.jpg" data-start="75.8250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0482.jpg" data-start="75.8917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0483.jpg" data-start="75.9250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0484.jpg" data-start="75.9583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0485.jpg" data-start="75.9917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0486.jpg" data-start="76.0250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0487.jpg" data-start="76.0917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0488.jpg" data-start="76.1250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0489.jpg" data-start="76.1583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0490.jpg" data-start="76.1917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0491.jpg" data-start="76.2250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0492.jpg" data-start="76.2917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0493.jpg" data-start="76.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0494.jpg" data-start="76.3583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0495.jpg" data-start="76.3917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0496.jpg" data-start="76.4250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0497.jpg" data-start="76.4917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0498.jpg" data-start="76.5250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0499.jpg" data-start="76.5583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0500.jpg" data-start="76.5917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0501.jpg" data-start="76.6250" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0502.jpg" data-start="76.6917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0503.jpg" data-start="76.7250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0504.jpg" data-start="76.7583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0505.jpg" data-start="76.7917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0506.jpg" data-start="76.8250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0507.jpg" data-start="76.8583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0508.jpg" data-start="76.9250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0509.jpg" data-start="76.9583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0510.jpg" data-start="76.9917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0511.jpg" data-start="77.0250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0512.jpg" data-start="77.0583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0513.jpg" data-start="77.1250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0514.jpg" data-start="77.1583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0515.jpg" data-start="77.1917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0516.jpg" data-start="77.2250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0517.jpg" data-start="77.2583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0518.jpg" data-start="77.3250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0519.jpg" data-start="77.3583" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0520.jpg" data-start="77.3917" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0521.jpg" data-start="77.4250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0522.jpg" data-start="77.4583" data-duration="0.0667" alt="">
+      <img class="clip src" src="frames/a0523.jpg" data-start="77.5250" data-duration="0.0333" alt="">
+      <img class="clip src" src="frames/a0524.jpg" data-start="77.5583" data-duration="0.0417" alt="">
+      </div>
+      <div id="spot"></div>
+      <div id="ring"></div>
+      <div id="tag"><div class="wrap">
+        <div class="logo"><img id="tagLogo" src="assets/img/atm.png" alt=""></div>
+        <div class="name" id="tagName">Name</div>
+        <svg width="64" height="86" viewBox="0 0 64 86"><path d="M20 3 H44 V44 H61 L32 83 L3 44 H20 Z" fill="#ff1f1f" stroke="#3a0000" stroke-width="3" stroke-linejoin="round"/></svg>
+      </div></div>
+      <div id="banner"><img src="assets/img/atm.png" alt=""><span>ATM</span><span class="score"><span class="dig" id="d1">0</span><span>–</span><span class="dig">0</span></span><span>BAR</span><img src="assets/img/fcb.png" alt=""><span class="min">9'</span></div>
+      <div id="sub"></div>
+    </div>
+    <audio id="voice" src="assets/voice.wav" data-start="0" data-duration="77.6" data-volume="0.88"></audio>
+    <audio id="a0" src="assets/sfx/whoosh1.wav" data-start="4.230" data-duration="0.380" data-volume="0.194"></audio>
+    <audio id="a1" src="assets/sfx/whoosh2.wav" data-start="7.200" data-duration="0.320" data-volume="0.194"></audio>
+    <audio id="a2" src="assets/sfx/whoosh4.wav" data-start="12.990" data-duration="0.300" data-volume="0.194"></audio>
+    <audio id="a3" src="assets/sfx/whoosh1.wav" data-start="17.200" data-duration="0.380" data-volume="0.194"></audio>
+    <audio id="a4" src="assets/sfx/whoosh3.wav" data-start="31.440" data-duration="0.420" data-volume="0.194"></audio>
+    <audio id="a5" src="assets/sfx/whoosh4.wav" data-start="35.750" data-duration="0.300" data-volume="0.194"></audio>
+    <audio id="a6" src="assets/sfx/whoosh1.wav" data-start="37.360" data-duration="0.380" data-volume="0.194"></audio>
+    <audio id="a7" src="assets/sfx/whoosh3.wav" data-start="51.180" data-duration="0.420" data-volume="0.194"></audio>
+    <audio id="a8" src="assets/sfx/whoosh1.wav" data-start="64.920" data-duration="0.380" data-volume="0.194"></audio>
+    <audio id="a9" src="assets/sfx/whoosh2.wav" data-start="65.830" data-duration="0.320" data-volume="0.194"></audio>
+    <audio id="a10" src="assets/sfx/whoosh3.wav" data-start="68.460" data-duration="0.420" data-volume="0.194"></audio>
+    <audio id="a11" src="assets/sfx/whoosh4.wav" data-start="70.850" data-duration="0.300" data-volume="0.194"></audio>
+    <audio id="a12" src="assets/sfx/whoosh1.wav" data-start="72.460" data-duration="0.380" data-volume="0.194"></audio>
+    <audio id="a13" src="assets/sfx/whoosh2.wav" data-start="74.740" data-duration="0.320" data-volume="0.194"></audio>
+    <audio id="a14" src="assets/sfx/freeze.wav" data-start="11.140" data-duration="0.450" data-volume="0.308"></audio>
+    <audio id="a15" src="assets/sfx/freeze.wav" data-start="25.660" data-duration="0.450" data-volume="0.308"></audio>
+    <audio id="a16" src="assets/sfx/freeze.wav" data-start="42.060" data-duration="0.450" data-volume="0.308"></audio>
+    <audio id="a17" src="assets/sfx/freeze.wav" data-start="57.120" data-duration="0.450" data-volume="0.308"></audio>
+    <audio id="a18" src="assets/sfx/pop.wav" data-start="11.167" data-duration="0.120" data-volume="0.264"></audio>
+    <audio id="a19" src="assets/sfx/pop.wav" data-start="17.367" data-duration="0.120" data-volume="0.264"></audio>
+    <audio id="a20" src="assets/sfx/pop.wav" data-start="40.700" data-duration="0.120" data-volume="0.264"></audio>
+    <audio id="a21" src="assets/sfx/pop.wav" data-start="65.067" data-duration="0.120" data-volume="0.264"></audio>
+    <audio id="a22" src="assets/sfx/pop.wav" data-start="67.833" data-duration="0.120" data-volume="0.264"></audio>
+    <audio id="a23" src="assets/sfx/pop.wav" data-start="69.500" data-duration="0.120" data-volume="0.264"></audio>
+    <audio id="a24" src="assets/sfx/pop.wav" data-start="72.600" data-duration="0.120" data-volume="0.264"></audio>
+    <audio id="a25" src="assets/sfx/pop.wav" data-start="74.860" data-duration="0.120" data-volume="0.264"></audio>
+    <audio id="a26" src="assets/sfx/pop.wav" data-start="76.700" data-duration="0.120" data-volume="0.264"></audio>
+    <audio id="a27" src="assets/sfx/kick1.wav" data-start="5.133" data-duration="0.250" data-volume="0.396"></audio>
+    <audio id="a28" src="assets/sfx/kick2.wav" data-start="35.833" data-duration="0.250" data-volume="0.396"></audio>
+    <audio id="a29" src="assets/sfx/kick3.wav" data-start="65.900" data-duration="0.250" data-volume="0.396"></audio>
+    <audio id="a30" src="assets/sfx/kick1.wav" data-start="70.967" data-duration="0.250" data-volume="0.396"></audio>
+    <audio id="a31" src="assets/sfx/kick2.wav" data-start="74.800" data-duration="0.250" data-volume="0.396"></audio>
+    <script>
+      (function () {
+        const G = window.GOL;
+        const cam = document.getElementById("cam");
+        const spot = document.getElementById("spot");
+        const ring = document.getElementById("ring");
+        const tag = document.getElementById("tag");
+        const wrap = tag.querySelector(".wrap");
+        const tagName = document.getElementById("tagName");
+        const sub = document.getElementById("sub");
+        const banner = document.getElementById("banner");
+        const d1 = document.getElementById("d1");
+        // first frame index of each tag run (for the 0.12 s pop)
+        const popStart = new Array(G.N).fill(-1);
+        let cur = -1;
+        for (let k = 0; k < G.N; k++) {
+          const o = G.frames[k];
+          if (!o.tag) { cur = -1; continue; }
+          if (o.pop || cur < 0) cur = k;
+          popStart[k] = cur;
+        }
+        function render(t) {
+          let k = Math.floor(t * G.FPS + 1e-4);
+          k = Math.max(0, Math.min(G.N - 1, k));
+          const o = G.frames[k];
+          const [x0, y0, sc] = o.cam;
+          cam.style.transform = `translate(${(-x0 * sc).toFixed(2)}px, ${(-y0 * sc).toFixed(2)}px) scale(${sc})`;
+          // spotlight
+          if (o.sp && o.sp[3] > 0) {
+            const [cx, cy, r, a] = o.sp;
+            const m = `radial-gradient(circle at ${cx}px ${cy}px, transparent ${r}px, #000 ${r + 1.5}px)`;
+            spot.style.webkitMaskImage = m; spot.style.maskImage = m;
+            spot.style.opacity = a;
+            ring.style.width = ring.style.height = `${2 * r + 10}px`;
+            ring.style.transform = `translate(${cx - r - 5}px, ${cy - r - 5}px)`;
+            ring.style.opacity = a;
+          } else { spot.style.opacity = 0; ring.style.opacity = 0; }
+          // carrier tag
+          if (o.tag) {
+            const [id, hx, hy] = o.tag;
+            tag.style.display = "block";
+            tagName.textContent = G.names[id];
+            const bounce = 5 * Math.abs(Math.sin(2 * Math.PI * 1.4 * t));
+            const tip = -1 + bounce;   // drawn tip lands ~8..13 px above the head top (svg stroke + shadow measured in the render)
+            tag.style.transform = `translate(${hx}px, ${hy - tip}px)`;
+            const age = (k - popStart[k]) / G.FPS;
+            const p = Math.min(1, age / 0.12);
+            const s = p < 1 ? (0.2 + 0.8 * (1 - Math.pow(1 - p, 3)) * 1.08) : 1;
+            wrap.style.transform = `translateX(-50%) scale(${Math.min(s, 1.08).toFixed(3)})`;
+          } else tag.style.display = "none";
+          // subtitles: one word at a time
+          let w = "";
+          for (const [a, b, txt] of G.words) { if (t >= a && t < b) { w = txt; break; } }
+          sub.textContent = w;
+          // score banner
+          if (t >= G.banner) {
+            banner.style.display = "flex";
+            const p = Math.min(1, (t - G.banner) / 0.12);
+            banner.style.transform = `translateX(-50%) scale(${(0.3 + 0.7 * p).toFixed(3)})`;
+            const q = Math.min(1, Math.max(0, (t - G.flip) / 0.3));
+            d1.textContent = q >= 0.5 ? "1" : "0";
+            d1.style.transform = `rotateX(${q < 0.5 ? q * 180 : (q - 1) * 180}deg)`;
+          } else banner.style.display = "none";
+        }
+        const proxy = { t: 0 };
+        const tl = gsap.timeline({ paused: true });
+        tl.to(proxy, { t: G.N / G.FPS, duration: G.N / G.FPS, ease: "none", onUpdate: () => render(proxy.t) }, 0);
+        window.__timelines = window.__timelines || {};
+        window.__timelines["main"] = tl;
+        render(0);
+      })();
+    </script>
+  </body>
+</html>

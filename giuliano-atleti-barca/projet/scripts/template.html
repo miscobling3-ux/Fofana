@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/gsap.min.js"></script>
+    <script src="data.js"></script>
+    <style>
+      @font-face { font-family: "Montserrat"; font-weight: 800; src: url("assets/fonts/montserrat-latin-800-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Poppins"; font-weight: 500; src: url("assets/fonts/poppins-latin-500-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Poppins"; font-weight: 800; src: url("assets/fonts/poppins-latin-800-normal.woff2") format("woff2"); }
+      :root { --red: #ff1f1f; --ink: #ffffff; --ground: #000; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--ground); }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+      #cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; will-change: transform; }
+      #cam img.src { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+      #spot { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.58); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); opacity: 0; z-index: 5; }
+      #ring { position: absolute; left: 0; top: 0; border: 5px solid #fff; border-radius: 50%; box-shadow: 0 0 14px rgba(255,255,255,0.55), inset 0 0 10px rgba(255,255,255,0.25); opacity: 0; z-index: 6; }
+      #tag { position: absolute; left: 0; top: 0; width: 0; height: 0; z-index: 8; display: none; }
+      #tag .wrap { position: absolute; left: 0; bottom: 0; transform-origin: 50% 100%; display: flex; flex-direction: column; align-items: center; transform: translateX(-50%); }
+      #tag .logo { width: 84px; height: 84px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 8px rgba(0,0,0,0.45); margin-bottom: 8px; }
+      #tag .logo img { height: 66px; width: auto; }
+      #tag .name { font-family: "Montserrat", sans-serif; font-weight: 800; font-size: 38px; color: #fff; background: rgba(12, 14, 20, 0.88); border-radius: 16px; padding: 6px 18px 8px; white-space: nowrap; box-shadow: 0 3px 8px rgba(0,0,0,0.45); margin-bottom: 6px; }
+      #tag svg { display: block; filter: drop-shadow(0 3px 3px rgba(0,0,0,0.5)); }
+      #sub { position: absolute; left: 0; width: 1080px; top: 1600px; text-align: center; font-family: "Poppins", sans-serif; font-weight: 500; font-size: 46px; line-height: 1.15; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.85); z-index: 20; }
+      #banner { position: absolute; top: 120px; left: 50%; transform: translateX(-50%); display: none; align-items: center; gap: 14px; background: rgba(10, 12, 18, 0.9); border-radius: 18px; padding: 12px 22px; z-index: 15; font-family: "Montserrat", sans-serif; font-weight: 800; color: #fff; font-size: 40px; box-shadow: 0 6px 18px rgba(0,0,0,0.5); }
+      #banner img { height: 54px; }
+      #banner .score { display: flex; align-items: center; gap: 10px; background: var(--red); border-radius: 10px; padding: 4px 16px; perspective: 400px; }
+      #banner .dig { display: inline-block; min-width: 28px; text-align: center; transform-style: preserve-3d; }
+      #banner .min { font-size: 30px; opacity: 0.85; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="%%DUR%%" data-width="1080" data-height="1920">
+      <div id="cam">
+      %%IMGS%%
+      </div>
+      <div id="spot"></div>
+      <div id="ring"></div>
+      <div id="tag"><div class="wrap">
+        <div class="logo"><img id="tagLogo" src="assets/img/atm.png" alt=""></div>
+        <div class="name" id="tagName">Name</div>
+        <svg width="64" height="86" viewBox="0 0 64 86"><path d="M20 3 H44 V44 H61 L32 83 L3 44 H20 Z" fill="#ff1f1f" stroke="#3a0000" stroke-width="3" stroke-linejoin="round"/></svg>
+      </div></div>
+      <div id="banner"><img src="assets/img/atm.png" alt=""><span>ATM</span><span class="score"><span class="dig" id="d1">0</span><span>–</span><span class="dig">0</span></span><span>BAR</span><img src="assets/img/fcb.png" alt=""><span class="min">9'</span></div>
+      <div id="sub"></div>
+    </div>
+    <audio id="voice" src="assets/voice.wav" data-start="0" data-duration="%%DUR%%" data-volume="0.88"></audio>
+    %%AUDIO%%
+    <script>
+      (function () {
+        const G = window.GOL;
+        const cam = document.getElementById("cam");
+        const spot = document.getElementById("spot");
+        const ring = document.getElementById("ring");
+        const tag = document.getElementById("tag");
+        const wrap = tag.querySelector(".wrap");
+        const tagName = document.getElementById("tagName");
+        const sub = document.getElementById("sub");
+        const banner = document.getElementById("banner");
+        const d1 = document.getElementById("d1");
+        // first frame index of each tag run (for the 0.12 s pop)
+        const popStart = new Array(G.N).fill(-1);
+        let cur = -1;
+        for (let k = 0; k < G.N; k++) {
+          const o = G.frames[k];
+          if (!o.tag) { cur = -1; continue; }
+          if (o.pop || cur < 0) cur = k;
+          popStart[k] = cur;
+        }
+        function render(t) {
+          let k = Math.floor(t * G.FPS + 1e-4);
+          k = Math.max(0, Math.min(G.N - 1, k));
+          const o = G.frames[k];
+          const [x0, y0, sc] = o.cam;
+          cam.style.transform = `translate(${(-x0 * sc).toFixed(2)}px, ${(-y0 * sc).toFixed(2)}px) scale(${sc})`;
+          // spotlight
+          if (o.sp && o.sp[3] > 0) {
+            const [cx, cy, r, a] = o.sp;
+            const m = `radial-gradient(circle at ${cx}px ${cy}px, transparent ${r}px, #000 ${r + 1.5}px)`;
+            spot.style.webkitMaskImage = m; spot.style.maskImage = m;
+            spot.style.opacity = a;
+            ring.style.width = ring.style.height = `${2 * r + 10}px`;
+            ring.style.transform = `translate(${cx - r - 5}px, ${cy - r - 5}px)`;
+            ring.style.opacity = a;
+          } else { spot.style.opacity = 0; ring.style.opacity = 0; }
+          // carrier tag
+          if (o.tag) {
+            const [id, hx, hy] = o.tag;
+            tag.style.display = "block";
+            tagName.textContent = G.names[id];
+            const bounce = 5 * Math.abs(Math.sin(2 * Math.PI * 1.4 * t));
+            const tip = -1 + bounce;   // drawn tip lands ~8..13 px above the head top (svg stroke + shadow measured in the render)
+            tag.style.transform = `translate(${hx}px, ${hy - tip}px)`;
+            const age = (k - popStart[k]) / G.FPS;
+            const p = Math.min(1, age / 0.12);
+            const s = p < 1 ? (0.2 + 0.8 * (1 - Math.pow(1 - p, 3)) * 1.08) : 1;
+            wrap.style.transform = `translateX(-50%) scale(${Math.min(s, 1.08).toFixed(3)})`;
+          } else tag.style.display = "none";
+          // subtitles: one word at a time
+          let w = "";
+          for (const [a, b, txt] of G.words) { if (t >= a && t < b) { w = txt; break; } }
+          sub.textContent = w;
+          // score banner
+          if (t >= G.banner) {
+            banner.style.display = "flex";
+            const p = Math.min(1, (t - G.banner) / 0.12);
+            banner.style.transform = `translateX(-50%) scale(${(0.3 + 0.7 * p).toFixed(3)})`;
+            const q = Math.min(1, Math.max(0, (t - G.flip) / 0.3));
+            d1.textContent = q >= 0.5 ? "1" : "0";
+            d1.style.transform = `rotateX(${q < 0.5 ? q * 180 : (q - 1) * 180}deg)`;
+          } else banner.style.display = "none";
+        }
+        const proxy = { t: 0 };
+        const tl = gsap.timeline({ paused: true });
+        tl.to(proxy, { t: G.N / G.FPS, duration: G.N / G.FPS, ease: "none", onUpdate: () => render(proxy.t) }, 0);
+        window.__timelines = window.__timelines || {};
+        window.__timelines["main"] = tl;
+        render(0);
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=1080, height=1080">
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:"Poppins";font-weight:800;src:url("assets/fonts/poppins-latin-800-normal.woff2") format("woff2")}
+@font-face{font-family:"Montserrat";font-weight:800;src:url("assets/fonts/montserrat-latin-800-normal.woff2") format("woff2")}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden;background:#000}
+#root{position:relative;width:1080px;height:1080px;overflow:hidden;background:#000}
+.pan{position:absolute;top:0;overflow:hidden}
+.pan img{position:absolute;left:0;top:0;transform-origin:0 0}
+.sep{position:absolute;left:537px;top:0;width:6px;height:1080px;background:#fff;z-index:2}
+.grad{position:absolute;left:0;right:0;bottom:0;height:594px;background:linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,.75) 45%,#000 100%);z-index:3}
+.ban{position:absolute;left:50%;top:680px;transform:translateX(-50%);background:#e10600;color:#fff;font-family:"Montserrat",sans-serif;font-weight:800;font-size:50px;padding:14px 34px;border-radius:12px;display:flex;align-items:center;gap:22px;white-space:nowrap;z-index:4;box-shadow:0 8px 24px rgba(0,0,0,.6)}
+.ban img{height:62px;background:#fff;border-radius:50%;padding:6px}
+.big{position:absolute;left:0;right:0;bottom:50px;text-align:center;font-family:"Poppins",sans-serif;font-weight:800;font-size:140px;line-height:.98;color:#fff;letter-spacing:-2px;text-shadow:0 6px 18px rgba(0,0,0,.8);z-index:4}
+</style></head><body>
+<div id="root" data-composition-id="cover" data-start="0" data-duration="1" data-width="1080" data-height="1080">
+<div class="pan" style="left:0px;width:540px;height:1080px"><img src="assets/img/geste.jpg" style="width:4329.0px;height:2435.1px;transform:translate(-3010.6px,-947.0px)"></div>
+<div class="pan" style="left:540px;width:540px;height:1080px"><img src="assets/img/visage.jpg" style="width:3456.0px;height:1944.0px;transform:translate(-2205.0px,-324.0px)"></div>
+<div class="sep"></div><div class="grad"></div>
+<div class="ban"><img src="assets/img/atm.png" alt="">ATLÉTICO 1-0 BARÇA<img src="assets/img/fcb.png" alt=""></div>
+<div class="big">¡QUÉ JUGADA!</div>
+</div>
+<script>const tl=gsap.timeline({paused:true});tl.set("#root",{opacity:1},0);window.__timelines=window.__timelines||{};window.__timelines["cover"]=tl;</script>
+</body></html>
