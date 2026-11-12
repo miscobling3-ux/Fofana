@@ -1,0 +1,1244 @@
+[
+{
+"text": "Ce",
+"start": 0.03,
+"end": 0.16,
+"sent": 0
+},
+{
+"text": "coup",
+"start": 0.16,
+"end": 0.543,
+"sent": 0
+},
+{
+"text": "franc",
+"start": 0.543,
+"end": 0.99,
+"sent": 0
+},
+{
+"text": "d'Arda",
+"start": 0.99,
+"end": 1.5,
+"sent": 0
+},
+{
+"text": "Güler.",
+"start": 1.5,
+"end": 1.77,
+"sent": 0
+},
+{
+"text": "Vous",
+"start": 1.77,
+"end": 1.8,
+"sent": 1
+},
+{
+"text": "ne",
+"start": 1.8,
+"end": 1.92,
+"sent": 1
+},
+{
+"text": "verrez",
+"start": 1.92,
+"end": 2.3,
+"sent": 1
+},
+{
+"text": "jamais",
+"start": 2.3,
+"end": 2.68,
+"sent": 1
+},
+{
+"text": "Lamine",
+"start": 2.68,
+"end": 3.1,
+"sent": 1
+},
+{
+"text": "Yamal",
+"start": 3.1,
+"end": 3.47,
+"sent": 1
+},
+{
+"text": "marquer",
+"start": 3.47,
+"end": 3.8,
+"sent": 1
+},
+{
+"text": "un",
+"start": 3.8,
+"end": 3.957,
+"sent": 1
+},
+{
+"text": "coup",
+"start": 3.957,
+"end": 4.192,
+"sent": 1
+},
+{
+"text": "pareil",
+"start": 4.192,
+"end": 4.505,
+"sent": 1
+},
+{
+"text": "dans",
+"start": 4.505,
+"end": 4.74,
+"sent": 1
+},
+{
+"text": "toute",
+"start": 4.74,
+"end": 5.29,
+"sent": 1
+},
+{
+"text": "sa",
+"start": 5.29,
+"end": 5.52,
+"sent": 1
+},
+{
+"text": "carrière.",
+"start": 5.52,
+"end": 5.71,
+"sent": 1
+},
+{
+"text": "Tout",
+"start": 5.71,
+"end": 5.93,
+"sent": 2
+},
+{
+"text": "commence",
+"start": 5.93,
+"end": 6.47,
+"sent": 2
+},
+{
+"text": "quand",
+"start": 6.47,
+"end": 6.8,
+"sent": 2
+},
+{
+"text": "la",
+"start": 6.8,
+"end": 6.92,
+"sent": 2
+},
+{
+"text": "Turquie",
+"start": 6.92,
+"end": 7.38,
+"sent": 2
+},
+{
+"text": "obtient",
+"start": 7.38,
+"end": 7.86,
+"sent": 2
+},
+{
+"text": "un",
+"start": 7.98,
+"end": 7.99,
+"sent": 2
+},
+{
+"text": "coup",
+"start": 7.99,
+"end": 8.235,
+"sent": 2
+},
+{
+"text": "franc",
+"start": 8.235,
+"end": 8.52,
+"sent": 2
+},
+{
+"text": "très",
+"start": 8.52,
+"end": 8.79,
+"sent": 2
+},
+{
+"text": "loin",
+"start": 8.79,
+"end": 9.06,
+"sent": 2
+},
+{
+"text": "de",
+"start": 9.06,
+"end": 9.19,
+"sent": 2
+},
+{
+"text": "la",
+"start": 9.19,
+"end": 9.293,
+"sent": 2
+},
+{
+"text": "surface.",
+"start": 9.293,
+"end": 9.55,
+"sent": 2
+},
+{
+"text": "À",
+"start": 9.55,
+"end": 9.55,
+"sent": 3
+},
+{
+"text": "ce",
+"start": 9.55,
+"end": 9.62,
+"sent": 3
+},
+{
+"text": "moment,",
+"start": 9.69,
+"end": 10.21,
+"sent": 3
+},
+{
+"text": "on",
+"start": 10.22,
+"end": 10.37,
+"sent": 3
+},
+{
+"text": "voit",
+"start": 10.37,
+"end": 10.44,
+"sent": 3
+},
+{
+"text": "trois",
+"start": 10.45,
+"end": 10.8,
+"sent": 3
+},
+{
+"text": "joueurs",
+"start": 10.8,
+"end": 11.08,
+"sent": 3
+},
+{
+"text": "turcs",
+"start": 11.5,
+"end": 11.64,
+"sent": 3
+},
+{
+"text": "placés",
+"start": 11.64,
+"end": 12.05,
+"sent": 3
+},
+{
+"text": "près",
+"start": 12.05,
+"end": 12.65,
+"sent": 3
+},
+{
+"text": "du",
+"start": 12.65,
+"end": 13.05,
+"sent": 3
+},
+{
+"text": "ballon.",
+"start": 13.05,
+"end": 13.39,
+"sent": 3
+},
+{
+"text": "On",
+"start": 13.39,
+"end": 13.42,
+"sent": 4
+},
+{
+"text": "pourrait",
+"start": 13.42,
+"end": 13.91,
+"sent": 4
+},
+{
+"text": "penser",
+"start": 13.91,
+"end": 14.28,
+"sent": 4
+},
+{
+"text": "qu'ils",
+"start": 14.28,
+"end": 14.64,
+"sent": 4
+},
+{
+"text": "préparent",
+"start": 14.64,
+"end": 15.04,
+"sent": 4
+},
+{
+"text": "une",
+"start": 15.04,
+"end": 15.11,
+"sent": 4
+},
+{
+"text": "combinaison",
+"start": 15.11,
+"end": 15.72,
+"sent": 4
+},
+{
+"text": "spéciale",
+"start": 15.72,
+"end": 16.3,
+"sent": 4
+},
+{
+"text": "pour",
+"start": 16.3,
+"end": 16.54,
+"sent": 4
+},
+{
+"text": "tromper",
+"start": 16.54,
+"end": 16.98,
+"sent": 4
+},
+{
+"text": "la",
+"start": 16.98,
+"end": 17.18,
+"sent": 4
+},
+{
+"text": "défense",
+"start": 17.18,
+"end": 17.75,
+"sent": 4
+},
+{
+"text": "et",
+"start": 17.75,
+"end": 17.84,
+"sent": 4
+},
+{
+"text": "surtout",
+"start": 17.91,
+"end": 18.49,
+"sent": 4
+},
+{
+"text": "surprendre",
+"start": 18.49,
+"end": 19.22,
+"sent": 4
+},
+{
+"text": "le",
+"start": 19.22,
+"end": 19.33,
+"sent": 4
+},
+{
+"text": "gardien",
+"start": 19.33,
+"end": 19.747,
+"sent": 4
+},
+{
+"text": "adverse.",
+"start": 19.747,
+"end": 20.21,
+"sent": 4
+},
+{
+"text": "Mais",
+"start": 20.21,
+"end": 20.43,
+"sent": 5
+},
+{
+"text": "ce",
+"start": 20.51,
+"end": 20.63,
+"sent": 5
+},
+{
+"text": "que",
+"start": 20.63,
+"end": 20.88,
+"sent": 5
+},
+{
+"text": "Arda",
+"start": 20.88,
+"end": 21.2,
+"sent": 5
+},
+{
+"text": "Güler",
+"start": 21.2,
+"end": 21.61,
+"sent": 5
+},
+{
+"text": "fait",
+"start": 21.61,
+"end": 21.86,
+"sent": 5
+},
+{
+"text": "ensuite",
+"start": 22.39,
+"end": 22.39,
+"sent": 5
+},
+{
+"text": "est",
+"start": 22.39,
+"end": 22.66,
+"sent": 5
+},
+{
+"text": "simplement",
+"start": 22.66,
+"end": 23.62,
+"sent": 5
+},
+{
+"text": "incroyable.",
+"start": 23.62,
+"end": 24.37,
+"sent": 5
+},
+{
+"text": "Il",
+"start": 24.37,
+"end": 24.48,
+"sent": 6
+},
+{
+"text": "lève",
+"start": 24.48,
+"end": 24.88,
+"sent": 6
+},
+{
+"text": "la",
+"start": 24.88,
+"end": 25.04,
+"sent": 6
+},
+{
+"text": "main",
+"start": 25.04,
+"end": 25.36,
+"sent": 6
+},
+{
+"text": "droite,",
+"start": 25.36,
+"end": 25.72,
+"sent": 6
+},
+{
+"text": "comme",
+"start": 25.72,
+"end": 25.9,
+"sent": 6
+},
+{
+"text": "pour",
+"start": 25.9,
+"end": 26.18,
+"sent": 6
+},
+{
+"text": "indiquer",
+"start": 26.18,
+"end": 26.54,
+"sent": 6
+},
+{
+"text": "à",
+"start": 26.54,
+"end": 26.58,
+"sent": 6
+},
+{
+"text": "ses",
+"start": 26.58,
+"end": 26.7,
+"sent": 6
+},
+{
+"text": "coéquipiers",
+"start": 26.7,
+"end": 27.24,
+"sent": 6
+},
+{
+"text": "qu'il",
+"start": 27.24,
+"end": 27.54,
+"sent": 6
+},
+{
+"text": "va",
+"start": 27.54,
+"end": 27.64,
+"sent": 6
+},
+{
+"text": "envoyer",
+"start": 27.66,
+"end": 28.1,
+"sent": 6
+},
+{
+"text": "un",
+"start": 28.1,
+"end": 28.14,
+"sent": 6
+},
+{
+"text": "centre",
+"start": 28.22,
+"end": 28.6,
+"sent": 6
+},
+{
+"text": "vers",
+"start": 28.63,
+"end": 28.89,
+"sent": 6
+},
+{
+"text": "les",
+"start": 28.97,
+"end": 29.12,
+"sent": 6
+},
+{
+"text": "joueurs",
+"start": 29.12,
+"end": 29.64,
+"sent": 6
+},
+{
+"text": "situés",
+"start": 29.64,
+"end": 30.09,
+"sent": 6
+},
+{
+"text": "dans",
+"start": 30.09,
+"end": 30.32,
+"sent": 6
+},
+{
+"text": "la",
+"start": 30.32,
+"end": 30.449,
+"sent": 6
+},
+{
+"text": "surface.",
+"start": 30.449,
+"end": 30.77,
+"sent": 6
+},
+{
+"text": "Ce",
+"start": 30.77,
+"end": 30.89,
+"sent": 7
+},
+{
+"text": "geste",
+"start": 30.89,
+"end": 31.26,
+"sent": 7
+},
+{
+"text": "trompe",
+"start": 31.26,
+"end": 31.85,
+"sent": 7
+},
+{
+"text": "complètement",
+"start": 31.85,
+"end": 32.46,
+"sent": 7
+},
+{
+"text": "le",
+"start": 32.73,
+"end": 32.91,
+"sent": 7
+},
+{
+"text": "gardien,",
+"start": 32.91,
+"end": 33.32,
+"sent": 7
+},
+{
+"text": "convaincu",
+"start": 33.32,
+"end": 33.82,
+"sent": 7
+},
+{
+"text": "que",
+"start": 33.82,
+"end": 34.08,
+"sent": 7
+},
+{
+"text": "Güler",
+"start": 34.08,
+"end": 34.52,
+"sent": 7
+},
+{
+"text": "est",
+"start": 34.52,
+"end": 34.76,
+"sent": 7
+},
+{
+"text": "en",
+"start": 34.87,
+"end": 34.92,
+"sent": 7
+},
+{
+"text": "train",
+"start": 34.92,
+"end": 35.32,
+"sent": 7
+},
+{
+"text": "de",
+"start": 35.32,
+"end": 35.33,
+"sent": 7
+},
+{
+"text": "préparer",
+"start": 35.33,
+"end": 35.38,
+"sent": 7
+},
+{
+"text": "une",
+"start": 35.41,
+"end": 35.54,
+"sent": 7
+},
+{
+"text": "combinaison",
+"start": 35.54,
+"end": 36.8,
+"sent": 7
+},
+{
+"text": "ou",
+"start": 36.8,
+"end": 36.96,
+"sent": 7
+},
+{
+"text": "un",
+"start": 36.96,
+"end": 37.1,
+"sent": 7
+},
+{
+"text": "centre",
+"start": 37.1,
+"end": 37.2,
+"sent": 7
+},
+{
+"text": "classique.",
+"start": 37.7,
+"end": 37.99,
+"sent": 7
+},
+{
+"text": "Et",
+"start": 37.99,
+"end": 38.08,
+"sent": 8
+},
+{
+"text": "soudain,",
+"start": 38.08,
+"end": 38.84,
+"sent": 8
+},
+{
+"text": "Arda",
+"start": 38.84,
+"end": 39.2,
+"sent": 8
+},
+{
+"text": "Güler",
+"start": 39.2,
+"end": 39.47,
+"sent": 8
+},
+{
+"text": "prend",
+"start": 39.47,
+"end": 40.19,
+"sent": 8
+},
+{
+"text": "tout",
+"start": 40.19,
+"end": 40.55,
+"sent": 8
+},
+{
+"text": "le",
+"start": 40.55,
+"end": 40.67,
+"sent": 8
+},
+{
+"text": "monde",
+"start": 40.73,
+"end": 41.18,
+"sent": 8
+},
+{
+"text": "au",
+"start": 41.18,
+"end": 41.305,
+"sent": 8
+},
+{
+"text": "dépourvu.",
+"start": 41.305,
+"end": 41.65,
+"sent": 8
+},
+{
+"text": "Au",
+"start": 41.65,
+"end": 41.75,
+"sent": 9
+},
+{
+"text": "lieu",
+"start": 41.75,
+"end": 42.05,
+"sent": 9
+},
+{
+"text": "de",
+"start": 42.05,
+"end": 42.2,
+"sent": 9
+},
+{
+"text": "centrer,",
+"start": 42.2,
+"end": 42.77,
+"sent": 9
+},
+{
+"text": "il",
+"start": 42.77,
+"end": 42.77,
+"sent": 9
+},
+{
+"text": "envoie",
+"start": 42.77,
+"end": 43.12,
+"sent": 9
+},
+{
+"text": "le",
+"start": 43.12,
+"end": 43.22,
+"sent": 9
+},
+{
+"text": "ballon",
+"start": 43.64,
+"end": 43.79,
+"sent": 9
+},
+{
+"text": "directement",
+"start": 43.79,
+"end": 44.61,
+"sent": 9
+},
+{
+"text": "vers",
+"start": 44.61,
+"end": 44.91,
+"sent": 9
+},
+{
+"text": "le",
+"start": 44.91,
+"end": 45.06,
+"sent": 9
+},
+{
+"text": "second",
+"start": 45.06,
+"end": 45.44,
+"sent": 9
+},
+{
+"text": "poteau.",
+"start": 45.44,
+"end": 45.53,
+"sent": 9
+},
+{
+"text": "Le",
+"start": 45.53,
+"end": 45.64,
+"sent": 10
+},
+{
+"text": "ballon",
+"start": 45.64,
+"end": 46.13,
+"sent": 10
+},
+{
+"text": "trace",
+"start": 46.13,
+"end": 46.54,
+"sent": 10
+},
+{
+"text": "alors",
+"start": 46.54,
+"end": 46.95,
+"sent": 10
+},
+{
+"text": "une",
+"start": 46.95,
+"end": 47.2,
+"sent": 10
+},
+{
+"text": "trajectoire",
+"start": 47.2,
+"end": 48.1,
+"sent": 10
+},
+{
+"text": "absolument",
+"start": 48.15,
+"end": 48.94,
+"sent": 10
+},
+{
+"text": "élevée,",
+"start": 48.94,
+"end": 49.35,
+"sent": 10
+},
+{
+"text": "avec",
+"start": 49.35,
+"end": 49.56,
+"sent": 10
+},
+{
+"text": "une",
+"start": 49.56,
+"end": 49.75,
+"sent": 10
+},
+{
+"text": "courbe",
+"start": 49.75,
+"end": 50.11,
+"sent": 10
+},
+{
+"text": "impressionnante",
+"start": 50.13,
+"end": 51.02,
+"sent": 10
+},
+{
+"text": "qui",
+"start": 51.02,
+"end": 51.12,
+"sent": 10
+},
+{
+"text": "surprend",
+"start": 51.12,
+"end": 51.79,
+"sent": 10
+},
+{
+"text": "complètement",
+"start": 51.79,
+"end": 52.57,
+"sent": 10
+},
+{
+"text": "le",
+"start": 52.57,
+"end": 52.7,
+"sent": 10
+},
+{
+"text": "gardien.",
+"start": 52.7,
+"end": 53.05,
+"sent": 10
+},
+{
+"text": "Il",
+"start": 53.05,
+"end": 53.05,
+"sent": 11
+},
+{
+"text": "croit",
+"start": 53.07,
+"end": 53.42,
+"sent": 11
+},
+{
+"text": "d'abord",
+"start": 53.42,
+"end": 54.01,
+"sent": 11
+},
+{
+"text": "qu'il",
+"start": 54.01,
+"end": 54.42,
+"sent": 11
+},
+{
+"text": "peut",
+"start": 54.42,
+"end": 54.63,
+"sent": 11
+},
+{
+"text": "se",
+"start": 54.63,
+"end": 55.16,
+"sent": 11
+},
+{
+"text": "préparer",
+"start": 55.16,
+"end": 55.42,
+"sent": 11
+},
+{
+"text": "pour",
+"start": 55.42,
+"end": 55.576,
+"sent": 11
+},
+{
+"text": "le",
+"start": 55.576,
+"end": 55.68,
+"sent": 11
+},
+{
+"text": "centre,",
+"start": 55.68,
+"end": 55.99,
+"sent": 11
+},
+{
+"text": "mais",
+"start": 55.99,
+"end": 56.19,
+"sent": 11
+},
+{
+"text": "il",
+"start": 56.19,
+"end": 56.33,
+"sent": 11
+},
+{
+"text": "se",
+"start": 56.33,
+"end": 56.47,
+"sent": 11
+},
+{
+"text": "rend",
+"start": 56.47,
+"end": 56.76,
+"sent": 11
+},
+{
+"text": "compte",
+"start": 56.76,
+"end": 57.19,
+"sent": 11
+},
+{
+"text": "trop",
+"start": 57.19,
+"end": 57.48,
+"sent": 11
+},
+{
+"text": "tard",
+"start": 57.48,
+"end": 57.69,
+"sent": 11
+},
+{
+"text": "que",
+"start": 57.69,
+"end": 57.955,
+"sent": 11
+},
+{
+"text": "le",
+"start": 57.955,
+"end": 58.22,
+"sent": 11
+},
+{
+"text": "ballon",
+"start": 58.22,
+"end": 58.63,
+"sent": 11
+},
+{
+"text": "file",
+"start": 58.63,
+"end": 59.23,
+"sent": 11
+},
+{
+"text": "directement",
+"start": 59.23,
+"end": 60.07,
+"sent": 11
+},
+{
+"text": "vers",
+"start": 60.07,
+"end": 60.37,
+"sent": 11
+},
+{
+"text": "sa",
+"start": 60.37,
+"end": 60.52,
+"sent": 11
+},
+{
+"text": "cage.",
+"start": 60.52,
+"end": 60.95,
+"sent": 11
+},
+{
+"text": "Malgré",
+"start": 60.95,
+"end": 61.3,
+"sent": 12
+},
+{
+"text": "son",
+"start": 61.3,
+"end": 61.54,
+"sent": 12
+},
+{
+"text": "effort",
+"start": 61.54,
+"end": 62.03,
+"sent": 12
+},
+{
+"text": "désespéré,",
+"start": 62.03,
+"end": 62.83,
+"sent": 12
+},
+{
+"text": "il",
+"start": 62.83,
+"end": 62.94,
+"sent": 12
+},
+{
+"text": "ne",
+"start": 62.94,
+"end": 63.03,
+"sent": 12
+},
+{
+"text": "peut",
+"start": 63.03,
+"end": 63.36,
+"sent": 12
+},
+{
+"text": "rien",
+"start": 63.77,
+"end": 64.11,
+"sent": 12
+},
+{
+"text": "faire.",
+"start": 64.11,
+"end": 64.11,
+"sent": 12
+},
+{
+"text": "Le",
+"start": 64.11,
+"end": 64.11,
+"sent": 13
+},
+{
+"text": "ballon",
+"start": 64.11,
+"end": 64.5,
+"sent": 13
+},
+{
+"text": "continue",
+"start": 64.5,
+"end": 65.06,
+"sent": 13
+},
+{
+"text": "sa",
+"start": 65.06,
+"end": 65.19,
+"sent": 13
+},
+{
+"text": "trajectoire",
+"start": 65.19,
+"end": 65.76,
+"sent": 13
+},
+{
+"text": "et",
+"start": 65.81,
+"end": 65.95,
+"sent": 13
+},
+{
+"text": "termine",
+"start": 65.95,
+"end": 66.51,
+"sent": 13
+},
+{
+"text": "au",
+"start": 66.51,
+"end": 66.65,
+"sent": 13
+},
+{
+"text": "fond",
+"start": 66.65,
+"end": 66.93,
+"sent": 13
+},
+{
+"text": "des",
+"start": 66.93,
+"end": 67.13,
+"sent": 13
+},
+{
+"text": "filets.",
+"start": 67.13,
+"end": 67.49,
+"sent": 13
+},
+{
+"text": "Quel",
+"start": 67.49,
+"end": 67.63,
+"sent": 14
+},
+{
+"text": "coup",
+"start": 67.63,
+"end": 67.999,
+"sent": 14
+},
+{
+"text": "franc",
+"start": 67.999,
+"end": 68.43,
+"sent": 14
+},
+{
+"text": "exceptionnel",
+"start": 68.43,
+"end": 69.45,
+"sent": 14
+},
+{
+"text": "d'Arda",
+"start": 69.53,
+"end": 69.86,
+"sent": 14
+},
+{
+"text": "Güler!",
+"start": 69.93,
+"end": 70.52,
+"sent": 14
+}
+]

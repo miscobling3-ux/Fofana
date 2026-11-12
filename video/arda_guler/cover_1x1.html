@@ -1,0 +1,19 @@
+<!doctype html><html lang="fr"><head><meta charset="UTF-8" /><meta name="viewport" content="width=1080, height=1080" />
+<script src="assets/gsap.min.js"></script><style>
+@font-face{font-family:"Poppins";font-weight:800;src:url(assets/fonts/poppins-800.woff2) format("woff2")}
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1080px;height:1080px;overflow:hidden;background:#000}
+#root{position:relative;width:1080px;height:1080px;overflow:hidden;background:#000;font-family:"Poppins"}
+.panel{position:absolute;top:0;height:700px;overflow:hidden}
+.panel img{position:absolute}
+#p1{left:0;width:604px} #p2{left:604px;width:476px;border-left:8px solid #e10600}
+#grad{position:absolute;left:0;right:0;top:315px;height:765px;background:linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,.85) 40%,#000 62%)}
+#banner{position:absolute;left:50%;transform:translateX(-50%) rotate(-2deg);top:630px;background:#e10600;color:#fff;font-weight:800;font-size:50px;padding:10px 34px;border-radius:10px;white-space:nowrap;box-shadow:0 8px 24px rgba(0,0,0,.6);letter-spacing:.02em}
+#title{position:absolute;left:0;right:0;top:744px;text-align:center;color:#fff;font-weight:800;font-size:120px;line-height:.95;text-shadow:0 6px 20px rgba(0,0,0,.8);letter-spacing:-.01em}
+</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="1" data-width="1080" data-height="1080">
+<div class="panel clip" id="p1" data-start="0" data-duration="1"><img src="assets/geste.jpg" style="width:2636px;height:1483px;left:-1318px;top:-474px" alt="" /></div>
+<div class="panel clip" id="p2" data-start="0" data-duration="1"><img src="assets/visage.jpg" style="width:6093px;height:3427px;left:-4205px;top:-285px" alt="" /></div>
+<div id="grad" class="clip" data-start="0" data-duration="1"></div>
+<div id="banner" class="clip" data-start="0" data-duration="1">TURQUIE 1-0 BELGIQUE</div>
+<div id="title" class="clip" data-start="0" data-duration="1">QUEL<br/>COUP FRANC !</div>
+</div><script>const tl=gsap.timeline({paused:true});window.__timelines=window.__timelines||{};window.__timelines["main"]=tl;tl.seek(0);</script></body></html>
