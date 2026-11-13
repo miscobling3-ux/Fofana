@@ -6,17 +6,20 @@ import numpy as np
 
 S = sys.argv[1]
 P = f'{S}/proj'            # frames + words.json
-H = f'{S}/guler'           # projet HyperFrames
+LANG = os.environ.get('HF_LANG', 'fr')
+H = f'{S}/guler' if LANG == 'fr' else f'{S}/guler_{LANG}'
 AN = f'{S}/an'
 FPS = 30
 OW, OH = 1080, 1920
 SRC_FPS = 50
 
-words = json.load(open(f'{P}/words.json'))
-VO_DUR = 70.50
+words = json.load(open(f'{P}/words.json' if LANG == 'fr' else f'{P}/words_{LANG}.json'))
+VO_DUR = 70.50 if LANG == 'fr' else round(words[-1]['end'] + 0.05, 2)
+ES = {('et',4):('y',4),('surprendre',4):('sorprender',4),('vers',6):('hacia',6),('convaincu',7):('convencido',7),('envoie',9):('lanza',9),('qui',10):('que',10),('gardien',10):('portero',10),('mais',11):('pero',11),('trompe',7):('engaña',7),('filets',13):('red',13)}
 
 def wt(text, sent, nth=0):
-    c = [w for w in words if w['sent'] == sent and w['text'].strip('.,!?').lower() == text.lower()]
+    if LANG == 'es': text, sent = ES.get((text, sent), (text, sent))
+    c = [w for w in words if w['sent'] == sent and w['text'].strip('.,!?¡¿').lower() == text.lower()]
     return c[nth]['start']
 
 def J(name):
@@ -33,15 +36,17 @@ TVBUG = (75, 0, 565, 118)            # clip A uniquement
 # ---------------------------------------------------------------- EDL
 # map: [(T, srcframe)...] interpolation linéaire, cam: dict, spot: (target, t_on, t_off), label: bool
 T = {}
-T['s4'] = 9.55; T['s5'] = 13.39; T['s5b'] = wt('et', 4); T['s6'] = 20.21; T['s7'] = 24.37
-T['s7b'] = wt('vers', 6); T['s8'] = 30.77; T['s8b'] = wt('convaincu', 7); T['s9'] = 37.99
-T['s10'] = 41.65; T['envoie'] = wt('envoie', 9); T['s11'] = 45.53; T['s11b'] = wt('qui', 10)
-T['s12'] = 53.05; T['s12b'] = wt('mais', 11); T['s13'] = 60.95; T['s14'] = 64.11; T['s15'] = 67.49
+SS = {n: min(w['start'] for w in words if w['sent'] == n) for n in range(15)}
+T['s2'] = SS[1]; T['s3'] = SS[2]
+T['s4'] = SS[3]; T['s5'] = SS[4]; T['s5b'] = wt('et', 4); T['s6'] = SS[5]; T['s7'] = SS[6]
+T['s7b'] = wt('vers', 6); T['s8'] = SS[7]; T['s8b'] = wt('convaincu', 7); T['s9'] = SS[8]
+T['s10'] = SS[9]; T['envoie'] = wt('envoie', 9); T['s11'] = SS[10]; T['s11b'] = wt('qui', 10)
+T['s12'] = SS[11]; T['s12b'] = wt('mais', 11); T['s13'] = SS[12]; T['s14'] = SS[13]; T['s15'] = SS[14]
 
 SEG = [
- dict(n='hook-frappe', clip='B', map=[(0, 441), (1.77, 485)], cam=dict(m='follow', tr='headB', dy=330, h=1000, side='left')),
- dict(n='but-haut', clip='B', map=[(1.77, 85), (5.71, 164)], cam=dict(m='static', cx=1030, cy=540, h=1080)),
- dict(n='coup-franc-loin', clip='A', map=[(5.71, 190), (T['s4'], 280)], cam=dict(m='pan', k=[(190, 560, 600, 900), (232, 600, 590, 900), (280, 1290, 470, 900)])),
+ dict(n='hook-frappe', clip='B', map=[(0, 441), (T['s2'], 485)], cam=dict(m='follow', tr='headB', dy=330, h=1000, side='left')),
+ dict(n='but-haut', clip='B', map=[(T['s2'], 85), (T['s3'], 164)], cam=dict(m='static', cx=1030, cy=540, h=1080)),
+ dict(n='coup-franc-loin', clip='A', map=[(T['s3'], 190), (T['s4'], 280)], cam=dict(m='pan', k=[(190, 560, 600, 900), (232, 600, 590, 900), (280, 1290, 470, 900)])),
  dict(n='trois-joueurs', clip='A', map=[(T['s4'], 99), (T['s5'], 150)], cam=dict(m='pan', k=[(99, 1360, 650, 900), (128, 1360, 650, 900), (141, 430, 585, 900), (150, 430, 585, 900)])),
  dict(n='mur', clip='A', map=[(T['s5'], 1), (T['s5b'], 98)], cam=dict(m='pan', k=[(1, 600, 608, 940), (98, 900, 608, 940)])),
  dict(n='gardien-haut', clip='B', map=[(T['s5b'], 1), (T['s6'], 20)], cam=dict(m='static', cx=960, cy=640, h=880), spot=('gkB1', wt('surprendre', 4), T['s6'])),
@@ -263,7 +268,7 @@ def tstart(i): return max(0.0, i / FPS - Q) if i > 0 else 0.0
 
 html = []
 A = html.append
-A('<!doctype html>\n<html lang="fr" data-resolution="portrait">\n<head>\n<meta charset="UTF-8" />\n<meta name="viewport" content="width=1080, height=1920" />')
+A(f'<!doctype html>\n<html lang="{LANG}" data-resolution="portrait">\n<head>\n<meta charset="UTF-8" />\n<meta name="viewport" content="width=1080, height=1920" />')
 A('<script src="assets/gsap.min.js"></script>')
 A('''<style>
 @font-face{font-family:"Poppins";font-weight:500;src:url(assets/fonts/poppins-500.woff2) format("woff2")}
@@ -313,7 +318,7 @@ A('''<div id="score"><div class="team"><img src="assets/tff.svg" alt="" />TUR</d
 for j, w in enumerate(words):
     st = w['start']; en = words[j + 1]['start'] if j + 1 < len(words) else VO_DUR
     if en - st < 0.05: en = st + 0.05
-    txt = w['text'].strip('.,!?:;').lower()
+    txt = w['text'].strip('.,!?:;¡¿').lower()
     if not txt: continue
     A(f'<div class="word clip" data-start="{st:.3f}" data-duration="{en - st:.3f}">{txt}</div>')
 
@@ -395,7 +400,7 @@ plan = [dict(i=f['i'], t=round(f['t'], 4), clip=f['clip'], k=f['k'], seg=SEG[f['
              label=f.get('lab') if f['label'] else None, spot=(list(to_out(f, *f['spot_src'][:2])) + [f['spot_src'][2] * OH / f['cam'][2]]) if f['spot'] > 0 else None,
              spot_a=f['spot']) for f in frames]
 json.dump(dict(frames=plan, segs=[dict(n=s['n'], t0=s['map'][0][0], t1=s['map'][-1][0]) for s in SEG], sfx=sfx, kick=kick_times,
-               score=(SCORE_ON, SCORE_FLIP), spots=[(a, b) for a, b, _ in spot_windows]), open(f'{S}/an/plan.json', 'w'))
+               score=(SCORE_ON, SCORE_FLIP), spots=[(a, b) for a, b, _ in spot_windows]), open(f'{S}/an/plan.json' if LANG == 'fr' else f'{S}/an/plan_{LANG}.json', 'w'))
 print('frames', NF, 'imgs', len(imgs), 'sfx', len(sfx), 'kick', kick_times, 'spots', [(round(a, 2), round(b, 2)) for a, b, _ in spot_windows])
 for si, sg in enumerate(SEG):
     print(f"{si:2d} {sg['n']:16s} {sg['map'][0][0]:6.2f}-{sg['map'][-1][0]:6.2f} {sg['clip']} {sg['map'][0][1]}-{sg['map'][-1][1]}")

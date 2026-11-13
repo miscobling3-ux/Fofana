@@ -1,0 +1,1250 @@
+[
+{
+"text": "Este",
+"start": 0.01,
+"end": 0.29,
+"sent": 0
+},
+{
+"text": "tiro",
+"start": 0.38,
+"end": 0.72,
+"sent": 0
+},
+{
+"text": "libre",
+"start": 0.72,
+"end": 1.2,
+"sent": 0
+},
+{
+"text": "de",
+"start": 1.22,
+"end": 1.41,
+"sent": 0
+},
+{
+"text": "Arda",
+"start": 1.41,
+"end": 1.8,
+"sent": 0
+},
+{
+"text": "Güler.",
+"start": 1.8,
+"end": 2.28,
+"sent": 0
+},
+{
+"text": "Nunca",
+"start": 2.28,
+"end": 2.68,
+"sent": 1
+},
+{
+"text": "verás",
+"start": 2.68,
+"end": 3.038,
+"sent": 1
+},
+{
+"text": "a",
+"start": 3.038,
+"end": 3.192,
+"sent": 1
+},
+{
+"text": "Lamine",
+"start": 3.192,
+"end": 3.602,
+"sent": 1
+},
+{
+"text": "Yamal",
+"start": 3.602,
+"end": 3.96,
+"sent": 1
+},
+{
+"text": "marcar",
+"start": 3.96,
+"end": 4.31,
+"sent": 1
+},
+{
+"text": "uno",
+"start": 4.31,
+"end": 4.52,
+"sent": 1
+},
+{
+"text": "igual",
+"start": 4.52,
+"end": 5.03,
+"sent": 1
+},
+{
+"text": "en",
+"start": 5.04,
+"end": 5.18,
+"sent": 1
+},
+{
+"text": "toda",
+"start": 5.18,
+"end": 5.52,
+"sent": 1
+},
+{
+"text": "su",
+"start": 5.52,
+"end": 5.68,
+"sent": 1
+},
+{
+"text": "carrera.",
+"start": 5.69,
+"end": 6.36,
+"sent": 1
+},
+{
+"text": "Todo",
+"start": 6.37,
+"end": 6.65,
+"sent": 2
+},
+{
+"text": "empieza",
+"start": 6.82,
+"end": 7.18,
+"sent": 2
+},
+{
+"text": "cuando",
+"start": 7.18,
+"end": 7.63,
+"sent": 2
+},
+{
+"text": "Turquía",
+"start": 7.66,
+"end": 8.1,
+"sent": 2
+},
+{
+"text": "consigue",
+"start": 8.18,
+"end": 8.51,
+"sent": 2
+},
+{
+"text": "un",
+"start": 8.78,
+"end": 8.9,
+"sent": 2
+},
+{
+"text": "tiro",
+"start": 8.9,
+"end": 9.2,
+"sent": 2
+},
+{
+"text": "libre",
+"start": 9.2,
+"end": 9.56,
+"sent": 2
+},
+{
+"text": "muy",
+"start": 9.58,
+"end": 9.79,
+"sent": 2
+},
+{
+"text": "lejos",
+"start": 9.79,
+"end": 10.16,
+"sent": 2
+},
+{
+"text": "del",
+"start": 10.16,
+"end": 10.38,
+"sent": 2
+},
+{
+"text": "área.",
+"start": 10.38,
+"end": 10.6,
+"sent": 2
+},
+{
+"text": "En",
+"start": 10.61,
+"end": 10.73,
+"sent": 3
+},
+{
+"text": "ese",
+"start": 10.8,
+"end": 10.89,
+"sent": 3
+},
+{
+"text": "momento,",
+"start": 11.04,
+"end": 11.51,
+"sent": 3
+},
+{
+"text": "vemos",
+"start": 11.51,
+"end": 11.76,
+"sent": 3
+},
+{
+"text": "a",
+"start": 11.76,
+"end": 11.84,
+"sent": 3
+},
+{
+"text": "tres",
+"start": 11.84,
+"end": 12.13,
+"sent": 3
+},
+{
+"text": "jugadores",
+"start": 12.22,
+"end": 12.88,
+"sent": 3
+},
+{
+"text": "turcos",
+"start": 12.88,
+"end": 13.36,
+"sent": 3
+},
+{
+"text": "colocados",
+"start": 13.36,
+"end": 14.04,
+"sent": 3
+},
+{
+"text": "junto",
+"start": 14.09,
+"end": 14.48,
+"sent": 3
+},
+{
+"text": "al",
+"start": 14.48,
+"end": 14.56,
+"sent": 3
+},
+{
+"text": "balón.",
+"start": 14.72,
+"end": 15.04,
+"sent": 3
+},
+{
+"text": "Uno",
+"start": 15.05,
+"end": 15.17,
+"sent": 4
+},
+{
+"text": "podría",
+"start": 15.25,
+"end": 15.68,
+"sent": 4
+},
+{
+"text": "pensar",
+"start": 15.68,
+"end": 16.07,
+"sent": 4
+},
+{
+"text": "que",
+"start": 16.07,
+"end": 16.19,
+"sent": 4
+},
+{
+"text": "preparan",
+"start": 16.22,
+"end": 16.77,
+"sent": 4
+},
+{
+"text": "una",
+"start": 16.77,
+"end": 16.98,
+"sent": 4
+},
+{
+"text": "jugada",
+"start": 16.98,
+"end": 17.4,
+"sent": 4
+},
+{
+"text": "especial",
+"start": 17.4,
+"end": 17.97,
+"sent": 4
+},
+{
+"text": "para",
+"start": 17.97,
+"end": 18.25,
+"sent": 4
+},
+{
+"text": "engañar",
+"start": 18.25,
+"end": 18.74,
+"sent": 4
+},
+{
+"text": "a",
+"start": 18.74,
+"end": 18.8,
+"sent": 4
+},
+{
+"text": "la",
+"start": 18.81,
+"end": 18.95,
+"sent": 4
+},
+{
+"text": "defensa",
+"start": 18.95,
+"end": 19.37,
+"sent": 4
+},
+{
+"text": "y,",
+"start": 19.5,
+"end": 19.51,
+"sent": 4
+},
+{
+"text": "sobre",
+"start": 19.51,
+"end": 19.84,
+"sent": 4
+},
+{
+"text": "todo,",
+"start": 19.91,
+"end": 20.19,
+"sent": 4
+},
+{
+"text": "sorprender",
+"start": 20.34,
+"end": 20.97,
+"sent": 4
+},
+{
+"text": "al",
+"start": 20.97,
+"end": 21.15,
+"sent": 4
+},
+{
+"text": "portero",
+"start": 21.15,
+"end": 21.78,
+"sent": 4
+},
+{
+"text": "rival.",
+"start": 22.04,
+"end": 22.36,
+"sent": 4
+},
+{
+"text": "Pero",
+"start": 22.37,
+"end": 22.65,
+"sent": 5
+},
+{
+"text": "lo",
+"start": 22.65,
+"end": 22.8,
+"sent": 5
+},
+{
+"text": "que",
+"start": 22.8,
+"end": 23.01,
+"sent": 5
+},
+{
+"text": "Arda",
+"start": 23.01,
+"end": 23.29,
+"sent": 5
+},
+{
+"text": "Güler",
+"start": 23.29,
+"end": 23.64,
+"sent": 5
+},
+{
+"text": "hace",
+"start": 23.66,
+"end": 23.94,
+"sent": 5
+},
+{
+"text": "después",
+"start": 23.94,
+"end": 24.43,
+"sent": 5
+},
+{
+"text": "es",
+"start": 24.43,
+"end": 24.44,
+"sent": 5
+},
+{
+"text": "simplemente",
+"start": 24.71,
+"end": 25.32,
+"sent": 5
+},
+{
+"text": "increíble.",
+"start": 25.32,
+"end": 26.04,
+"sent": 5
+},
+{
+"text": "Levanta",
+"start": 26.05,
+"end": 26.57,
+"sent": 6
+},
+{
+"text": "la",
+"start": 26.57,
+"end": 26.72,
+"sent": 6
+},
+{
+"text": "mano",
+"start": 26.72,
+"end": 27.02,
+"sent": 6
+},
+{
+"text": "derecha,",
+"start": 27.03,
+"end": 27.61,
+"sent": 6
+},
+{
+"text": "como",
+"start": 27.61,
+"end": 27.61,
+"sent": 6
+},
+{
+"text": "para",
+"start": 27.61,
+"end": 27.69,
+"sent": 6
+},
+{
+"text": "indicar",
+"start": 27.96,
+"end": 28.38,
+"sent": 6
+},
+{
+"text": "a",
+"start": 28.38,
+"end": 28.44,
+"sent": 6
+},
+{
+"text": "sus",
+"start": 28.46,
+"end": 28.69,
+"sent": 6
+},
+{
+"text": "compañeros",
+"start": 28.69,
+"end": 29.47,
+"sent": 6
+},
+{
+"text": "que",
+"start": 29.47,
+"end": 29.7,
+"sent": 6
+},
+{
+"text": "va",
+"start": 29.7,
+"end": 29.86,
+"sent": 6
+},
+{
+"text": "a",
+"start": 29.86,
+"end": 29.93,
+"sent": 6
+},
+{
+"text": "mandar",
+"start": 29.93,
+"end": 30.4,
+"sent": 6
+},
+{
+"text": "un",
+"start": 30.4,
+"end": 30.54,
+"sent": 6
+},
+{
+"text": "centro",
+"start": 30.55,
+"end": 31.1,
+"sent": 6
+},
+{
+"text": "hacia",
+"start": 31.19,
+"end": 31.47,
+"sent": 6
+},
+{
+"text": "los",
+"start": 31.62,
+"end": 31.79,
+"sent": 6
+},
+{
+"text": "jugadores",
+"start": 31.79,
+"end": 32.46,
+"sent": 6
+},
+{
+"text": "situados",
+"start": 32.48,
+"end": 33.1,
+"sent": 6
+},
+{
+"text": "en",
+"start": 33.1,
+"end": 33.25,
+"sent": 6
+},
+{
+"text": "el",
+"start": 33.25,
+"end": 33.34,
+"sent": 6
+},
+{
+"text": "área.",
+"start": 33.34,
+"end": 33.34,
+"sent": 6
+},
+{
+"text": "Ese",
+"start": 33.65,
+"end": 33.77,
+"sent": 7
+},
+{
+"text": "gesto",
+"start": 33.85,
+"end": 34.2,
+"sent": 7
+},
+{
+"text": "engaña",
+"start": 34.22,
+"end": 34.62,
+"sent": 7
+},
+{
+"text": "por",
+"start": 34.62,
+"end": 34.83,
+"sent": 7
+},
+{
+"text": "completo",
+"start": 34.83,
+"end": 35.38,
+"sent": 7
+},
+{
+"text": "al",
+"start": 35.46,
+"end": 35.54,
+"sent": 7
+},
+{
+"text": "portero,",
+"start": 35.54,
+"end": 35.93,
+"sent": 7
+},
+{
+"text": "convencido",
+"start": 35.93,
+"end": 36.49,
+"sent": 7
+},
+{
+"text": "de",
+"start": 36.49,
+"end": 36.63,
+"sent": 7
+},
+{
+"text": "que",
+"start": 36.63,
+"end": 36.84,
+"sent": 7
+},
+{
+"text": "Güler",
+"start": 36.84,
+"end": 37.19,
+"sent": 7
+},
+{
+"text": "está",
+"start": 37.19,
+"end": 37.42,
+"sent": 7
+},
+{
+"text": "preparando",
+"start": 37.58,
+"end": 38.25,
+"sent": 7
+},
+{
+"text": "una",
+"start": 38.26,
+"end": 38.42,
+"sent": 7
+},
+{
+"text": "jugada",
+"start": 38.43,
+"end": 38.92,
+"sent": 7
+},
+{
+"text": "combinada",
+"start": 38.92,
+"end": 39.57,
+"sent": 7
+},
+{
+"text": "o",
+"start": 39.57,
+"end": 39.61,
+"sent": 7
+},
+{
+"text": "un",
+"start": 39.61,
+"end": 39.77,
+"sent": 7
+},
+{
+"text": "centro",
+"start": 39.77,
+"end": 40.27,
+"sent": 7
+},
+{
+"text": "clásico.",
+"start": 40.27,
+"end": 40.72,
+"sent": 7
+},
+{
+"text": "Y",
+"start": 40.73,
+"end": 40.824,
+"sent": 8
+},
+{
+"text": "de",
+"start": 40.824,
+"end": 40.95,
+"sent": 8
+},
+{
+"text": "repente,",
+"start": 40.95,
+"end": 41.5,
+"sent": 8
+},
+{
+"text": "Arda",
+"start": 41.5,
+"end": 41.68,
+"sent": 8
+},
+{
+"text": "Güler",
+"start": 41.7,
+"end": 42.09,
+"sent": 8
+},
+{
+"text": "pilla",
+"start": 42.09,
+"end": 42.48,
+"sent": 8
+},
+{
+"text": "a",
+"start": 42.48,
+"end": 42.56,
+"sent": 8
+},
+{
+"text": "todo",
+"start": 42.56,
+"end": 42.77,
+"sent": 8
+},
+{
+"text": "el",
+"start": 42.77,
+"end": 43.05,
+"sent": 8
+},
+{
+"text": "mundo",
+"start": 43.05,
+"end": 43.41,
+"sent": 8
+},
+{
+"text": "desprevenido.",
+"start": 43.41,
+"end": 44.34,
+"sent": 8
+},
+{
+"text": "En",
+"start": 44.35,
+"end": 44.47,
+"sent": 9
+},
+{
+"text": "lugar",
+"start": 44.55,
+"end": 44.84,
+"sent": 9
+},
+{
+"text": "de",
+"start": 44.84,
+"end": 44.98,
+"sent": 9
+},
+{
+"text": "centrar,",
+"start": 44.98,
+"end": 45.47,
+"sent": 9
+},
+{
+"text": "lanza",
+"start": 45.47,
+"end": 45.73,
+"sent": 9
+},
+{
+"text": "el",
+"start": 45.77,
+"end": 45.88,
+"sent": 9
+},
+{
+"text": "balón",
+"start": 45.96,
+"end": 46.28,
+"sent": 9
+},
+{
+"text": "directamente",
+"start": 46.57,
+"end": 47.16,
+"sent": 9
+},
+{
+"text": "al",
+"start": 47.16,
+"end": 47.3,
+"sent": 9
+},
+{
+"text": "segundo",
+"start": 47.3,
+"end": 47.78,
+"sent": 9
+},
+{
+"text": "palo.",
+"start": 47.83,
+"end": 48.11,
+"sent": 9
+},
+{
+"text": "El",
+"start": 48.13,
+"end": 48.25,
+"sent": 10
+},
+{
+"text": "balón",
+"start": 48.32,
+"end": 48.63,
+"sent": 10
+},
+{
+"text": "traza",
+"start": 48.63,
+"end": 48.99,
+"sent": 10
+},
+{
+"text": "una",
+"start": 48.99,
+"end": 49.21,
+"sent": 10
+},
+{
+"text": "trayectoria",
+"start": 49.21,
+"end": 49.92,
+"sent": 10
+},
+{
+"text": "altísima,",
+"start": 49.92,
+"end": 50.63,
+"sent": 10
+},
+{
+"text": "con",
+"start": 50.72,
+"end": 50.81,
+"sent": 10
+},
+{
+"text": "una",
+"start": 50.81,
+"end": 50.81,
+"sent": 10
+},
+{
+"text": "curva",
+"start": 50.81,
+"end": 51.08,
+"sent": 10
+},
+{
+"text": "impresionante",
+"start": 51.08,
+"end": 52.04,
+"sent": 10
+},
+{
+"text": "que",
+"start": 52.04,
+"end": 52.26,
+"sent": 10
+},
+{
+"text": "sorprende",
+"start": 52.26,
+"end": 53.05,
+"sent": 10
+},
+{
+"text": "por",
+"start": 53.07,
+"end": 53.28,
+"sent": 10
+},
+{
+"text": "completo",
+"start": 53.28,
+"end": 53.89,
+"sent": 10
+},
+{
+"text": "al",
+"start": 53.89,
+"end": 54.04,
+"sent": 10
+},
+{
+"text": "portero.",
+"start": 54.04,
+"end": 54.47,
+"sent": 10
+},
+{
+"text": "Al",
+"start": 54.51,
+"end": 54.63,
+"sent": 11
+},
+{
+"text": "principio",
+"start": 54.71,
+"end": 55.29,
+"sent": 11
+},
+{
+"text": "cree",
+"start": 55.29,
+"end": 55.56,
+"sent": 11
+},
+{
+"text": "que",
+"start": 55.58,
+"end": 55.78,
+"sent": 11
+},
+{
+"text": "puede",
+"start": 55.8,
+"end": 56.15,
+"sent": 11
+},
+{
+"text": "prepararse",
+"start": 56.15,
+"end": 56.65,
+"sent": 11
+},
+{
+"text": "para",
+"start": 56.93,
+"end": 57.11,
+"sent": 11
+},
+{
+"text": "el",
+"start": 57.2,
+"end": 57.29,
+"sent": 11
+},
+{
+"text": "centro,",
+"start": 57.32,
+"end": 57.63,
+"sent": 11
+},
+{
+"text": "pero",
+"start": 57.63,
+"end": 57.68,
+"sent": 11
+},
+{
+"text": "se",
+"start": 57.73,
+"end": 57.84,
+"sent": 11
+},
+{
+"text": "da",
+"start": 57.84,
+"end": 57.98,
+"sent": 11
+},
+{
+"text": "cuenta",
+"start": 57.98,
+"end": 58.41,
+"sent": 11
+},
+{
+"text": "demasiado",
+"start": 58.41,
+"end": 59.05,
+"sent": 11
+},
+{
+"text": "tarde",
+"start": 59.15,
+"end": 59.52,
+"sent": 11
+},
+{
+"text": "de",
+"start": 59.53,
+"end": 59.65,
+"sent": 11
+},
+{
+"text": "que",
+"start": 59.72,
+"end": 59.81,
+"sent": 11
+},
+{
+"text": "el",
+"start": 59.96,
+"end": 60.08,
+"sent": 11
+},
+{
+"text": "balón",
+"start": 60.1,
+"end": 60.48,
+"sent": 11
+},
+{
+"text": "va",
+"start": 60.48,
+"end": 60.64,
+"sent": 11
+},
+{
+"text": "directo",
+"start": 60.64,
+"end": 61.1,
+"sent": 11
+},
+{
+"text": "a",
+"start": 61.1,
+"end": 61.16,
+"sent": 11
+},
+{
+"text": "su",
+"start": 61.24,
+"end": 61.34,
+"sent": 11
+},
+{
+"text": "portería.",
+"start": 61.34,
+"end": 62.0,
+"sent": 11
+},
+{
+"text": "A",
+"start": 62.01,
+"end": 62.07,
+"sent": 12
+},
+{
+"text": "pesar",
+"start": 62.07,
+"end": 62.45,
+"sent": 12
+},
+{
+"text": "de",
+"start": 62.46,
+"end": 62.6,
+"sent": 12
+},
+{
+"text": "su",
+"start": 62.6,
+"end": 62.75,
+"sent": 12
+},
+{
+"text": "esfuerzo",
+"start": 62.75,
+"end": 63.36,
+"sent": 12
+},
+{
+"text": "desesperado,",
+"start": 63.36,
+"end": 64.23,
+"sent": 12
+},
+{
+"text": "no",
+"start": 64.3,
+"end": 64.38,
+"sent": 12
+},
+{
+"text": "puede",
+"start": 64.38,
+"end": 64.76,
+"sent": 12
+},
+{
+"text": "hacer",
+"start": 64.76,
+"end": 65.14,
+"sent": 12
+},
+{
+"text": "nada.",
+"start": 65.14,
+"end": 65.5,
+"sent": 12
+},
+{
+"text": "El",
+"start": 65.51,
+"end": 65.63,
+"sent": 13
+},
+{
+"text": "balón",
+"start": 65.7,
+"end": 66.03,
+"sent": 13
+},
+{
+"text": "sigue",
+"start": 66.03,
+"end": 66.42,
+"sent": 13
+},
+{
+"text": "su",
+"start": 66.42,
+"end": 66.56,
+"sent": 13
+},
+{
+"text": "trayectoria",
+"start": 66.58,
+"end": 67.32,
+"sent": 13
+},
+{
+"text": "y",
+"start": 67.32,
+"end": 67.39,
+"sent": 13
+},
+{
+"text": "termina",
+"start": 67.39,
+"end": 67.93,
+"sent": 13
+},
+{
+"text": "en",
+"start": 67.93,
+"end": 67.99,
+"sent": 13
+},
+{
+"text": "el",
+"start": 67.99,
+"end": 68.1,
+"sent": 13
+},
+{
+"text": "fondo",
+"start": 68.11,
+"end": 68.48,
+"sent": 13
+},
+{
+"text": "de",
+"start": 68.5,
+"end": 68.65,
+"sent": 13
+},
+{
+"text": "la",
+"start": 68.65,
+"end": 68.8,
+"sent": 13
+},
+{
+"text": "red.",
+"start": 68.8,
+"end": 69.42,
+"sent": 13
+},
+{
+"text": "¡Qué",
+"start": 69.42,
+"end": 69.42,
+"sent": 14
+},
+{
+"text": "tiro",
+"start": 69.42,
+"end": 69.7,
+"sent": 14
+},
+{
+"text": "libre",
+"start": 69.7,
+"end": 70.05,
+"sent": 14
+},
+{
+"text": "tan",
+"start": 70.05,
+"end": 70.17,
+"sent": 14
+},
+{
+"text": "excepcional",
+"start": 70.17,
+"end": 70.94,
+"sent": 14
+},
+{
+"text": "de",
+"start": 70.94,
+"end": 71.09,
+"sent": 14
+},
+{
+"text": "Arda",
+"start": 71.09,
+"end": 71.37,
+"sent": 14
+},
+{
+"text": "Güler!",
+"start": 71.44,
+"end": 71.95,
+"sent": 14
+}
+]

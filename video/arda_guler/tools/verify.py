@@ -2,9 +2,9 @@
 """Vérifications sur la vidéo FINALE. usage: python3 -I verify.py <scratch> <video.mp4>"""
 import cv2, json, sys, math, numpy as np, subprocess, os
 S, V = sys.argv[1], sys.argv[2]
-plan = json.load(open(f'{S}/an/plan.json'))
+plan = json.load(open(f'{S}/an/' + os.environ.get('PLAN', 'plan.json')))
 trkB = {int(k): v for k, v in json.load(open(f'{S}/an/trk_B.json')).items()}
-OUT = f'{S}/verif'; os.makedirs(OUT, exist_ok=True)
+OUT = f'{S}/' + os.environ.get('VDIR', 'verif'); os.makedirs(OUT, exist_ok=True)
 cap = cv2.VideoCapture(V)
 frames = plan['frames']
 lab_rows, lab_tiles, src_scores, edge_tiles = [], [], [], []
