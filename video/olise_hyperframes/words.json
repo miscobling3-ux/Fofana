@@ -1,0 +1,1087 @@
+[
+{
+"text": "Este",
+"start": 0.07,
+"end": 0.19
+},
+{
+"text": "gol",
+"start": 0.26,
+"end": 0.45
+},
+{
+"text": "de",
+"start": 0.45,
+"end": 0.56
+},
+{
+"text": "Michael",
+"start": 0.59,
+"end": 1.04
+},
+{
+"text": "Olise",
+"start": 1.04,
+"end": 1.49
+},
+{
+"text": "demuestra",
+"start": 1.59,
+"end": 2
+},
+{
+"text": "claramente",
+"start": 2,
+"end": 2.76
+},
+{
+"text": "por",
+"start": 2.76,
+"end": 3.02
+},
+{
+"text": "qué",
+"start": 3.02,
+"end": 3.28
+},
+{
+"text": "es",
+"start": 3.28,
+"end": 3.4
+},
+{
+"text": "uno",
+"start": 3.45,
+"end": 3.66
+},
+{
+"text": "de",
+"start": 3.66,
+"end": 3.79
+},
+{
+"text": "los",
+"start": 3.79,
+"end": 3.99
+},
+{
+"text": "mejores",
+"start": 3.99,
+"end": 4.48
+},
+{
+"text": "jugadores",
+"start": 4.48,
+"end": 4.98
+},
+{
+"text": "del",
+"start": 5.05,
+"end": 5.1
+},
+{
+"text": "mundo.",
+"start": 5.1,
+"end": 5.46
+},
+{
+"text": "Todo",
+"start": 5.55,
+"end": 5.67
+},
+{
+"text": "empieza",
+"start": 5.74,
+"end": 6.13
+},
+{
+"text": "cuando",
+"start": 6.13,
+"end": 6.48
+},
+{
+"text": "Donnarumma",
+"start": 6.48,
+"end": 6.97
+},
+{
+"text": "recibe",
+"start": 7.07,
+"end": 7.37
+},
+{
+"text": "el",
+"start": 7.44,
+"end": 7.52
+},
+{
+"text": "balón",
+"start": 7.52,
+"end": 7.88
+},
+{
+"text": "en",
+"start": 7.88,
+"end": 8.03
+},
+{
+"text": "el",
+"start": 8.03,
+"end": 8.13
+},
+{
+"text": "borde",
+"start": 8.21,
+"end": 8.5
+},
+{
+"text": "de",
+"start": 8.63,
+"end": 8.7
+},
+{
+"text": "su",
+"start": 8.7,
+"end": 8.85
+},
+{
+"text": "área",
+"start": 8.85,
+"end": 9.16
+},
+{
+"text": "y",
+"start": 9.16,
+"end": 9.23
+},
+{
+"text": "se",
+"start": 9.23,
+"end": 9.33
+},
+{
+"text": "da",
+"start": 9.34,
+"end": 9.46
+},
+{
+"text": "cuenta",
+"start": 9.46,
+"end": 9.84
+},
+{
+"text": "de",
+"start": 9.84,
+"end": 9.96
+},
+{
+"text": "que",
+"start": 9.96,
+"end": 10.15
+},
+{
+"text": "un",
+"start": 10.15,
+"end": 10.27
+},
+{
+"text": "jugador",
+"start": 10.27,
+"end": 10.65
+},
+{
+"text": "francés",
+"start": 10.75,
+"end": 11.14
+},
+{
+"text": "se",
+"start": 11.14,
+"end": 11.21
+},
+{
+"text": "le",
+"start": 11.34,
+"end": 11.38
+},
+{
+"text": "echa",
+"start": 11.38,
+"end": 11.63
+},
+{
+"text": "encima.",
+"start": 11.63,
+"end": 12.18
+},
+{
+"text": "En",
+"start": 12.34,
+"end": 12.4
+},
+{
+"text": "ese",
+"start": 12.4,
+"end": 12.58
+},
+{
+"text": "momento,",
+"start": 12.58,
+"end": 13.13
+},
+{
+"text": "tiene",
+"start": 13.13,
+"end": 13.43
+},
+{
+"text": "varias",
+"start": 13.43,
+"end": 13.77
+},
+{
+"text": "opciones.",
+"start": 13.87,
+"end": 14.33
+},
+{
+"text": "Pasarle",
+"start": 14.41,
+"end": 14.86
+},
+{
+"text": "el",
+"start": 14.86,
+"end": 15.01
+},
+{
+"text": "balón",
+"start": 15.01,
+"end": 15.38
+},
+{
+"text": "a",
+"start": 15.38,
+"end": 15.45
+},
+{
+"text": "Nicolò",
+"start": 15.45,
+"end": 15.83
+},
+{
+"text": "Barella,",
+"start": 15.93,
+"end": 16.51
+},
+{
+"text": "que",
+"start": 16.52,
+"end": 16.68
+},
+{
+"text": "está",
+"start": 16.68,
+"end": 16.91
+},
+{
+"text": "desmarcado",
+"start": 16.91,
+"end": 17.36
+},
+{
+"text": "en",
+"start": 17.49,
+"end": 17.59
+},
+{
+"text": "el",
+"start": 17.59,
+"end": 17.7
+},
+{
+"text": "espacio",
+"start": 17.7,
+"end": 18.1
+},
+{
+"text": "libre,",
+"start": 18.1,
+"end": 18.46
+},
+{
+"text": "o",
+"start": 18.46,
+"end": 18.53
+},
+{
+"text": "despejar",
+"start": 18.53,
+"end": 19.01
+},
+{
+"text": "lejos",
+"start": 19.02,
+"end": 19.33
+},
+{
+"text": "hacia",
+"start": 19.33,
+"end": 19.65
+},
+{
+"text": "un",
+"start": 19.65,
+"end": 19.77
+},
+{
+"text": "lateral",
+"start": 19.77,
+"end": 20.21
+},
+{
+"text": "para",
+"start": 20.21,
+"end": 20.46
+},
+{
+"text": "alejar",
+"start": 20.46,
+"end": 20.84
+},
+{
+"text": "el",
+"start": 20.84,
+"end": 20.96
+},
+{
+"text": "peligro.",
+"start": 20.96,
+"end": 21.66
+},
+{
+"text": "Bajo",
+"start": 21.72,
+"end": 21.85
+},
+{
+"text": "presión,",
+"start": 21.92,
+"end": 22.52
+},
+{
+"text": "Donnarumma",
+"start": 22.52,
+"end": 23.16
+},
+{
+"text": "despeja",
+"start": 23.25,
+"end": 23.64
+},
+{
+"text": "mal,",
+"start": 23.64,
+"end": 23.71
+},
+{
+"text": "hacia",
+"start": 23.84,
+"end": 24.17
+},
+{
+"text": "el",
+"start": 24.17,
+"end": 24.3
+},
+{
+"text": "centro",
+"start": 24.3,
+"end": 24.68
+},
+{
+"text": "del",
+"start": 24.81,
+"end": 24.9
+},
+{
+"text": "área,",
+"start": 24.9,
+"end": 25.26
+},
+{
+"text": "sin",
+"start": 25.26,
+"end": 25.43
+},
+{
+"text": "encontrar",
+"start": 25.44,
+"end": 25.99
+},
+{
+"text": "a",
+"start": 25.99,
+"end": 26.05
+},
+{
+"text": "ningún",
+"start": 26.05,
+"end": 26.4
+},
+{
+"text": "compañero.",
+"start": 26.4,
+"end": 27.12
+},
+{
+"text": "Francia",
+"start": 27.23,
+"end": 27.63
+},
+{
+"text": "recupera",
+"start": 27.63,
+"end": 28.16
+},
+{
+"text": "inmediatamente",
+"start": 28.16,
+"end": 29.05
+},
+{
+"text": "el",
+"start": 29.12,
+"end": 29.21
+},
+{
+"text": "balón",
+"start": 29.21,
+"end": 29.54
+},
+{
+"text": "y",
+"start": 29.54,
+"end": 29.6
+},
+{
+"text": "vuelve",
+"start": 29.6,
+"end": 29.96
+},
+{
+"text": "al",
+"start": 30.05,
+"end": 30.13
+},
+{
+"text": "ataque.",
+"start": 30.13,
+"end": 30.6
+},
+{
+"text": "Y",
+"start": 30.67,
+"end": 30.775
+},
+{
+"text": "ahí",
+"start": 30.775,
+"end": 30.88
+},
+{
+"text": "es",
+"start": 30.88,
+"end": 31.02
+},
+{
+"text": "donde",
+"start": 31.02,
+"end": 31.37
+},
+{
+"text": "la",
+"start": 31.37,
+"end": 31.48
+},
+{
+"text": "jugada",
+"start": 31.57,
+"end": 31.93
+},
+{
+"text": "se",
+"start": 31.93,
+"end": 32.07
+},
+{
+"text": "vuelve",
+"start": 32.07,
+"end": 32.48
+},
+{
+"text": "increíble,",
+"start": 32.48,
+"end": 33.25
+},
+{
+"text": "porque",
+"start": 33.25,
+"end": 33.53
+},
+{
+"text": "lo",
+"start": 33.53,
+"end": 33.62
+},
+{
+"text": "que",
+"start": 33.62,
+"end": 33.75
+},
+{
+"text": "va",
+"start": 33.76,
+"end": 33.85
+},
+{
+"text": "a",
+"start": 33.85,
+"end": 33.89
+},
+{
+"text": "hacer",
+"start": 33.89,
+"end": 34.16
+},
+{
+"text": "Olise",
+"start": 34.16,
+"end": 34.6
+},
+{
+"text": "es",
+"start": 34.6,
+"end": 34.7
+},
+{
+"text": "sencillamente",
+"start": 34.84,
+"end": 35.58
+},
+{
+"text": "excepcional.",
+"start": 35.65,
+"end": 36.56
+},
+{
+"text": "Recibe",
+"start": 36.62,
+"end": 36.95
+},
+{
+"text": "el",
+"start": 36.95,
+"end": 37.08
+},
+{
+"text": "balón",
+"start": 37.08,
+"end": 37.4
+},
+{
+"text": "en",
+"start": 37.4,
+"end": 37.44
+},
+{
+"text": "el",
+"start": 37.53,
+"end": 37.66
+},
+{
+"text": "lateral",
+"start": 37.66,
+"end": 38.04
+},
+{
+"text": "derecho",
+"start": 38.15,
+"end": 38.56
+},
+{
+"text": "del",
+"start": 38.56,
+"end": 38.75
+},
+{
+"text": "área",
+"start": 38.75,
+"end": 39.01
+},
+{
+"text": "con",
+"start": 39.01,
+"end": 39.2
+},
+{
+"text": "tres",
+"start": 39.2,
+"end": 39.35
+},
+{
+"text": "defensas",
+"start": 39.45,
+"end": 39.96
+},
+{
+"text": "italianos",
+"start": 40.01,
+"end": 40.56
+},
+{
+"text": "frente",
+"start": 40.56,
+"end": 40.95
+},
+{
+"text": "a",
+"start": 40.95,
+"end": 41.01
+},
+{
+"text": "él.",
+"start": 41.01,
+"end": 41.4
+},
+{
+"text": "En",
+"start": 41.46,
+"end": 41.52
+},
+{
+"text": "ese",
+"start": 41.52,
+"end": 41.7
+},
+{
+"text": "momento,",
+"start": 41.7,
+"end": 42.25
+},
+{
+"text": "se",
+"start": 42.25,
+"end": 42.28
+},
+{
+"text": "le",
+"start": 42.37,
+"end": 42.49
+},
+{
+"text": "presentan",
+"start": 42.49,
+"end": 43.04
+},
+{
+"text": "varias",
+"start": 43.04,
+"end": 43.41
+},
+{
+"text": "opciones.",
+"start": 43.41,
+"end": 44.16
+},
+{
+"text": "Cualquier",
+"start": 44.21,
+"end": 44.67
+},
+{
+"text": "otro",
+"start": 44.67,
+"end": 44.89
+},
+{
+"text": "jugador",
+"start": 44.89,
+"end": 45.3
+},
+{
+"text": "habría",
+"start": 45.3,
+"end": 45.64
+},
+{
+"text": "intentado",
+"start": 45.64,
+"end": 46.16
+},
+{
+"text": "sorprender",
+"start": 46.16,
+"end": 46.73
+},
+{
+"text": "al",
+"start": 46.73,
+"end": 46.81
+},
+{
+"text": "portero",
+"start": 46.89,
+"end": 47.31
+},
+{
+"text": "con",
+"start": 47.32,
+"end": 47.5
+},
+{
+"text": "un",
+"start": 47.5,
+"end": 47.61
+},
+{
+"text": "disparo",
+"start": 47.62,
+"end": 48.04
+},
+{
+"text": "con",
+"start": 48.04,
+"end": 48.23
+},
+{
+"text": "efecto",
+"start": 48.24,
+"end": 48.65
+},
+{
+"text": "hacia",
+"start": 48.72,
+"end": 48.97
+},
+{
+"text": "el",
+"start": 48.97,
+"end": 49.09
+},
+{
+"text": "segundo",
+"start": 49.09,
+"end": 49.53
+},
+{
+"text": "palo.",
+"start": 49.53,
+"end": 49.92
+},
+{
+"text": "Pero",
+"start": 49.99,
+"end": 50.11
+},
+{
+"text": "es",
+"start": 50.18,
+"end": 50.26
+},
+{
+"text": "precisamente",
+"start": 50.29,
+"end": 51.06
+},
+{
+"text": "ahí",
+"start": 51.06,
+"end": 51.25
+},
+{
+"text": "donde",
+"start": 51.25,
+"end": 51.57
+},
+{
+"text": "Olise",
+"start": 51.57,
+"end": 51.97
+},
+{
+"text": "demuestra",
+"start": 52.1,
+"end": 52.56
+},
+{
+"text": "toda",
+"start": 52.56,
+"end": 52.71
+},
+{
+"text": "su",
+"start": 52.81,
+"end": 52.93
+},
+{
+"text": "clase.",
+"start": 52.93,
+"end": 53.52
+},
+{
+"text": "Se",
+"start": 53.58,
+"end": 53.64
+},
+{
+"text": "inclina",
+"start": 53.64,
+"end": 54.07
+},
+{
+"text": "ligeramente,",
+"start": 54.08,
+"end": 54.88
+},
+{
+"text": "dando",
+"start": 54.9,
+"end": 55.21
+},
+{
+"text": "a",
+"start": 55.21,
+"end": 55.27
+},
+{
+"text": "entender",
+"start": 55.27,
+"end": 55.78
+},
+{
+"text": "que",
+"start": 55.78,
+"end": 55.97
+},
+{
+"text": "va",
+"start": 55.97,
+"end": 56.09
+},
+{
+"text": "a",
+"start": 56.09,
+"end": 56.15
+},
+{
+"text": "lanzar",
+"start": 56.15,
+"end": 56.52
+},
+{
+"text": "con",
+"start": 56.52,
+"end": 56.71
+},
+{
+"text": "efecto",
+"start": 56.71,
+"end": 57.09
+},
+{
+"text": "hacia",
+"start": 57.09,
+"end": 57.4
+},
+{
+"text": "el",
+"start": 57.46,
+"end": 57.53
+},
+{
+"text": "segundo",
+"start": 57.53,
+"end": 57.97
+},
+{
+"text": "palo.",
+"start": 57.97,
+"end": 58.5
+},
+{
+"text": "Los",
+"start": 58.59,
+"end": 58.69
+},
+{
+"text": "defensas",
+"start": 58.7,
+"end": 59.19
+},
+{
+"text": "se",
+"start": 59.19,
+"end": 59.31
+},
+{
+"text": "anticipan",
+"start": 59.31,
+"end": 59.86
+},
+{
+"text": "a",
+"start": 59.86,
+"end": 59.91
+},
+{
+"text": "este",
+"start": 59.91,
+"end": 60.17
+},
+{
+"text": "movimiento,",
+"start": 60.17,
+"end": 60.96
+},
+{
+"text": "pero",
+"start": 60.96,
+"end": 61.17
+},
+{
+"text": "Olise",
+"start": 61.25,
+"end": 61.68
+},
+{
+"text": "no",
+"start": 61.7,
+"end": 61.84
+},
+{
+"text": "se",
+"start": 61.84,
+"end": 61.97
+},
+{
+"text": "inmuta.",
+"start": 61.99,
+"end": 62.62
+},
+{
+"text": "Acelera",
+"start": 62.7,
+"end": 63.1
+},
+{
+"text": "de",
+"start": 63.1,
+"end": 63.2
+},
+{
+"text": "golpe,",
+"start": 63.22,
+"end": 63.7
+},
+{
+"text": "se",
+"start": 63.7,
+"end": 63.915
+},
+{
+"text": "cuela",
+"start": 63.915,
+"end": 64.13
+},
+{
+"text": "entre",
+"start": 64.23,
+"end": 64.51
+},
+{
+"text": "ellos,",
+"start": 64.51,
+"end": 65.04
+},
+{
+"text": "penetra",
+"start": 65.04,
+"end": 65.57
+},
+{
+"text": "en",
+"start": 65.57,
+"end": 65.66
+},
+{
+"text": "el",
+"start": 65.79,
+"end": 65.87
+},
+{
+"text": "área",
+"start": 65.87,
+"end": 66.2
+},
+{
+"text": "y",
+"start": 66.2,
+"end": 66.29
+},
+{
+"text": "remata",
+"start": 66.29,
+"end": 66.74
+},
+{
+"text": "sin",
+"start": 66.88,
+"end": 67.04
+},
+{
+"text": "siquiera",
+"start": 67.04,
+"end": 67.57
+},
+{
+"text": "levantar",
+"start": 67.57,
+"end": 68.09
+},
+{
+"text": "la",
+"start": 68.1,
+"end": 68.23
+},
+{
+"text": "cabeza",
+"start": 68.23,
+"end": 68.67
+},
+{
+"text": "para",
+"start": 68.73,
+"end": 68.93
+},
+{
+"text": "marcar",
+"start": 68.93,
+"end": 69.31
+},
+{
+"text": "un",
+"start": 69.31,
+"end": 69.44
+},
+{
+"text": "gol",
+"start": 69.44,
+"end": 69.63
+},
+{
+"text": "excepcional.",
+"start": 69.63,
+"end": 70.56
+}
+]
