@@ -59,3 +59,15 @@ Vidéo prête à poster : **`output/balon_de_oro_2026_top10_es.mp4`**. Format 10
 Refaire : `cd video && python3 make_top10.py`. Le texte et les stats sont dans `video/guion_top10_es.py`.
 
 **Voix ElevenLabs (Adam - Dominant, Firm).** Si des fichiers `video/assets/voice_adam/00.wav`, `01.wav`, … existent (un par ligne de `LINES`), ils remplacent automatiquement la voix de synthèse au prochain rendu.
+
+---
+
+# Vidéo 4 — Analyse du but de Bellingham (Real Madrid 1-1 Celta, 66'), master prompt v3, voix en espagnol
+
+Vidéo prête à poster : **`output/bellingham_celta_es.mp4`** (1080×1920, 30 i/s, 79 s, -14,2 LUFS, crête -2,0 dBTP).
+Couvertures : `output/bellingham_celta_cover_1080x1920.png` et `output/bellingham_celta_cover_1080x1080.png`.
+
+- Action : Vinícius conduit, passe à Mbappé (image source 155), Mbappé ouvre pour Bellingham (image 209), contrôle puis frappe rasante du droit (contact image 253), 1-1. Joueurs vérifiés avec la compo FotMob (J13 LaLiga, 21/11/2026).
+- Montage HyperFrames : `video/bellingham_celta/build.py` génère la composition à partir de `template.html` (une `<img>` par image source à 50 i/s, caméra 9:16 qui évite le score télé, beIN et les filigranes, étiquettes, projecteur, sous-titres mot à mot, bandeau de score, bruitages Mixkit).
+- Voix : Kokoro `em_alex` (espagnol), car les crédits Fish Audio et ElevenLabs étaient insuffisants. Script : `data/script.txt`, alignement mot à mot : `data/words.json`.
+- Vérification : `verify.py` contrôle la vidéo finale image par image (pointe de la flèche, image source, bandes haut et bas).

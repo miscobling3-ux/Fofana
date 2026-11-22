@@ -75,7 +75,7 @@ __SFX__
         if (prevTag && prevTag !== cur) tl.set(prevTag, { opacity: 0 }, t);
         if (cur) {
           const bounce = 5 * Math.abs(Math.sin(2 * Math.PI * 1.4 * t));
-          tl.set(cur, { x: tag[1], y: tag[2] - 4 - bounce, opacity: 1 }, t);
+          tl.set(cur, { x: tag[1], y: tag[2] + 1 - bounce, opacity: 1 }, t);
           if (cur !== prevTag) tl.fromTo(inners[cur], { scale: 0.2, xPercent: -50 }, { scale: 1, xPercent: -50, duration: 0.12, ease: 'back.out(2)', immediateRender: false }, t);
         }
         prevTag = cur;

@@ -31,8 +31,8 @@ SEG = [
     (8.82, 11.64, 99, 134),   # construction : Vinícius + Cucurella (plan large)
     (11.64, 12.70, 134, 146),
     (12.70, 13.96, 146, 146), # arrêt : "rodeado de camisetas del Celta"
-    (13.96, 15.05, 146, 160), # "No fuerza el regate" (passe image 155)
-    (15.05, 16.73, 160, 186), # "Toca hacia dentro para Kylian Mbappé"
+    (13.96, 15.05, 146, 155), # "No fuerza el regate"
+    (15.05, 16.73, 155, 186), # "Toca hacia dentro para Kylian Mbappé" (passe image 155 sur "Toca")
     (16.73, 20.34, 186, 232), # Mbappé aguanta... abre (passe image 209)
     (20.34, 23.70, 205, 205), # ARRÊT "Mirad bien"
     (23.70, 27.16, 209, 246), # Bellingham llega desde la derecha
@@ -74,13 +74,19 @@ for n in range(NOUT):
 
 # ---------------------------------------------------------------- measured positions (source pixels)
 H = {k: {int(f): v for f, v in d.items()} for k, d in json.load(open(f'{S}/heads.json')).items()}
+# corrections après contrôle des planches zoomées (rendu 1)
+for f, (x, y) in list(H['vini'].items()):
+    if f <= 77: H['vini'][f] = (x, y + 4)
+    elif f <= 112: H['vini'][f] = (x + 2, y + 4)
+    elif f <= 125: H['vini'][f] = (x + 2.5, y + 1)
+    else: H['vini'][f] = (x + 4, y)
 BL = {int(f): v for f, v in json.load(open(f'{S}/trk_belli_long.json')).items()}  # Bellingham head 205..280
 def interp(d, f):
     ks = sorted(d); f = min(max(f, ks[0]), ks[-1])
     return (float(np.interp(f, ks, [d[k][0] for k in ks])), float(np.interp(f, ks, [d[k][1] for k in ks])))
 MB_HEAD = {170: (1106, 566), **{f: H['mbappe'][f] for f in H['mbappe']}}
-RADU = {246: (312, 524), 256: (325, 524), 262: (354, 524), 268: (380, 524), 274: (426, 524), 280: (469, 552),
-        286: (539, 524), 292: (605, 495), 298: (642, 552), 310: (639, 596)}
+RADU = {246: (318, 548), 256: (330, 550), 262: (350, 550), 268: (377, 557), 274: (417, 557), 280: (477, 570),
+        286: (550, 577), 292: (603, 590), 298: (657, 577), 304: (650, 610), 310: (637, 603)}
 VINI_LATE = {300: (878, 640), 330: (628, 668), 360: (467, 769), 390: (403, 876), 420: (613, 876), 450: (812, 861), 468: (900, 830)}
 CUCU = {99: (545, 770), 105: (528, 760), 124: (495, 735), 134: (477, 740)}
 BALL = {253: (1287, 640), 262: (1000, 650), 268: (700, 610), 274: (520, 570), 280: (350, 530), 288: (220, 520), 300: (220, 520)}
@@ -119,11 +125,11 @@ def tag_at(f):
 
 # ---------------------------------------------------------------- spotlights (t0, t1, who)
 def body(who, f):
-    if who == 'belli': x, y = interp(BL, f); return x, y + 34, 60
+    if who == 'belli': x, y = interp(BL, f); return x, y + 46, 78
     if who == 'vini': x, y = interp(H['vini'], f); return x, y + 34, 60
     if who == 'mbappe': x, y = interp(MB_HEAD, f); return x, y + 34, 60
     if who == 'cucu': x, y = interp(CUCU, f); return x, y, 62
-    if who == 'radu': x, y = interp(RADU, f); return x, y, 62
+    if who == 'radu': x, y = interp(RADU, f); return x, y, 74
     if who == 'vini_late': x, y = interp(VINI_LATE, f); return x, y, 70
 SPOT = [
     (wt('Jude Bellingham'), 2.6, 'belli'),
@@ -254,6 +260,7 @@ def out_time_of_src(fsrc, segs=None):
 kicks = []
 for fc in (155, 209, 253):
     kicks += [(t, fc) for t in out_time_of_src(fc)]
+kicks.append((SEG[6][0], 155))   # passe de Vinícius : image 155 au début du plan, sur "Toca"
 kicks.sort()
 pops = []
 prev = None
