@@ -1,0 +1,312 @@
+[
+ {
+  "start": 0.0,
+  "clip": "c1",
+  "a": 0.3,
+  "b": 2.24,
+  "phrase": "Pero, ¿cómo tuvo",
+  "end": 2.68,
+  "rate": 0.7238805970149254,
+  "freeze": false
+ },
+ {
+  "start": 2.68,
+  "clip": "c1",
+  "a": 2.8,
+  "b": 2.8,
+  "phrase": "Fíjate en que Palmer",
+  "end": 3.868,
+  "rate": 0.0,
+  "freeze": true
+ },
+ {
+  "start": 3.868,
+  "clip": "c1",
+  "a": 2.3,
+  "b": 5.66,
+  "phrase": "recibe este saque",
+  "end": 7.15,
+  "rate": 1.023765996343693,
+  "freeze": false
+ },
+ {
+  "start": 7.15,
+  "clip": "c1",
+  "a": 5.74,
+  "b": 11.3,
+  "phrase": "Después, se quedó tocando",
+  "end": 12.71,
+  "rate": 1.0,
+  "freeze": false
+ },
+ {
+  "start": 12.71,
+  "clip": "c1",
+  "a": 17.45,
+  "b": 19.4,
+  "phrase": "Pero nadie imaginaba",
+  "end": 14.08,
+  "rate": 1.423357664233577,
+  "freeze": false
+ },
+ {
+  "start": 14.08,
+  "clip": "c1",
+  "a": 19.46,
+  "b": 22.14,
+  "phrase": "Guardiola lo mandaría",
+  "end": 17.99,
+  "rate": 0.6854219948849107,
+  "freeze": false
+ },
+ {
+  "start": 17.99,
+  "clip": "c1",
+  "a": 22.2,
+  "b": 25.06,
+  "phrase": "Lo más absurdo",
+  "end": 21.19,
+  "rate": 0.893749999999999,
+  "freeze": false
+ },
+ {
+  "start": 21.19,
+  "clip": "c1",
+  "a": 25.12,
+  "b": 26.78,
+  "phrase": "A los 45,",
+  "end": 26.42,
+  "rate": 0.3173996175908222,
+  "freeze": false
+ },
+ {
+  "start": 26.42,
+  "clip": "c1",
+  "a": 26.84,
+  "b": 31.1,
+  "phrase": "Y a los 84",
+  "end": 31.49,
+  "rate": 0.8402366863905334,
+  "freeze": false
+ },
+ {
+  "start": 31.49,
+  "clip": "c2",
+  "a": 0.05,
+  "b": 3.3,
+  "phrase": "Después de que el Tottenham",
+  "end": 35.69,
+  "rate": 0.773809523809524,
+  "freeze": false
+ },
+ {
+  "start": 35.69,
+  "clip": "c2",
+  "a": 4.46,
+  "b": 6.4,
+  "phrase": "pero recibió un rodillazo",
+  "end": 38.4,
+  "rate": 0.7158671586715867,
+  "freeze": false
+ },
+ {
+  "start": 38.4,
+  "clip": "c2",
+  "a": 3.3,
+  "b": 4.4,
+  "phrase": "Todos los jugadores",
+  "end": 41.42,
+  "rate": 0.3642384105960263,
+  "freeze": false
+ },
+ {
+  "start": 41.42,
+  "clip": "c2",
+  "a": 7.6,
+  "b": 8.2,
+  "phrase": "y Guardiola enseguida",
+  "end": 43.78,
+  "rate": 0.25423728813559315,
+  "freeze": false
+ },
+ {
+  "start": 43.78,
+  "clip": "c2",
+  "a": 6.46,
+  "b": 7.54,
+  "phrase": "Pero Ederson le dijo",
+  "end": 46.61,
+  "rate": 0.38162544169611334,
+  "freeze": false
+ },
+ {
+  "start": 46.61,
+  "clip": "c2",
+  "a": 8.88,
+  "b": 9.6,
+  "phrase": "solo que el tipo",
+  "end": 49.49,
+  "rate": 0.2499999999999994,
+  "freeze": false
+ },
+ {
+  "start": 49.49,
+  "clip": "c2",
+  "a": 8.24,
+  "b": 8.8,
+  "phrase": "y Guardiola, al ver",
+  "end": 51.5,
+  "rate": 0.27860696517412986,
+  "freeze": false
+ },
+ {
+  "start": 51.5,
+  "clip": "c2",
+  "a": 9.62,
+  "b": 10.85,
+  "phrase": "Ederson fue sustituido",
+  "end": 56.11,
+  "rate": 0.26681127982646435,
+  "freeze": false
+ },
+ {
+  "start": 56.11,
+  "clip": "c2",
+  "a": 16.88,
+  "b": 20.54,
+  "phrase": "Y cuando Son",
+  "end": 58.56,
+  "rate": 1.4938775510204065,
+  "freeze": false
+ },
+ {
+  "start": 58.56,
+  "clip": "c2",
+  "a": 20.6,
+  "b": 21.6,
+  "phrase": "Guardiola se llevó",
+  "end": 60.46,
+  "rate": 0.5263157894736846,
+  "freeze": false
+ },
+ {
+  "start": 60.46,
+  "clip": "c2",
+  "a": 21.7,
+  "b": 24.8,
+  "phrase": "Pero el portero suplente",
+  "end": 63.69,
+  "rate": 0.9597523219814256,
+  "freeze": false
+ },
+ {
+  "start": 63.69,
+  "clip": "c2",
+  "a": 24.88,
+  "b": 26.44,
+  "phrase": "y al técnico casi",
+  "end": 65.061,
+  "rate": 1.137855579868703,
+  "freeze": false
+ },
+ {
+  "start": 65.061,
+  "clip": "c2",
+  "a": 26.56,
+  "b": 27.1,
+  "phrase": "da un infarto.",
+  "end": 65.54,
+  "rate": 1.1273486430062705,
+  "freeze": false
+ },
+ {
+  "start": 65.54,
+  "clip": "c3",
+  "a": 0.03,
+  "b": 3.86,
+  "phrase": "Cuando Bernardo Silva",
+  "end": 69.35,
+  "rate": 1.0052493438320242,
+  "freeze": false
+ },
+ {
+  "start": 69.35,
+  "clip": "c3",
+  "a": 3.94,
+  "b": 5.68,
+  "phrase": "y los jugadores del City y Guardiola",
+  "end": 72.22,
+  "rate": 0.6062717770034832,
+  "freeze": false
+ },
+ {
+  "start": 72.22,
+  "clip": "c3",
+  "a": 5.74,
+  "b": 7.3,
+  "phrase": "Pero el árbitro dijo",
+  "end": 73.94,
+  "rate": 0.9069767441860469,
+  "freeze": false
+ },
+ {
+  "start": 73.94,
+  "clip": "c3",
+  "a": 7.46,
+  "b": 10.1,
+  "phrase": "Diez minutos después,",
+  "end": 76.505,
+  "rate": 1.0292397660818722,
+  "freeze": false
+ },
+ {
+  "start": 76.505,
+  "clip": "c3",
+  "a": 11.2,
+  "b": 13.24,
+  "phrase": "y nuevamente la pelota",
+  "end": 80.09,
+  "rate": 0.5690376569037647,
+  "freeze": false
+ },
+ {
+  "start": 80.09,
+  "clip": "c3",
+  "a": 10.45,
+  "b": 10.45,
+  "phrase": "Pero fíjate en el juez",
+  "end": 81.443,
+  "rate": 0.0,
+  "freeze": true
+ },
+ {
+  "start": 81.443,
+  "clip": "c3",
+  "a": 10.12,
+  "b": 11.14,
+  "phrase": "haciendo el mismo gesto",
+  "end": 83.31,
+  "rate": 0.5463310123192281,
+  "freeze": false
+ },
+ {
+  "start": 83.31,
+  "clip": "c3",
+  "a": 13.3,
+  "b": 17.06,
+  "phrase": "Esto dejó a Guardiola",
+  "end": 87.36,
+  "rate": 0.9283950617283953,
+  "freeze": false
+ },
+ {
+  "start": 87.36,
+  "clip": "c3",
+  "a": 17.14,
+  "b": 19.46,
+  "phrase": "y después, fue",
+  "end": 91.09,
+  "rate": 0.6219839142091147,
+  "freeze": false
+ }
+]
