@@ -399,6 +399,7 @@ for j, (segi, ev) in enumerate(P.CONTACTS):
     f = P.EV[ev]; s = P.SEGMENTS[segi]
     if "freeze" in s or not (s["f0"] <= f <= s["f1"]): continue
     sfx.append((f"sfx/{kick_ids[j % 3]}.mp3", out_time_of_src(segi, f), 0.55, f"kick{segi}"))
+MIX_GAIN = 0.80   # measured on render v2: -12.1 LUFS -> -14 LUFS
 SFX_DUR = {"166": 0.809796, "174": 1.044898, "168": 0.888163, "3115": 0.600816, "1492": 1.38449,
            "3005": 0.20898, "2112": 1.462857, "2108": 0.966531, "2099": 1.593469}
 
@@ -491,10 +492,10 @@ for j, w in enumerate(words):
     st_, en_ = w["start"], min(nxt, max(w["end"], w["start"] + 0.08))
     if j + 1 < len(words) and nxt - w["end"] < 0.35: en_ = nxt
     H.append(f'<div class="sub clip" data-start="{st_:.3f}" data-duration="{en_ - st_:.3f}">{esc(sub_word(w["text"]))}</div>')
-H.append(f'<audio id="voice" src="assets/audio/voice_es.wav" data-start="0" data-duration="{P.DURATION:.2f}" data-volume="1"></audio>')
+H.append(f'<audio id="voice" src="assets/audio/voice_es.wav" data-start="0" data-duration="{P.DURATION:.2f}" data-volume="{MIX_GAIN:.3f}"></audio>')
 for j, (src, t0, vol, nm) in enumerate(sfx):
     d = min(SFX_DUR[src.split("/")[1][:-4]], P.DURATION - t0)
-    H.append(f'<audio id="sfx{j}" src="assets/{src}" data-start="{t0:.3f}" data-duration="{d:.3f}" data-volume="{vol}"></audio>')
+    H.append(f'<audio id="sfx{j}" src="assets/{src}" data-start="{t0:.3f}" data-duration="{d:.3f}" data-volume="{vol * MIX_GAIN:.3f}"></audio>')
 H.append("</div>")
 
 # --------- per-frame label corrections measured on the previous render (tools/verify.py)
