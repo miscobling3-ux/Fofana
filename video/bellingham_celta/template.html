@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@500;800&display=block" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+      #cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; will-change: transform; }
+      #cam .src { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+      #spot { position: absolute; inset: 0; opacity: 0; --cx: 540px; --cy: 960px; --r: 200px; pointer-events: none; }
+      #dim { position: absolute; inset: 0; background: rgba(0,0,0,0.58); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);
+             -webkit-mask-image: radial-gradient(circle var(--r) at var(--cx) var(--cy), transparent 98.5%, #000 100%);
+                     mask-image: radial-gradient(circle var(--r) at var(--cx) var(--cy), transparent 98.5%, #000 100%); }
+      #ring { position: absolute; left: calc(var(--cx) - var(--r)); top: calc(var(--cy) - var(--r)); width: calc(var(--r) * 2); height: calc(var(--r) * 2);
+              border: 5px solid #fff; border-radius: 50%; box-shadow: 0 0 14px 3px rgba(255,255,255,0.55), inset 0 0 10px rgba(255,255,255,0.35); }
+      .tag { position: absolute; left: 0; top: 0; opacity: 0; will-change: transform; }
+      .tag .inner { position: absolute; left: 0; bottom: 0; display: flex; flex-direction: column; align-items: center; transform-origin: 50% 100%; }
+      .tag .logo { width: 84px; height: 84px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center;
+                   box-shadow: 0 3px 8px rgba(0,0,0,0.55); margin-bottom: 8px; }
+      .tag .logo img { height: 66px; width: auto; }
+      .tag .name { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 38px; color: #fff; background: rgba(12,12,16,0.86);
+                   padding: 6px 18px 8px; border-radius: 14px; white-space: nowrap; margin-bottom: 8px; box-shadow: 0 3px 8px rgba(0,0,0,0.5); }
+      .tag svg { display: block; filter: drop-shadow(0 3px 3px rgba(0,0,0,0.6)); }
+      .sub { position: absolute; left: 0; right: 0; top: 1600px; text-align: center; font-family: 'Poppins', sans-serif; font-weight: 500;
+             font-size: 46px; line-height: 1.15; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.85); z-index: 50; }
+      #score { position: absolute; top: 170px; left: 0; right: 0; margin: 0 auto; width: max-content; display: flex; align-items: center; gap: 0;
+               font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 44px; color: #fff; opacity: 0; z-index: 40;
+               filter: drop-shadow(0 4px 10px rgba(0,0,0,0.6)); }
+      #score .team { background: rgba(14,14,18,0.92); padding: 8px 22px; }
+      #score .team.l { border-radius: 14px 0 0 14px; }
+      #score .box { background: #e0101b; padding: 8px 18px; display: flex; align-items: center; gap: 10px; }
+      #score .dig { position: relative; width: 32px; height: 60px; display: inline-block; }
+      #score .dig span { position: absolute; left: 0; right: 0; text-align: center; top: 0; line-height: 60px; }
+      #score .min { background: #fff; color: #111; padding: 8px 18px; border-radius: 0 14px 14px 0; font-size: 40px; }
+      #flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 30; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="__DUR__" data-width="1080" data-height="1920">
+      <div id="cam">
+__IMGS__
+      </div>
+      <div id="spot"><div id="dim"></div><div id="ring"></div></div>
+      <div class="tag" id="tag0"><div class="inner"><div class="logo"><img src="assets/logo/rm.svg" alt=""></div><div class="name">Vinícius Júnior</div>
+        <svg width="64" height="86" viewBox="0 0 64 86"><path d="M18 3 H46 V44 H61 L32 83 L3 44 H18 Z" fill="#ff1f1f" stroke="#3a0000" stroke-width="3.5" stroke-linejoin="round"/></svg></div></div>
+      <div class="tag" id="tag1"><div class="inner"><div class="logo"><img src="assets/logo/rm.svg" alt=""></div><div class="name">Kylian Mbappé</div>
+        <svg width="64" height="86" viewBox="0 0 64 86"><path d="M18 3 H46 V44 H61 L32 83 L3 44 H18 Z" fill="#ff1f1f" stroke="#3a0000" stroke-width="3.5" stroke-linejoin="round"/></svg></div></div>
+      <div class="tag" id="tag2"><div class="inner"><div class="logo"><img src="assets/logo/rm.svg" alt=""></div><div class="name">Jude Bellingham</div>
+        <svg width="64" height="86" viewBox="0 0 64 86"><path d="M18 3 H46 V44 H61 L32 83 L3 44 H18 Z" fill="#ff1f1f" stroke="#3a0000" stroke-width="3.5" stroke-linejoin="round"/></svg></div></div>
+      <div id="score"><div class="team l">RMA</div><div class="box"><span class="dig"><span id="d0">0</span><span id="d1">1</span></span><span>–</span><span class="dig"><span>1</span></span></div><div class="team">CEL</div><div class="min">66'</div></div>
+      <div id="flash"></div>
+__SUBS__
+      <audio id="vo" class="clip" src="assets/voice.wav" data-start="0" data-duration="__DUR__" data-volume="VOL_VOICE" data-track-index="1"></audio>
+__SFX__
+    </div>
+    <script>
+      const D = __DATA__;
+      const tl = gsap.timeline({ paused: true });
+      const NAMES = { 'Vinícius Júnior': '#tag0', 'Kylian Mbappé': '#tag1', 'Jude Bellingham': '#tag2' };
+      const inners = { '#tag0': '#tag0 .inner', '#tag1': '#tag1 .inner', '#tag2': '#tag2 .inner' };
+      gsap.set('#d1', { scaleY: 0 });
+      gsap.set('.tag .inner', { xPercent: -50 });
+      let prevTag = null, prevSpot = false;
+      D.frames.forEach((fr, n) => {
+        const t = n / D.fps;
+        const [x0, y0, s, tag, spot] = fr;
+        tl.set('#cam', { x: -x0 * s, y: -y0 * s, scale: s }, t);
+        const cur = tag ? NAMES[tag[0]] : null;
+        if (prevTag && prevTag !== cur) tl.set(prevTag, { opacity: 0 }, t);
+        if (cur) {
+          const bounce = 5 * Math.abs(Math.sin(2 * Math.PI * 1.4 * t));
+          tl.set(cur, { x: tag[1], y: tag[2] - 4 - bounce, opacity: 1 }, t);
+          if (cur !== prevTag) tl.fromTo(inners[cur], { scale: 0.2, xPercent: -50 }, { scale: 1, xPercent: -50, duration: 0.12, ease: 'back.out(2)', immediateRender: false }, t);
+        }
+        prevTag = cur;
+        if (spot) {
+          tl.set('#spot', { '--cx': spot[1] + 'px', '--cy': spot[2] + 'px', '--r': spot[3] + 'px', opacity: spot[4] }, t);
+        } else if (prevSpot) {
+          tl.set('#spot', { opacity: 0 }, t);
+        }
+        prevSpot = !!spot;
+      });
+      // score banner
+      tl.fromTo('#score', { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.18, ease: 'back.out(2)', transformOrigin: '50% 50%', immediateRender: false }, D.scoreIn);
+      tl.to('#d0', { scaleY: 0, duration: 0.12, ease: 'power2.in' }, D.scoreFlip);
+      tl.to('#d1', { scaleY: 1, duration: 0.14, ease: 'power2.out' }, D.scoreFlip + 0.12);
+      tl.fromTo('#flash', { opacity: 0.35 }, { opacity: 0, duration: 0.25, immediateRender: false }, D.scoreFlip);
+      window.__timelines = window.__timelines || {};
+      window.__timelines['main'] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

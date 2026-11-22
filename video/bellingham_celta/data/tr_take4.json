@@ -1,0 +1,1796 @@
+[
+  {
+    "text": "Este",
+    "start": 0.1,
+    "end": 0.18,
+    "id": "w0"
+  },
+  {
+    "text": "gol",
+    "start": 0.19,
+    "end": 0.32,
+    "id": "w1"
+  },
+  {
+    "text": "de",
+    "start": 0.34,
+    "end": 0.41,
+    "id": "w2"
+  },
+  {
+    "text": "Jude",
+    "start": 0.41,
+    "end": 0.6,
+    "id": "w3"
+  },
+  {
+    "text": "Bellingham",
+    "start": 0.69,
+    "end": 1.08,
+    "id": "w4"
+  },
+  {
+    "text": "nos",
+    "start": 1.08,
+    "end": 1.18,
+    "id": "w5"
+  },
+  {
+    "text": "demuestra",
+    "start": 1.26,
+    "end": 1.64,
+    "id": "w6"
+  },
+  {
+    "text": "que",
+    "start": 1.64,
+    "end": 1.78,
+    "id": "w7"
+  },
+  {
+    "text": "un",
+    "start": 1.78,
+    "end": 1.87,
+    "id": "w8"
+  },
+  {
+    "text": "segundo",
+    "start": 1.87,
+    "end": 2.21,
+    "id": "w9"
+  },
+  {
+    "text": "de",
+    "start": 2.21,
+    "end": 2.3,
+    "id": "w10"
+  },
+  {
+    "text": "calma",
+    "start": 2.3,
+    "end": 2.53,
+    "id": "w11"
+  },
+  {
+    "text": "vale",
+    "start": 2.53,
+    "end": 2.72,
+    "id": "w12"
+  },
+  {
+    "text": "más",
+    "start": 2.72,
+    "end": 2.86,
+    "id": "w13"
+  },
+  {
+    "text": "que",
+    "start": 2.86,
+    "end": 3,
+    "id": "w14"
+  },
+  {
+    "text": "cualquier",
+    "start": 3,
+    "end": 3.56,
+    "id": "w15"
+  },
+  {
+    "text": "cañonazo.",
+    "start": 3.66,
+    "end": 4.56,
+    "id": "w16"
+  },
+  {
+    "text": "Minuto",
+    "start": 4.66,
+    "end": 4.9,
+    "id": "w17"
+  },
+  {
+    "text": "66",
+    "start": 4.9,
+    "end": 5.12,
+    "id": "w18"
+  },
+  {
+    "text": "en",
+    "start": 5.25,
+    "end": 5.35,
+    "id": "w19"
+  },
+  {
+    "text": "el",
+    "start": 5.35,
+    "end": 5.46,
+    "id": "w20"
+  },
+  {
+    "text": "Bernabéu.",
+    "start": 5.46,
+    "end": 6.06,
+    "id": "w21"
+  },
+  {
+    "text": "El",
+    "start": 6.22,
+    "end": 6.23,
+    "id": "w22"
+  },
+  {
+    "text": "Celta",
+    "start": 6.23,
+    "end": 6.51,
+    "id": "w23"
+  },
+  {
+    "text": "gana",
+    "start": 6.51,
+    "end": 6.72,
+    "id": "w24"
+  },
+  {
+    "text": "0-1",
+    "start": 6.81,
+    "end": 7.12,
+    "id": "w25"
+  },
+  {
+    "text": "y",
+    "start": 7.12,
+    "end": 7.17,
+    "id": "w26"
+  },
+  {
+    "text": "todo",
+    "start": 7.17,
+    "end": 7.4,
+    "id": "w27"
+  },
+  {
+    "text": "empieza",
+    "start": 7.4,
+    "end": 7.77,
+    "id": "w28"
+  },
+  {
+    "text": "con",
+    "start": 7.86,
+    "end": 7.97,
+    "id": "w29"
+  },
+  {
+    "text": "Vinicius.",
+    "start": 7.98,
+    "end": 8.72,
+    "id": "w30"
+  },
+  {
+    "text": "Vinicius",
+    "start": 8.82,
+    "end": 9.14,
+    "id": "w31"
+  },
+  {
+    "text": "arranca",
+    "start": 9.17,
+    "end": 9.56,
+    "id": "w32"
+  },
+  {
+    "text": "a",
+    "start": 9.56,
+    "end": 9.61,
+    "id": "w33"
+  },
+  {
+    "text": "toda",
+    "start": 9.61,
+    "end": 9.83,
+    "id": "w34"
+  },
+  {
+    "text": "velocidad",
+    "start": 9.83,
+    "end": 10.34,
+    "id": "w35"
+  },
+  {
+    "text": "con",
+    "start": 10.34,
+    "end": 10.51,
+    "id": "w36"
+  },
+  {
+    "text": "Cucurella",
+    "start": 10.51,
+    "end": 11.01,
+    "id": "w37"
+  },
+  {
+    "text": "a",
+    "start": 11.01,
+    "end": 11.06,
+    "id": "w38"
+  },
+  {
+    "text": "su",
+    "start": 11.06,
+    "end": 11.17,
+    "id": "w39"
+  },
+  {
+    "text": "lado.",
+    "start": 11.17,
+    "end": 11.64,
+    "id": "w40"
+  },
+  {
+    "text": "Llega",
+    "start": 11.69,
+    "end": 11.89,
+    "id": "w41"
+  },
+  {
+    "text": "a",
+    "start": 11.89,
+    "end": 11.94,
+    "id": "w42"
+  },
+  {
+    "text": "la",
+    "start": 11.94,
+    "end": 12.04,
+    "id": "w43"
+  },
+  {
+    "text": "frontal",
+    "start": 12.04,
+    "end": 12.4,
+    "id": "w44"
+  },
+  {
+    "text": "rodeado",
+    "start": 12.4,
+    "end": 12.76,
+    "id": "w45"
+  },
+  {
+    "text": "de",
+    "start": 12.76,
+    "end": 12.83,
+    "id": "w46"
+  },
+  {
+    "text": "camisetas",
+    "start": 12.9,
+    "end": 13.3,
+    "id": "w47"
+  },
+  {
+    "text": "del",
+    "start": 13.38,
+    "end": 13.47,
+    "id": "w48"
+  },
+  {
+    "text": "Celta.",
+    "start": 13.47,
+    "end": 13.96,
+    "id": "w49"
+  },
+  {
+    "text": "No",
+    "start": 13.96,
+    "end": 14.06,
+    "id": "w50"
+  },
+  {
+    "text": "fuerza",
+    "start": 14.06,
+    "end": 14.37,
+    "id": "w51"
+  },
+  {
+    "text": "el",
+    "start": 14.37,
+    "end": 14.47,
+    "id": "w52"
+  },
+  {
+    "text": "regate.",
+    "start": 14.47,
+    "end": 14.96,
+    "id": "w53"
+  },
+  {
+    "text": "Toca",
+    "start": 15.05,
+    "end": 15.13,
+    "id": "w54"
+  },
+  {
+    "text": "hacia",
+    "start": 15.15,
+    "end": 15.37,
+    "id": "w55"
+  },
+  {
+    "text": "adentro",
+    "start": 15.37,
+    "end": 15.7,
+    "id": "w56"
+  },
+  {
+    "text": "para",
+    "start": 15.7,
+    "end": 15.89,
+    "id": "w57"
+  },
+  {
+    "text": "Kylian",
+    "start": 15.89,
+    "end": 16.15,
+    "id": "w58"
+  },
+  {
+    "text": "Mbappé.",
+    "start": 16.15,
+    "end": 16.61,
+    "id": "w59"
+  },
+  {
+    "text": "Mbappé",
+    "start": 16.73,
+    "end": 16.99,
+    "id": "w60"
+  },
+  {
+    "text": "aguanta,",
+    "start": 16.99,
+    "end": 17.46,
+    "id": "w61"
+  },
+  {
+    "text": "levanta",
+    "start": 17.46,
+    "end": 17.83,
+    "id": "w62"
+  },
+  {
+    "text": "la",
+    "start": 17.83,
+    "end": 17.88,
+    "id": "w63"
+  },
+  {
+    "text": "cabeza",
+    "start": 17.93,
+    "end": 18.18,
+    "id": "w64"
+  },
+  {
+    "text": "y",
+    "start": 18.25,
+    "end": 18.3,
+    "id": "w65"
+  },
+  {
+    "text": "abre",
+    "start": 18.3,
+    "end": 18.51,
+    "id": "w66"
+  },
+  {
+    "text": "a",
+    "start": 18.51,
+    "end": 18.56,
+    "id": "w67"
+  },
+  {
+    "text": "la",
+    "start": 18.56,
+    "end": 18.66,
+    "id": "w68"
+  },
+  {
+    "text": "derecha",
+    "start": 18.66,
+    "end": 19.02,
+    "id": "w69"
+  },
+  {
+    "text": "para",
+    "start": 19.1,
+    "end": 19.24,
+    "id": "w70"
+  },
+  {
+    "text": "Jude",
+    "start": 19.24,
+    "end": 19.45,
+    "id": "w71"
+  },
+  {
+    "text": "Bellingham.",
+    "start": 19.45,
+    "end": 20.24,
+    "id": "w72"
+  },
+  {
+    "text": "Mirad",
+    "start": 20.34,
+    "end": 20.49,
+    "id": "w73"
+  },
+  {
+    "text": "bien,",
+    "start": 20.49,
+    "end": 20.79,
+    "id": "w74"
+  },
+  {
+    "text": "en",
+    "start": 20.79,
+    "end": 20.84,
+    "id": "w75"
+  },
+  {
+    "text": "este",
+    "start": 20.93,
+    "end": 21.09,
+    "id": "w76"
+  },
+  {
+    "text": "momento",
+    "start": 21.09,
+    "end": 21.42,
+    "id": "w77"
+  },
+  {
+    "text": "la",
+    "start": 21.5,
+    "end": 21.55,
+    "id": "w78"
+  },
+  {
+    "text": "defensa",
+    "start": 21.55,
+    "end": 21.89,
+    "id": "w79"
+  },
+  {
+    "text": "del",
+    "start": 21.9,
+    "end": 22.05,
+    "id": "w80"
+  },
+  {
+    "text": "Celta",
+    "start": 22.05,
+    "end": 22.3,
+    "id": "w81"
+  },
+  {
+    "text": "está",
+    "start": 22.3,
+    "end": 22.5,
+    "id": "w82"
+  },
+  {
+    "text": "pendiente",
+    "start": 22.5,
+    "end": 22.95,
+    "id": "w83"
+  },
+  {
+    "text": "de",
+    "start": 22.95,
+    "end": 23.05,
+    "id": "w84"
+  },
+  {
+    "text": "Mbappé.",
+    "start": 23.05,
+    "end": 23.6,
+    "id": "w85"
+  },
+  {
+    "text": "Bellingham",
+    "start": 23.7,
+    "end": 24.1,
+    "id": "w86"
+  },
+  {
+    "text": "llega",
+    "start": 24.1,
+    "end": 24.35,
+    "id": "w87"
+  },
+  {
+    "text": "desde",
+    "start": 24.35,
+    "end": 24.6,
+    "id": "w88"
+  },
+  {
+    "text": "la",
+    "start": 24.6,
+    "end": 24.7,
+    "id": "w89"
+  },
+  {
+    "text": "derecha",
+    "start": 24.7,
+    "end": 25.05,
+    "id": "w90"
+  },
+  {
+    "text": "al",
+    "start": 25.05,
+    "end": 25.1,
+    "id": "w91"
+  },
+  {
+    "text": "borde",
+    "start": 25.19,
+    "end": 25.4,
+    "id": "w92"
+  },
+  {
+    "text": "del",
+    "start": 25.4,
+    "end": 25.55,
+    "id": "w93"
+  },
+  {
+    "text": "área",
+    "start": 25.55,
+    "end": 25.75,
+    "id": "w94"
+  },
+  {
+    "text": "y",
+    "start": 25.75,
+    "end": 25.79,
+    "id": "w95"
+  },
+  {
+    "text": "tiene",
+    "start": 25.8,
+    "end": 26.05,
+    "id": "w96"
+  },
+  {
+    "text": "espacio",
+    "start": 26.05,
+    "end": 26.41,
+    "id": "w97"
+  },
+  {
+    "text": "para",
+    "start": 26.41,
+    "end": 26.61,
+    "id": "w98"
+  },
+  {
+    "text": "pensar.",
+    "start": 26.61,
+    "end": 27.16,
+    "id": "w99"
+  },
+  {
+    "text": "La",
+    "start": 27.16,
+    "end": 27.26,
+    "id": "w100"
+  },
+  {
+    "text": "mayoría",
+    "start": 27.26,
+    "end": 27.62,
+    "id": "w101"
+  },
+  {
+    "text": "de",
+    "start": 27.62,
+    "end": 27.72,
+    "id": "w102"
+  },
+  {
+    "text": "los",
+    "start": 27.72,
+    "end": 27.87,
+    "id": "w103"
+  },
+  {
+    "text": "jugadores",
+    "start": 27.87,
+    "end": 28.33,
+    "id": "w104"
+  },
+  {
+    "text": "habría",
+    "start": 28.33,
+    "end": 28.64,
+    "id": "w105"
+  },
+  {
+    "text": "disparado",
+    "start": 28.64,
+    "end": 29.1,
+    "id": "w106"
+  },
+  {
+    "text": "de",
+    "start": 29.1,
+    "end": 29.2,
+    "id": "w107"
+  },
+  {
+    "text": "primeras",
+    "start": 29.2,
+    "end": 29.62,
+    "id": "w108"
+  },
+  {
+    "text": "con",
+    "start": 29.62,
+    "end": 29.77,
+    "id": "w109"
+  },
+  {
+    "text": "toda",
+    "start": 29.77,
+    "end": 29.98,
+    "id": "w110"
+  },
+  {
+    "text": "la",
+    "start": 29.98,
+    "end": 30.08,
+    "id": "w111"
+  },
+  {
+    "text": "fuerza",
+    "start": 30.08,
+    "end": 30.37,
+    "id": "w112"
+  },
+  {
+    "text": "para",
+    "start": 30.45,
+    "end": 30.54,
+    "id": "w113"
+  },
+  {
+    "text": "sorprender",
+    "start": 30.64,
+    "end": 31.22,
+    "id": "w114"
+  },
+  {
+    "text": "al",
+    "start": 31.32,
+    "end": 31.37,
+    "id": "w115"
+  },
+  {
+    "text": "portero.",
+    "start": 31.38,
+    "end": 32.22,
+    "id": "w116"
+  },
+  {
+    "text": "Pero",
+    "start": 32.32,
+    "end": 32.4,
+    "id": "w117"
+  },
+  {
+    "text": "Bellingham",
+    "start": 32.41,
+    "end": 32.82,
+    "id": "w118"
+  },
+  {
+    "text": "no,",
+    "start": 32.91,
+    "end": 33.05,
+    "id": "w119"
+  },
+  {
+    "text": "primero",
+    "start": 33.05,
+    "end": 33.38,
+    "id": "w120"
+  },
+  {
+    "text": "controla,",
+    "start": 33.38,
+    "end": 33.84,
+    "id": "w121"
+  },
+  {
+    "text": "se",
+    "start": 33.84,
+    "end": 33.88,
+    "id": "w122"
+  },
+  {
+    "text": "perfila",
+    "start": 33.96,
+    "end": 34.26,
+    "id": "w123"
+  },
+  {
+    "text": "y",
+    "start": 34.26,
+    "end": 34.3,
+    "id": "w124"
+  },
+  {
+    "text": "elige",
+    "start": 34.3,
+    "end": 34.53,
+    "id": "w125"
+  },
+  {
+    "text": "la",
+    "start": 34.53,
+    "end": 34.56,
+    "id": "w126"
+  },
+  {
+    "text": "precisión",
+    "start": 34.64,
+    "end": 35.04,
+    "id": "w127"
+  },
+  {
+    "text": "antes",
+    "start": 35.04,
+    "end": 35.26,
+    "id": "w128"
+  },
+  {
+    "text": "que",
+    "start": 35.26,
+    "end": 35.42,
+    "id": "w129"
+  },
+  {
+    "text": "la",
+    "start": 35.42,
+    "end": 35.44,
+    "id": "w130"
+  },
+  {
+    "text": "potencia.",
+    "start": 35.51,
+    "end": 36.16,
+    "id": "w131"
+  },
+  {
+    "text": "Un",
+    "start": 36.26,
+    "end": 36.29,
+    "id": "w132"
+  },
+  {
+    "text": "segundo",
+    "start": 36.29,
+    "end": 36.75,
+    "id": "w133"
+  },
+  {
+    "text": "de",
+    "start": 36.76,
+    "end": 36.89,
+    "id": "w134"
+  },
+  {
+    "text": "calma",
+    "start": 36.89,
+    "end": 37.22,
+    "id": "w135"
+  },
+  {
+    "text": "que",
+    "start": 37.22,
+    "end": 37.35,
+    "id": "w136"
+  },
+  {
+    "text": "lo",
+    "start": 37.42,
+    "end": 37.55,
+    "id": "w137"
+  },
+  {
+    "text": "cambia",
+    "start": 37.55,
+    "end": 37.95,
+    "id": "w138"
+  },
+  {
+    "text": "todo,",
+    "start": 37.95,
+    "end": 38.35,
+    "id": "w139"
+  },
+  {
+    "text": "ahora",
+    "start": 38.35,
+    "end": 38.69,
+    "id": "w140"
+  },
+  {
+    "text": "el",
+    "start": 38.69,
+    "end": 38.81,
+    "id": "w141"
+  },
+  {
+    "text": "duel.",
+    "start": 38.82,
+    "end": 39.35,
+    "id": "w142"
+  },
+  {
+    "text": "Defensor",
+    "start": 39.46,
+    "end": 39.74,
+    "id": "w143"
+  },
+  {
+    "text": "del",
+    "start": 39.74,
+    "end": 39.88,
+    "id": "w144"
+  },
+  {
+    "text": "Celta",
+    "start": 39.88,
+    "end": 40.11,
+    "id": "w145"
+  },
+  {
+    "text": "le",
+    "start": 40.11,
+    "end": 40.2,
+    "id": "w146"
+  },
+  {
+    "text": "persigue",
+    "start": 40.2,
+    "end": 40.54,
+    "id": "w147"
+  },
+  {
+    "text": "pegado",
+    "start": 40.62,
+    "end": 40.86,
+    "id": "w148"
+  },
+  {
+    "text": "a",
+    "start": 40.86,
+    "end": 40.96,
+    "id": "w149"
+  },
+  {
+    "text": "la",
+    "start": 40.96,
+    "end": 40.99,
+    "id": "w150"
+  },
+  {
+    "text": "espalda.",
+    "start": 40.99,
+    "end": 41.56,
+    "id": "w151"
+  },
+  {
+    "text": "Otro",
+    "start": 41.66,
+    "end": 41.76,
+    "id": "w152"
+  },
+  {
+    "text": "llega",
+    "start": 41.76,
+    "end": 41.98,
+    "id": "w153"
+  },
+  {
+    "text": "desde",
+    "start": 42.01,
+    "end": 42.26,
+    "id": "w154"
+  },
+  {
+    "text": "la",
+    "start": 42.26,
+    "end": 42.36,
+    "id": "w155"
+  },
+  {
+    "text": "izquierda",
+    "start": 42.36,
+    "end": 42.76,
+    "id": "w156"
+  },
+  {
+    "text": "y",
+    "start": 42.81,
+    "end": 42.86,
+    "id": "w157"
+  },
+  {
+    "text": "se",
+    "start": 42.86,
+    "end": 42.96,
+    "id": "w158"
+  },
+  {
+    "text": "lanza",
+    "start": 42.96,
+    "end": 43.21,
+    "id": "w159"
+  },
+  {
+    "text": "al",
+    "start": 43.21,
+    "end": 43.31,
+    "id": "w160"
+  },
+  {
+    "text": "suelo",
+    "start": 43.31,
+    "end": 43.55,
+    "id": "w161"
+  },
+  {
+    "text": "para",
+    "start": 43.56,
+    "end": 43.76,
+    "id": "w162"
+  },
+  {
+    "text": "tapar",
+    "start": 43.76,
+    "end": 44.01,
+    "id": "w163"
+  },
+  {
+    "text": "el",
+    "start": 44.01,
+    "end": 44.11,
+    "id": "w164"
+  },
+  {
+    "text": "disparo,",
+    "start": 44.11,
+    "end": 44.56,
+    "id": "w165"
+  },
+  {
+    "text": "dos",
+    "start": 44.56,
+    "end": 44.67,
+    "id": "w166"
+  },
+  {
+    "text": "rivales",
+    "start": 44.72,
+    "end": 45.1,
+    "id": "w167"
+  },
+  {
+    "text": "encima",
+    "start": 45.1,
+    "end": 45.52,
+    "id": "w168"
+  },
+  {
+    "text": "y",
+    "start": 45.52,
+    "end": 45.62,
+    "id": "w169"
+  },
+  {
+    "text": "el",
+    "start": 45.62,
+    "end": 45.67,
+    "id": "w170"
+  },
+  {
+    "text": "portero",
+    "start": 45.68,
+    "end": 46.07,
+    "id": "w171"
+  },
+  {
+    "text": "rado",
+    "start": 46.07,
+    "end": 46.29,
+    "id": "w172"
+  },
+  {
+    "text": "esperando",
+    "start": 46.29,
+    "end": 46.81,
+    "id": "w173"
+  },
+  {
+    "text": "bajo",
+    "start": 46.81,
+    "end": 47.02,
+    "id": "w174"
+  },
+  {
+    "text": "palos.",
+    "start": 47.12,
+    "end": 47.56,
+    "id": "w175"
+  },
+  {
+    "text": "Con",
+    "start": 47.66,
+    "end": 47.71,
+    "id": "w176"
+  },
+  {
+    "text": "tantas",
+    "start": 47.72,
+    "end": 48.03,
+    "id": "w177"
+  },
+  {
+    "text": "piernas",
+    "start": 48.03,
+    "end": 48.4,
+    "id": "w178"
+  },
+  {
+    "text": "delante,",
+    "start": 48.4,
+    "end": 48.87,
+    "id": "w179"
+  },
+  {
+    "text": "el",
+    "start": 48.87,
+    "end": 48.97,
+    "id": "w180"
+  },
+  {
+    "text": "portero",
+    "start": 48.97,
+    "end": 49.34,
+    "id": "w181"
+  },
+  {
+    "text": "casi",
+    "start": 49.34,
+    "end": 49.55,
+    "id": "w182"
+  },
+  {
+    "text": "no",
+    "start": 49.55,
+    "end": 49.65,
+    "id": "w183"
+  },
+  {
+    "text": "ve",
+    "start": 49.65,
+    "end": 49.75,
+    "id": "w184"
+  },
+  {
+    "text": "el",
+    "start": 49.75,
+    "end": 49.85,
+    "id": "w185"
+  },
+  {
+    "text": "balón",
+    "start": 49.85,
+    "end": 50.11,
+    "id": "w186"
+  },
+  {
+    "text": "y",
+    "start": 50.11,
+    "end": 50.16,
+    "id": "w187"
+  },
+  {
+    "text": "aquí",
+    "start": 50.16,
+    "end": 50.37,
+    "id": "w188"
+  },
+  {
+    "text": "está",
+    "start": 50.37,
+    "end": 50.58,
+    "id": "w189"
+  },
+  {
+    "text": "el",
+    "start": 50.58,
+    "end": 50.67,
+    "id": "w190"
+  },
+  {
+    "text": "gesto,",
+    "start": 50.72,
+    "end": 50.94,
+    "id": "w191"
+  },
+  {
+    "text": "no",
+    "start": 51.04,
+    "end": 51.32,
+    "id": "w192"
+  },
+  {
+    "text": "se",
+    "start": 51.42,
+    "end": 51.46,
+    "id": "w193"
+  },
+  {
+    "text": "precipita.",
+    "start": 51.46,
+    "end": 52.32,
+    "id": "w194"
+  },
+  {
+    "text": "Apoya",
+    "start": 52.41,
+    "end": 52.55,
+    "id": "w195"
+  },
+  {
+    "text": "el",
+    "start": 52.55,
+    "end": 52.63,
+    "id": "w196"
+  },
+  {
+    "text": "pie",
+    "start": 52.64,
+    "end": 52.77,
+    "id": "w197"
+  },
+  {
+    "text": "izquierdo,",
+    "start": 52.78,
+    "end": 53.3,
+    "id": "w198"
+  },
+  {
+    "text": "golpea",
+    "start": 53.3,
+    "end": 53.57,
+    "id": "w199"
+  },
+  {
+    "text": "con",
+    "start": 53.58,
+    "end": 53.72,
+    "id": "w200"
+  },
+  {
+    "text": "el",
+    "start": 53.72,
+    "end": 53.81,
+    "id": "w201"
+  },
+  {
+    "text": "derecho,",
+    "start": 53.81,
+    "end": 54.23,
+    "id": "w202"
+  },
+  {
+    "text": "raso,",
+    "start": 54.25,
+    "end": 54.51,
+    "id": "w203"
+  },
+  {
+    "text": "seco,",
+    "start": 54.51,
+    "end": 54.78,
+    "id": "w204"
+  },
+  {
+    "text": "justo",
+    "start": 54.78,
+    "end": 55.02,
+    "id": "w205"
+  },
+  {
+    "text": "antes",
+    "start": 55.02,
+    "end": 55.26,
+    "id": "w206"
+  },
+  {
+    "text": "de",
+    "start": 55.26,
+    "end": 55.35,
+    "id": "w207"
+  },
+  {
+    "text": "que",
+    "start": 55.35,
+    "end": 55.43,
+    "id": "w208"
+  },
+  {
+    "text": "llegue",
+    "start": 55.5,
+    "end": 55.7,
+    "id": "w209"
+  },
+  {
+    "text": "el",
+    "start": 55.8,
+    "end": 55.86,
+    "id": "w210"
+  },
+  {
+    "text": "defensor",
+    "start": 55.86,
+    "end": 56.4,
+    "id": "w211"
+  },
+  {
+    "text": "que",
+    "start": 56.58,
+    "end": 56.73,
+    "id": "w212"
+  },
+  {
+    "text": "se",
+    "start": 56.73,
+    "end": 56.89,
+    "id": "w213"
+  },
+  {
+    "text": "tira.",
+    "start": 56.89,
+    "end": 57.48,
+    "id": "w214"
+  },
+  {
+    "text": "El",
+    "start": 57.48,
+    "end": 57.58,
+    "id": "w215"
+  },
+  {
+    "text": "balón",
+    "start": 57.58,
+    "end": 57.83,
+    "id": "w216"
+  },
+  {
+    "text": "sale",
+    "start": 57.83,
+    "end": 58.03,
+    "id": "w217"
+  },
+  {
+    "text": "pegado",
+    "start": 58.03,
+    "end": 58.33,
+    "id": "w218"
+  },
+  {
+    "text": "al",
+    "start": 58.33,
+    "end": 58.42,
+    "id": "w219"
+  },
+  {
+    "text": "césped",
+    "start": 58.44,
+    "end": 58.66,
+    "id": "w220"
+  },
+  {
+    "text": "y",
+    "start": 58.73,
+    "end": 58.78,
+    "id": "w221"
+  },
+  {
+    "text": "ningún",
+    "start": 58.78,
+    "end": 59.09,
+    "id": "w222"
+  },
+  {
+    "text": "rival",
+    "start": 59.09,
+    "end": 59.35,
+    "id": "w223"
+  },
+  {
+    "text": "llega",
+    "start": 59.35,
+    "end": 59.61,
+    "id": "w224"
+  },
+  {
+    "text": "a",
+    "start": 59.61,
+    "end": 59.66,
+    "id": "w225"
+  },
+  {
+    "text": "tocarlo.",
+    "start": 59.66,
+    "end": 60.24,
+    "id": "w226"
+  },
+  {
+    "text": "No,",
+    "start": 60.33,
+    "end": 60.41,
+    "id": "w227"
+  },
+  {
+    "text": "no",
+    "start": 60.43,
+    "end": 60.51,
+    "id": "w228"
+  },
+  {
+    "text": "es",
+    "start": 60.51,
+    "end": 60.6,
+    "id": "w229"
+  },
+  {
+    "text": "un",
+    "start": 60.6,
+    "end": 60.66,
+    "id": "w230"
+  },
+  {
+    "text": "disparo",
+    "start": 60.69,
+    "end": 61,
+    "id": "w231"
+  },
+  {
+    "text": "fuerte,",
+    "start": 61,
+    "end": 61.36,
+    "id": "w232"
+  },
+  {
+    "text": "es",
+    "start": 61.36,
+    "end": 61.43,
+    "id": "w233"
+  },
+  {
+    "text": "un",
+    "start": 61.49,
+    "end": 61.54,
+    "id": "w234"
+  },
+  {
+    "text": "disparo",
+    "start": 61.54,
+    "end": 61.85,
+    "id": "w235"
+  },
+  {
+    "text": "perfecto.",
+    "start": 61.85,
+    "end": 62.4,
+    "id": "w236"
+  },
+  {
+    "text": "Mirad",
+    "start": 62.5,
+    "end": 62.65,
+    "id": "w237"
+  },
+  {
+    "text": "la",
+    "start": 62.65,
+    "end": 62.75,
+    "id": "w238"
+  },
+  {
+    "text": "trayectoria,",
+    "start": 62.75,
+    "end": 63.4,
+    "id": "w239"
+  },
+  {
+    "text": "el",
+    "start": 63.4,
+    "end": 63.5,
+    "id": "w240"
+  },
+  {
+    "text": "balón",
+    "start": 63.5,
+    "end": 63.75,
+    "id": "w241"
+  },
+  {
+    "text": "cruza",
+    "start": 63.75,
+    "end": 63.9,
+    "id": "w242"
+  },
+  {
+    "text": "el",
+    "start": 64,
+    "end": 64.06,
+    "id": "w243"
+  },
+  {
+    "text": "área",
+    "start": 64.14,
+    "end": 64.3,
+    "id": "w244"
+  },
+  {
+    "text": "sin",
+    "start": 64.3,
+    "end": 64.45,
+    "id": "w245"
+  },
+  {
+    "text": "levantarse",
+    "start": 64.45,
+    "end": 64.95,
+    "id": "w246"
+  },
+  {
+    "text": "del",
+    "start": 64.95,
+    "end": 65.1,
+    "id": "w247"
+  },
+  {
+    "text": "suelo,",
+    "start": 65.1,
+    "end": 65.44,
+    "id": "w248"
+  },
+  {
+    "text": "Radu",
+    "start": 65.44,
+    "end": 65.62,
+    "id": "w249"
+  },
+  {
+    "text": "se",
+    "start": 65.69,
+    "end": 65.75,
+    "id": "w250"
+  },
+  {
+    "text": "queda",
+    "start": 65.75,
+    "end": 65.98,
+    "id": "w251"
+  },
+  {
+    "text": "clavado,",
+    "start": 66.07,
+    "end": 66.64,
+    "id": "w252"
+  },
+  {
+    "text": "casi",
+    "start": 66.74,
+    "end": 66.89,
+    "id": "w253"
+  },
+  {
+    "text": "no",
+    "start": 66.89,
+    "end": 67.01,
+    "id": "w254"
+  },
+  {
+    "text": "se",
+    "start": 67.01,
+    "end": 67.13,
+    "id": "w255"
+  },
+  {
+    "text": "mueve.",
+    "start": 67.13,
+    "end": 67.64,
+    "id": "w256"
+  },
+  {
+    "text": "Gol",
+    "start": 67.74,
+    "end": 67.78,
+    "id": "w257"
+  },
+  {
+    "text": "y",
+    "start": 67.78,
+    "end": 67.8,
+    "id": "w258"
+  },
+  {
+    "text": "Vinicius",
+    "start": 67.83,
+    "end": 68.19,
+    "id": "w259"
+  },
+  {
+    "text": "corre",
+    "start": 68.19,
+    "end": 68.43,
+    "id": "w260"
+  },
+  {
+    "text": "a",
+    "start": 68.43,
+    "end": 68.47,
+    "id": "w261"
+  },
+  {
+    "text": "sacar",
+    "start": 68.47,
+    "end": 68.71,
+    "id": "w262"
+  },
+  {
+    "text": "el",
+    "start": 68.71,
+    "end": 68.8,
+    "id": "w263"
+  },
+  {
+    "text": "balón",
+    "start": 68.8,
+    "end": 69.03,
+    "id": "w264"
+  },
+  {
+    "text": "de",
+    "start": 69.03,
+    "end": 69.12,
+    "id": "w265"
+  },
+  {
+    "text": "la",
+    "start": 69.12,
+    "end": 69.14,
+    "id": "w266"
+  },
+  {
+    "text": "portería",
+    "start": 69.24,
+    "end": 69.59,
+    "id": "w267"
+  },
+  {
+    "text": "porque",
+    "start": 69.59,
+    "end": 69.88,
+    "id": "w268"
+  },
+  {
+    "text": "quiere",
+    "start": 69.88,
+    "end": 70.17,
+    "id": "w269"
+  },
+  {
+    "text": "la",
+    "start": 70.17,
+    "end": 70.26,
+    "id": "w270"
+  },
+  {
+    "text": "remontada.",
+    "start": 70.26,
+    "end": 70.96,
+    "id": "w271"
+  },
+  {
+    "text": "1",
+    "start": 71.06,
+    "end": 71.37,
+    "id": "w272"
+  },
+  {
+    "text": "a",
+    "start": 71.37,
+    "end": 71.52,
+    "id": "w273"
+  },
+  {
+    "text": "1.",
+    "start": 71.52,
+    "end": 71.96,
+    "id": "w274"
+  },
+  {
+    "text": "Bellingham",
+    "start": 72.03,
+    "end": 72.33,
+    "id": "w275"
+  },
+  {
+    "text": "lo",
+    "start": 72.33,
+    "end": 72.38,
+    "id": "w276"
+  },
+  {
+    "text": "celebra",
+    "start": 72.4,
+    "end": 72.66,
+    "id": "w277"
+  },
+  {
+    "text": "con",
+    "start": 72.66,
+    "end": 72.77,
+    "id": "w278"
+  },
+  {
+    "text": "Mbappé",
+    "start": 72.77,
+    "end": 72.97,
+    "id": "w279"
+  },
+  {
+    "text": "y",
+    "start": 72.97,
+    "end": 73,
+    "id": "w280"
+  },
+  {
+    "text": "con",
+    "start": 73,
+    "end": 73.11,
+    "id": "w281"
+  },
+  {
+    "text": "todo",
+    "start": 73.11,
+    "end": 73.26,
+    "id": "w282"
+  },
+  {
+    "text": "el",
+    "start": 73.26,
+    "end": 73.33,
+    "id": "w283"
+  },
+  {
+    "text": "Bernabéu.¿Qué",
+    "start": 73.33,
+    "end": 74.18,
+    "id": "w284"
+  },
+  {
+    "text": "golpeo?¿Entonces",
+    "start": 74.18,
+    "end": 75.43,
+    "id": "w285"
+  },
+  {
+    "text": "dime?¿Bellingham",
+    "start": 75.43,
+    "end": 76.29,
+    "id": "w286"
+  },
+  {
+    "text": "es",
+    "start": 76.29,
+    "end": 76.37,
+    "id": "w287"
+  },
+  {
+    "text": "el",
+    "start": 76.37,
+    "end": 76.44,
+    "id": "w288"
+  },
+  {
+    "text": "mejor",
+    "start": 76.47,
+    "end": 76.65,
+    "id": "w289"
+  },
+  {
+    "text": "centrocampista",
+    "start": 76.65,
+    "end": 77.19,
+    "id": "w290"
+  },
+  {
+    "text": "llegador",
+    "start": 77.19,
+    "end": 77.5,
+    "id": "w291"
+  },
+  {
+    "text": "del",
+    "start": 77.5,
+    "end": 77.54,
+    "id": "w292"
+  },
+  {
+    "text": "mundo?",
+    "start": 77.62,
+    "end": 78,
+    "id": "w293"
+  },
+  {
+    "text": "Te",
+    "start": 78,
+    "end": 78.1,
+    "id": "w294"
+  },
+  {
+    "text": "leo",
+    "start": 78.1,
+    "end": 78.2,
+    "id": "w295"
+  },
+  {
+    "text": "en",
+    "start": 78.2,
+    "end": 78.28,
+    "id": "w296"
+  },
+  {
+    "text": "los",
+    "start": 78.28,
+    "end": 78.41,
+    "id": "w297"
+  },
+  {
+    "text": "comentarios.",
+    "start": 78.41,
+    "end": 78.92,
+    "id": "w298"
+  }
+]
