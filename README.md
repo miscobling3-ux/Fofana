@@ -60,3 +60,32 @@ python3 remix.py --script guion_ongles_fr --stills 2,14,45   # aperçu rapide en
 ```
 - **Texte, zooms et badges** : `video/guion_ongles_fr.py` / `guion_ongles_es.py` → `LINES`. Chaque phrase indique le passage de la vidéo source (`src`) et le zoom (`zoom=(départ, fin, centre x, centre y)`).
 - **Autre vidéo source** : copie un script, change `SOURCE` et les passages. Si la source n'a pas de sous-titres au même endroit, adapte `BAND` / `WATERMARK` dans `remix.py`.
+
+---
+
+# Analyse d'un but : Fermín López (Barça 2-2 Villarreal, 60') — espagnol
+
+Vidéo prête à poster : **`output/fermin_lopez_es.mp4`** (1080×1920, 30 fps, H.264 + AAC, voix off espagnole fournie, durée = durée de la voix).
+Couvertures : `output/fermin_cover_9x16.png` et `output/fermin_cover_1x1.png`.
+
+Montage fait avec **HyperFrames** (`video/fermin_hf/`, HTML + GSAP), selon le master prompt v3 :
+recadrage 9:16 qui suit le joueur (sans jamais montrer le score télé, le filigrane ni le hashtag),
+étiquette flèche rouge + nom + logo au-dessus du porteur du ballon, effet projecteur sur le joueur nommé,
+sous-titres mot par mot, bandeau de score qui passe de 1-2 à 2-2, sons Mixkit, aucun son d'origine.
+
+## Refaire la vidéo
+```bash
+cd video/fermin_hf
+# 1. extraire les images des deux clips (50 i/s) dans deux dossiers
+ffmpeg -i clipA.mov -vsync 0 -q:v 2 frames_a/%04d.jpg   # direct
+ffmpeg -i clipB.mov -vsync 0 -q:v 2 frames_b/%04d.jpg   # ralentis
+# 2. générer la composition (index.html) à partir du plan, du suivi et de data/words.json
+python3 tools/build.py --frames-a frames_a --frames-b frames_b
+npx hyperframes check
+npx hyperframes render --fps 30 --crf 20 -o renders/final.mp4
+# 3. vérifier la vidéo finale (étiquettes image par image, image propre, bonne image source)
+python3 tools/verify.py renders/final.mp4 frames_a frames_b renders/verif
+```
+- **Plan de montage** : `tools/plan.py` (`SEGMENTS` : temps de sortie, plan source, vitesse, cibles caméra, étiquettes, projecteurs).
+- **Suivi des joueurs** : `data/tracks/*.json` (produits par `tools/track.py`, contrôlés image par image).
+- **Texte / timing** : `data/script_es.txt` et `data/words.json` (alignement script ↔ transcription).

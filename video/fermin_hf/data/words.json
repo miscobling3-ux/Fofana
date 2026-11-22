@@ -1,0 +1,1570 @@
+[
+ {
+  "i": 0,
+  "text": "Este",
+  "sent": 0,
+  "start": 0.0,
+  "end": 0.24
+ },
+ {
+  "i": 1,
+  "text": "gol",
+  "sent": 0,
+  "start": 0.24,
+  "end": 0.46
+ },
+ {
+  "i": 2,
+  "text": "de",
+  "sent": 0,
+  "start": 0.46,
+  "end": 0.64
+ },
+ {
+  "i": 3,
+  "text": "Fermín",
+  "sent": 0,
+  "start": 0.64,
+  "end": 0.96
+ },
+ {
+  "i": 4,
+  "text": "López",
+  "sent": 0,
+  "start": 0.96,
+  "end": 1.32
+ },
+ {
+  "i": 5,
+  "text": "hoy",
+  "sent": 0,
+  "start": 1.32,
+  "end": 1.68
+ },
+ {
+  "i": 6,
+  "text": "nos",
+  "sent": 0,
+  "start": 1.68,
+  "end": 1.86
+ },
+ {
+  "i": 7,
+  "text": "confirma",
+  "sent": 0,
+  "start": 1.86,
+  "end": 2.38
+ },
+ {
+  "i": 8,
+  "text": "por",
+  "sent": 0,
+  "start": 2.38,
+  "end": 2.68
+ },
+ {
+  "i": 9,
+  "text": "qué",
+  "sent": 0,
+  "start": 2.68,
+  "end": 2.84
+ },
+ {
+  "i": 10,
+  "text": "algunos",
+  "sent": 0,
+  "start": 2.84,
+  "end": 3.22
+ },
+ {
+  "i": 11,
+  "text": "dicen",
+  "sent": 0,
+  "start": 3.22,
+  "end": 3.58
+ },
+ {
+  "i": 12,
+  "text": "que",
+  "sent": 0,
+  "start": 3.58,
+  "end": 3.82
+ },
+ {
+  "i": 13,
+  "text": "es",
+  "sent": 0,
+  "start": 3.82,
+  "end": 3.98
+ },
+ {
+  "i": 14,
+  "text": "mejor",
+  "sent": 0,
+  "start": 3.98,
+  "end": 4.32
+ },
+ {
+  "i": 15,
+  "text": "que",
+  "sent": 0,
+  "start": 4.32,
+  "end": 4.46
+ },
+ {
+  "i": 16,
+  "text": "Bellingham.",
+  "sent": 0,
+  "start": 4.46,
+  "end": 4.94
+ },
+ {
+  "i": 17,
+  "text": "Todo",
+  "sent": 1,
+  "start": 5.08,
+  "end": 5.22
+ },
+ {
+  "i": 18,
+  "text": "comienza",
+  "sent": 1,
+  "start": 5.22,
+  "end": 5.7
+ },
+ {
+  "i": 19,
+  "text": "cuando",
+  "sent": 1,
+  "start": 5.7,
+  "end": 5.92
+ },
+ {
+  "i": 20,
+  "text": "Rafinha",
+  "sent": 1,
+  "start": 5.92,
+  "end": 6.48
+ },
+ {
+  "i": 21,
+  "text": "le",
+  "sent": 1,
+  "start": 6.48,
+  "end": 6.72
+ },
+ {
+  "i": 22,
+  "text": "da",
+  "sent": 1,
+  "start": 6.72,
+  "end": 6.84
+ },
+ {
+  "i": 23,
+  "text": "el",
+  "sent": 1,
+  "start": 6.84,
+  "end": 6.96
+ },
+ {
+  "i": 24,
+  "text": "balón",
+  "sent": 1,
+  "start": 6.96,
+  "end": 7.26
+ },
+ {
+  "i": 25,
+  "text": "a",
+  "sent": 1,
+  "start": 7.26,
+  "end": 7.4
+ },
+ {
+  "i": 26,
+  "text": "Lamine",
+  "sent": 1,
+  "start": 7.4,
+  "end": 7.76
+ },
+ {
+  "i": 27,
+  "text": "Yamal",
+  "sent": 1,
+  "start": 7.76,
+  "end": 8.06
+ },
+ {
+  "i": 28,
+  "text": "en",
+  "sent": 1,
+  "start": 8.06,
+  "end": 8.18
+ },
+ {
+  "i": 29,
+  "text": "la",
+  "sent": 1,
+  "start": 8.18,
+  "end": 8.28
+ },
+ {
+  "i": 30,
+  "text": "banda.",
+  "sent": 1,
+  "start": 8.28,
+  "end": 8.54
+ },
+ {
+  "i": 31,
+  "text": "Lamine",
+  "sent": 2,
+  "start": 8.74,
+  "end": 9.111
+ },
+ {
+  "i": 32,
+  "text": "Yamal",
+  "sent": 2,
+  "start": 9.111,
+  "end": 9.42
+ },
+ {
+  "i": 33,
+  "text": "avanza",
+  "sent": 2,
+  "start": 9.42,
+  "end": 9.72
+ },
+ {
+  "i": 34,
+  "text": "con",
+  "sent": 2,
+  "start": 9.72,
+  "end": 9.98
+ },
+ {
+  "i": 35,
+  "text": "el",
+  "sent": 2,
+  "start": 9.98,
+  "end": 10.1
+ },
+ {
+  "i": 36,
+  "text": "balón",
+  "sent": 2,
+  "start": 10.1,
+  "end": 10.42
+ },
+ {
+  "i": 37,
+  "text": "y",
+  "sent": 2,
+  "start": 10.42,
+  "end": 10.62
+ },
+ {
+  "i": 38,
+  "text": "en",
+  "sent": 2,
+  "start": 10.62,
+  "end": 10.7
+ },
+ {
+  "i": 39,
+  "text": "esta",
+  "sent": 2,
+  "start": 10.7,
+  "end": 10.88
+ },
+ {
+  "i": 40,
+  "text": "posición",
+  "sent": 2,
+  "start": 10.88,
+  "end": 11.36
+ },
+ {
+  "i": 41,
+  "text": "podemos",
+  "sent": 2,
+  "start": 11.36,
+  "end": 11.74
+ },
+ {
+  "i": 42,
+  "text": "ver",
+  "sent": 2,
+  "start": 11.74,
+  "end": 12.06
+ },
+ {
+  "i": 43,
+  "text": "que",
+  "sent": 2,
+  "start": 12.06,
+  "end": 12.22
+ },
+ {
+  "i": 44,
+  "text": "se",
+  "sent": 2,
+  "start": 12.22,
+  "end": 12.36
+ },
+ {
+  "i": 45,
+  "text": "encuentra",
+  "sent": 2,
+  "start": 12.36,
+  "end": 12.74
+ },
+ {
+  "i": 46,
+  "text": "en",
+  "sent": 2,
+  "start": 12.74,
+  "end": 12.98
+ },
+ {
+  "i": 47,
+  "text": "una",
+  "sent": 2,
+  "start": 12.98,
+  "end": 13.12
+ },
+ {
+  "i": 48,
+  "text": "situación",
+  "sent": 2,
+  "start": 13.12,
+  "end": 13.6
+ },
+ {
+  "i": 49,
+  "text": "de",
+  "sent": 2,
+  "start": 13.6,
+  "end": 13.88
+ },
+ {
+  "i": 50,
+  "text": "uno",
+  "sent": 2,
+  "start": 13.88,
+  "end": 14.14
+ },
+ {
+  "i": 51,
+  "text": "contra",
+  "sent": 2,
+  "start": 14.14,
+  "end": 14.5
+ },
+ {
+  "i": 52,
+  "text": "dos.",
+  "sent": 2,
+  "start": 14.5,
+  "end": 14.84
+ },
+ {
+  "i": 53,
+  "text": "Tiene",
+  "sent": 3,
+  "start": 14.96,
+  "end": 15.18
+ },
+ {
+  "i": 54,
+  "text": "a",
+  "sent": 3,
+  "start": 15.18,
+  "end": 15.34
+ },
+ {
+  "i": 55,
+  "text": "dos",
+  "sent": 3,
+  "start": 15.34,
+  "end": 15.5
+ },
+ {
+  "i": 56,
+  "text": "jugadores",
+  "sent": 3,
+  "start": 15.5,
+  "end": 15.94
+ },
+ {
+  "i": 57,
+  "text": "del",
+  "sent": 3,
+  "start": 15.94,
+  "end": 16.18
+ },
+ {
+  "i": 58,
+  "text": "Villarreal",
+  "sent": 3,
+  "start": 16.18,
+  "end": 16.7
+ },
+ {
+  "i": 59,
+  "text": "delante",
+  "sent": 3,
+  "start": 16.7,
+  "end": 17.16
+ },
+ {
+  "i": 60,
+  "text": "de",
+  "sent": 3,
+  "start": 17.16,
+  "end": 17.32
+ },
+ {
+  "i": 61,
+  "text": "él",
+  "sent": 3,
+  "start": 17.32,
+  "end": 17.52
+ },
+ {
+  "i": 62,
+  "text": "y",
+  "sent": 3,
+  "start": 17.52,
+  "end": 17.7
+ },
+ {
+  "i": 63,
+  "text": "no",
+  "sent": 3,
+  "start": 17.7,
+  "end": 17.82
+ },
+ {
+  "i": 64,
+  "text": "puede",
+  "sent": 3,
+  "start": 17.82,
+  "end": 18.06
+ },
+ {
+  "i": 65,
+  "text": "superar",
+  "sent": 3,
+  "start": 18.06,
+  "end": 18.58
+ },
+ {
+  "i": 66,
+  "text": "fácilmente",
+  "sent": 3,
+  "start": 18.58,
+  "end": 19.28
+ },
+ {
+  "i": 67,
+  "text": "a",
+  "sent": 3,
+  "start": 19.28,
+  "end": 19.38
+ },
+ {
+  "i": 68,
+  "text": "los",
+  "sent": 3,
+  "start": 19.38,
+  "end": 19.52
+ },
+ {
+  "i": 69,
+  "text": "dos.",
+  "sent": 3,
+  "start": 19.52,
+  "end": 19.72
+ },
+ {
+  "i": 70,
+  "text": "Además,",
+  "sent": 4,
+  "start": 19.9,
+  "end": 20.2
+ },
+ {
+  "i": 71,
+  "text": "no",
+  "sent": 4,
+  "start": 20.46,
+  "end": 20.54
+ },
+ {
+  "i": 72,
+  "text": "hay",
+  "sent": 4,
+  "start": 20.54,
+  "end": 20.66
+ },
+ {
+  "i": 73,
+  "text": "muchos",
+  "sent": 4,
+  "start": 20.66,
+  "end": 20.92
+ },
+ {
+  "i": 74,
+  "text": "jugadores",
+  "sent": 4,
+  "start": 20.92,
+  "end": 21.4
+ },
+ {
+  "i": 75,
+  "text": "del",
+  "sent": 4,
+  "start": 21.4,
+  "end": 21.64
+ },
+ {
+  "i": 76,
+  "text": "Barça",
+  "sent": 4,
+  "start": 21.64,
+  "end": 22.02
+ },
+ {
+  "i": 77,
+  "text": "en",
+  "sent": 4,
+  "start": 22.02,
+  "end": 22.14
+ },
+ {
+  "i": 78,
+  "text": "la",
+  "sent": 4,
+  "start": 22.14,
+  "end": 22.22
+ },
+ {
+  "i": 79,
+  "text": "defensa",
+  "sent": 4,
+  "start": 22.22,
+  "end": 22.6
+ },
+ {
+  "i": 80,
+  "text": "rival",
+  "sent": 4,
+  "start": 22.6,
+  "end": 22.88
+ },
+ {
+  "i": 81,
+  "text": "que",
+  "sent": 4,
+  "start": 22.88,
+  "end": 23.2
+ },
+ {
+  "i": 82,
+  "text": "puedan",
+  "sent": 4,
+  "start": 23.2,
+  "end": 23.54
+ },
+ {
+  "i": 83,
+  "text": "ofrecerle",
+  "sent": 4,
+  "start": 23.54,
+  "end": 24.14
+ },
+ {
+  "i": 84,
+  "text": "otras",
+  "sent": 4,
+  "start": 24.14,
+  "end": 24.4
+ },
+ {
+  "i": 85,
+  "text": "opciones.",
+  "sent": 4,
+  "start": 24.4,
+  "end": 24.92
+ },
+ {
+  "i": 86,
+  "text": "Pero",
+  "sent": 5,
+  "start": 25.18,
+  "end": 25.34
+ },
+ {
+  "i": 87,
+  "text": "en",
+  "sent": 5,
+  "start": 25.34,
+  "end": 25.46
+ },
+ {
+  "i": 88,
+  "text": "lugar",
+  "sent": 5,
+  "start": 25.46,
+  "end": 25.7
+ },
+ {
+  "i": 89,
+  "text": "de",
+  "sent": 5,
+  "start": 25.7,
+  "end": 25.88
+ },
+ {
+  "i": 90,
+  "text": "intentar",
+  "sent": 5,
+  "start": 25.88,
+  "end": 26.26
+ },
+ {
+  "i": 91,
+  "text": "un",
+  "sent": 5,
+  "start": 26.26,
+  "end": 26.48
+ },
+ {
+  "i": 92,
+  "text": "regate",
+  "sent": 5,
+  "start": 26.48,
+  "end": 26.86
+ },
+ {
+  "i": 93,
+  "text": "arriesgado",
+  "sent": 5,
+  "start": 26.86,
+  "end": 27.5
+ },
+ {
+  "i": 94,
+  "text": "y",
+  "sent": 5,
+  "start": 27.5,
+  "end": 27.72
+ },
+ {
+  "i": 95,
+  "text": "perder",
+  "sent": 5,
+  "start": 27.72,
+  "end": 28.0
+ },
+ {
+  "i": 96,
+  "text": "el",
+  "sent": 5,
+  "start": 28.0,
+  "end": 28.2
+ },
+ {
+  "i": 97,
+  "text": "balón,",
+  "sent": 5,
+  "start": 28.2,
+  "end": 28.56
+ },
+ {
+  "i": 98,
+  "text": "Lamine",
+  "sent": 5,
+  "start": 28.72,
+  "end": 29.08
+ },
+ {
+  "i": 99,
+  "text": "Yamal",
+  "sent": 5,
+  "start": 29.08,
+  "end": 29.38
+ },
+ {
+  "i": 100,
+  "text": "decide",
+  "sent": 5,
+  "start": 29.38,
+  "end": 29.68
+ },
+ {
+  "i": 101,
+  "text": "esperar",
+  "sent": 5,
+  "start": 29.68,
+  "end": 30.14
+ },
+ {
+  "i": 102,
+  "text": "a",
+  "sent": 5,
+  "start": 30.14,
+  "end": 30.32
+ },
+ {
+  "i": 103,
+  "text": "que",
+  "sent": 5,
+  "start": 30.32,
+  "end": 30.46
+ },
+ {
+  "i": 104,
+  "text": "Fermín",
+  "sent": 5,
+  "start": 30.46,
+  "end": 30.84
+ },
+ {
+  "i": 105,
+  "text": "López",
+  "sent": 5,
+  "start": 30.84,
+  "end": 31.2
+ },
+ {
+  "i": 106,
+  "text": "se",
+  "sent": 5,
+  "start": 31.2,
+  "end": 31.5
+ },
+ {
+  "i": 107,
+  "text": "coloque",
+  "sent": 5,
+  "start": 31.5,
+  "end": 31.88
+ },
+ {
+  "i": 108,
+  "text": "correctamente.",
+  "sent": 5,
+  "start": 31.88,
+  "end": 32.8
+ },
+ {
+  "i": 109,
+  "text": "Y",
+  "sent": 6,
+  "start": 32.92,
+  "end": 33.0
+ },
+ {
+  "i": 110,
+  "text": "en",
+  "sent": 6,
+  "start": 33.0,
+  "end": 33.08
+ },
+ {
+  "i": 111,
+  "text": "esta",
+  "sent": 6,
+  "start": 33.08,
+  "end": 33.26
+ },
+ {
+  "i": 112,
+  "text": "posición",
+  "sent": 6,
+  "start": 33.26,
+  "end": 33.74
+ },
+ {
+  "i": 113,
+  "text": "podemos",
+  "sent": 6,
+  "start": 33.74,
+  "end": 34.14
+ },
+ {
+  "i": 114,
+  "text": "ver",
+  "sent": 6,
+  "start": 34.14,
+  "end": 34.46
+ },
+ {
+  "i": 115,
+  "text": "que",
+  "sent": 6,
+  "start": 34.46,
+  "end": 34.62
+ },
+ {
+  "i": 116,
+  "text": "varios",
+  "sent": 6,
+  "start": 34.62,
+  "end": 34.88
+ },
+ {
+  "i": 117,
+  "text": "jugadores",
+  "sent": 6,
+  "start": 34.88,
+  "end": 35.42
+ },
+ {
+  "i": 118,
+  "text": "del",
+  "sent": 6,
+  "start": 35.42,
+  "end": 35.66
+ },
+ {
+  "i": 119,
+  "text": "Villarreal",
+  "sent": 6,
+  "start": 35.66,
+  "end": 36.22
+ },
+ {
+  "i": 120,
+  "text": "están",
+  "sent": 6,
+  "start": 36.22,
+  "end": 36.58
+ },
+ {
+  "i": 121,
+  "text": "bien",
+  "sent": 6,
+  "start": 36.58,
+  "end": 36.88
+ },
+ {
+  "i": 122,
+  "text": "colocados",
+  "sent": 6,
+  "start": 36.88,
+  "end": 37.5
+ },
+ {
+  "i": 123,
+  "text": "defensivamente,",
+  "sent": 6,
+  "start": 37.5,
+  "end": 38.28
+ },
+ {
+  "i": 124,
+  "text": "pero",
+  "sent": 6,
+  "start": 38.58,
+  "end": 38.72
+ },
+ {
+  "i": 125,
+  "text": "no",
+  "sent": 6,
+  "start": 38.72,
+  "end": 38.88
+ },
+ {
+  "i": 126,
+  "text": "han",
+  "sent": 6,
+  "start": 38.88,
+  "end": 39.02
+ },
+ {
+  "i": 127,
+  "text": "calculado",
+  "sent": 6,
+  "start": 39.02,
+  "end": 39.56
+ },
+ {
+  "i": 128,
+  "text": "la",
+  "sent": 6,
+  "start": 39.56,
+  "end": 39.72
+ },
+ {
+  "i": 129,
+  "text": "línea",
+  "sent": 6,
+  "start": 39.72,
+  "end": 39.96
+ },
+ {
+  "i": 130,
+  "text": "de",
+  "sent": 6,
+  "start": 39.96,
+  "end": 40.16
+ },
+ {
+  "i": 131,
+  "text": "pase",
+  "sent": 6,
+  "start": 40.16,
+  "end": 40.46
+ },
+ {
+  "i": 132,
+  "text": "entre",
+  "sent": 6,
+  "start": 40.46,
+  "end": 40.82
+ },
+ {
+  "i": 133,
+  "text": "Lamine",
+  "sent": 6,
+  "start": 40.82,
+  "end": 41.235
+ },
+ {
+  "i": 134,
+  "text": "Yamal",
+  "sent": 6,
+  "start": 41.235,
+  "end": 41.58
+ },
+ {
+  "i": 135,
+  "text": "y",
+  "sent": 6,
+  "start": 41.58,
+  "end": 41.94
+ },
+ {
+  "i": 136,
+  "text": "Fermín",
+  "sent": 6,
+  "start": 41.94,
+  "end": 42.32
+ },
+ {
+  "i": 137,
+  "text": "López.",
+  "sent": 6,
+  "start": 42.32,
+  "end": 42.66
+ },
+ {
+  "i": 138,
+  "text": "Lamine",
+  "sent": 7,
+  "start": 42.78,
+  "end": 43.151
+ },
+ {
+  "i": 139,
+  "text": "Yamal",
+  "sent": 7,
+  "start": 43.151,
+  "end": 43.46
+ },
+ {
+  "i": 140,
+  "text": "detecta",
+  "sent": 7,
+  "start": 43.46,
+  "end": 43.92
+ },
+ {
+  "i": 141,
+  "text": "inmediatamente",
+  "sent": 7,
+  "start": 43.92,
+  "end": 44.6
+ },
+ {
+  "i": 142,
+  "text": "ese",
+  "sent": 7,
+  "start": 44.6,
+  "end": 45.04
+ },
+ {
+  "i": 143,
+  "text": "espacio",
+  "sent": 7,
+  "start": 45.04,
+  "end": 45.48
+ },
+ {
+  "i": 144,
+  "text": "y",
+  "sent": 7,
+  "start": 45.48,
+  "end": 45.82
+ },
+ {
+  "i": 145,
+  "text": "mete",
+  "sent": 7,
+  "start": 45.82,
+  "end": 46.0
+ },
+ {
+  "i": 146,
+  "text": "un",
+  "sent": 7,
+  "start": 46.0,
+  "end": 46.2
+ },
+ {
+  "i": 147,
+  "text": "magnífico",
+  "sent": 7,
+  "start": 46.2,
+  "end": 47.0
+ },
+ {
+  "i": 148,
+  "text": "pase",
+  "sent": 7,
+  "start": 47.0,
+  "end": 47.22
+ },
+ {
+  "i": 149,
+  "text": "raso",
+  "sent": 7,
+  "start": 47.22,
+  "end": 47.72
+ },
+ {
+  "i": 150,
+  "text": "hacia",
+  "sent": 7,
+  "start": 47.72,
+  "end": 47.92
+ },
+ {
+  "i": 151,
+  "text": "Fermín",
+  "sent": 7,
+  "start": 47.92,
+  "end": 48.34
+ },
+ {
+  "i": 152,
+  "text": "López.",
+  "sent": 7,
+  "start": 48.34,
+  "end": 48.7
+ },
+ {
+  "i": 153,
+  "text": "Y",
+  "sent": 8,
+  "start": 48.82,
+  "end": 48.88
+ },
+ {
+  "i": 154,
+  "text": "ahora,",
+  "sent": 8,
+  "start": 48.88,
+  "end": 49.16
+ },
+ {
+  "i": 155,
+  "text": "mirad",
+  "sent": 8,
+  "start": 49.38,
+  "end": 49.62
+ },
+ {
+  "i": 156,
+  "text": "bien.",
+  "sent": 8,
+  "start": 49.62,
+  "end": 49.82
+ },
+ {
+  "i": 157,
+  "text": "Fermín",
+  "sent": 9,
+  "start": 50.0,
+  "end": 50.34
+ },
+ {
+  "i": 158,
+  "text": "recibe",
+  "sent": 9,
+  "start": 50.34,
+  "end": 50.78
+ },
+ {
+  "i": 159,
+  "text": "el",
+  "sent": 9,
+  "start": 50.78,
+  "end": 50.92
+ },
+ {
+  "i": 160,
+  "text": "balón",
+  "sent": 9,
+  "start": 50.92,
+  "end": 51.24
+ },
+ {
+  "i": 161,
+  "text": "sin",
+  "sent": 9,
+  "start": 51.24,
+  "end": 51.46
+ },
+ {
+  "i": 162,
+  "text": "siquiera",
+  "sent": 9,
+  "start": 51.46,
+  "end": 52.02
+ },
+ {
+  "i": 163,
+  "text": "controlarlo.",
+  "sent": 9,
+  "start": 52.02,
+  "end": 52.78
+ },
+ {
+  "i": 164,
+  "text": "Se",
+  "sent": 10,
+  "start": 52.9,
+  "end": 53.02
+ },
+ {
+  "i": 165,
+  "text": "da",
+  "sent": 10,
+  "start": 53.02,
+  "end": 53.12
+ },
+ {
+  "i": 166,
+  "text": "cuenta",
+  "sent": 10,
+  "start": 53.12,
+  "end": 53.28
+ },
+ {
+  "i": 167,
+  "text": "inmediatamente",
+  "sent": 10,
+  "start": 53.28,
+  "end": 54.12
+ },
+ {
+  "i": 168,
+  "text": "de",
+  "sent": 10,
+  "start": 54.12,
+  "end": 54.44
+ },
+ {
+  "i": 169,
+  "text": "que",
+  "sent": 10,
+  "start": 54.44,
+  "end": 54.56
+ },
+ {
+  "i": 170,
+  "text": "el",
+  "sent": 10,
+  "start": 54.56,
+  "end": 54.72
+ },
+ {
+  "i": 171,
+  "text": "portero",
+  "sent": 10,
+  "start": 54.72,
+  "end": 55.16
+ },
+ {
+  "i": 172,
+  "text": "está",
+  "sent": 10,
+  "start": 55.16,
+  "end": 55.36
+ },
+ {
+  "i": 173,
+  "text": "colocado",
+  "sent": 10,
+  "start": 55.36,
+  "end": 55.88
+ },
+ {
+  "i": 174,
+  "text": "en",
+  "sent": 10,
+  "start": 55.88,
+  "end": 56.04
+ },
+ {
+  "i": 175,
+  "text": "el",
+  "sent": 10,
+  "start": 56.04,
+  "end": 56.16
+ },
+ {
+  "i": 176,
+  "text": "segundo",
+  "sent": 10,
+  "start": 56.16,
+  "end": 56.5
+ },
+ {
+  "i": 177,
+  "text": "palo",
+  "sent": 10,
+  "start": 56.5,
+  "end": 56.96
+ },
+ {
+  "i": 178,
+  "text": "y",
+  "sent": 10,
+  "start": 56.96,
+  "end": 57.08
+ },
+ {
+  "i": 179,
+  "text": "deja",
+  "sent": 10,
+  "start": 57.08,
+  "end": 57.34
+ },
+ {
+  "i": 180,
+  "text": "muchísimo",
+  "sent": 10,
+  "start": 57.34,
+  "end": 57.92
+ },
+ {
+  "i": 181,
+  "text": "espacio",
+  "sent": 10,
+  "start": 57.92,
+  "end": 58.46
+ },
+ {
+  "i": 182,
+  "text": "en",
+  "sent": 10,
+  "start": 58.46,
+  "end": 58.68
+ },
+ {
+  "i": 183,
+  "text": "el",
+  "sent": 10,
+  "start": 58.68,
+  "end": 58.78
+ },
+ {
+  "i": 184,
+  "text": "primero.",
+  "sent": 10,
+  "start": 58.78,
+  "end": 59.12
+ },
+ {
+  "i": 185,
+  "text": "Sin",
+  "sent": 11,
+  "start": 59.3,
+  "end": 59.42
+ },
+ {
+  "i": 186,
+  "text": "perder",
+  "sent": 11,
+  "start": 59.42,
+  "end": 59.8
+ },
+ {
+  "i": 187,
+  "text": "ni",
+  "sent": 11,
+  "start": 59.8,
+  "end": 60.12
+ },
+ {
+  "i": 188,
+  "text": "un",
+  "sent": 11,
+  "start": 60.12,
+  "end": 60.28
+ },
+ {
+  "i": 189,
+  "text": "segundo,",
+  "sent": 11,
+  "start": 60.28,
+  "end": 60.8
+ },
+ {
+  "i": 190,
+  "text": "Fermín",
+  "sent": 11,
+  "start": 60.98,
+  "end": 61.32
+ },
+ {
+  "i": 191,
+  "text": "López",
+  "sent": 11,
+  "start": 61.32,
+  "end": 61.64
+ },
+ {
+  "i": 192,
+  "text": "golpea",
+  "sent": 11,
+  "start": 61.64,
+  "end": 62.2
+ },
+ {
+  "i": 193,
+  "text": "directamente",
+  "sent": 11,
+  "start": 62.2,
+  "end": 62.64
+ },
+ {
+  "i": 194,
+  "text": "el",
+  "sent": 11,
+  "start": 62.64,
+  "end": 63.1
+ },
+ {
+  "i": 195,
+  "text": "balón",
+  "sent": 11,
+  "start": 63.1,
+  "end": 63.42
+ },
+ {
+  "i": 196,
+  "text": "al",
+  "sent": 11,
+  "start": 63.42,
+  "end": 63.52
+ },
+ {
+  "i": 197,
+  "text": "primer",
+  "sent": 11,
+  "start": 63.52,
+  "end": 63.8
+ },
+ {
+  "i": 198,
+  "text": "toque",
+  "sent": 11,
+  "start": 63.8,
+  "end": 64.28
+ },
+ {
+  "i": 199,
+  "text": "y",
+  "sent": 11,
+  "start": 64.28,
+  "end": 64.48
+ },
+ {
+  "i": 200,
+  "text": "lo",
+  "sent": 11,
+  "start": 64.48,
+  "end": 64.58
+ },
+ {
+  "i": 201,
+  "text": "manda",
+  "sent": 11,
+  "start": 64.58,
+  "end": 64.96
+ },
+ {
+  "i": 202,
+  "text": "al",
+  "sent": 11,
+  "start": 64.96,
+  "end": 65.1
+ },
+ {
+  "i": 203,
+  "text": "fondo",
+  "sent": 11,
+  "start": 65.1,
+  "end": 65.42
+ },
+ {
+  "i": 204,
+  "text": "de",
+  "sent": 11,
+  "start": 65.42,
+  "end": 65.66
+ },
+ {
+  "i": 205,
+  "text": "la",
+  "sent": 11,
+  "start": 65.66,
+  "end": 65.76
+ },
+ {
+  "i": 206,
+  "text": "red.",
+  "sent": 11,
+  "start": 65.76,
+  "end": 65.98
+ },
+ {
+  "i": 207,
+  "text": "¡Qué",
+  "sent": 12,
+  "start": 66.1,
+  "end": 66.16
+ },
+ {
+  "i": 208,
+  "text": "jugada",
+  "sent": 12,
+  "start": 66.16,
+  "end": 66.7
+ },
+ {
+  "i": 209,
+  "text": "tan",
+  "sent": 12,
+  "start": 66.7,
+  "end": 66.98
+ },
+ {
+  "i": 210,
+  "text": "increíble!",
+  "sent": 12,
+  "start": 66.98,
+  "end": 67.74
+ },
+ {
+  "i": 211,
+  "text": "Una",
+  "sent": 13,
+  "start": 67.88,
+  "end": 68.0
+ },
+ {
+  "i": 212,
+  "text": "visión",
+  "sent": 13,
+  "start": 68.0,
+  "end": 68.36
+ },
+ {
+  "i": 213,
+  "text": "excepcional",
+  "sent": 13,
+  "start": 68.36,
+  "end": 69.02
+ },
+ {
+  "i": 214,
+  "text": "de",
+  "sent": 13,
+  "start": 69.02,
+  "end": 69.22
+ },
+ {
+  "i": 215,
+  "text": "Lamine",
+  "sent": 13,
+  "start": 69.22,
+  "end": 69.58
+ },
+ {
+  "i": 216,
+  "text": "Yamal",
+  "sent": 13,
+  "start": 69.58,
+  "end": 69.88
+ },
+ {
+  "i": 217,
+  "text": "y",
+  "sent": 13,
+  "start": 69.88,
+  "end": 70.14
+ },
+ {
+  "i": 218,
+  "text": "una",
+  "sent": 13,
+  "start": 70.14,
+  "end": 70.28
+ },
+ {
+  "i": 219,
+  "text": "definición",
+  "sent": 13,
+  "start": 70.28,
+  "end": 70.84
+ },
+ {
+  "i": 220,
+  "text": "perfecta",
+  "sent": 13,
+  "start": 70.84,
+  "end": 71.56
+ },
+ {
+  "i": 221,
+  "text": "de",
+  "sent": 13,
+  "start": 71.56,
+  "end": 71.64
+ },
+ {
+  "i": 222,
+  "text": "Fermín",
+  "sent": 13,
+  "start": 71.64,
+  "end": 72.06
+ },
+ {
+  "i": 223,
+  "text": "López.",
+  "sent": 13,
+  "start": 72.06,
+  "end": 72.42
+ }
+]

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es"><head><meta charset="UTF-8" /><meta name="viewport" content="width=1080, height=1920" />
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:Poppins;font-weight:800;src:url(assets/poppins-latin-800-normal.woff2) format("woff2")}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;background:#000;font-family:Poppins;font-weight:800}
+.ph{position:absolute;top:0;height:1300px;width:50%;background-size:cover;background-position:center}
+#g{left:0;width:60%;background-image:url(assets/cov_geste.jpg)}
+#f{right:0;width:40%;background-position:center top;background-image:url(assets/cov_face.jpg);border-left:6px solid #fff}
+#grad{position:absolute;left:0;right:0;bottom:0;height:1000px;background:linear-gradient(to bottom,rgba(0,0,0,0),#000 62%)}
+#band{position:absolute;left:50%;top:1180px;transform:translateX(-50%);display:flex;align-items:center;gap:18px;background:#e10600;color:#fff;
+  padding:14px 34px;font-size:52px;border-radius:10px;white-space:nowrap;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+#band img{width:64px;height:64px;background:#fff;border-radius:50%;padding:6px}
+#words{position:absolute;left:0;right:0;top:1330px;text-align:center;color:#fff;font-size:190px;line-height:.95;letter-spacing:-2px;
+  text-shadow:0 8px 30px rgba(0,0,0,.9)}
+</style></head><body>
+<div id="root" data-composition-id="cover" data-start="0" data-duration="1" data-width="1080" data-height="1920">
+<div class="ph clip" id="g" data-start="0" data-duration="1"></div>
+<div class="ph clip" id="f" data-start="0" data-duration="1"></div>
+<div id="grad" class="clip" data-start="0" data-duration="1"></div>
+<div id="band" class="clip" data-start="0" data-duration="1"><img src="assets/barca.svg" alt="">BARÇA 2-2 VILLARREAL<img src="assets/villarreal.svg" alt=""></div>
+<div id="words" class="clip" data-start="0" data-duration="1">¡PRIMER<br>TOQUE!</div>
+</div>
+<script>const tl=gsap.timeline({paused:true});tl.set({},{},1);window.__timelines=window.__timelines||{};window.__timelines["cover"]=tl;tl.seek(0);</script>
+</body></html>
