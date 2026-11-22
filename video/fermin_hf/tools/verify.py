@@ -36,7 +36,7 @@ for e in state:
     roi = im[y0:y1, x0:x1].astype(int)
     red = (roi[:, :, 2] > 190) & (roi[:, :, 1] < 90) & (roi[:, :, 0] < 90)
     ys, xs = np.nonzero(red)
-    if len(ys) < 20:
+    if len(ys) < 6:
         res.append((e["k"], None, None, "no arrow")); continue
     tip_y = ys.max() + y0
     bottom = ys >= ys.max() - 3

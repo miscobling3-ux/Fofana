@@ -497,6 +497,14 @@ for j, (src, t0, vol, nm) in enumerate(sfx):
     H.append(f'<audio id="sfx{j}" src="assets/{src}" data-start="{t0:.3f}" data-duration="{d:.3f}" data-volume="{vol}"></audio>')
 H.append("</div>")
 
+# --------- per-frame label corrections measured on the previous render (tools/verify.py)
+CORR = {}
+if os.path.exists(f"{ROOT}/data/label_corr.json"):
+    CORR = {int(k): v for k, v in json.load(open(f"{ROOT}/data/label_corr.json")).items()}
+for e in state:
+    if "label" in e and e["k"] in CORR:
+        e["label"]["x"] = round(e["label"]["x"] + CORR[e["k"]], 1)
+
 # --------- timeline: per-frame sets
 js = ["const tl = gsap.timeline({ paused: true });", "const S=(sel,v,t)=>tl.set(sel,v,t);",
       'tl.set(".tag .in",{scale:1},0);tl.set("#h1",{opacity:0,scaleY:1},0);tl.set("#h0",{opacity:1,scaleY:1},0);']
