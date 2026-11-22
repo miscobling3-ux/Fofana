@@ -188,7 +188,7 @@ for f in frames:
             half = 200; dx = min(max(0.0, 16 + half - x), 0.0) if False else 0.0
             if x - half < 16: dx = 16 + half - x
             if x + half > W - 16: dx = W - 16 - half - x
-            tag_sets[who].append(f'[{fmt(f["t"])},{fmt(x)},{fmt(y - 6 - bounce)},{fmt(dx)}]'); shown.add(who)
+            tag_sets[who].append(f'[{fmt(f["t"])},{fmt(x)},{fmt(y - bounce)},{fmt(dx)}]'); shown.add(who)
     for who in NAMES: tag_on[who].append((f['n'], (f['shot'] if who in shown else None)))
 
 def intervals(lst):
@@ -228,25 +228,25 @@ for i, w in enumerate(WORDS):
     subs.append(f'<div id="w{i}" class="clip sub" data-start="{s:.3f}" data-duration="{max(0.06, e - s):.3f}">{txt}</div>')
 
 # sons
-aud = ['<audio class="clip" src="assets/voice.wav" data-start="0" data-duration="96.52" data-volume="1"></audio>']
+aud = ['<audio class="clip" src="assets/voice.wav" data-start="0" data-duration="96.52" data-volume="0.78"></audio>']
 k = 0
 for si, (t0, *_r) in enumerate(EDL[1:], 1):
     nm = 'whoosh' if k % 2 == 0 else 'whoosh2'; k += 1
-    aud.append(f'<audio class="clip" src="sfx/{nm}.wav" data-start="{max(0, t0 - 0.12):.3f}" data-duration="{0.38 if nm == "whoosh" else 0.28}" data-volume="0.30"></audio>')
+    aud.append(f'<audio class="clip" src="sfx/{nm}.wav" data-start="{max(0, t0 - 0.12):.3f}" data-duration="{0.38 if nm == "whoosh" else 0.28}" data-volume="0.24"></audio>')
 for si, (t0, t1, src, fin, fout, o) in enumerate(EDL):
     if o.get('freeze'):
-        aud.append(f'<audio class="clip" src="sfx/freeze.wav" data-start="{t0:.3f}" data-duration="0.45" data-volume="0.35"></audio>')
+        aud.append(f'<audio class="clip" src="sfx/freeze.wav" data-start="{t0:.3f}" data-duration="0.45" data-volume="0.28"></audio>')
     for kf in o.get('kick', []):
         for f in frames:
             if f['shot'] == si and f['sf'] >= kf:
-                aud.append(f'<audio class="clip" src="sfx/kick.wav" data-start="{f["t"]:.3f}" data-duration="0.25" data-volume="0.45"></audio>'); break
+                aud.append(f'<audio class="clip" src="sfx/kick.wav" data-start="{f["t"]:.3f}" data-duration="0.25" data-volume="0.36"></audio>'); break
 pops = []
 for who in NAMES:
     for a, b in intervals(tag_on[who]):
         pops.append(a / OUT_FPS)
 for a, b, R in spot_iv: pops.append(a)
 for p in sorted(set(round(p, 3) for p in pops)):
-    aud.append(f'<audio class="clip" src="sfx/pop.wav" data-start="{p:.3f}" data-duration="0.09" data-volume="0.30"></audio>')
+    aud.append(f'<audio class="clip" src="sfx/pop.wav" data-start="{p:.3f}" data-duration="0.09" data-volume="0.24"></audio>')
 
 tag_iv = {who: [(a / OUT_FPS, b / OUT_FPS) for a, b in intervals(tag_on[who])] for who in NAMES}
 json.dump(dict(tag_iv=tag_iv, spot_iv=spot_iv, frames=[dict(t=f['t'], src=f['src'], sf=f['sf'], shot=f['shot'], cam=cam(f)) for f in frames], tags={w: tag_sets[w] for w in NAMES}, spots=spot_sets),

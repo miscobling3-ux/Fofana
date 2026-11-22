@@ -26,19 +26,24 @@ while True:
         f = frames[n]
         # 1) bonne image source : corrélation avec l'image attendue (zone hors sous-titres)
         if n % 3 == 0:
-            e = expected(f)
-            a = cv2.cvtColor(cv2.resize(im[200:1550], (108, 135)), cv2.COLOR_BGR2GRAY).astype(float)
-            b = cv2.cvtColor(cv2.resize(e[200:1550], (108, 135)), cv2.COLOR_BGR2GRAY).astype(float)
-            a -= a.mean(); b -= b.mean(); c = (a * b).sum() / (np.sqrt((a * a).sum() * (b * b).sum()) + 1e-9)
-            res_corr.append((n, f['shot'], f['sf'], float(c)))
+            def g(img): 
+                x = cv2.cvtColor(cv2.resize(img[200:1550], (108, 135)), cv2.COLOR_BGR2GRAY).astype(float); x -= x.mean(); return x / (np.sqrt((x * x).sum()) + 1e-9)
+            a = g(im); best = None
+            for k in range(-4, 5):
+                ff = dict(f); ff['sf'] = f['sf'] + k
+                if not os.path.exists(f"frames/{f['src']}/{ff['sf']:04d}.jpg"): continue
+                c = float((a * g(expected(ff))).sum())
+                if best is None or c > best[1]: best = (k, c)
+            c0 = float((a * g(expected(f))).sum())
+            res_corr.append((n, f['shot'], f['sf'], c0, best[0], best[1]))
         # 2) étiquettes : pointe rouge mesurée vs haut de la tête
         for w, d in tags.items():
             if n in d:
                 _, x, y, dx = d[n]
-                head_y = y + 6 + 5 * abs(math.sin(2 * math.pi * 1.4 * n / 30))
-                x0, x1 = int(max(0, x - 50)), int(min(W, x + 50)); y0, y1 = int(max(0, y - 120)), int(min(H, y + 40))
+                head_y = y + 5 * abs(math.sin(2 * math.pi * 1.4 * n / 30))
+                x0, x1 = int(max(0, x - 40)), int(min(W, x + 40)); y0, y1 = int(max(0, y - 100)), int(min(H, y + 8))
                 roi = im[y0:y1, x0:x1].astype(int)
-                red = (roi[:, :, 2] > 190) & (roi[:, :, 1] < 90) & (roi[:, :, 0] < 90)
+                red = (roi[:, :, 2] > 225) & (roi[:, :, 1] < 70) & (roi[:, :, 0] < 70)
                 ys, xs = np.where(red)
                 if len(ys):
                     ty = y0 + ys.max(); tx = x0 + xs[ys >= ys.max() - 3].mean()
@@ -65,8 +70,8 @@ def sheet(tiles, cols, path):
     for k in range(0, len(rows), 12): cv2.imwrite(f'{path}_{k // 12:02d}.jpg', np.vstack(rows[k:k + 12]))
 sheet(tag_tiles, 16, f'{OUT}/tags'); sheet(spot_tiles, 10, f'{OUT}/spots'); sheet(edge_tiles, 10, f'{OUT}/edges')
 bad_tag = [e for e in tag_err if e[2] is None or not (0 <= e[2] <= 16 and abs(e[3]) <= 6)]
-low = [r for r in res_corr if r[3] < 0.75]
+low = [r for r in res_corr if abs(r[4]) > 1 and r[5] - r[3] > 0.02]
 json.dump(dict(frames=n, corr=res_corr, tag=tag_err), open(f'{OUT}/report.json', 'w'))
 print('images rendues', n, 'attendues', len(frames))
-print('corrélation image source : min %.3f moyenne %.3f, sous 0.75 : %d' % (min(r[3] for r in res_corr), np.mean([r[3] for r in res_corr]), len(low)), low[:10])
+print('image source : %d contrôles, meilleure correspondance décalée de plus d\'1 image : %d' % (len(res_corr), len(low)), low[:10])
 print('étiquettes mesurées', len(tag_err), 'hors tolérance', len(bad_tag), bad_tag[:15])
