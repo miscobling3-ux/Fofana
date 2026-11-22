@@ -388,18 +388,19 @@ words = json.load(open(f"{ROOT}/data/words.json"))
 sfx = []
 cut_ids = ["166", "174", "168", "3115"]
 for i, s in enumerate(P.SEGMENTS[1:], 1):
-    sfx.append((f"sfx/{cut_ids[(i - 1) % 4]}.mp3", max(0, s["t0"] - 0.12), 0.30, f"cut{i}"))
+    sfx.append((f"sfx/{cut_ids[(i - 1) % 4]}.wav", max(0, s["t0"] - 0.12), 0.30, f"cut{i}"))
 for tf in P.FREEZE_TIMES:
-    sfx.append(("sfx/1492.mp3", tf, 0.35, f"freeze{tf}"))
+    sfx.append(("sfx/1492.wav", tf, 0.35, f"freeze{tf}"))
 for who, a, b in label_runs:
-    sfx.append(("sfx/3005.mp3", a / FPS, 0.40, f"pop_{who}_{a}"))
-sfx.append(("sfx/3005.mp3", P.SCORE["show"], 0.45, "pop_score"))
+    sfx.append(("sfx/3005.wav", a / FPS, 0.40, f"pop_{who}_{a}"))
+sfx.append(("sfx/3005.wav", P.SCORE["show"], 0.45, "pop_score"))
 kick_ids = ["2112", "2108", "2099"]
 for j, (segi, ev) in enumerate(P.CONTACTS):
     f = P.EV[ev]; s = P.SEGMENTS[segi]
     if "freeze" in s or not (s["f0"] <= f <= s["f1"]): continue
-    sfx.append((f"sfx/{kick_ids[j % 3]}.mp3", out_time_of_src(segi, f), 0.55, f"kick{segi}"))
+    sfx.append((f"sfx/{kick_ids[j % 3]}.wav", out_time_of_src(segi, f), 0.55, f"kick{segi}"))
 MIX_GAIN = 0.80   # measured on render v2: -12.1 LUFS -> -14 LUFS
+SFX_GAIN = 0.70   # -3 dB on effects: stacked cut+pop+kick peaks under -1.5 dBTP
 SFX_DUR = {"166": 0.809796, "174": 1.044898, "168": 0.888163, "3115": 0.600816, "1492": 1.38449,
            "3005": 0.20898, "2112": 1.462857, "2108": 0.966531, "2099": 1.593469}
 
@@ -495,7 +496,7 @@ for j, w in enumerate(words):
 H.append(f'<audio id="voice" src="assets/audio/voice_es.wav" data-start="0" data-duration="{P.DURATION:.2f}" data-volume="{MIX_GAIN:.3f}"></audio>')
 for j, (src, t0, vol, nm) in enumerate(sfx):
     d = min(SFX_DUR[src.split("/")[1][:-4]], P.DURATION - t0)
-    H.append(f'<audio id="sfx{j}" src="assets/{src}" data-start="{t0:.3f}" data-duration="{d:.3f}" data-volume="{vol * MIX_GAIN:.3f}"></audio>')
+    H.append(f'<audio id="sfx{j}" src="assets/{src}" data-start="{t0:.3f}" data-duration="{d:.3f}" data-volume="{vol * SFX_GAIN * MIX_GAIN:.3f}"></audio>')
 H.append("</div>")
 
 # --------- per-frame label corrections measured on the previous render (tools/verify.py)
