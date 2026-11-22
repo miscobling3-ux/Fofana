@@ -1,0 +1,24 @@
+<!doctype html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=1080, height=1920">
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face { font-family: Poppins; font-weight: 800; src: url(assets/fonts/Poppins-ExtraBold.ttf); }
+*{margin:0;padding:0;box-sizing:border-box} html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden}
+.pan{position:absolute;top:0;height:1920px;width:540px;overflow:hidden}
+.pan img{position:absolute}
+#l{left:0} #r{left:540px;border-left:6px solid #fff}
+#ring{position:absolute;border:6px solid #fff;border-radius:50%;box-shadow:0 0 18px 4px rgba(255,255,255,.6)}
+#grad{position:absolute;left:0;right:0;bottom:0;height:1056px;background:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.92) 70%)}
+#band{position:absolute;left:50%;transform:translateX(-50%);bottom:576px;background:#d10f1f;color:#fff;font:800 46px Poppins;padding:10px 34px;border-radius:12px;white-space:nowrap;letter-spacing:1px}
+#big{position:absolute;left:0;right:0;bottom:192px;text-align:center;color:#fff;font:800 170px/0.95 Poppins;text-shadow:0 6px 18px rgba(0,0,0,.7)}
+</style></head><body>
+<div id="root" data-composition-id="cover" data-start="0" data-duration="1" data-width="1080" data-height="1920">
+<div class="pan" id="l"><img src="img/rice.jpg" style="width:2160px;height:2880px;left:-1446px;top:-353px">
+<div id="ring" style="left:135px;top:556px;width:270px;height:270px"></div></div>
+<div class="pan" id="r"><img src="img/bar.jpg" style="width:1656px;height:2208px;left:-489px;top:-46px"></div>
+<div id="grad"></div>
+<div id="band">LIVERPOOL – ARSENAL</div>
+<div id="big">¡QUÉ<br>LECTURA!</div>
+</div>
+<script>const tl=gsap.timeline({paused:true});tl.set("#root",{opacity:1},0.9);window.__timelines=window.__timelines||{};window.__timelines["cover"]=tl;tl.seek(0);</script>
+</body></html>

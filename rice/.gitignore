@@ -1,0 +1,11 @@
+frames/
+snaps/
+snaps2/
+.hyperframes/
+analysis/verif/
+analysis/voice16.wav
+analysis/board_*.jpg
+covers/shot_*/
+assets/voice.wav
+out/
+node_modules/
